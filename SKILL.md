@@ -19,7 +19,7 @@ description: >
    - 若用户提供了账号密码，将其用于连接，并严禁在任何地方明文记录密码。
 
 3. **设备初始化与版本查验**  
-   对每台设备，使用 **本 SKILL.md 所在目录下的** `scripts/device_init.py` 脚本完成连接、关闭分屏和版本查询。  
+   对每台设备，使用 **[scripts/device_init.py](scripts/device_init.py)** 脚本完成连接、关闭分屏和版本查询。  
    - 无认证设备：`python3 <SKILL目录>/scripts/device_init.py <端口号>`
    - 有认证设备：`python3 <SKILL目录>/scripts/device_init.py <端口号> <用户名> <密码>`（密码通过安全方式获取，不写入脚本）  
    脚本返回 JSON，包含 `status`（success/error）和 `output`（版本信息或错误消息）。  
@@ -32,8 +32,8 @@ description: >
 ### 二、操作规则（务必严格遵守）
 
 #### 1. 指令来源
-- 收到配置需求后，**必须先查阅本 SKILL.md 文件所在目录下的 `references/CMD-help` 目录**。该目录下按功能模块分类（例如 `VLAN`、`OSPF`、`DHCP`、`BGP` 等），每个模块下又细分为“配置命令”“调试命令”“Probe命令”等子目录，最终的命令格式均记录在对应的 `.md` 文件中。请根据用户需求精确定位到具体的 `.md` 文件，并严格遵循其中的命令格式执行。
-- **例外（高频操作白名单）**：白名单命令已确认无需查阅文档，可直接按通用 H3C 语法执行。完整清单详见 **本 SKILL.md 所在目录下的** `references/high-frequency-commands.md` 文件。
+- 收到配置需求后，**必须先查阅 [references/CMD-help](references/CMD-help) 目录**。该目录下按功能模块分类（例如 `VLAN`、`OSPF`、`DHCP`、`BGP` 等），每个模块下又细分为“配置命令”“调试命令”“Probe命令”等子目录，最终的命令格式均记录在对应的 `.md` 文件中。请根据用户需求精确定位到具体的 `.md` 文件，并严格遵循其中的命令格式执行。
+- **例外（高频操作白名单）**：白名单命令已确认无需查阅文档，可直接按通用 H3C 语法执行。完整清单详见 **[references/high-frequency-commands.md](references/high-frequency-commands.md)** 文件。
 - **查找命令文档的方法**：在执行任何配置前，优先使用 `grep -rl "<配置需求关键字>" <SKILL目录>/references/CMD-help/` 定位相关 `.md` 文件。例如需要 VLAN 配置，可执行：
   `grep -rl "vlan" <SKILL目录>/references/CMD-help/ | grep -i config`
   然后读取搜索到的文件，确认命令格式。若搜索结果过多，可追加功能模块名（如 `VLAN映射`、`OSPF`）进一步过滤。对于明确的功能模块，也可直接进入对应子目录读取 `.md` 文件。
@@ -83,6 +83,6 @@ description: >
 - 即使使用脚本，对于符合第 2 条的高危命令，你仍必须在调用 `apply_config.py` 之前，明确向用户请求授权。脚本不会自动处理 `[Y/N]` 交互，因此若命令可能触发此类交互，必须由你与用户沟通确认后，方可传入脚本执行。
 
 ### 三、注意事项
-- 脚本 `apply_config.py` 和 `device_init.py` 均位于本 SKILL.md 同级目录下的 `scripts` 文件夹中，请使用绝对路径或正确的相对路径调用。
+- 脚本 [apply_config.py](scripts/apply_config.py) 和 [device_init.py](scripts/device_init.py) 均位于 [scripts](scripts) 文件夹中，请使用绝对路径或正确的相对路径调用。
 - 任何情况下都**严禁将密码明文写入命令行或任何持久化文档**，应优先使用 `--password-env` 或由脚本交互提示输入。
 - 若设备数量或命令复杂度超出脚本设计范围，请及时提示用户并等待进一步指示，切勿自作主张。
