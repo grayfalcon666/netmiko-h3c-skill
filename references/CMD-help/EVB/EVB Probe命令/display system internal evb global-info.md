@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  display system internal evb global-info | Probe视图          | L6
+  display system internal evb kernel  | ]                | L26
+-->
 
 **EVB \-- EVB Probe命令 \-- display system internal evb global-info**
 

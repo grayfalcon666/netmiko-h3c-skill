@@ -1,3 +1,26 @@
+<!-- CMD-INDEX
+  display ip netstream cache          | 任意视图             | L25
+  display ip netstream export         | 任意视图             | L467
+  display ip netstream template       | 任意视图             | L705
+  enable                              | NetStream聚合视图    | L1157
+  ip netstream                        | 系统视图/接口视图        | L1199
+  ip netstream { inbound \| outbound } filter | 接口视图             | L1271
+  ip netstream { inbound \| outbound } mirror-to |                  | L1325
+  ip netstream { inbound \| outbound } sampler | 接口视图             | L1401
+  ip netstream aggregation            | 系统视图             | L1449
+  ip netstream aggregation advanced   | 系统视图             | L1523
+  ip netstream export host            | 系统视图/NetStream聚合视图 | L1577
+  ip netstream export rate            | 系统视图             | L1649
+  ip netstream export source          | 系统视图/NetStream聚合视图 | L1689
+  ip netstream export v9-template refresh-rate packet | 系统视图             | L1749
+  ip netstream export v9-template refresh-rate time | 系统视图             | L1799
+  ip netstream export version         | 系统视图             | L1849
+  ip netstream max-entry              | 系统视图             | L1909
+  ip netstream mpls                   | 系统视图             | L1977
+  ip netstream timeout active         | 系统视图             | L2033
+  ip netstream timeout inactive       | 系统视图             | L2081
+  reset ip netstream statistics       | 用户视图             | L2129
+-->
 
 **NetStream \-- NetStream配置命令 \-- display ip netstream cache**
 

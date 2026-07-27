@@ -1,3 +1,36 @@
+<!-- CMD-INDEX
+  display dot1x                       | 任意视图             | L35
+  display dot1x connection            | 任意视图             | L477
+  dot1x                               | 系统视图/以太网接口视图     | L895
+  dot1x authentication-method         | 系统视图             | L947
+  dot1x auth-fail vlan                | 以太网接口视图          | L1011
+  dot1x critical vlan                 | 以太网接口视图          | L1063
+  dot1x domain-delimiter              | 系统视图             | L1115
+  dot1x ead-assistant enable          | 系统视图             | L1165
+  dot1x ead-assistant free-ip         | 系统视图             | L1215
+  dot1x ead-assistant url             | 系统视图             | L1273
+  dot1x guest-vlan                    | 以太网接口视图          | L1329
+  dot1x handshake                     | 以太网接口视图          | L1381
+  dot1x handshake secure              | 以太网接口视图          | L1431
+  dot1x mandatory-domain              | 以太网接口视图          | L1481
+  dot1x max-user                      | 以太网接口视图          | L1531
+  dot1x multicast-trigger             | 以太网接口视图          | L1581
+  dot1x port-control                  | 以太网接口视图          | L1633
+  dot1x port-method                   | 以太网接口视图          | L1687
+  dot1x quiet-period                  | 系统视图             | L1743
+  dot1x re-authenticate               | 以太网接口视图          | L1791
+  dot1x re-authenticate server-unreachable keep-online | 以太网接口视图          | L1841
+  dot1x retry                         | 系统视图             | L1889
+  dot1x smarton                       | 以太网接口视图          | L1939
+  dot1x smarton password              | 系统视图             | L1989
+  dot1x smarton retry                 | 系统视图             | L2049
+  dot1x smarton switchid              | 系统视图             | L2099
+  dot1x smarton timer supp-timeout    | 系统视图             | L2151
+  dot1x timer                         | 系统视图             | L2201
+  dot1x unicast-trigger               | 以太网接口视图          | L2275
+  reset dot1x guest-vlan              | 用户视图             | L2327
+  reset dot1x statistics              | 用户视图             | L2363
+-->
 
 **802.1X \-- 802.1X配置命令 \-- display dot1x**
 

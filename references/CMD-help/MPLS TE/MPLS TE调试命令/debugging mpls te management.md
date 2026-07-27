@@ -1,3 +1,10 @@
+<!-- CMD-INDEX
+  debugging mpls te management        | 用户视图             | L9
+  debugging mpls te cspf              | 用户视图             | L157
+  debugging mpls te pce               | 用户视图             | L329
+  debugging isis mpls te              | 用户视图             | L1417
+  debugging ospf mpls te              | 用户视图             | L1685
+-->
 
 **MPLS TE \-- MPLS TE调试命令 \-- debugging mpls te management**
 

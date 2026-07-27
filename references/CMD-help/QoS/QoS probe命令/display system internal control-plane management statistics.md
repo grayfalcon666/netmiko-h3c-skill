@@ -1,3 +1,9 @@
+<!-- CMD-INDEX
+  display system internal control-plane management statistics | Probe视图          | L8
+  display system internal control-plane statistics | Probe视图          | L32
+  reset system internal control-plane management statistics | Probe视图          | L78
+  reset system internal control-plane statistics | Probe视图          | L102
+-->
 
 **QoS \-- QoS probe命令 \-- display system internal control-plane management statistics**
 

@@ -1,3 +1,13 @@
+<!-- CMD-INDEX
+  debugging session aging-process     | 用户视图             | L12
+  debugging session config            | 用户视图             | L150
+  debugging session ext-info          | 用户视图             | L318
+  debugging session packet-process    | 用户视图             | L454
+  debugging session relation          | 用户视图             | L524
+  debugging session session-table     | 用户视图             | L644
+  debugging session alg               | 用户视图             | L844
+  debugging session tcp               | 用户视图             | L1062
+-->
 
 **会话管理 \-- 会话管理调试命令 \-- debugging session aging-process**
 

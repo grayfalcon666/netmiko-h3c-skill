@@ -1,3 +1,10 @@
+<!-- CMD-INDEX
+  display ipv6 fast-forwarding aging-time | 任意视图             | L9
+  display ipv6 fast-forwarding cache  | 任意视图             | L55
+  ipv6 fast-forwarding aging-time     | 系统视图             | L187
+  ipv6 fast-forwarding load-shaing    | 系统视图             | L231
+  reset ipv6 fast-forwarding cache    | 用户视图             | L273
+-->
 
 **IPv6快速转发 \-- IPv6快速转发配置命令 \-- display ipv6 fast-forwarding aging-time**
 

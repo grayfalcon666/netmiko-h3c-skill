@@ -1,3 +1,61 @@
+<!-- CMD-INDEX
+  authentication-algorithm            | ADVPN域视图         | L60
+  authentication-method               | ADVPN域视图         | L120
+  display vam server address-map      | 任意视图             | L174
+  display vam server ipv6 address-map | 任意视图             | L564
+  display vam server ipv6 private-network | 任意视图             | L974
+  display vam server private-network  | 任意视图             | L1096
+  display vam server statistics       | 任意视图             | L1218
+  encryption-algorithm                | ADVPN域视图         | L1612
+  hub-group                           | ADVPN域视图         | L1680
+  hub ipv6 private-address            | Hub组视图           | L1738
+  hub private-address                 | Hub组视图           | L1800
+  keepalive                           | ADVPN域视图         | L1860
+  pre-shared-key (ADVPN domain view)  | ADVPN域视图         | L1912
+  retry interval                      | ADVPN域视图         | L1970
+  reset vam server address-map        | 用户视图             | L2016
+  reset vam server ipv6 address-map   | 用户视图             | L2064
+  reset vam server statistics         | 用户视图             | L2112
+  server enable                       | ADVPN域视图         | L2150
+  shortcut interest                   | Hub组视图           | L2196
+  shortcut ipv6 interest              | Hub组视图           | L2270
+  spoke ipv6 private-address          | Hub组视图           | L2344
+  spoke private-address               | Hub组视图           | L2398
+  vam server advpn-domain             | 系统视图             | L2452
+  vam server enable                   | 系统视图             | L2502
+  vam server listen-port              | 系统视图             | L2556
+  advpn-domain                        | VAM Client视图     | L2606
+  client enable                       | VAM Client视图     | L2652
+  display vam client fsm              | 任意视图             | L2698
+  display vam client shortcut interest | 任意视图             | L2936
+  display vam client shortcut ipv6 interest | 任意视图             | L3076
+  display vam client statistics       | 任意视图             | L3264
+  dumb-time                           | VAM Client视图     | L3736
+  pre-shared-key (VAM Client view)    | VAM Client视图     | L3782
+  reset vam client fsm                | 用户视图             | L3842
+  reset vam client ipv6 fsm           | 用户视图             | L3882
+  reset vam client statistics         | 用户视图             | L3922
+  retry                               | VAM Client视图     | L3960
+  server primary                      | VAM Client视图     | L4014
+  server secondary                    | VAM Client视图     | L4090
+  user                                | VAM Client视图     | L4166
+  vam client enable                   | 系统视图             | L4224
+  vam client name                     | 系统视图             | L4278
+  advpn ipv6 network                  | Tunnel接口视图       | L4320
+  advpn network                       | Tunnel接口视图       | L4382
+  advpn session dumb-time             | Tunnel接口视图       | L4448
+  advpn session idle-time             | Tunnel接口视图       | L4496
+  advpn source-port                   | Tunnel接口视图       | L4546
+  display advpn ipv6 session          | 任意视图             | L4598
+  display advpn session               | 任意视图             | L5096
+  keepalive                           | Tunnel接口视图       | L5618
+  reset advpn ipv6 session            | 用户视图             | L5672
+  reset advpn ipv6 session statistics | 用户视图             | L5720
+  reset advpn session                 | 用户视图             | L5760
+  reset advpn session statistics      | 用户视图             | L5808
+  vam client                          | Tunnel接口视图       | L5848
+  vam ipv6 client                     | Tunnel接口视图       | L5910
+-->
 
 **ADVPN \-- VAM Server配置命令 \-- authentication-algorithm**
 

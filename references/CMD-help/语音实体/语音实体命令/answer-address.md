@@ -1,3 +1,27 @@
+<!-- CMD-INDEX
+  answer-address                      | POTS语音实体视图/VoIP语音实体视图 | L26
+  codec                               | POTS语音实体视图/VoIP语音实体视图/IVR语音实体视图 | L132
+  codec preference                    | 编解码模板视图          | L272
+  description                         | POTS语音实体视图/VoIP语音实体视图/IVR语音实体视图 | L362
+  display voice call                  | 任意视图             | L408
+  display voice call-info             | 任意视图             | L654
+  display voice entity                | 任意视图             | L742
+  dsp-image                           | 语音视图             | L1172
+  entity                              | 语音拨号策略视图         | L1218
+  incoming called-number              | POTS语音实体视图/VoIP语音实体视图 | L1276
+  ip qos dscp                         | POTS语音实体视图/VoIP语音实体视图/IVR语音实体视图 | L1382
+  line                                | POTS语音实体视图       | L1568
+  match-template                      | POTS语音实体视图/VoIP语音实体视图/IVR语音实体视图 | L1614
+  outband nte                         | POTS语音实体视图/VoIP语音实体视图/IVR语音实体视图 | L1744
+  playout-delay                       | POTS语音实体视图/VoIP语音实体视图 | L1794
+  playout-delay mode                  | POTS语音实体视图/VoIP语音实体视图 | L1846
+  rtp payload-type nte                | POTS语音实体视图/VoIP语音实体视图/IVR语音实体视图 | L1898
+  shutdown                            | POTS语音实体视图/VoIP语音实体视图/IVR语音实体视图 | L1956
+  vad-on                              | POTS语音实体视图/VoIP语音实体视图/IVR语音实体视图 | L1998
+  voice class codec                   | 语音视图             | L2058
+  voice-class codec                   | POTS语音实体视图/VoIP语音实体视图/IVR语音实体视图 | L2106
+  voice-setup                         | 系统视图             | L2164
+-->
 
 **语音实体 \-- 语音实体命令 \-- answer-address**
 

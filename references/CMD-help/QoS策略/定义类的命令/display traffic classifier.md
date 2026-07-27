@@ -1,3 +1,175 @@
+<!-- CMD-INDEX
+  display traffic classifier          | 任意视图             | L174
+  if-match                            | 类视图              | L300
+  traffic classifier                  | 系统视图             | L1062
+  accounting                          | 流行为视图            | L1114
+  car                                 | 流行为视图            | L1166
+  display traffic behavior            | 任意视图             | L1260
+  filter                              | 流行为视图            | L1560
+  gts                                 | 流行为视图            | L1604
+  gts percent                         | 流行为视图            | L1670
+  nest top-most                       | 流行为视图            | L1730
+  packet-rate                         | 流行为视图            | L1780
+  primap color-map-dp                 | 流行为视图            | L1826
+  primap pre-defined                  | 流行为视图            | L1878
+  primap pre-defined color            | 流行为视图            | L1996
+  redirect                            |                  | L2122
+  remark customer-vlan-id             | 流行为视图            | L2242
+  remark dot1p                        | 流行为视图            | L2284
+  remark drop-precedence              | 流行为视图            | L2352
+  remark dscp                         | 流行为视图            | L2398
+  remark ip-precedence                | 流行为视图            | L2580
+  remark local-precedence             | 流行为视图            | L2628
+  remark qos-local-id                 | 流行为视图            | L2676
+  remark service-vlan-id              | 流行为视图            | L2722
+  traffic behavior                    | 系统视图             | L2764
+  traffic-policy                      | 流行为视图            | L2810
+  classifier behavior                 | 策略视图             | L2878
+  control-plane                       | 系统视图             | L2948
+  control-plane management            | 系统视图             | L3026
+  display qos policy                  | 任意视图             | L3056
+  display qos policy control-plane    | 任意视图             | L3240
+  display qos policy control-plane management | 任意视图             | L3386
+  display qos policy control-plane management pre-defined | 任意视图             | L3498
+  display qos policy control-plane pre-defined | 任意视图             | L3596
+  display qos policy global           | 任意视图             | L3760
+  display qos policy interface        | 任意视图             | L3928
+  display qos policy l2vpn-pw         | 任意视图             | L4242
+  display qos policy user-profile     | 任意视图             | L4418
+  display qos vlan-policy             | 任意视图             | L4848
+  qos apply policy (interface view, PVC view, control plane view, control plane management view,PW view) | 接口视图/PVC视图/控制平面视图/管理口控制平面视图/交叉连接PW视图/VSI LDP PW视图/VSI静态PW视图 | L5020
+  qos apply policy (user-profile view) | User Profile视图   | L5122
+  qos apply policy global             | 系统视图             | L5172
+  qos policy                          | 系统视图             | L5228
+  qos vlan-policy                     | 系统视图             | L5284
+  reset qos policy control-plane      | 用户视图             | L5336
+  reset qos policy control-plane management | 用户视图             | L5398
+  reset qos policy global             | 用户视图             | L5424
+  reset qos vlan-policy               | 用户视图             | L5460
+  qos flow-interval                   | 接口视图             | L5498
+  display qos map-table               | 任意视图             | L5552
+  display qos map-table color         | 任意视图             | L5830
+  import                              | 优先级映射表视图         | L5938
+  qos map-table                       | 系统视图             | L5990
+  qos map-table color                 | 系统视图             | L6050
+  qos priority                        |                  | L6118
+  display qos remark { tcp-port \| udp-port } | 任意视图             | L6234
+  display qos remark ip-address       | 任意视图             | L6320
+  display qos remark protocol         | 任意视图             | L6380
+  display qos remark vlan             | 任意视图             | L6442
+  display qos type-of-service         | 任意视图             | L6502
+  qos remark { tcp-port \| udp-port } | 系统视图             | L6560
+  qos remark ip-address               | 系统视图             | L6618
+  qos remark protocol                 | 系统视图             | L6674
+  qos remark vlan                     | 系统视图             | L6716
+  qos type-of-service                 | 系统视图             | L6762
+  display qos trust interface         | 任意视图             | L6804
+  qos trust                           | 接口视图             | L6958
+  display qos car interface           | 任意视图             | L7022
+  display qos carl                    | 任意视图             | L7158
+  qos car (interface view)            | 接口视图             | L7246
+  qos car percent (interface view)    | 接口视图             | L7362
+  qos car (user-profile view,session-group-profile view) | User Profile视图/Session Group Profile视图 | L7472
+  qos carl                            | 系统视图             | L7538
+  display qos gts interface           | 任意视图             | L7626
+  qos gts (interface view)            | 接口视图             | L7742
+  qos gts percent (interface view)    | 接口视图             | L7804
+  qos gts(user-profile view)          | User Profile视图   | L7866
+  display qos lr                      | 任意视图             | L7912
+  qos lr                              | 接口视图/交叉连接PW视图/VSI LDP PW视图/VSI静态PW视图 | L8038
+  qos lr percent                      | 接口视图             | L8088
+  display qos queue interface         | 任意视图             | L8142
+  display qos queue l2vpn-pw          | 任意视图             | L8260
+  reset qos statistics l2vpn-pw       | 用户视图             | L8404
+  display qos queue fifo              | ]                | L8434
+  qos fifo queue-length               | 接口视图/PVC视图/交叉连接PW视图/VSI LDP PW视图/VSI静态PW视图 | L8534
+  display qos queue pq interface      | 任意视图             | L8584
+  display qos pql                     | 任意视图             | L8688
+  qos pq                              | 接口视图/PVC视图       | L8758
+  qos pql default-queue               | 系统视图             | L8806
+  qos pql inbound-interface           | 系统视图             | L8854
+  qos pql local-precedence            | 系统视图             | L8900
+  qos pql protocol                    | 系统视图             | L8948
+  qos pql protocol mpls exp           | 系统视图             | L9044
+  qos pql queue                       | 系统视图             | L9092
+  display qos queue cq interface      | 任意视图             | L9140
+  display qos cql                     | 任意视图             | L9238
+  qos cq                              | 接口视图/PVC视图       | L9306
+  qos cql default-queue               | 系统视图             | L9356
+  qos cql inbound-interface           | 系统视图             | L9402
+  qos cql local-precedence            | 系统视图             | L9450
+  qos cql protocol                    | 系统视图             | L9498
+  qos cql protocol mpls exp           | 系统视图             | L9594
+  qos cql queue                       | 系统视图             | L9642
+  qos cql queue serving               | 系统视图             | L9690
+  display qos queue wfq               | 任意视图             | L9734
+  qos wfq                             | 接口视图/PVC视图/交叉连接PW视图/VSI LDP PW视图/VSI静态PW视图 | L9862
+  display qos queue rtpq interface    | 任意视图             | L9920
+  qos rtpq                            | 接口视图/PVC视图       | L9994
+  display qos queue cbq               | 任意视图             | L10048
+  qos reserved-bandwidth              | 接口视图/PVC视图       | L10200
+  queue af                            | 流行为视图            | L10250
+  queue ef                            | 流行为视图            | L10312
+  queue sp                            | 流行为视图            | L10384
+  queue wfq                           | 流行为视图            | L10438
+  queue-length                        | 流行为视图            | L10494
+  wred                                | 流行为视图            | L10550
+  wred dscp                           | 流行为视图            | L10606
+  wred ip-precedence                  | 流行为视图            | L10674
+  wred weighting-constant             | 流行为视图            | L10742
+  qos pre-classify                    | Tunnel接口视图       | L10802
+  display qos queue sp                | 任意视图             | L10842
+  qos sp                              | 接口视图             | L10894
+  display qos queue wrr interface     | 任意视图             | L10936
+  qos wrr                             | 接口视图             | L11024
+  qos wrr { byte-count \| weight }    | 接口视图             | L11084
+  qos wrr group sp                    | 接口视图             | L11194
+  display qos queue wfq interface     | 任意视图             | L11256
+  qos bandwidth queue                 | 接口视图             | L11350
+  qos wfq                             | 接口视图             | L11404
+  qos wfq { byte-count \| weight }    | 接口视图             | L11464
+  qos wfq group sp                    | 接口视图             | L11538
+  display qos queue gmb interface     | 任意视图             | L11602
+  qos gmb                             | 接口视图             | L11686
+  qos gmb min-bandwidth               | 接口视图             | L11728
+  bandwidth queue                     | 队列调度策略视图         | L11792
+  display qos qmprofile configuration | 任意视图             | L11840
+  display qos qmprofile interface     | 任意视图             | L11990
+  qos apply qmprofile(interface view) | 接口视图             | L12042
+  qos apply qmprofile(session-group-profile view) | Session Group Profile视图 | L12092
+  qos qmprofile                       | 系统视图             | L12150
+  queue                               | 队列调度策略视图         | L12214
+  queue(four-queue qmprofile view)    | 四队列调度策略视图        | L12292
+  queue af                            | 流行为视图            | L12366
+  queue ef                            | 流行为视图            | L12414
+  queue wfq                           | 流行为视图            | L12472
+  weight                              | 流行为视图            | L12510
+  wred                                | 流行为视图            | L12568
+  queue low-latency enable            | 系统视图             | L12618
+  display qos wred interface          | 任意视图             | L12664
+  qos wred enable                     | 接口视图/PVC视图       | L12778
+  qos wred dscp                       | 接口视图/PVC视图       | L12834
+  qos wred ip-precedence              | 接口视图/PVC视图       | L12896
+  qos wred weighting-constant         | 接口视图/PVC视图       | L12958
+  display qos wred table              | 任意视图             | L13014
+  qos wred apply                      | 接口视图             | L13154
+  qos wred table                      | 系统视图             | L13208
+  queue                               | WRED表视图          | L13262
+  queue ecn                           | WRED表视图          | L13322
+  queue weighting-constant            | WRED表视图          | L13374
+  car name                            | 流行为视图            | L13430
+  display qos car name                | 任意视图             | L13494
+  qos car (interface view)            | 接口视图             | L13762
+  qos car (system view)               | 系统视图             | L13822
+  reset qos car name                  | 用户视图             | L13930
+  display qos traffic-counter         | 任意视图             | L13962
+  qos traffic-counter                 | 系统视图             | L14108
+  reset qos traffic-counter           | 用户视图             | L14206
+  display qos queue-statistics interface outbound | 任意视图             | L14268
+  qos queue-statistics                | 系统视图             | L14552
+  reset qos queue-statistics interface outbound | 用户视图             | L14598
+  bgp-policy                          | 接口视图             | L14632
+-->
 
 **QoS策略 \-- 定义类的命令 \-- display traffic classifier**
 

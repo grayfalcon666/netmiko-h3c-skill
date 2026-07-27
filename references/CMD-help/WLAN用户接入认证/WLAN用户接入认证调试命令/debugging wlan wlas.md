@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging wlan wlas                 | 用户视图             | L5
+-->
 
 **WLAN用户接入认证 \-- WLAN用户接入认证调试命令 \-- debugging wlan wlas**
 

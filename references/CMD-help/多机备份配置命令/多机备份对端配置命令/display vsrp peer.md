@@ -1,3 +1,42 @@
+<!-- CMD-INDEX
+  display vsrp peer                   | 任意视图             | L41
+  peer                                | 多机备份对端视图         | L169
+  peer ipv6                           | 多机备份对端视图         | L225
+  track                               | 多机备份对端视图         | L281
+  vsrp peer                           | 系统视图             | L331
+  backup id                           | 多机备份实例视图         | L379
+  backup mode                         | 多机备份实例视图         | L431
+  bind vrrp vrid                      | 多机备份实例视图         | L483
+  bind vrrp ipv6 vrid                 | 多机备份实例视图         | L531
+  display vsrp instance               | 任意视图             | L579
+  nas                                 | 多机备份实例视图         | L783
+  traffic backup                      | 多机备份实例视图         | L855
+  vsrp instance（系统视图）                 | 系统视图             | L921
+  ipv6 virtual-address                | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图/三层RPR逻辑接口视图/VLAN接口视图 | L969
+  ip subscriber vsrp-instance         | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图 | L1021
+  ip subscriber vsrp-port             | 系统视图             | L1073
+  ipv6 subscriber vsrp-instance       | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图 | L1121
+  ipv6 subscriber vsrp-port           | 系统视图             | L1171
+  display ppp sync-session            | 任意视图             | L1221
+  display pppoe-server sync-session   | 任意视图             | L1337
+  ppp vsrp-port                       | 系统视图             | L1453
+  pppoe-server vsrp-instance          | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图/EFM接口视图/EFM子接口视图 | L1505
+  pppoe-server vsrp-port              | 系统视图             | L1561
+  display l2tp session vsrp           | 任意视图             | L1613
+  display l2tp tunnel vsrp            | 任意视图             | L1703
+  display l2tp vsrp                   | 任意视图             | L1821
+  l2tp tunnel-id                      | 系统视图             | L2031
+  l2tp vsrp-port                      | 系统视图             | L2079
+  tunnel vsrp source-ip               | L2TP组视图          | L2129
+  vsrp-instance（L2TP组视图）              | L2TP组视图          | L2191
+  portal vsrp-instance                | 接口视图             | L2245
+  portal vsrp-port                    | 系统视图             | L2307
+  dhcp vsrp-instance                  | 三层以太网接口/三层以太网子接口/三层聚合口/三层聚合子接口/三层RPR逻辑接口视图 | L2357
+  dhcp vsrp port                      | 系统视图             | L2405
+  ipv6 dhcp vsrp-instance             | 三层以太网接口/三层以太网子接口/三层聚合口/三层聚合子接口/三层RPR逻辑接口视图 | L2451
+  ipv6 dhcp vsrp port                 | 系统视图             | L2499
+  vsrp-instance(DHCPv4/DHCPv6地址池视图)   | DHCPv4/DHCPv6地址池视图 | L2545
+-->
 
 **多机备份配置命令 \-- 多机备份对端配置命令 \-- display vsrp peer**
 

@@ -1,3 +1,57 @@
+<!-- CMD-INDEX
+  apply as-path                       | 路由策略视图           | L56
+  apply comm-list delete              | 路由策略视图           | L110
+  apply community                     | 路由策略视图           | L162
+  apply cost                          | 路由策略视图           | L224
+  apply cost-type                     | 路由策略视图           | L272
+  apply extcommunity                  | 路由策略视图           | L328
+  apply ip-precedence                 | 路由策略视图           | L382
+  apply isis                          | 路由策略视图           | L430
+  apply local-preference              | 路由策略视图           | L478
+  apply mpls-label                    | 路由策略视图           | L522
+  apply origin                        | 路由策略视图           | L568
+  apply preference                    | 路由策略视图           | L616
+  apply preferred-value               | 路由策略视图           | L664
+  apply prefix-priority               | 路由策略视图           | L708
+  apply qos-local-id                  | 路由策略视图           | L762
+  apply tag                           | 路由策略视图           | L810
+  apply traffic-index                 | 路由策略视图           | L852
+  continue                            | 路由策略视图           | L900
+  display ip as-path                  | 任意视图             | L946
+  display ip community-list           | 任意视图             | L1006
+  display ip extcommunity-list        | 任意视图             | L1078
+  display mac-list                    | 任意视图             | L1144
+  display route-policy                | 任意视图             | L1212
+  if-match as-path                    | 路由策略视图           | L1286
+  if-match community                  | 路由策略视图           | L1340
+  if-match cost                       | 路由策略视图           | L1402
+  if-match extcommunity               | 路由策略视图           | L1448
+  if-match interface                  | 路由策略视图           | L1500
+  if-match local-preference           | 路由策略视图           | L1560
+  if-match mac-list                   | 路由策略视图           | L1602
+  if-match mpls-label                 | 路由策略视图           | L1648
+  if-match route-type                 | 路由策略视图           | L1690
+  if-match tag                        | 路由策略视图           | L1748
+  if-match vlan                       | 路由策略视图           | L1790
+  ip as-path                          | 系统视图             | L1832
+  ip community-list                   | 系统视图             | L1890
+  ip extcommunity-list                | 系统视图             | L1978
+  mac-list                            | 系统视图             | L2048
+  reset mac-list                      | 用户视图             | L2100
+  route-policy                        | 系统视图             | L2130
+  apply fast-reroute                  | 路由策略视图           | L2186
+  apply ip-address next-hop           | 路由策略视图           | L2262
+  display ip prefix-list              | 任意视图             | L2316
+  if-match ip                         | 路由策略视图           | L2406
+  ip prefix-list                      | 系统视图             | L2456
+  reset ip prefix-list                | 用户视图             | L2522
+  apply ipv6 fast-reroute             | 路由策略视图           | L2558
+  apply ipv6 next-hop                 | 路由策略视图           | L2616
+  display ipv6 prefix-list            | 任意视图             | L2664
+  if-match ipv6                       | 路由策略视图           | L2754
+  ipv6 prefix-list                    | 系统视图             | L2804
+  reset ipv6 prefix-list              | 用户视图             | L2880
+-->
 
 **路由策略 \-- 路由策略公共配置命令 \-- apply as-path**
 

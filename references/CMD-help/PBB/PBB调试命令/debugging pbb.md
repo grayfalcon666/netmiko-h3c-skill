@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging pbb                       | 用户视图             | L5
+-->
 
 **PBB \-- PBB调试命令 \-- debugging pbb**
 

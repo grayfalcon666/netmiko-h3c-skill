@@ -1,3 +1,17 @@
+<!-- CMD-INDEX
+  apply topology                      | 多拓扑策略节点视图        | L16
+  display mtr-policy                  | 任意视图             | L58
+  display topology                    | 任意视图             | L148
+  global-address-family ipv4          | 系统视图             | L250
+  if-match ip acl                     | 多拓扑策略节点视图        | L296
+  if-match ip dscp                    | 多拓扑策略节点视图        | L342
+  if-match ip precedence              | 多拓扑策略节点视图        | L522
+  mtr-policy                          | 系统视图             | L606
+  routing-table limit                 | 多拓扑实例视图          | L654
+  topology                            | 全局地址族视图          | L702
+  topology ipv4                       | 接口视图             | L746
+  topology-routing mtr-policy         | 全局地址族视图          | L798
+-->
 
 **MTR \-- MTR配置命令 \-- apply topology**
 

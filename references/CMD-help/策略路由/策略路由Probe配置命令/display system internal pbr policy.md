@@ -1,3 +1,8 @@
+<!-- CMD-INDEX
+  display system internal pbr policy  | Probe视图          | L7
+  display system internal pbr kernel policy | Probe视图          | L55
+  display system internal pbr fib     | Probe视图          | L103
+-->
 
 **策略路由 \-- 策略路由Probe配置命令 \-- display system internal pbr policy**
 

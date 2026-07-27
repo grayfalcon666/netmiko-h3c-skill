@@ -1,3 +1,30 @@
+<!-- CMD-INDEX
+  ap                                  | AP组视图            | L29
+  cir                                 | AP视图/AP组视图       | L85
+  description(AP view)                | AP视图             | L137
+  description(AP group view)          | AP组视图            | L185
+  display wlan ap                     | 任意视图             | L239
+  display wlan ap reboot-log          | 任意视图             | L853
+  display wlan ap-group               | 任意视图             | L903
+  echo-interval                       | AP视图/AP组视图       | L1019
+  firmware-upgrade enable             | AP视图/AP组视图/全局配置视图 | L1067
+  jumboframe enable                   | AP视图/AP组视图       | L1123
+  mac-address                         | AP组视图            | L1173
+  priority                            | AP视图/AP组视图       | L1229
+  reset wlan ap                       | 用户视图             | L1277
+  reset wlan ap reboot-log            | 用户视图             | L1315
+  retransmit-count                    | AP视图/AP组视图       | L1351
+  retransmit-interval                 | AP视图/AP组视图       | L1407
+  serial-id(AP view)                  | AP视图             | L1463
+  serial-id(AP group view)            | AP组视图            | L1509
+  statistics-interval                 | AP视图/AP组视图       | L1565
+  wlan ap                             | 系统视图             | L1613
+  wlan apdb file                      | 系统视图             | L1659
+  wlan ap-group                       | 系统视图             | L1705
+  wlan auto-ap                        | 系统视图             | L1757
+  wlan global-configuration           | 系统视图             | L1799
+  wlan re-group                       | ]                | L1829
+-->
 
 **AP管理 \-- AP管理配置命令 \-- ap**
 

@@ -1,3 +1,40 @@
+<!-- CMD-INDEX
+  display ptp clock                   | 任意视图             | L39
+  display ptp corrections             | 任意视图             | L223
+  display ptp foreign-masters-record  | 任意视图             | L285
+  display ptp interface               | 任意视图             | L385
+  display ptp parent                  | 任意视图             | L609
+  display ptp statistics              | 任意视图             | L727
+  display ptp time-property           | 任意视图             | L813
+  ptp active force-state              | 系统视图             | L949
+  ptp announce-interval               | 二层以太网接口视图/三层以太网接口视图 | L1001
+  ptp announce-timeout                | 二层以太网接口视图/三层以太网接口视图 | L1061
+  ptp asymmetry-correction            | 二层以太网接口视图/三层以太网接口视图 | L1123
+  ptp clock-source                    | 系统视图             | L1183
+  ptp clock-step                      | 二层以太网接口视图/三层以太网接口视图 | L1435
+  ptp delay-mechanism                 | 二层以太网接口视图/三层以太网接口视图 | L1497
+  ptp destination-mac                 | 二层以太网接口视图/三层以太网接口视图 | L1561
+  ptp domain                          | 系统视图             | L1623
+  ptp dscp                            | 二层以太网接口视图/三层以太网接口视图 | L1677
+  ptp enable                          | 二层以太网接口视图/三层以太网接口视图 | L1741
+  ptp force-state                     | 二层以太网接口视图/三层以太网接口视图 | L1813
+  ptp min-delayreq-interval           | 二层以太网接口视图/三层以太网接口视图 | L1877
+  ptp mode                            | 系统视图             | L1937
+  ptp pdelay-req-interval             | 二层以太网接口视图/三层以太网接口视图 | L2001
+  ptp port-mode                       | 二层以太网接口视图/三层以太网接口视图 | L2057
+  ptp priority                        | 系统视图             | L2115
+  ptp profile                         | 系统视图             | L2181
+  ptp slave-only                      | 系统视图             | L2229
+  ptp source                          | 系统视图             | L2285
+  ptp syn-interval                    | 二层以太网接口视图/三层以太网接口视图 | L2347
+  ptp tod                             | 系统视图             | L2407
+  ptp transport-protocol              | 二层以太网接口视图/三层以太网接口视图 | L2473
+  ptp unicast-destination             | 三层以太网接口视图        | L2531
+  ptp utc                             | 系统视图             | L2595
+  ptp utc offset                      | 系统视图             | L2655
+  ptp vlan                            | 二层以太网接口视图        | L2709
+  reset ptp statistics                | 用户视图             | L2767
+-->
 
 **PTP \-- PTP配置命令 \-- display ptp clock**
 

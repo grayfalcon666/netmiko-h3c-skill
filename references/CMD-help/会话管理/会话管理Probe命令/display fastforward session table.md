@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  display fastforward session table   | Probe视图          | L5
+-->
 
 **会话管理 \-- 会话管理Probe命令 \-- display fastforward session table**
 

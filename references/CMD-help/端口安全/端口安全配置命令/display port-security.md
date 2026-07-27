@@ -1,3 +1,23 @@
+<!-- CMD-INDEX
+  display port-security               | 任意视图             | L22
+  display port-security mac-address block | 任意视图             | L242
+  display port-security mac-address security | 任意视图             | L488
+  port-security authorization ignore  | 以太网接口视图          | L618
+  port-security authorization-fail offline | 系统视图             | L666
+  port-security enable                | 系统视图             | L712
+  port-security intrusion-mode        | 二层以太网接口视图        | L772
+  port-security mac-address aging-type inactivity | 二层以太网接口视图        | L830
+  port-security mac-address dynamic   | 二层以太网接口视图        | L878
+  port-security mac-address security  | 二层以太网接口视图/系统视图   | L928
+  port-security mac-move permit       | 系统视图             | L1014
+  port-security max-mac-count         | 以太网接口视图          | L1062
+  port-security nas-id-profile        | 系统视图/接口视图        | L1122
+  port-security ntk-mode              | 以太网接口视图          | L1182
+  port-security oui                   | 系统视图             | L1242
+  port-security port-mode             | 接口视图             | L1296
+  port-security timer autolearn aging | 系统视图             | L1470
+  port-security timer disableport     | 系统视图             | L1522
+-->
 
 **端口安全 \-- 端口安全配置命令 \-- display port-security**
 

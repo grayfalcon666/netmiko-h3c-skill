@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging pki                       | 用户视图             | L5
+-->
 
 **PKI \-- PKI调试命令 \-- debugging pki**
 

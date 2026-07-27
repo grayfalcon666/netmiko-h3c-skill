@@ -1,3 +1,15 @@
+<!-- CMD-INDEX
+  debugging rsvp all                  | 用户视图             | L14
+  debugging rsvp authentication       | 用户视图             | L44
+  debugging rsvp error                | 用户视图             | L176
+  debugging rsvp frr                  | 用户视图             | L284
+  debugging rsvp hello                | 用户视图             | L510
+  debugging rsvp packet               | 用户视图             | L686
+  debugging rsvp path                 | 用户视图             | L760
+  debugging rsvp reduction            | 用户视图             | L1054
+  debugging rsvp resv                 | 用户视图             | L1186
+  debugging rsvp timer                | 用户视图             | L1474
+-->
 
 **RSVP \-- RSVP调试命令 \-- debugging rsvp all**
 

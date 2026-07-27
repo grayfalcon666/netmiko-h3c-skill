@@ -1,3 +1,56 @@
+<!-- CMD-INDEX
+  display ipv6 l2-multicast ip        | 任意视图             | L55
+  display ipv6 l2-multicast ip forwarding | 任意视图             | L235
+  display ipv6 l2-multicast mac       | 任意视图             | L379
+  display ipv6 l2-multicast mac forwarding | 任意视图             | L529
+  display mld-snooping                | 任意视图             | L671
+  display mld-snooping group          | 任意视图             | L901
+  display mld-snooping router-port    | 任意视图             | L1101
+  display mld-snooping static-group   | 任意视图             | L1253
+  display mld-snooping static-router-port | 任意视图             | L1387
+  display mld-snooping statistics     | 任意视图             | L1479
+  dot1p-priority (MLD-Snooping view)  | MLD-Snooping视图   | L1571
+  drop-unknown (MLD-Snooping view)    | MLD-Snooping视图   | L1621
+  enable (MLD-Snooping view)          | MLD-Snooping视图   | L1671
+  entry-limit (MLD-Snooping view)     | MLD-Snooping视图   | L1725
+  fast-leave (MLD-Snooping view)      | MLD-Snooping视图   | L1767
+  group-policy (MLD-Snooping view)    | MLD-Snooping视图   | L1819
+  host-aging-time (MLD-Snooping view) | MLD-Snooping视图   | L1885
+  last-listener-query-interval (MLD-Snooping view) | MLD-Snooping视图   | L1935
+  max-response-time (MLD-Snooping view) | MLD-Snooping视图   | L1985
+  mld-snooping                        | 系统视图             | L2039
+  mld-snooping done source-ip         | VLAN视图           | L2083
+  mld-snooping dot1p-priority         | VLAN视图           | L2141
+  mld-snooping drop-unknown           | VLAN视图/VSI视图     | L2203
+  mld-snooping enable                 | VLAN视图/VSI视图     | L2279
+  mld-snooping fast-leave             | 二层以太网接口视图/二层聚合接口视图/二层RPR逻辑接口视图 | L2345
+  mld-snooping general-query source-ip | VLAN视图/VSI视图     | L2397
+  mld-snooping group-limit            | 二层以太网接口视图/二层聚合接口视图/二层RPR逻辑接口视图 | L2471
+  mld-snooping group-policy           | 二层以太网接口视图/二层聚合接口视图/二层RPR逻辑接口视图 | L2519
+  mld-snooping host-aging-time        | VLAN视图/VSI视图     | L2585
+  mld-snooping host-join              | 二层以太网接口视图/二层聚合接口视图/二层RPR逻辑接口视图 | L2661
+  mld-snooping last-listener-query-interval | VLAN视图/VSI视图     | L2727
+  mld-snooping max-response-time      | VLAN视图/VSI视图     | L2803
+  mld-snooping overflow-replace       | 二层以太网接口视图/二层聚合接口视图/二层RPR逻辑接口视图 | L2885
+  mld-snooping querier                | VLAN视图/VSI视图     | L2937
+  mld-snooping query-interval         | VLAN视图/VSI视图     | L3009
+  mld-snooping report source-ip       | VLAN视图           | L3089
+  mld-snooping router-aging-time      | VLAN视图/VSI视图     | L3147
+  mld-snooping router-port-deny       | 二层以太网接口视图/二层聚合接口视图/二层RPR逻辑接口视图 | L3223
+  mld-snooping source-deny            | 二层以太网接口视图        | L3265
+  mld-snooping special-query source-ip | VLAN视图/VSI视图     | L3315
+  mld-snooping static-group           | 二层以太网接口视图/二层聚合接口视图/二层RPR逻辑接口视图 | L3389
+  mld-snooping static-router-port     | 二层以太网接口视图/二层聚合接口视图/二层RPR逻辑接口视图 | L3449
+  mld-snooping version                | VLAN视图/VSI视图     | L3493
+  overflow-replace (MLD-Snooping view) | MLD-Snooping视图   | L3569
+  report-aggregation (MLD-Snooping view) | MLD-Snooping视图   | L3621
+  reset mld-snooping group            | 用户视图             | L3659
+  reset mld-snooping router-port      | 用户视图             | L3701
+  reset mld-snooping statistics       | 用户视图             | L3739
+  router-aging-time (MLD-Snooping view) | MLD-Snooping视图   | L3769
+  source-deny (MLD-Snooping view)     | MLD-Snooping视图   | L3819
+  version (MLD-Snooping view)         | MLD-Snooping视图   | L3873
+-->
 
 **MLD Snooping \-- MLD Snooping配置命令 \-- display ipv6 l2-multicast ip**
 

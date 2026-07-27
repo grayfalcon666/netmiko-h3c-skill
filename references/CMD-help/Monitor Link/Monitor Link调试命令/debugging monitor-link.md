@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging monitor-link              | 用户视图             | L5
+-->
 
 **Monitor Link \-- Monitor Link调试命令 \-- debugging monitor-link**
 

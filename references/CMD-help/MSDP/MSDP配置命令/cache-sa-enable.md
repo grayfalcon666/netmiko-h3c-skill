@@ -1,3 +1,30 @@
+<!-- CMD-INDEX
+  cache-sa-enable                     | MSDP视图           | L29
+  display msdp brief                  | 任意视图             | L73
+  display msdp peer-status            | 任意视图             | L191
+  display msdp sa-cache               | 任意视图             | L445
+  display msdp sa-count               | 任意视图             | L551
+  encap-data-enable                   | MSDP视图           | L647
+  import-source                       | MSDP视图           | L685
+  msdp                                | 系统视图             | L745
+  originating-rp                      | MSDP视图           | L799
+  peer                                | MSDP视图           | L853
+  peer description                    | MSDP视图           | L913
+  peer mesh-group                     | MSDP视图           | L957
+  peer minimum-ttl                    | MSDP视图           | L1001
+  peer password                       | MSDP视图           | L1045
+  peer request-sa-enable              | MSDP视图           | L1099
+  peer sa-cache-maximum               | MSDP视图           | L1153
+  peer sa-policy                      | MSDP视图           | L1205
+  peer sa-request-policy              | MSDP视图           | L1293
+  reset msdp peer                     | 用户视图             | L1347
+  reset msdp sa-cache                 | 用户视图             | L1379
+  reset msdp statistics               | 用户视图             | L1417
+  shutdown (MSDP view)                | MSDP视图           | L1449
+  static-rpf-peer                     | MSDP视图           | L1497
+  timer keepalive                     | MSDP视图           | L1567
+  timer retry                         | MSDP视图           | L1617
+-->
 
 **MSDP \-- MSDP配置命令 \-- cache-sa-enable**
 

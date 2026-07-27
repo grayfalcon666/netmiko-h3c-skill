@@ -1,3 +1,37 @@
+<!-- CMD-INDEX
+  copy                                | 用户视图             | L36
+  delete                              | 用户视图             | L80
+  dir                                 | 用户视图             | L110
+  display copyright                   | 任意视图             | L248
+  display install package             | 任意视图             | L270
+  display interface m-eth0            | 任意视图             | L376
+  display ip routing-table            | 任意视图             | L484
+  display ipv6 routing-table          | 任意视图             | L566
+  display version                     | 任意视图             | L662
+  format                              | 用户视图             | L684
+  ftp                                 | 用户视图             | L716
+  install load                        | 用户视图             | L754
+  interface m-eth0                    | 系统视图             | L798
+  ip address                          | 管理以太网接口视图        | L830
+  ip gateway                          | 管理以太网接口视图        | L880
+  ipv6 address                        | 管理以太网接口视图        | L924
+  ipv6 gateway                        | 管理以太网接口视图        | L968
+  mkdir                               | 用户视图             | L1012
+  more                                | 用户视图             | L1056
+  move                                | 用户视图             | L1082
+  ping                                | 任意视图             | L1122
+  ping ipv6                           | 任意视图             | L1218
+  pwd                                 | 用户视图             | L1272
+  quit                                | 系统视图/管理以太网接口视图   | L1294
+  reboot                              | 用户视图             | L1318
+  reset ssh public-key                | 用户视图             | L1350
+  rmdir                               | 用户视图             | L1428
+  shutdown                            | 管理以太网接口视图        | L1468
+  ssh2                                | 用户视图             | L1508
+  system-view                         | 用户视图             | L1582
+  telnet                              | 用户视图             | L1612
+  tftp                                | 用户视图             | L1642
+-->
 
 **应急Shell \-- 应急Shell配置命令 \-- copy**
 

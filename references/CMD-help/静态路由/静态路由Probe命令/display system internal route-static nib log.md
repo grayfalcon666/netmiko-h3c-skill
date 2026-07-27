@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  display system internal route-static nib log | Probe视图          | L6
+  reset system internal route-static nib log | Probe视图          | L30
+-->
 
 **静态路由 \-- 静态路由Probe命令 \-- display system internal route-static nib log**
 

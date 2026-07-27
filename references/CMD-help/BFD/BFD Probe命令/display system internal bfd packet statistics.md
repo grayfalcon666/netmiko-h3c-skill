@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  display system internal bfd packet statistics | Probe视图          | L5
+-->
 
 **BFD \-- BFD Probe命令 \-- display system internal bfd packet statistics**
 

@@ -1,3 +1,11 @@
+<!-- CMD-INDEX
+  debugging system internal ip vpn-instance |                  | L10
+  display system internal ip vpn-binding | Probe视图          | L66
+  display system internal ip vpn-instance | Probe视图          | L110
+  display system internal ip vpn-instance inactive | Probe视图          | L156
+  display system internal ip vpn-instance statistics | Probe视图          | L176
+  display system internal ospf sham-link standby | Probe视图          | L220
+-->
 
 **MPLS L3VPN \-- MPLS L3VPN Probe命令 \-- debugging system internal ip vpn-instance**
 

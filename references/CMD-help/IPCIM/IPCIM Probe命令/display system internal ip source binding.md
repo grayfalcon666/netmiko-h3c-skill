@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  display system internal ip source binding | Probe视图          | L6
+  display system internal ipv6 source binding | Probe视图          | L70
+-->
 
 **IPCIM \-- IPCIM Probe命令 \-- display system internal ip source binding**
 

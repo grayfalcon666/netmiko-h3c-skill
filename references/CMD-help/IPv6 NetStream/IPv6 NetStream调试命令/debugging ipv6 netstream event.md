@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  debugging ipv6 netstream event      | 用户视图             | L6
+  debugging ipv6 netstream packet     | 用户视图             | L458
+-->
 
 **IPv6 NetStream \-- IPv6 NetStream调试命令 \-- debugging ipv6 netstream event**
 

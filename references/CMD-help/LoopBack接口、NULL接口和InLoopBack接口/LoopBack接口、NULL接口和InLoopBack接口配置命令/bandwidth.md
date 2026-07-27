@@ -1,3 +1,16 @@
+<!-- CMD-INDEX
+  bandwidth                           | LoopBack接口视图     | L15
+  default                             | LoopBack接口视图/NULL接口视图 | L65
+  description                         | LoopBack接口视图/NULL接口视图 | L101
+  display interface inloopback        | 任意视图             | L149
+  display interface loopback          | 任意视图             | L333
+  display interface null              | 任意视图             | L585
+  interface loopback                  | 系统视图             | L699
+  interface null                      | 系统视图             | L745
+  reset counters interface loopback   | 用户视图             | L783
+  reset counters interface null       | 用户视图             | L827
+  shutdown                            | LoopBack接口视图     | L869
+-->
 
 **LoopBack接口、NULL接口和InLoopBack接口 \-- LoopBack接口、NULL接口和InLoopBack接口配置命令 \-- bandwidth**
 

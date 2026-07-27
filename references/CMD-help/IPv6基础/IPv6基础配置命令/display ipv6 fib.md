@@ -1,3 +1,80 @@
+<!-- CMD-INDEX
+  display ipv6 fib                    | 任意视图             | L79
+  display ipv6 icmp statistics        | 任意视图             | L207
+  display ipv6 interface              | 任意视图             | L401
+  display ipv6 interface prefix       | 任意视图             | L1141
+  display ipv6 nd snooping            | 任意视图             | L1237
+  display ipv6 nd snooping count      | 任意视图             | L1343
+  display ipv6 nd suppression xconnect-group | 任意视图             | L1399
+  display ipv6 neighbors              | 任意视图             | L1495
+  display ipv6 neighbors count        | 任意视图             | L1647
+  display ipv6 neighbors vpn-instance | 任意视图             | L1713
+  display ipv6 pathmtu                | 任意视图             | L1805
+  display ipv6 prefix                 | 任意视图             | L1899
+  display ipv6 rawip                  | 任意视图             | L1991
+  display ipv6 rawip verbose          | 任意视图             | L2095
+  display ipv6 router-renumber statistics | 任意视图             | L2495
+  display ipv6 statistics             | 任意视图             | L2649
+  display ipv6 tcp                    | 任意视图             | L3047
+  display ipv6 tcp-proxy              | 任意视图             | L3179
+  display ipv6 tcp verbose            | 任意视图             | L3297
+  display ipv6 udp                    | 任意视图             | L3793
+  display ipv6 udp verbose            | 任意视图             | L3893
+  ipv6 address                        | 接口视图             | L4291
+  ipv6 address anycast                | 接口视图             | L4373
+  ipv6 address auto                   | 接口视图             | L4449
+  ipv6 address auto link-local        | 接口视图             | L4507
+  ipv6 address eui-64                 | 接口视图             | L4573
+  ipv6 address link-local             | 接口视图             | L4657
+  ipv6 bandwidth-based-sharing        | 系统视图             | L4719
+  ipv6 hop-limit                      | 系统视图             | L4761
+  ipv6 hoplimit-expires enable        | 系统视图             | L4813
+  ipv6 icmpv6 error-interval          | 系统视图             | L4857
+  ipv6 icmpv6 multicast-echo-reply enable | 系统视图             | L4905
+  ipv6 icmpv6 source                  | 系统视图             | L4947
+  ipv6 mtu                            | 接口视图             | L4995
+  ipv6 nd autoconfig managed-address-flag | 接口视图             | L5053
+  ipv6 nd autoconfig other-flag       | 接口视图             | L5109
+  ipv6 nd dad attempts                | 接口视图             | L5165
+  ipv6 nd mode uni                    | VLAN接口视图         | L5229
+  ipv6 nd ns retrans-timer            | 接口视图             | L5279
+  ipv6 nd nud reachable-time          | 接口视图             | L5343
+  ipv6 nd snooping enable global      | VLAN视图           | L5407
+  ipv6 nd snooping enable link-local  | VLAN视图           | L5445
+  ipv6 nd snooping glean source       | VLAN视图           | L5483
+  ipv6 nd snooping max-learning-num   | 二层以太网接口视图/二层聚合接口视图 | L5527
+  ipv6 nd ra halt                     | 接口视图             | L5565
+  ipv6 nd ra hop-limit unspecified    | 接口视图             | L5615
+  ipv6 nd ra interval                 | 接口视图             | L5673
+  ipv6 nd ra no-advlinkmtu            | 接口视图             | L5739
+  ipv6 nd ra prefix                   | 接口视图             | L5793
+  ipv6 nd ra router-lifetime          | 接口视图             | L5881
+  ipv6 nd route-direct advertise      | L3VE接口视图         | L5945
+  ipv6 nd router-preference           | 接口视图             | L5983
+  ipv6 nd suppression enable          | 交叉连接视图           | L6047
+  ipv6 nd suppression push interval   | 系统视图             | L6095
+  ipv6 neighbor                       | 系统视图             | L6143
+  ipv6 neighbor link-local minimize   | 系统视图             | L6219
+  ipv6 neighbor stale-aging           | 系统视图             | L6263
+  ipv6 neighbors max-learning-num     | 二层接口视图/二层聚合接口视图/三层接口视图/三层聚合接口视图/S通道接口视图/S通道聚合接口视图/三层RPR逻辑接口视图 | L6309
+  ipv6 pathmtu                        | 系统视图             | L6367
+  ipv6 pathmtu age                    | 系统视图             | L6421
+  ipv6 prefer temporary-address       | 系统视图             | L6471
+  ipv6 prefix                         | 系统视图             | L6523
+  ipv6 reassemble local enable        | 系统视图             | L6577
+  ipv6 redirects enable               | 系统视图             | L6619
+  ipv6 router-renumber enable         | 接口视图             | L6661
+  ipv6 temporary-address              | 系统视图             | L6715
+  ipv6 unreachables enable            | 系统视图             | L6789
+  local-proxy-nd enable               | VLAN接口视图/三层以太网接口视图/三层以太网子接口视图 | L6837
+  proxy-nd enable                     | VLAN接口视图/三层以太网接口视图/三层以太网子接口视图 | L6891
+  reset ipv6 nd snooping              | 用户视图             | L6945
+  reset ipv6 nd suppression xconnect-group | 用户视图             | L6971
+  reset ipv6 neighbors                | 用户视图             | L7005
+  reset ipv6 pathmtu                  | 用户视图             | L7089
+  reset ipv6 router-renumber statistics | 用户视图             | L7127
+  reset ipv6 statistics               | 用户视图             | L7161
+-->
 
 **IPv6基础 \-- IPv6基础配置命令 \-- display ipv6 fib**
 

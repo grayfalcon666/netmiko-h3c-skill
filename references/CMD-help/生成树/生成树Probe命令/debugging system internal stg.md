@@ -1,3 +1,9 @@
+<!-- CMD-INDEX
+  debugging system internal stg       | Probe视图          | L8
+  debugging system internal stp       | Probe视图          | L50
+  display system internal stp bridge-info | Probe视图          | L82
+  display system internal stp port-info | Probe视图          | L126
+-->
 
 **生成树 \-- 生成树Probe命令 \-- debugging system internal stg**
 

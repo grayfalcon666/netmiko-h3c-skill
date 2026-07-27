@@ -1,3 +1,22 @@
+<!-- CMD-INDEX
+  control-vlan                        | RRPP域视图          | L21
+  display rrpp brief                  | 任意视图             | L71
+  display rrpp ring-group             | 任意视图             | L265
+  display rrpp statistics             | 任意视图             | L335
+  display rrpp verbose                | 任意视图             | L579
+  domain ring                         | RRPP环组视图         | L783
+  fast-detection enable               | RRPP域视图          | L849
+  fast-edge-timer                     | RRPP域视图          | L899
+  fast-timer                          | RRPP域视图          | L947
+  protected-vlan                      | RRPP域视图          | L995
+  reset rrpp statistics               | 用户视图             | L1059
+  ring                                | RRPP域视图          | L1095
+  ring enable                         | RRPP域视图          | L1191
+  rrpp domain                         | 系统视图             | L1249
+  rrpp enable                         | 系统视图             | L1303
+  rrpp ring-group                     | 系统视图             | L1347
+  timer                               | RRPP域视图          | L1401
+-->
 
 **RRPP \-- RRPP配置命令 \-- control-vlan**
 

@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  display system internal vrrp kernel | Probe视图          | L6
+  display system internal vrrp ipv6 kernel | Probe视图          | L58
+-->
 
 **VRRP \-- VRRP Probe 命令 \-- display system internal vrrp kernel**
 

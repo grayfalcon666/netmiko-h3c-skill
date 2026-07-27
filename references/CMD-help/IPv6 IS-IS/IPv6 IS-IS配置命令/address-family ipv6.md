@@ -1,3 +1,32 @@
+<!-- CMD-INDEX
+  address-family ipv6                 | IS-IS视图          | L31
+  auto-cost enable                    | IS-IS IPv6单播地址族视图 | L79
+  bandwidth-reference                 | IS-IS IPv6单播地址族视图** | L131
+  circuit-cost                        | IS-IS IPv6单播地址族视图 | L179
+  default-route-advertise             | IS-IS IPv6单播地址族视图 | L241
+  display isis redistribute ipv6      | 任意视图             | L309
+  display isis route ipv6             | 任意视图             | L415
+  display isis spf-tree ipv6          | 任意视图             | L631
+  filter-policy export                | IS-IS IPv6单播地址族视图 | L1047
+  filter-policy import                | IS-IS IPv6单播地址族视图 | L1133
+  import-route                        | IS-IS IPv6单播地址族视图 | L1209
+  import-route isisv6 level-1 into level-2 | IS-IS IPv6单播地址族视图 | L1279
+  import-route isisv6 level-2 into level-1 | IS-IS IPv6单播地址族视图 | L1335
+  import-route limit                  | IS-IS IPv6单播地址族视图 | L1391
+  isis ipv6 bfd enable                | 接口视图             | L1435
+  isis ipv6 cost                      | 接口视图             | L1489
+  isis ipv6 enable                    | 接口视图             | L1573
+  isis ipv6 prefix-suppression        | 接口视图             | L1651
+  isis ipv6 tag                       | 接口视图             | L1705
+  ispf enable                         | IS-IS IPv6单播地址族视图 | L1763
+  maximum load-balancing              | IS-IS IPv6单播地址族视图 | L1811
+  multi-topology                      | IS-IS IPv6地址族视图  | L1861
+  preference                          | IS-IS IPv6单播地址族视图 | L1915
+  prefix-priority                     | IS-IS IPv6单播地址族视图 | L1965
+  set-overload                        | IS-IS IPv6单播地址族视图 | L2029
+  summary                             | IS-IS IPv6单播地址族视图 | L2097
+  timer spf                           | IS-IS IPv6单播地址族视图 | L2161
+-->
 
 **IPv6 IS-IS \-- IPv6 IS-IS配置命令 \-- address-family ipv6**
 

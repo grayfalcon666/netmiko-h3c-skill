@@ -1,3 +1,30 @@
+<!-- CMD-INDEX
+  bandwidth                           | 以太网冗余接口视图        | L29
+  default                             | 以太网冗余接口视图        | L75
+  description                         | 以太网冗余接口视图        | L111
+  display interface reth              | 任意视图             | L153
+  display reth interface              | 任意视图             | L365
+  interface reth                      | 系统视图             | L463
+  member interface                    | 以太网冗余接口视图        | L509
+  mtu                                 | 以太网冗余接口视图        | L577
+  reset counters interface            | 用户视图             | L625
+  shutdown                            | 以太网冗余接口视图        | L667
+  bind chassis                        | 冗余组节点视图          | L707
+  bind slot                           | 冗余组节点视图          | L763
+  display redundancy group            | 任意视图             | L819
+  hold-down-interval                  | 冗余组视图            | L1077
+  member failover group               | 冗余组视图            | L1123
+  member interface                    | 冗余组视图            | L1175
+  node                                | 冗余组视图            | L1223
+  node-member interface               | 冗余组节点视图          | L1271
+  preempt-delay                       | 冗余组视图            | L1341
+  priority                            | 冗余组节点视图          | L1387
+  redundancy group                    | 系统视图             | L1435
+  snmp-agent trap enable redundancy   | 系统视图             | L1483
+  switchover request                  | 冗余组视图            | L1525
+  switchover reset                    | 冗余组视图            | L1563
+  track                               | 冗余组节点视图          | L1601
+-->
 
 **以太网冗余接口 \-- 以太网冗余接口配置命令 \-- bandwidth**
 

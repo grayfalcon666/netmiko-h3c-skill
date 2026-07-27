@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging wlan load-balance         | 用户视图             | L5
+-->
 
 **负载均衡 \-- 负载均衡debug命令 \-- debugging wlan load-balance**
 

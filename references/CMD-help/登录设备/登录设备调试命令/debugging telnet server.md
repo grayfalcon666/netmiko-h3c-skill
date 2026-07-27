@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  debugging telnet server             | 用户视图             | L6
+  debugging telnet client             | 用户视图             | L376
+-->
 
 **登录设备 \-- 登录设备调试命令 \-- debugging telnet server**
 

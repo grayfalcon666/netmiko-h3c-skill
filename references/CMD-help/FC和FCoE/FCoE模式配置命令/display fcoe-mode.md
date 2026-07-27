@@ -1,3 +1,178 @@
+<!-- CMD-INDEX
+  display fcoe-mode                   | 任意视图             | L177
+  fcoe-mode                           | 系统视图             | L233
+  bandwidth (FC interface view)       | FC接口视图           | L309
+  default (FC interface view)         | FC接口视图           | L355
+  description (FC interface view)     | FC接口视图           | L391
+  display interface fc                | 任意视图             | L433
+  fc mode (FC interface view)         | FC接口视图           | L783
+  fcb2bcredit                         | FC接口视图           | L843
+  fill-word                           | FC接口视图           | L889
+  interface fc                        | 系统视图             | L947
+  port-type                           | 二层以太网接口视图/FC接口视图 | L981
+  reset counters interface fc         | 用户视图             | L1043
+  shutdown (FC interface view)        | FC接口视图           | L1089
+  speed                               | FC接口视图           | L1127
+  bandwidth (VFC interface view)      | VFC接口视图          | L1179
+  bind interface                      | VFC接口视图          | L1227
+  default (VFC interface view)        | VFC接口视图          | L1325
+  description (VFC interface view)    | VFC接口视图          | L1361
+  display interface vfc               | 任意视图             | L1407
+  fc mode (VFC interface view)        | VFC接口视图          | L1737
+  interface vfc                       | 系统视图             | L1795
+  reset counters interface vfc        | 用户视图             | L1845
+  shutdown (VFC interface view)       | VFC接口视图          | L1891
+  bandwidth (FC aggregate interface view) | FC聚合接口视图         | L1929
+  default (FC aggregate interface view) | FC聚合接口视图         | L1977
+  description (FC aggregate interface view) | FC聚合接口视图         | L2013
+  display interface san-aggregation   | 任意视图             | L2055
+  display san-aggregation             | 任意视图             | L2355
+  fc mode (FC aggregate interface view) | FC聚合接口视图         | L2557
+  interface san-aggregation           | 系统视图             | L2617
+  reset counters interface san-aggregation | 用户视图             | L2663
+  san-aggregation group               | FC接口视图           | L2709
+  san-aggregation load-sharing mode local-first | 系统视图             | L2765
+  shutdown (FC aggregate interface view) | FC聚合接口视图         | L2813
+  display fcoe                        | 任意视图             | L2851
+  display fcoe vlan                   | 任意视图             | L2929
+  fcoe enable                         | VLAN视图           | L3011
+  fcoe fcf-priority                   | VFC接口视图          | L3077
+  fcoe fcmap                          | 系统视图/VLAN视图      | L3127
+  fcoe fka-adv-period                 | 系统视图/VLAN视图      | L3183
+  fcoe global fcf-priority            | 系统视图/VLAN视图      | L3255
+  display vsan port-member            | 任意视图             | L3313
+  display vsan status                 | 任意视图             | L3401
+  port                                | VSAN视图           | L3479
+  port access vsan                    | FC接口视图/FC聚合接口视图  | L3529
+  port trunk mode                     | FC接口视图/FC聚合接口视图  | L3583
+  port trunk vsan                     | FC接口视图/VFC接口视图/FC聚合接口视图 | L3633
+  vsan                                | 系统视图             | L3691
+  working-mode                        | VSAN视图           | L3777
+  allowed-domain-id                   | VSAN视图           | L3839
+  display fc domain                   | 任意视图             | L3895
+  display fc domain-list              | 任意视图             | L4067
+  display fc ess                      | 任意视图             | L4145
+  display fc login                    | 任意视图             | L4299
+  display fc name-service database    | 任意视图             | L4395
+  display fc scr-table                | 任意视图             | L4645
+  display fc switch-wwn               | 任意视图             | L4729
+  display fc timer                    | 任意视图             | L4761
+  display fcid allocation             | 任意视图             | L4835
+  display fcid persistent             | 任意视图             | L4915
+  domain auto-reconfigure enable      | VSAN视图           | L5021
+  domain configure enable             | VSAN视图           | L5079
+  domain restart                      | VSAN视图           | L5123
+  domain-id                           | VSAN视图           | L5177
+  fabric-name                         | VSAN视图           | L5237
+  fc domain rcf-reject                | FC接口视图/FC聚合接口视图/VFC接口视图 | L5287
+  fc login-limit                      | VSAN视图           | L5343
+  fc name-service auto-discovery      | VSAN视图           | L5395
+  fc timer distributed-services       | 系统视图             | L5443
+  fc timer error-detect               | 系统视图             | L5491
+  fc timer resource-allocation        | 系统视图             | L5539
+  fc wwn default-fc4-type             | 系统视图             | L5587
+  fcid persistent enable              | VSAN视图           | L5649
+  priority                            | VSAN视图           | L5703
+  reset fcid persistent               | 用户视图             | L5757
+  rscn aggregation enable             | VSAN视图           | L5795
+  rscn aggregation timer              | VSAN视图           | L5845
+  snmp-agent trap enable fc-fabric    | 系统视图             | L5899
+  snmp-agent trap enable fc-name-service | 系统视图             | L5949
+  timer distributed-services          | VSAN视图           | L5999
+  timer error-detect                  | VSAN视图           | L6049
+  timer resource-allocation           | VSAN视图           | L6099
+  wwn fcid                            | VSAN视图           | L6149
+  display fc exchange                 | 任意视图             | L6213
+  display fc fib                      | 任意视图             | L6417
+  display fc routing-table            | 任意视图             | L6541
+  display fspf graceful-restart       | 任意视图             | L6813
+  display fspf lsdb                   | 任意视图             | L6913
+  display fspf neighbor               | 任意视图             | L7055
+  display fspf statistics             | 任意视图             | L7147
+  fc route-static                     | VSAN视图           | L7287
+  fspf cost                           | FC接口视图/VFC接口视图/FC聚合接口视图 | L7359
+  fspf dead-interval                  | FC接口视图/VFC接口视图/FC聚合接口视图 | L7419
+  fspf enable                         | VSAN视图           | L7483
+  fspf graceful-restart               | 系统视图             | L7527
+  fspf graceful-restart helper        | 系统视图             | L7581
+  fspf graceful-restart interval      | 系统视图             | L7629
+  fspf hello-interval                 | FC接口视图/VFC接口视图/FC聚合接口视图 | L7679
+  fspf min-ls-arrival                 | VSAN视图           | L7743
+  fspf min-ls-interval                | VSAN视图           | L7791
+  fspf retransmit-interval            | FC接口视图/VFC接口视图/FC聚合接口视图 | L7839
+  fspf silent                         | FC接口视图/VFC接口视图/FC聚合接口视图 | L7897
+  fspf spf-hold-time                  | VSAN视图           | L7953
+  reset fspf counters                 | 用户视图             | L8003
+  delete zone database all            | VSAN视图           | L8041
+  display zone                        | 任意视图             | L8077
+  display zone member                 | 任意视图             | L8199
+  display zone statistics             | 任意视图             | L8359
+  display zone status                 | 任意视图             | L8455
+  display zone-alias                  | 任意视图             | L8595
+  display zoneset                     | 任意视图             | L8709
+  display zoneset active              | 任意视图             | L8829
+  member (zone view)                  | Zone视图           | L9003
+  member (zone alias view)            | Zone别名视图         | L9103
+  member (zone set view)              | Zone set视图       | L9187
+  pairwise-zoning enable              | Zone视图           | L9253
+  reset zone statistics               | 用户视图             | L9317
+  snmp-agent trap enable fc-zone      | 系统视图             | L9355
+  zone clone                          | VSAN视图           | L9411
+  zone default-zone permit            | VSAN视图           | L9463
+  zone hard-zoning enable             | VSAN视图           | L9521
+  zone merge-control restrict         | VSAN视图           | L9579
+  zone mode enhanced                  | VSAN视图           | L9637
+  zone name                           | VSAN视图           | L9691
+  zone rename                         | VSAN视图           | L9743
+  zone-alias clone                    | VSAN视图           | L9795
+  zone-alias name                     | VSAN视图           | L9847
+  zone-alias rename                   | VSAN视图           | L9899
+  zoneset activate                    | VSAN视图           | L9951
+  zoneset clone                       | VSAN视图           | L10031
+  zoneset distribute                  | VSAN视图           | L10083
+  zoneset distribute full             | VSAN视图           | L10123
+  zoneset name                        | VSAN视图           | L10181
+  zoneset rename                      | VSAN视图           | L10233
+  display fc nport                    | 任意视图             | L10285
+  display npv login                   | 任意视图             | L10393
+  display npv status                  | 任意视图             | L10501
+  display npv traffic-map             | 任意视图             | L10665
+  npv auto-load-balance enable        | VSAN视图           | L10735
+  npv auto-load-balance-interval      | VSAN视图           | L10785
+  npv load-balance disruptive         | VSAN视图           | L10833
+  npv traffic-map                     | VSAN视图           | L10869
+  display fip-snooping enode          | 任意视图             | L10919
+  display fip-snooping fcf            | 任意视图             | L10981
+  display fip-snooping flushing-rules | 任意视图             | L11053
+  display fip-snooping rules          | 任意视图             | L11153
+  display fip-snooping sessions       | 任意视图             | L11279
+  fip-snooping enable                 | VLAN视图           | L11345
+  fip-snooping fc-map                 | VLAN视图           | L11389
+  fip-snooping port-mode              | 二层以太网接口视图/二层聚合接口视图 | L11439
+  any-wwn                             | VSAN视图           | L11491
+  display fc-port-security database   | 任意视图             | L11553
+  display fc-port-security statistics | 任意视图             | L11661
+  display fc-port-security status     | 任意视图             | L11763
+  display fc-port-security violation  | 任意视图             | L11849
+  fc-port-security auto-learn         | VSAN视图           | L11939
+  fc-port-security database copy      | VSAN视图           | L11995
+  fc-port-security enable             | VSAN视图           | L12037
+  nwwn                                | VSAN视图           | L12093
+  pwwn                                | VSAN视图           | L12157
+  reset fc-port-security database     | 用户视图             | L12221
+  reset fc-port-security statistics   | 用户视图             | L12269
+  snmp-agent trap enable fc-port-security | 系统视图             | L12307
+  swwn                                | VSAN视图           | L12353
+  fcs discovery start                 | 系统视图             | L12417
+  fcs discovery stop                  | 系统视图             | L12465
+  display fcs discovery status        | 任意视图             | L12505
+  display fcs database                | 任意视图             | L12577
+  display fcs ie                      | 任意视图             | L12749
+  display fcs port                    | 任意视图             | L12993
+  display fdmi database               | 任意视图             | L13181
+  fcping                              | 任意视图             | L13431
+  fctracert                           | 任意视图             | L13569
+-->
 
 **FC和FCoE \-- FCoE模式配置命令 \-- display fcoe-mode**
 

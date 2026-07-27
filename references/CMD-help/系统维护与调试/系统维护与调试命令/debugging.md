@@ -1,3 +1,11 @@
+<!-- CMD-INDEX
+  debugging                           | 用户视图             | L10
+  display debugging                   | 任意视图             | L64
+  ping                                | 任意视图             | L104
+  ping ipv6                           | 任意视图             | L308
+  tracert                             | 任意视图             | L468
+  tracert ipv6                        | 任意视图             | L588
+-->
 
 **系统维护与调试 \-- 系统维护与调试命令 \-- debugging**
 

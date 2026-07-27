@@ -1,3 +1,23 @@
+<!-- CMD-INDEX
+  client-security accounting-start-fail offline | 无线服务模板视图         | L22
+  client-security authentication fail-vlan | 无线服务模板视图         | L64
+  client-security authentication-mode | 无线服务模板视图         | L120
+  client-security authorization-fail offline | 无线服务模板视图         | L176
+  client-security ignore-authorization | 无线服务模板视图         | L222
+  client-security intrusion-protection action | 无线服务模板视图         | L266
+  client-security intrusion-protection enable | 无线服务模板视图         | L334
+  client-security intrusion-protection timer temporary-block | 无线服务模板视图         | L382
+  client-security intrusion-protection timer temporary-service-stop | 无线服务模板视图         | L440
+  display wlan client-security block-mac （仅AC） | 任意视图             | L498
+  display wlan client-security block-mac（仅FAT AP） | 任意视图             | L582
+  dot1x domain                        | 无线服务模板视图         | L660
+  dot1x handshake enable              | 无线服务模板视图         | L708
+  dot1x handshake secure enable       | 无线服务模板视图         | L762
+  dot1x max-user                      | 无线服务模板视图         | L820
+  dot1x re-authenticate enable        | 无线服务模板视图         | L866
+  mac-authentication domain           | 无线服务模板视图         | L918
+  mac-authentication max-user         | 无线服务模板视图         | L966
+-->
 
 **WLAN用户接入认证 \-- WLAN用户接入认证配置命令 \-- client-security accounting-start-fail offline**
 

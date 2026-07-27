@@ -1,3 +1,15 @@
+<!-- CMD-INDEX
+  debugging ip error                  | 用户视图             | L14
+  debugging ip icmp                   | 用户视图             | L90
+  debugging ip packet                 | 用户视图             | L200
+  debugging ip virtual-reassembly     | 用户视图             | L362
+  debugging rawip packet              | 用户视图             | L490
+  debugging tcp-proxy                 | 用户视图             | L654
+  debugging tcp event                 | 用户视图             | L1076
+  debugging tcp nsr                   | 用户视图             | L1218
+  debugging tcp packet                | 用户视图             | L1602
+  debugging udp packet                | 用户视图             | L1758
+-->
 
 **IP性能优化 \-- IP性能优化调试命令 \-- debugging ip error**
 

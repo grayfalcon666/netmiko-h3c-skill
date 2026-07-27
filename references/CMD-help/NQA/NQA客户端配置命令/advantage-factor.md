@@ -1,3 +1,81 @@
+<!-- CMD-INDEX
+  advantage-factor                    | Voice测试类型视图      | L80
+  codec-type                          | Voice测试类型视图      | L128
+  data-fill                           | ICMP-echo/Path-jitter/UDP-echo/UDP-jitter/Voice测试类型视图 | L176
+  data-size                           |                  | L246
+  description (any NQA test type view) | 任意测试类型视图         | L360
+  destination ip                      | DHCP/DLSw/DNS/ICMP-echo/Path-jitter/SNMP/TCP/UDP-echo/UDP-jitter/UDP-tracert/Voice测试类型视图 | L410
+  destination ipv6                    | DNS/ICMP/RADIUS/TCP/UDP类型的NQA模板视图 | L464
+  destination port                    | TCP/UDP-echo/UDP-jitter/UDP-tracert/Voice测试类型视图 | L506
+  display nqa history                 | 任意视图             | L562
+  display nqa reaction counters       | 任意视图             | L682
+  display nqa result                  | 任意视图             | L896
+  display nqa statistics              | 任意视图             | L1530
+  expect data                         | HTTP/TCP/UDP类型的NQA模板视图 | L2334
+  expect status                       | HTTP类型的模板视图      | L2388
+  expect ip                           | DNS类型的NQA模板视图    | L2434
+  expect ipv6                         | DNS类型的NQA模板视图    | L2480
+  filename                            | FTP测试类型视图        | L2526
+  frequency                           | 任意测试类型视图         | L2580
+  history-record enable               | DHCP/DLSw/DNS/FTP/HTTP/ICMP-echo/SNMP/TCP/UDP-echo/UDP-tracert测试类型视图 | L2642
+  history-record keep-time            | DHCP/DLSw/DNS/FTP/HTTP/ICMP-echo/SNMP/TCP/UDP-echo/UDP-tracert测试类型视图 | L2692
+  history-record number               | DHCP/DLSw/DNS/FTP/HTTP/ICMP-echo/SNMP/TCP/UDP-echo/UDP-tracert测试类型视图 | L2740
+  init-ttl                            | UDP-tracert测试类型视图 | L2788
+  key                                 | RADIUS类型的NQA模板视图 | L2832
+  lsr-path                            | Path-jitter测试类型视图 | L2884
+  max-failture                        | UDP-tracert测试类型视图 | L2934
+  mode                                | FTP测试类型视图        | L2978
+  next-hop                            | ICMP-echo测试类型视图  | L3038
+  no-fragment enable                  | UDP-tracert测试类型视图 | L3082
+  nqa                                 | 系统视图             | L3126
+  nqa template                        | 系统视图             | L3176
+  nqa agent enable                    | 系统视图             | L3232
+  nqa schedule                        | 系统视图             | L3272
+  operation (FTP test type view)      | FTP测试类型视图        | L3350
+  operation (HTTP test type view)     | HTTP测试类型视图       | L3414
+  out interface                       | DHCP/ICMP-echo/UDP-tracert测试类型视图 | L3476
+  password                            | FTP/HTTP测试类型视图   | L3540
+  probe count                         | DHCP/DNS/DLSw/FTP/HTTP/ICMP-echo/SNMP/TCP/UDP-echo/UDP-jitter/UDP-tracert测试类型视图 | L3608
+  probe packet-interval               | Path-jitter/UDP-jitter/Voice测试类型视图 | L3672
+  probe packet-number                 | Path-jitter/UDP-jitter/Voice测试类型视图 | L3716
+  probe packet-timeout                | Path-jitter/UDP-jitter/Voice测试类型视图 | L3760
+  probe timeout                       | DHCP/DNS/DLSw/FTP/HTTP/ICMP-echo/SNMP/TCP/UDP-echo/UDP-tracert测试类型视图 | L3804
+  raw-request                         | HTTP测试类型视图       | L3862
+  reaction checked-element icpif      | Voice测试类型视图      | L3920
+  reaction checked-element { jitter-ds \| jitter-sd } | UDP-jitter/Voice测试类型视图 | L3980
+  reaction checked-element mos        | Voice测试类型视图      | L4062
+  reaction checked-element { owd-ds \| owd-sd } | UDP-jitter/Voice测试类型视图 | L4124
+  reaction checked-element packet-loss | UDP-jitter/Voice测试类型视图 | L4186
+  reaction checked-element probe-duration | DHCP/DLSw/DNS/FTP/HTTP/ICMP-echo/SNMP/TCP/UDP-echo测试类型视图 | L4244
+  reaction checked-element probe-fail (for trap) | DHCP/DLSw/DNS/FTP/HTTP/ICMP-echo/SNMP/TCP/UDP-echo测试类型视图 | L4334
+  reaction checked-element probe-fail (for trigger) | DHCP/DLSw/DNS/FTP/HTTP/ICMP-echo/SNMP/TCP/UDP-echo测试类型视图 | L4404
+  reaction checked-element rtt        | UDP-jitter/Voice测试类型视图 | L4464
+  reaction trap                       | DHCP/DLSw/DNS/FTP/HTTP/ICMP-echo/SNMP/TCP/UDP-echo/UDP-jitter/UDP-tracert/Voice测试类型视图 | L4542
+  reaction trigger probe-fail         | 任意类型的NQA模板视图     | L4598
+  reaction trigger probe-pass         | 任意类型的NQA模板视图     | L4640
+  resolve-target                      | DNS测试类型视图        | L4682
+  resolve-type                        | DNS类型的NQA模板视图    | L4736
+  route-option bypass-route           | DLSw/DNS/FTP/HTTP/ICMP-echo/SNMP/TCP/UDP-echo/UDP-jitter/UDP-tracert/Voice测试类型视图 | L4776
+  source interface                    | ICMP-echo/UDP-tracert测试类型视图 | L4822
+  source ip                           | DLSw/FTP/HTTP/ICMP-echo/Path-jitter/SNMP/TCP/UDP-echo/DHCP/UDP-jitter/UDP-tracert/Voice测试类型视图 | L4906
+  source ipv6                         | 任意类型的NQA模板视图     | L4972
+  source port                         | SNMP/UDP-echo/UDP-jitter/UDP-tracert/Voice测试类型视图 | L5026
+  statistics hold-time                | DHCP/DLSw/DNS/FTP/HTTP/ICMP-echo/Path-jitter/SNMP/TCP/UDP-echo/UDP-jitter/Voice测试类型视图 | L5080
+  statistics interval                 | DHCP/DLSw/DNS/FTP/HTTP/ICMP-echo/Path-jitter/SNMP/TCP/UDP-echo/UDP-jitter/Voice测试类型视图 | L5128
+  statistics max-group                | DHCP/DLSw/DNS/FTP/HTTP/ICMP-echo/Path-jitter/SNMP/TCP/UDP-echo/UDP-jitter/Voice测试类型视图 | L5176
+  target-only                         | Path-jitter测试类型视图 | L5226
+  tos                                 | 任意测试类型视图         | L5266
+  ttl                                 | DLSw/DNS/FTP/HTTP/ICMP-echo/SNMP/TCP/UDP-echo/UDP-jitter/UDP-tracert/Voice测试类型视图 | L5320
+  type                                | NQA测试组视图         | L5380
+  url                                 | FTP/HTTP测试类型视图   | L5444
+  username                            | FTP/HTTP测试类型视图   | L5504
+  version                             | HTTP测试类型视图       | L5564
+  vpn-instance                        | 任意测试类型视图         | L5610
+  display nqa server                  | 任意视图             | L5672
+  nqa server enable                   | 系统视图             | L5754
+  nqa server tcp-connect              | 系统视图             | L5798
+  nqa server udp-echo                 | 系统视图             | L5858
+-->
 
 **NQA \-- NQA客户端配置命令 \-- advantage-factor**
 

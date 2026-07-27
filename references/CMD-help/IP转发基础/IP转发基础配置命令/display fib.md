@@ -1,3 +1,10 @@
+<!-- CMD-INDEX
+  display fib                         | 任意视图             | L9
+  ip last-hop hold                    | 三层以太网接口视图/三层以太网子接口视图 | L209
+  bandwidth-based-sharing             | 系统视图             | L257
+  ip load-sharing local-first enable  | 系统视图             | L303
+  ip load-sharing mode                |                  | L343
+-->
 
 **IP转发基础 \-- IP转发基础配置命令 \-- display fib**
 

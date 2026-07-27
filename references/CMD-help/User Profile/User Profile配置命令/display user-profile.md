@@ -1,3 +1,9 @@
+<!-- CMD-INDEX
+  display user-profile                | 任意视图             | L8
+  qos queue                           | User Profile视图   | L730
+  qos session-group identify          | 接口视图             | L818
+  user-profile                        | 系统视图             | L870
+-->
 
 **User Profile \-- User Profile配置命令 \-- display user-profile**
 

@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  python                              | 用户视图             | L6
+  python filename                     | 用户视图             | L50
+-->
 
 **Python \-- Python配置命令 \-- python**
 

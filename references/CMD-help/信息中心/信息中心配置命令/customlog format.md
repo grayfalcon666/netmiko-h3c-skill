@@ -1,3 +1,49 @@
+<!-- CMD-INDEX
+  customlog format                    | 系统视图             | L48
+  customlog host                      | 系统视图             | L104
+  customlog host source               | 系统视图             | L178
+  customlog timestamp                 | 系统视图             | L236
+  diagnostic-logfile save             | 任意视图             | L280
+  display diagnostic-logfile summary  | 任意视图             | L324
+  display info-center                 | 任意视图             | L388
+  display logbuffer                   | 任意视图             | L496
+  display logbuffer summary           | 任意视图             | L706
+  display logfile summary             | 任意视图             | L860
+  display security-logfile summary    | 任意视图             | L924
+  enable log updown                   | 接口视图             | L1002
+  info-center diagnostic-logfile enable | 系统视图             | L1040
+  info-center diagnostic-logfile frequency | 系统视图             | L1084
+  info-center diagnostic-logfile quota | 系统视图             | L1136
+  info-center diagnostic-logfile directory | 系统视图             | L1180
+  info-center logfile overwrite-protection | 系统视图             | L1238
+  info-center enable                  | 系统视图             | L1290
+  info-center format                  | 系统视图             | L1328
+  info-center logbuffer               | 系统视图             | L1374
+  info-center logbuffer size          | 系统视图             | L1416
+  info-center logfile enable          | 系统视图             | L1468
+  info-center logfile frequency       | 系统视图             | L1508
+  info-center logfile size-quota      | 系统视图             | L1560
+  info-center logfile directory       | 系统视图             | L1618
+  info-center logging suppress duplicates | 系统视图             | L1684
+  info-center loghost                 | 系统视图             | L1784
+  info-center loghost source          | 系统视图             | L1840
+  info-center security-logfile alarm-threshold | 系统视图             | L1892
+  info-center security-logfile enable | 系统视图             | L1944
+  info-center security-logfile frequency | 系统视图             | L1988
+  info-center security-logfile size-quota | 系统视图             | L2040
+  info-center security-logfile directory | 系统视图             | L2088
+  info-center source                  |                  | L2144
+  info-center synchronous             | 系统视图             | L2318
+  info-center timestamp               | 系统视图             | L2390
+  info-center timestamp loghost       | 系统视图             | L2446
+  info-center trace-logfile quota     | 系统视图             | L2496
+  logfile save                        | 任意视图             | L2536
+  reset logbuffer                     | 用户视图             | L2580
+  security-logfile save               | 任意视图             | L2610
+  terminal debugging                  | 用户视图             | L2652
+  terminal logging level              | 用户视图             | L2708
+  terminal monitor                    | 用户视图             | L2752
+-->
 
 **信息中心 \-- 信息中心配置命令 \-- customlog format**
 

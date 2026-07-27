@@ -1,3 +1,56 @@
+<!-- CMD-INDEX
+  display igmp-snooping               | 任意视图             | L55
+  display igmp-snooping group         | 任意视图             | L285
+  display igmp-snooping router-port   | 任意视图             | L485
+  display igmp-snooping static-group  | 任意视图             | L637
+  display igmp-snooping static-router-port | 任意视图             | L771
+  display igmp-snooping statistics    | 任意视图             | L863
+  display l2-multicast ip             | 任意视图             | L957
+  display l2-multicast ip forwarding  | 任意视图             | L1137
+  display l2-multicast mac            | 任意视图             | L1281
+  display l2-multicast mac forwarding | 任意视图             | L1423
+  dot1p-priority (IGMP-Snooping view) | IGMP-Snooping视图  | L1565
+  drop-unknown (IGMP-Snooping view)   | IGMP-Snooping视图  | L1615
+  enable (IGMP-Snooping view)         | IGMP-Snooping视图  | L1665
+  entry-limit (IGMP-Snooping view)    | IGMP-Snooping视图  | L1719
+  fast-leave (IGMP-Snooping view)     | IGMP-Snooping视图  | L1761
+  group-policy (IGMP-Snooping view)   | IGMP-Snooping视图  | L1813
+  host-aging-time (IGMP-Snooping view) | IGMP-Snooping视图  | L1879
+  igmp-snooping                       | 系统视图             | L1929
+  igmp-snooping dot1p-priority        | VLAN视图           | L1973
+  igmp-snooping drop-unknown          | VLAN视图/VSI视图     | L2035
+  igmp-snooping enable                | VLAN视图/VSI视图     | L2111
+  igmp-snooping fast-leave            | 二层以太网接口视图/二层聚合接口视图/二层RPR逻辑接口视图 | L2177
+  igmp-snooping general-query source-ip | VLAN视图/VSI视图     | L2229
+  igmp-snooping group-limit           | 二层以太网接口视图/二层聚合接口视图/二层RPR逻辑接口视图 | L2303
+  igmp-snooping group-policy          | 二层以太网接口视图/二层聚合接口视图/二层RPR逻辑接口视图 | L2351
+  igmp-snooping host-aging-time       | VLAN视图/VSI视图     | L2417
+  igmp-snooping host-join             | 二层以太网接口视图/二层聚合接口视图/二层RPR逻辑接口视图 | L2493
+  igmp-snooping last-member-query-interval | VLAN视图/VSI视图     | L2559
+  igmp-snooping leave source-ip       | VLAN视图           | L2635
+  igmp-snooping max-response-time     | VLAN视图/VSI视图     | L2693
+  igmp-snooping overflow-replace      | 二层以太网接口视图/二层聚合接口视图/二层RPR逻辑接口视图 | L2773
+  igmp-snooping querier               | VLAN视图/VSI视图     | L2825
+  igmp-snooping query-interval        | VLAN视图/VSI视图     | L2897
+  igmp-snooping report source-ip      | VLAN视图           | L2977
+  igmp-snooping router-aging-time     | VLAN视图/VSI视图     | L3035
+  igmp-snooping router-port-deny      | 二层以太网接口视图/二层聚合接口视图/二层RPR逻辑接口视图 | L3111
+  igmp-snooping source-deny           | 二层以太网接口视图        | L3153
+  igmp-snooping special-query source-ip | VLAN视图/VSI视图     | L3203
+  igmp-snooping static-group          | 二层以太网接口视图/二层聚合接口视图/二层RPR逻辑接口视图 | L3277
+  igmp-snooping static-router-port    | 二层以太网接口视图/二层聚合接口视图/二层RPR逻辑接口视图 | L3337
+  igmp-snooping version               | VLAN视图/VSI视图     | L3381
+  last-member-query-interval (IGMP-Snooping view) | IGMP-Snooping视图  | L3457
+  max-response-time (IGMP-Snooping view) | IGMP-Snooping视图  | L3507
+  overflow-replace (IGMP-Snooping view) | IGMP-Snooping视图  | L3561
+  report-aggregation (IGMP-Snooping view) | IGMP-Snooping视图  | L3613
+  reset igmp-snooping group           | 用户视图             | L3651
+  reset igmp-snooping router-port     | 用户视图             | L3693
+  reset igmp-snooping statistics      | 用户视图             | L3731
+  router-aging-time (IGMP-Snooping view) | IGMP-Snooping视图  | L3761
+  source-deny (IGMP-Snooping view)    | IGMP-Snooping视图  | L3811
+  version (IGMP-Snooping view)        | IGMP-Snooping视图  | L3865
+-->
 
 **IGMP Snooping \-- IGMP Snooping配置命令 \-- display igmp-snooping**
 

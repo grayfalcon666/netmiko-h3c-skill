@@ -1,3 +1,15 @@
+<!-- CMD-INDEX
+  display system internal isis import-route | Probe视图          | L14
+  display system internal isis interface | Probe视图          | L60
+  display system internal isis interface standby | Probe视图          | L94
+  display system internal isis lsdb standby | Probe视图          | L136
+  display system internal isis nib    | Probe视图          | L186
+  display system internal isis nib log | Probe视图          | L214
+  display system internal isis peer standby | Probe视图          | L234
+  display system internal isis prefix | Probe视图          | L276
+  display system internal isis standby | Probe视图          | L328
+  display system internal isis status | Probe视图          | L366
+-->
 
 **IS-IS \-- IS-IS probe命令 \-- display system internal isis import-route**
 

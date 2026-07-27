@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging rmon                      | 用户视图             | L5
+-->
 
 **RMON \-- RMON调试命令 \-- debugging rmon**
 

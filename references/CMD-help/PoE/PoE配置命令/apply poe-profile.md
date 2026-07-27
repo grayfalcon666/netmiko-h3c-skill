@@ -1,3 +1,34 @@
+<!-- CMD-INDEX
+  apply poe-profile                   | PoE接口视图          | L33
+  apply poe-profile interface         | 系统视图             | L83
+  display poe device                  | 任意视图             | L139
+  display poe interface               | 任意视图             | L283
+  display poe interface power         | 任意视图             | L563
+  display poe power-usage             | 任意视图             | L663
+  display poe pse                     | 任意视图             | L905
+  display poe pse interface           | 任意视图             | L1173
+  display poe pse interface power     | 任意视图             | L1317
+  display poe-power                   | 任意视图             | L1411
+  display poe-profile                 | 任意视图             | L1799
+  display poe-profile interface       | 任意视图             | L1913
+  poe disconnect                      | 系统视图             | L1955
+  poe enable                          | PoE接口视图/PoE profile视图 | L2007
+  poe enable pse                      | 系统视图             | L2065
+  poe legacy enable                   | 系统视图             | L2113
+  poe max-power                       | PoE接口视图/PoE profile视图 | L2171
+  poe max-power (System view)         | 系统视图             | L2227
+  poe mode                            | PoE接口视图/PoE profile视图 | L2293
+  poe pd-description                  | PoE接口视图          | L2349
+  poe pd-policy priority              | 系统视图             | L2391
+  poe power max-value                 |                  | L2437
+  poe priority                        | PoE接口视图/PoE profile视图 | L2509
+  poe priority (system view)          | 系统视图             | L2583
+  poe pse-policy priority             | 系统视图             | L2645
+  poe temperature-protection          | 系统视图             | L2695
+  poe update                          | 系统视图             | L2743
+  poe-profile                         | 系统视图             | L2803
+  poe utilization-threshold           | 系统视图             | L2873
+-->
 
 **PoE \-- PoE配置命令 \-- apply poe-profile**
 

@@ -1,3 +1,11 @@
+<!-- CMD-INDEX
+  debugging system internal l2vpn l2vfib |                  | L10
+  display system internal l2vpn l2vfib record | Probe视图          | L76
+  display system internal l2vpn l2vfib statistics | Probe视图          | L126
+  display system internal l2vpn ldp   | 任意视图             | L170
+  l2vpn l2vfib record size            | Probe视图          | L218
+  reset system internal l2vpn l2vfib record | Probe视图          | L268
+-->
 
 **MPLS L2VPN \-- MPLS L2VPN Probe命令 \-- debugging system internal l2vpn l2vfib**
 

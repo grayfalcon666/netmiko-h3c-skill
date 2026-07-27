@@ -1,3 +1,62 @@
+<!-- CMD-INDEX
+  alarm-detect                        | CPOS接口视图         | L61
+  clock                               | CPOS接口视图         | L127
+  controller cpos                     | 系统视图             | L181
+  default                             | CPOS接口视图         | L215
+  description                         | CPOS接口视图         | L251
+  display controller cpos             | 任意视图             | L293
+  display controller cpos e1          | 任意视图             | L503
+  display controller cpos e3          | 任意视图             | L609
+  display controller cpos t1          | 任意视图             | L755
+  display controller cpos t3          | 任意视图             | L861
+  e1 channel-set                      | CPOS接口视图         | L913
+  e1 clock                            | CPOS接口视图         | L977
+  e1 flag                             | CPOS接口视图         | L1029
+  e1 frame-format                     | CPOS接口视图         | L1087
+  e1 loopback                         | CPOS接口视图         | L1133
+  e1 shutdown                         | CPOS接口视图         | L1195
+  e1 unframed                         | CPOS接口视图         | L1241
+  e3 clock                            | CPOS接口视图         | L1291
+  e3 framed                           | CPOS接口视图         | L1347
+  e3 loopback                         | CPOS接口视图         | L1393
+  e3 national-bit                     | CPOS接口视图         | L1457
+  e3 shutdown                         | CPOS接口视图         | L1507
+  fe3                                 | CPOS接口视图         | L1549
+  flag                                |                  | L1611
+  flag vc-3                           | ]                | L1693
+  flag vc-4                           | ]                | L1755
+  frame-format                        | CPOS接口视图         | L1817
+  ft3                                 | CPOS接口视图         | L1861
+  link-delay                          | CPOS接口视图         | L1929
+  loopback                            | CPOS接口视图         | L1979
+  multiplex mode                      | CPOS接口视图         | L2029
+  oc-12                               | 2.5Gbps高速CPOS接口视图 | L2091
+  oc-3                                | 622Mbps高速CPOS接口视图/622Mbps通道视图 | L2143
+  reset counters controller cpos      | 用户视图             | L2209
+  shutdown                            | CPOS接口视图         | L2253
+  t1 channel-set                      | CPOS接口视图         | L2295
+  t1 clock                            | CPOS接口视图         | L2359
+  t1 flag                             | CPOS接口视图         | L2411
+  t1 frame-format                     | CPOS接口视图         | L2469
+  t1 loopback                         | CPOS接口视图         | L2515
+  t1 shutdown                         | CPOS接口视图         | L2571
+  t1 unframed                         | CPOS接口视图         | L2617
+  t3 alarm                            | CPOS接口视图         | L2667
+  t3 bert                             | CPOS接口视图         | L2737
+  t3 clock                            | CPOS接口视图         | L2799
+  t3 feac                             | CPOS接口视图         | L2855
+  t3 framed                           | CPOS接口视图         | L2931
+  t3 frame-format                     | CPOS接口视图         | L2977
+  t3 loopback                         | CPOS接口视图         | L3023
+  t3 mdl                              | CPOS接口视图         | L3079
+  t3 shutdown                         | CPOS接口视图         | L3163
+  threshold                           | CPOS接口视图         | L3205
+  using e3                            | CPOS接口视图/155Mbps通道视图 | L3261
+  using oc-12/using oc-12c            | 622Mbps高速CPOS接口视图/622Mbps通道视图 | L3327
+  using oc-3/using oc-3c              | 155Mbps高速CPOS接口视图/155Mbps通道视图 | L3397
+  using oc-48/using oc-48c            | 2.5Gbps高速CPOS接口视图 | L3467
+  using t3                            | CPOS接口视图/155Mbps通道视图 | L3521
+-->
 
 **CPOS接口 \-- CPOS接口配置命令 \-- alarm-detect**
 

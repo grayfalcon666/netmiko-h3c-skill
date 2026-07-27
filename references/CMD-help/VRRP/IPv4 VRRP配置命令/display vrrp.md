@@ -1,3 +1,34 @@
+<!-- CMD-INDEX
+  display vrrp                        | 任意视图             | L33
+  display vrrp statistics             | 任意视图             | L641
+  reset vrrp statistics               | 用户视图             | L993
+  snmp-agent trap enable vrrp         | 系统视图             | L1033
+  vrrp check-ttl enable               | 接口视图             | L1079
+  vrrp dot1q                          | 三层以太网子接口视图/三层聚合子接口视图/三层RPR逻辑接口视图 | L1135
+  vrrp dscp                           | 系统视图             | L1185
+  vrrp mode                           | 系统视图             | L1225
+  vrrp version                        | 接口视图             | L1287
+  vrrp vrid                           | 接口视图             | L1345
+  vrrp vrid authentication-mode       | 接口视图             | L1419
+  vrrp vrid preempt-mode              | 接口视图             | L1511
+  vrrp vrid priority                  | 接口视图             | L1581
+  vrrp vrid shutdown                  | 接口视图             | L1649
+  vrrp vrid source-interface          | 接口视图             | L1707
+  vrrp vrid timer advertise           | 接口视图             | L1767
+  vrrp vrid track                     | 接口视图             | L1841
+  display vrrp ipv6                   | 任意视图             | L1969
+  display vrrp ipv6 statistics        | 任意视图             | L2547
+  reset vrrp ipv6 statistics          | 用户视图             | L2899
+  vrrp ipv6 dot1q                     | 三层以太网子接口视图/三层聚合子接口视图/三层RPR逻辑接口视图 | L2939
+  vrrp ipv6 dscp                      | 系统视图             | L2989
+  vrrp ipv6 mode                      | 系统视图             | L3029
+  vrrp ipv6 vrid                      | 接口视图             | L3083
+  vrrp ipv6 vrid preempt-mode         | 接口视图             | L3161
+  vrrp ipv6 vrid priority             | 接口视图             | L3231
+  vrrp ipv6 vrid shutdown             | 接口视图             | L3297
+  vrrp ipv6 vrid timer advertise      | 接口视图             | L3355
+  vrrp ipv6 vrid track                | 接口视图             | L3427
+-->
 
 **VRRP \-- IPv4 VRRP配置命令 \-- display vrrp**
 

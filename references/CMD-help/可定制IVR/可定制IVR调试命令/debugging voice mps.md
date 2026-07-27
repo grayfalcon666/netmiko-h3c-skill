@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  debugging voice mps                 | 用户视图             | L6
+  debugging voice ivr                 | 用户视图             | L844
+-->
 
 **可定制IVR \-- 可定制IVR调试命令 \-- debugging voice mps**
 

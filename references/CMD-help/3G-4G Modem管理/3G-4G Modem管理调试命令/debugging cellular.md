@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  debugging cellular                  | 用户视图             | L6
+  debugging cellular plugin           | 用户视图             | L358
+-->
 
 **3G/4G Modem管理 \-- 3G/4G Modem管理调试命令 \-- debugging cellular**
 

@@ -1,3 +1,13 @@
+<!-- CMD-INDEX
+  display ip source binding           | 任意视图             | L12
+  display ipv6 source binding         | 任意视图             | L146
+  ip source binding(interface view)   | 二层以太网端口/三层以太网接口/VLAN接口 | L270
+  ip source binding(system view)      | 系统视图             | L330
+  ip verify source                    | 二层以太网端口/三层以太网接口/VLAN接口/三层聚合接口 | L386
+  ipv6 source binding(interface view) | 二层以太网端口/三层以太网接口/VLAN接口 | L470
+  ipv6 source binding(system view)    | 系统视图             | L530
+  ipv6 verify source                  | 二层以太网端口/三层以太网接口/VLAN接口/三层聚合接口 | L586
+-->
 
 **IP Source Guard \-- IP Source Guard配置命令 \-- display ip source binding**
 

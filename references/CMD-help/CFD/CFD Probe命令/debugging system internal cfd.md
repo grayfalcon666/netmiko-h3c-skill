@@ -1,3 +1,8 @@
+<!-- CMD-INDEX
+  debugging system internal cfd       | Probe视图          | L7
+  display system internal cfd hardware | Probe视图          | L41
+  display system internal cfd mep     | Probe视图          | L83
+-->
 
 **CFD \-- CFD Probe命令 \-- debugging system internal cfd**
 

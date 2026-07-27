@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  debugging wlan ap                   | 用户视图             | L6
+  debugging wlan capwap               | 用户视图             | L122
+-->
 
 **AP管理 \-- AP管理调试命令 \-- debugging wlan ap**
 

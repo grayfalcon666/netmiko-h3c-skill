@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  waas tfo auto-discovery blacklist   | Probe视图          | L5
+-->
 
 **WAAS \-- WAAS 命令 \-- waas tfo auto-discovery blacklist**
 

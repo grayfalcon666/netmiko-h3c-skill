@@ -1,3 +1,61 @@
+<!-- CMD-INDEX
+  active region-configuration         | MST域视图           | L60
+  bpdu-drop any                       | 二层以太网接口视图        | L112
+  check region-configuration          | MST域视图           | L154
+  display stp                         | 任意视图             | L244
+  display stp abnormal-port           | 任意视图             | L890
+  display stp bpdu-statistics         | 任意视图             | L978
+  display stp down-port               | 任意视图             | L1238
+  display stp history                 | 任意视图             | L1290
+  display stp ignored-vlan            | 任意视图             | L1628
+  display stp region-configuration    | 任意视图             | L1674
+  display stp root                    | 任意视图             | L1758
+  display stp tc                      | 任意视图             | L1830
+  instance                            | MST域视图           | L2024
+  region-name                         | MST域视图           | L2088
+  reset stp                           | 用户视图             | L2150
+  revision-level                      | MST域视图           | L2184
+  snmp-agent trap enable stp          | 系统视图             | L2246
+  stp bpdu-protection                 | 系统视图             | L2292
+  stp bridge-diameter                 | 系统视图             | L2328
+  stp compliance                      | 二层以太网接口视图/二层聚合接口视图/二层RPR逻辑接口 | L2392
+  stp config-digest-snooping          | 二层以太网接口视图/二层聚合接口视图/二层RPR逻辑接口视图 | L2442
+  stp cost                            | 二层以太网接口视图/二层聚合接口视图/二层RPR逻辑接口视图 | L2496
+  stp edged-port                      | 二层以太网接口视图/二层聚合接口视图/二层RPR逻辑接口视图 | L2572
+  stp enable                          | 二层以太网接口视图/二层聚合接口视图/二层RPR逻辑接口视图 | L2628
+  stp global config-digest-snooping   | 系统视图             | L2682
+  stp global enable                   | 系统视图             | L2734
+  stp global mcheck                   | 系统视图             | L2782
+  stp ignored vlan                    | 系统视图             | L2824
+  stp ignore-pvid-inconsistency       | 系统视图             | L2874
+  stp loop-protection                 | 二层以太网接口视图/二层聚合接口视图/二层RPR逻辑接口视图 | L2924
+  stp max-hops                        | 系统视图             | L2974
+  stp mcheck                          | 二层以太网接口视图/二层聚合接口视图/二层RPR逻辑接口视图 | L3018
+  stp mode                            | 系统视图             | L3066
+  stp no-agreement-check              | 二层以太网接口视图/二层聚合接口视图/二层RPR逻辑接口视图 | L3134
+  stp pathcost-standard               | 系统视图             | L3178
+  stp point-to-point                  | 二层以太网接口视图/二层聚合接口视图/二层RPR逻辑接口视图 | L3232
+  stp port priority                   | 二层以太网接口视图/二层聚合接口视图/二层RPR逻辑接口视图 | L3294
+  stp port-log                        | 系统视图             | L3360
+  stp priority                        | 系统视图             | L3422
+  stp pvst-bpdu-protection            | 系统视图             | L3476
+  stp region-configuration            | 系统视图             | L3520
+  stp role-restriction                | 二层以太网接口视图/二层聚合接口视图/二层RPR逻辑接口视图 | L3562
+  stp root primary                    | 系统视图             | L3606
+  stp root secondary                  | 系统视图             | L3666
+  stp root-protection                 | 二层以太网接口视图/二层聚合接口视图/二层RPR逻辑接口视图 | L3726
+  stp tc-protection                   | 系统视图             | L3776
+  stp tc-protection threshold         | 系统视图             | L3820
+  stp tc-restriction                  | 二层以太网接口视图/二层聚合接口视图/二层RPR逻辑接口视图 | L3864
+  stp tc-snooping                     | 系统视图             | L3908
+  stp timer forward-delay             | 系统视图             | L3954
+  stp timer hello                     | 系统视图             | L4016
+  stp timer max-age                   | 系统视图             | L4078
+  stp timer-factor                    | 系统视图             | L4140
+  stp transmit-limit                  | 二层以太网接口视图/二层聚合接口视图/二层RPR逻辑接口视图 | L4190
+  stp vlan enable                     | 系统视图             | L4240
+  vlan-mapping modulo                 | MST域视图           | L4298
+-->
 
 **生成树 \-- 生成树配置命令 \-- active region-configuration**
 

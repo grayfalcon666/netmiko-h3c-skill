@@ -1,3 +1,51 @@
+<!-- CMD-INDEX
+  action                              | Event视图          | L50
+  comparison                          | Trigger-boolean视图 | L118
+  context (Trigger view)              | Trigger视图        | L184
+  context (Action-set view)           | Action-set视图     | L236
+  delta falling                       | Trigger-threshold视图 | L292
+  delta rising                        | trigger-threshold视图 | L354
+  description (Trigger view)          | Trigger视图        | L418
+  description (Event view)            | Event视图          | L464
+  display snmp mib event              | 任意视图             | L510
+  display snmp mib event event        | 任意视图             | L652
+  display snmp mib event object list  | 任意视图             | L800
+  display snmp mib event summary      | 任意视图             | L882
+  display snmp mib event trigger      | 任意视图             | L968
+  event enable                        | Event视图          | L1298
+  event owner (Trigger-boolean view)  | Trigger-boolean视图 | L1346
+  event owner (Trigger-existence view) | Trigger-existence视图 | L1402
+  falling                             | Trigger-threshold视图 | L1458
+  frequency                           | Trigger视图        | L1520
+  object list owner (Trigger view)    | Trigger视图        | L1574
+  object list owner (Trigger-boolean view) | Trigger-boolean视图 | L1636
+  object list owner (Trigger-existence view) | Trigger-existence视图 | L1692
+  object list owner (Trigger-threshold view) | Trigger-threshold视图 | L1748
+  object list owner (Action-notification view) | Action-notification视图 | L1804
+  oid (Trigger view)                  | Trigger视图        | L1858
+  oid (Action-set view)               | Action-set视图     | L1910
+  oid (Action-notification view)      | Action-notification视图 | L1966
+  rising                              | Trigger-threshold视图 | L2020
+  sample                              | Trigger视图        | L2084
+  snmp mib event owner                | 系统视图             | L2140
+  snmp mib event object list          | 系统视图             | L2198
+  snmp mib event sample instance maximum | 系统视图             | L2256
+  snmp mib event sample minimum       | 系统视图             | L2308
+  snmp mib event trigger              | 系统视图             | L2360
+  snmp-agent trap enable event-mib    | 系统视图             | L2410
+  startup (Trigger-existence view)    | Trigger-existence视图 | L2452
+  startup (Trigger-threshold view)    | Trigger-threshold视图 | L2512
+  startup enable                      | Trigger-boolean视图 | L2578
+  test                                | Trigger视图        | L2632
+  trigger enable                      | trigger视图        | L2686
+  type                                | Trigger-existence视图 | L2740
+  value (Trigger-boolean view)        | Trigger-boolean视图 | L2808
+  value (Action-set view)             | Action-set视图     | L2860
+  wildcard context (Trigger view)     | Trigger视图        | L2912
+  wildcard context (Action-set view)  | Action-set视图     | L2966
+  wildcard oid (Trigger view)         | Trigger视图        | L3020
+  wildcard oid (Action-se view)       | Action-set视图     | L3074
+-->
 
 **Event MIB \-- Event MIB配置命令 \-- action**
 

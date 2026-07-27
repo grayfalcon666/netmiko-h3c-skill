@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  display system internal ipv6 route-static nib log | Probe视图          | L6
+  reset system internal ipv6 route-static nib log | Probe视图          | L30
+-->
 
 **IPv6静态路由 \-- IPv6静态路由Probe命令 \-- display system internal ipv6 route-static nib log**
 

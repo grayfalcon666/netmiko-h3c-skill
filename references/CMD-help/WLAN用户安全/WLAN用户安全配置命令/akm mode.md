@@ -1,3 +1,22 @@
+<!-- CMD-INDEX
+  akm mode                            | 无线服务模板视图         | L21
+  cipher-suite                        | 无线服务模板视图         | L81
+  gtk-rekey client-offline enable     | 无线服务模板视图         | L151
+  gtk-rekey enable                    | 无线服务模板视图         | L197
+  gtk-rekey method                    | 无线服务模板视图         | L235
+  key-derivation                      | 无线服务模板视图         | L311
+  pmf                                 | 无线服务模板视图         | L371
+  pmf association-comeback            | 无线服务模板视图         | L425
+  pmf saquery retrycount              | 无线服务模板视图         | L471
+  pmf saquery retrytimeout            | 无线服务模板视图         | L523
+  preshared-key                       | 无线服务模板视图         | L571
+  ptk-lifetime                        | 无线服务模板视图         | L641
+  security-ie                         | 无线服务模板视图         | L687
+  tkip-cm-time                        | 无线服务模板视图         | L745
+  user-authentication mode central    | 无线服务模板视图         | L799
+  wep key                             | 无线服务模板视图         | L851
+  wep key-id                          | 无线服务模板视图         | L935
+-->
 
 **WLAN用户安全 \-- WLAN用户安全配置命令 \-- akm mode**
 

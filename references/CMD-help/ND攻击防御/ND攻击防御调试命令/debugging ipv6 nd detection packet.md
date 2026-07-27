@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging ipv6 nd detection packet  | 用户视图             | L5
+-->
 
 **ND攻击防御 \-- ND攻击防御调试命令 \-- debugging ipv6 nd detection packet**
 

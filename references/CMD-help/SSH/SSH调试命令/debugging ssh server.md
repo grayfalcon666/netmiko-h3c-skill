@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  debugging ssh server                | 用户视图             | L6
+  debugging ssh client                | 用户视图             | L1920
+-->
 
 **SSH \-- SSH调试命令 \-- debugging ssh server**
 

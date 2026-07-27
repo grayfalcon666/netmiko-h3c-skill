@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging gre                       | 用户视图             | L5
+-->
 
 **GRE \-- GRE调试命令 \-- debugging gre**
 

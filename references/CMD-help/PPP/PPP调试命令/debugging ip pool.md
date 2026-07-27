@@ -1,3 +1,10 @@
+<!-- CMD-INDEX
+  debugging ip pool                   | 用户视图             | L9
+  debugging ppp                       | 用户视图             | L145
+  debugging ppp compression iphc      | 用户视图             | L771
+  debugging pppoe-server              | 用户视图             | L1064
+  debugging pppoe-client              | 用户视图             | L1600
+-->
 
 **PPP \-- PPP调试命令 \-- debugging ip pool**
 

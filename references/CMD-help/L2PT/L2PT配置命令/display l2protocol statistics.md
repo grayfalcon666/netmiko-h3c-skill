@@ -1,3 +1,10 @@
+<!-- CMD-INDEX
+  display l2protocol statistics       | 任意视图             | L9
+  l2protocol drop                     | 二层以太网接口视图/二层聚合接口视图 | L141
+  l2protocol tunnel dot1q             | 二层以太网接口视图/二层聚合接口视图 | L233
+  l2protocol tunnel-dmac              | 系统视图             | L333
+  reset l2protocol statistics         | 用户视图             | L373
+-->
 
 **L2PT \-- L2PT配置命令 \-- display l2protocol statistics**
 

@@ -1,3 +1,13 @@
+<!-- CMD-INDEX
+  debugging bgp update vpnv4          | 用户视图             | L12
+  debugging bgp update vpn-instance ipv4 | 用户视图             | L158
+  debugging bgp update-group vpnv4    | 用户视图             | L282
+  debugging bgp label                 | 用户视图             | L394
+  debugging bgp lsp                   | 用户视图             | L512
+  debugging bgp update vpnv6          | 用户视图             | L644
+  debugging bgp update vpn-instance ipv6 | 用户视图             | L770
+  debugging bgp update-group vpnv6    | 用户视图             | L894
+-->
 
 **MPLS L3VPN \-- MPLS L3VPN调试命令 \-- debugging bgp update vpnv4**
 

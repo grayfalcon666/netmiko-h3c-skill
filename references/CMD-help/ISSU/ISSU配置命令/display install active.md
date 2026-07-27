@@ -1,3 +1,36 @@
+<!-- CMD-INDEX
+  display install active              | 任意视图             | L35
+  display install backup              | 任意视图             | L419
+  display install committed           | 任意视图             | L565
+  display install inactive            | 任意视图             | L713
+  display install ipe-info            | 任意视图             | L803
+  display install job                 | 任意视图             | L857
+  display install log                 | 任意视图             | L909
+  display install package             | 任意视图             | L1043
+  display install rollback            | 任意视图             | L1137
+  display install which               | 任意视图             | L1209
+  display issu rollback-timer         | 任意视图             | L1293
+  display issu state                  | 任意视图             | L1371
+  display version comp-matrix         | ]                | L1805
+  install abort                       | 用户视图             | L2791
+  install activate                    | 用户视图             | L2827
+  install add                         | 用户视图             | L3271
+  install commit                      | 用户视图             | L3325
+  install deactivate                  | 用户视图             | L3373
+  install remove                      | 用户视图             | L3481
+  install rollback to                 | 用户视图             | L3541
+  install verify                      | 用户视图             | L3627
+  issu accept                         | 用户视图             | L3837
+  issu blade                          | 用户视图             | L3879
+  issu commit                         |                  | L4043
+  issu load                           |                  | L4327
+  issu pex                            | 用户视图             | L5027
+  issu rollback                       | 用户视图             | L5239
+  issu rollback-timer                 | 系统视图             | L5303
+  issu run switchover                 | 用户视图             | L5363
+  reset install log-history oldest    | 用户视图             | L5695
+  reset install rollback oldest       | 用户视图             | L5731
+-->
 
 **ISSU \-- ISSU配置命令 \-- display install active**
 

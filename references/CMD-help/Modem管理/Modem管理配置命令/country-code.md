@@ -1,3 +1,12 @@
+<!-- CMD-INDEX
+  country-code                        | AM接口视图           | L11
+  modem answer-timer                  | 用户线视图            | L59
+  modem auto-answer                   | 用户线视图            | L113
+  modem callback                      | 系统视图             | L163
+  modem caller-number resolve         | 用户线视图            | L203
+  modem enable                        | 用户线视图            | L257
+  sendat                              | 接口视图             | L309
+-->
 
 **Modem管理 \-- Modem管理配置命令 \-- country-code**
 

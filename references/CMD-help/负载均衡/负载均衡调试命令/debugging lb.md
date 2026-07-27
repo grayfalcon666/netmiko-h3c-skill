@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging lb                        | 用户视图             | L5
+-->
 
 **负载均衡 \-- 负载均衡调试命令 \-- debugging lb**
 

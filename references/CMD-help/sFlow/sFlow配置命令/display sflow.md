@@ -1,3 +1,15 @@
+<!-- CMD-INDEX
+  display sflow                       | 任意视图             | L14
+  sflow agent                         | 系统视图             | L170
+  sflow collector                     | 系统视图             | L218
+  sflow counter interval              | 二层以太网接口视图/三层以太网接口视图 | L272
+  sflow counter collector             | 二层以太网接口视图/三层以太网接口视图 | L314
+  sflow flow collector                | 二层以太网接口视图/三层以太网接口视图 | L356
+  sflow flow max-header               | 二层以太网接口视图/三层以太网接口视图 | L398
+  sflow sampling-mode                 | 二层以太网接口视图/三层以太网接口视图 | L444
+  sflow sampling-rate                 | 二层以太网接口视图/三层以太网接口视图 | L492
+  sflow source                        | 系统视图             | L538
+-->
 
 **sFlow \-- sFlow配置命令 \-- display sflow**
 

@@ -1,3 +1,8 @@
+<!-- CMD-INDEX
+  debugging system internal ip topology |                  | L7
+  display system internal ip topology | Probe视图          | L59
+  display system internal ip topology inactive | Probe视图          | L103
+-->
 
 **MTR \-- MTR Probe命令 \-- debugging system internal ip topology**
 

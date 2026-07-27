@@ -1,3 +1,24 @@
+<!-- CMD-INDEX
+  apply access-vpn vpn-instance       | IPv6策略节点视图       | L23
+  apply continue                      | IPv6策略节点视图       | L77
+  apply default-next-hop              | IPv6策略节点视图       | L125
+  apply default-output-interface      | IPv6策略节点视图       | L193
+  apply loadshare                     | IPv6策略节点视图       | L257
+  apply next-hop                      | IPv6策略节点视图       | L363
+  apply output-interface              | IPv6策略节点视图       | L435
+  apply precedence                    | IPv6策略节点视图       | L499
+  display ipv6 policy-based-route     | 任意视图             | L585
+  display ipv6 policy-based-route interface | 任意视图             | L657
+  display ipv6 policy-based-route local | 任意视图             | L843
+  display ipv6 policy-based-route setup | 任意视图             | L967
+  if-match acl                        | IPv6策略节点视图       | L1019
+  if-match packet-length              | IPv6策略节点视图       | L1075
+  ipv6 local policy-based-route       | 系统视图             | L1127
+  ipv6 policy-based-route (interface view) | 接口视图             | L1179
+  ipv6 policy-based-route (System view) | 系统视图             | L1245
+  reset ipv6 policy-based-route statistics | 用户视图             | L1303
+  snmp-agent trap enable ipv6 policy-based-route | 系统视图             | L1343
+-->
 
 **IPv6策略路由 \-- IPv6策略路由配置命令 \-- apply access-vpn vpn-instance**
 

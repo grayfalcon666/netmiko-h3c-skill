@@ -1,3 +1,10 @@
+<!-- CMD-INDEX
+  cir allow                           | 帧中继类视图           | L9
+  display fr class-map                | 任意视图             | L61
+  fr class                            | 系统视图             | L163
+  fr traffic-shaping                  | 帧中继接口视图          | L215
+  fr-class                            | 帧中继接口视图（包括主接口和子接口）/帧中继DLCI视图 | L257
+-->
 
 **帧中继QoS \-- 帧中继QoS配置命令 \-- cir allow**
 

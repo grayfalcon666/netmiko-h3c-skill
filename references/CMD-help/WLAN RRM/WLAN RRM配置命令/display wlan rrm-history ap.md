@@ -1,3 +1,24 @@
+<!-- CMD-INDEX
+  display wlan rrm-history ap         | ]                | L23
+  display wlan rrm-status ap          | ]                | L159
+  adjacency-factor                    | RRM视图            | L413
+  calibrate-channel self-decisive     | RRM视图            | L459
+  calibrate-power min                 | RRM视图            | L501
+  calibrate-power self-decisive       | RRM视图            | L551
+  calibrate-power threshold           | RRM视图            | L593
+  channel-capability mode             | Radio视图          | L639
+  channel-switch mode                 | Radio视图          | L697
+  crc-error-threshold                 | RRM视图            | L753
+  interference-threshold              | RRM视图            | L799
+  power-capability mode               | Radio视图          | L845
+  power-constraint mode               | Radio视图          | L903
+  rrm                                 | Radio视图          | L979
+  tolerance-level                     | RRM视图            | L1011
+  spectrum-management                 | Radio视图          | L1061
+  wlan calibrate-channel pronto ap all | 系统视图             | L1103
+  wlan calibrate-power pronto ap all  | 系统视图             | L1135
+  wlan rrm-calibration-interval       | 系统视图             | L1167
+-->
 
 **WLAN RRM \-- WLAN RRM配置命令 \-- display wlan rrm-history ap**
 

@@ -1,3 +1,61 @@
+<!-- CMD-INDEX
+  alarm-detect                        | Ten-GigabitEthernet接口视图 | L60
+  bandwidth                           | 以太网接口视图/以太网子接口视图 | L126
+  combo enable                        | 以太网接口视图          | L188
+  dampening                           | 以太网接口视图          | L248
+  default                             | 以太网接口视图/以太网子接口视图 | L338
+  description                         | 以太网接口视图/以太网子接口视图 | L382
+  display counters                    | 任意视图             | L432
+  display counters rate               | 任意视图             | L548
+  display ethernet statistics         | 用户视图             | L652
+  display interface                   | 任意视图             | L1026
+  display packet-drop                 | 任意视图             | L1822
+  duplex                              | 以太网接口视图          | L1944
+  eee enable                          | 以太网接口视图          | L1990
+  flag sdh                            | Ten-GigabitEthernet接口视图 | L2038
+  flow-control                        | 以太网接口视图          | L2096
+  flow-control receive enable         | 以太网接口视图          | L2144
+  flow-interval                       | 系统视图/以太网接口视图     | L2194
+  interface                           | 系统视图             | L2250
+  jumboframe enable                   | 二层以太网接口视图/三层以太网接口视图 | L2296
+  link-delay                          | 以太网接口视图          | L2350
+  loopback                            | 以太网接口视图          | L2426
+  port auto-power-down                | 接口视图             | L2486
+  port link-mode                      | 以太网接口视图          | L2532
+  port-mode                           | Ten-GigabitEthernet接口视图 | L2588
+  priority-flow-control               | 系统视图/以太网接口视图     | L2638
+  priority-flow-control no-drop dot1p | 系统视图/以太网接口视图     | L2698
+  reset counters interface            | 用户视图             | L2764
+  reset ethernet statistics           | 用户视图             | L2816
+  reset packet-drop interface         | 用户视图             | L2882
+  shutdown                            | 以太网接口视图/以太网子接口视图 | L2928
+  speed                               | 以太网接口视图          | L2982
+  sub-interface rate-statistic        | 以太网接口视图          | L3050
+  threshold                           | Ten-GigabitEthernet接口视图 | L3100
+  using fortygige                     | 10GE拆分接口视图/100GE接口视图 | L3174
+  using hundredgige                   | 10GE拆分接口视图/40GE切换接口视图 | L3252
+  using tengige                       | 100GE接口视图/40GE接口视图 | L3330
+  using twentygige                    | 40GE接口视图         | L3410
+  broadcast-suppression               | 二层以太网接口视图        | L3470
+  display storm-constrain             | 任意视图             | L3540
+  mac-address                         | 以太网接口视图          | L3682
+  mdix-mode                           | 二层以太网接口视图        | L3730
+  multicast-suppression               | 二层以太网接口视图        | L3782
+  port connection-mode                | 10GE接口视图         | L3852
+  port up-mode                        | 以太网接口视图          | L3904
+  port-type                           | 二层以太网接口视图/FC接口视图 | L3962
+  speed auto                          | 百兆或者千兆二层以太网接口视图  | L4024
+  storm-constrain                     | 二层以太网接口视图        | L4092
+  storm-constrain control             | 二层以太网接口视图        | L4186
+  storm-constrain enable log          | 二层以太网接口视图        | L4242
+  storm-constrain enable trap         | 二层以太网接口视图        | L4286
+  storm-constrain interval            | 系统视图             | L4330
+  unicast-suppression                 | 二层以太网接口视图        | L4386
+  virtual-cable-test                  | 二层以太网接口视图        | L4456
+  mac-address                         | 以太网接口视图          | L4572
+  mtu                                 | 三层以太网接口视图/三层以太网子接口视图 | L4626
+  port-type switch                    | POS接口视图/三层GE接口视图 | L4680
+-->
 
 **以太网接口 \-- 以太网接口通用配置命令 \-- alarm-detect**
 

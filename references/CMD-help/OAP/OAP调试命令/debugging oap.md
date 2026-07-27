@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging oap                       | 用户视图             | L5
+-->
 
 **OAP \-- OAP调试命令 \-- debugging oap**
 

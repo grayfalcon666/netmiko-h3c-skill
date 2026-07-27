@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging voice svc                 | 用户视图             | L5
+-->
 
 **语音业务 \-- 语音业务调试命令 \-- debugging voice svc**
 

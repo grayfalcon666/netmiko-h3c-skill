@@ -1,3 +1,12 @@
+<!-- CMD-INDEX
+  debugging rip                       | 用户视图             | L11
+  debugging rip brief                 | 用户视图             | L47
+  debugging rip event                 | 用户视图             | L135
+  debugging rip packet                | 用户视图             | L273
+  debugging rip receive               | 用户视图             | L767
+  debugging rip send                  | 用户视图             | L1161
+  debugging rip timer                 | 用户视图             | L1391
+-->
 
 **RIP \-- RIP调试命令 \-- debugging rip**
 

@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging wips                      | 用户视图             | L5
+-->
 
 **WIPS \-- WIPS调试命令 \-- debugging wips**
 

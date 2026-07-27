@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging aspf                      | 用户视图             | L5
+-->
 
 **ASPF \-- ASPF调试命令 \-- debugging aspf**
 

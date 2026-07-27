@@ -1,3 +1,20 @@
+<!-- CMD-INDEX
+  debugging bgp                       | 用户视图             | L19
+  debugging bgp acl                   | 用户视图             | L373
+  debugging bgp all                   | 用户视图             | L447
+  debugging bgp calc                  | 用户视图             | L705
+  debugging bgp event                 | 用户视图             | L819
+  debugging bgp graceful-restart      | 用户视图             | L941
+  debugging bgp ha                    | 用户视图             | L1149
+  debugging bgp ipc                   | 用户视图             | L1403
+  debugging bgp non-stop-routing      | 用户视图             | L1585
+  debugging bgp prefix-list           | 用户视图             | L1823
+  debugging bgp rely                  | 用户视图             | L1887
+  debugging bgp timer                 | 用户视图             | L1963
+  debugging bgp update                | 用户视图             | L2043
+  debugging bgp update-group          | 用户视图             | L2233
+  debugging bgp urt                   | 用户视图             | L2375
+-->
 
 **BGP \-- BGP调试命令 \-- debugging bgp**
 

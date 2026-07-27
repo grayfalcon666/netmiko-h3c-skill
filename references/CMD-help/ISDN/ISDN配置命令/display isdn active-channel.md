@@ -1,3 +1,43 @@
+<!-- CMD-INDEX
+  display isdn active-channel         | 任意视图             | L42
+  display isdn call-info              | 任意视图             | L176
+  display isdn call-record            | 任意视图             | L372
+  display isdn parameters             | 任意视图             | L456
+  display isdn spid                   | 任意视图             | L610
+  isdn bch-local-manage               | ISDN接口视图         | L774
+  isdn bch-select-way                 | ISDN接口视图         | L828
+  isdn bri-slipwnd-size               | ISDN接口视图         | L882
+  isdn caller-number                  | ISDN接口视图         | L934
+  isdn calling                        | ISDN接口视图         | L984
+  isdn carry calling-name             | ISDN接口视图         | L1042
+  isdn carry connected-name           | ISDN接口视图         | L1090
+  isdn check-called-number            | ISDN接口视图         | L1138
+  isdn crlength                       | ISDN接口视图         | L1190
+  isdn ignore connect-ack             |                  | L1240
+  isdn ignore hlc                     | ISDN接口视图         | L1310
+  isdn ignore llc                     | ISDN接口视图         | L1354
+  isdn ignore sending-complete        | ISDN接口视图         | L1398
+  isdn l3-timer                       | ISDN接口视图         | L1468
+  isdn link-mode p2p                  | ISDN BRI接口视图     | L1614
+  isdn number-property                | ISDN接口视图         | L1668
+  isdn overlap-sending                | ISDN接口视图         | L2644
+  isdn pri-slipwnd-size               | ISDN接口视图         | L2696
+  isdn progress-indicator             | ISDN接口视图         | L2756
+  isdn progress-to-alerting enable    | ISDN接口视图         | L2832
+  isdn protocol-mode                  | ISDN接口视图         | L2876
+  isdn protocol-type                  | ISDN接口视图         | L2934
+  isdn q921-permanent                 | ISDN BRI接口视图     | L3012
+  isdn spid auto-trigger              | ISDN BRI接口视图     | L3062
+  isdn spid nit                       | ISDN BRI接口视图     | L3110
+  isdn spid resend                    | ISDN BRI接口视图     | L3164
+  isdn spid service                   | ISDN BRI接口视图     | L3220
+  isdn spid timer                     | ISDN BRI接口视图     | L3280
+  isdn spid1                          | ISDN BRI接口视图     | L3336
+  isdn spid2                          | ISDN BRI接口视图     | L3404
+  isdn two-tei                        | ISDN BRI接口视图     | L3472
+  permanent-active                    | ISDN BRI接口视图     | L3526
+  power-source                        | ISDN BRI接口视图     | L3580
+-->
 
 **ISDN \-- ISDN配置命令 \-- display isdn active-channel**
 

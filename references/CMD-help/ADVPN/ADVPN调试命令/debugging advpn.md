@@ -1,3 +1,8 @@
+<!-- CMD-INDEX
+  debugging advpn                     | 用户视图             | L7
+  debugging vam client                | 用户视图             | L641
+  debugging vam server                | 用户视图             | L1591
+-->
 
 **ADVPN \-- ADVPN调试命令 \-- debugging advpn**
 

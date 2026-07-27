@@ -1,3 +1,20 @@
+<!-- CMD-INDEX
+  debugging rib all                   | 用户视图             | L19
+  debugging rib ftn                   | 用户视图             | L55
+  debugging rib nib                   | 用户视图             | L183
+  debugging rib rcom                  | 用户视图             | L447
+  debugging rib signal                | 用户视图             | L619
+  debugging rib urt                   | 用户视图             | L691
+  debugging route-direct nib          | 用户视图             | L861
+  debugging route-direct process      | 用户视图             | L1001
+  debugging ipv6 rib all              | 用户视图             | L1253
+  debugging ipv6 rib nib              | 用户视图             | L1289
+  debugging ipv6 rib rcom             | 用户视图             | L1465
+  debugging ipv6 rib signal           | 用户视图             | L1523
+  debugging ipv6 rib urt              | 用户视图             | L1569
+  debugging ipv6 route-direct nib     | 用户视图             | L1667
+  debugging ipv6 route-direct process | 用户视图             | L1809
+-->
 
 **IP路由基础调试命令 \-- IPv4路由基础调试命令 \-- debugging rib all**
 

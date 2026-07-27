@@ -1,3 +1,49 @@
+<!-- CMD-INDEX
+  backoff                             | LDP视图/LDP-VPN实例视图 | L48
+  display mpls ldp discovery          | 任意视图             | L100
+  display mpls ldp fec                | 任意视图             | L408
+  display mpls ldp interface          | 任意视图             | L724
+  display mpls ldp lsp                | 任意视图             | L820
+  display mpls ldp parameter          | 任意视图             | L970
+  display mpls ldp peer               | 任意视图             | L1122
+  display mpls ldp summary            | 任意视图             | L1488
+  dscp                                | LDP视图            | L1646
+  graceful-restart                    | LDP视图            | L1696
+  graceful-restart timer              | LDP视图            | L1746
+  label-distribution                  | LDP视图/LDP-VPN实例视图 | L1808
+  loop-detect                         | LDP视图/LDP-VPN实例视图 | L1862
+  lsr-id                              | LDP视图/LDP-VPN实例视图 | L1920
+  maxhops                             | LDP视图/LDP-VPN实例视图 | L1980
+  md5-authentication                  | LDP视图/LDP-VPN实例视图 | L2038
+  mpls ldp                            | 系统视图             | L2102
+  mpls ldp timer                      | 接口视图/LDP对等体视图    | L2160
+  non-stop-routing                    | LDP视图            | L2272
+  pv-limit                            | LDP视图/LDP-VPN实例视图 | L2344
+  reset mpls ldp                      | 用户视图             | L2404
+  snmp-agent trap enable ldp          | 系统视图             | L2446
+  vpn-instance                        | LDP视图            | L2488
+  accept-label                        | LDP视图/LDP-VPN实例视图 | L2554
+  advertise-label                     | LDP视图/LDP-VPN实例视图 | L2620
+  display mpls ldp igp sync           | 任意视图             | L2700
+  igp sync delay                      | LDP视图            | L2788
+  igp sync delay on-restart           | LDP视图            | L2856
+  import bgp                          | LDP视图/LDP-VPN实例视图 | L2914
+  lsp-trigger                         | LDP视图/LDP-VPN实例视图 | L2964
+  mpls ldp enable                     | 接口视图             | L3032
+  mpls ldp sync (IS-IS view)          | IS-IS视图          | L3116
+  mpls ldp sync (OSPF view/OSPF area view) | OSPF视图/OSPF区域视图  | L3184
+  mpls ldp igp sync disable           | 接口视图             | L3244
+  mpls ldp transport-address          |                  | L3304
+  session protection                  | LDP视图            | L3400
+  targeted-peer                       | LDP视图            | L3458
+  ipv6 accept-label                   | LDP视图/LDP-VPN实例视图 | L3516
+  ipv6 advertise-label                | LDP视图/LDP-VPN实例视图 | L3580
+  ipv6 lsp-trigger                    | LDP视图/LDP-VPN实例视图 | L3660
+  ipv6 import bgp                     | LDP视图/LDP-VPN实例视图 | L3726
+  mpls ldp ipv6 enable                | 接口视图             | L3776
+  mpls ldp transport-address          | 接口视图/LDP对等体视图    | L3858
+  targeted-peer                       | LDP视图            | L3920
+-->
 
 **LDP \-- LDP公共配置命令 \-- backoff**
 

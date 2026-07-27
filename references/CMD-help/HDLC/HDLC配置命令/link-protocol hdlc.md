@@ -1,3 +1,24 @@
+<!-- CMD-INDEX
+  link-protocol hdlc                  | POS接口视图/Serial接口视图 | L23
+  timer-hold                          | POS接口视图/Serial接口视图 | L61
+  timer-hold retry                    | POS接口视图/Serial接口视图 | L121
+  bandwidth                           | HDLC捆绑接口视图       | L175
+  bundle id                           | POS接口视图/Serial接口视图 | L221
+  bundle load-balance                 | HDLC捆绑接口视图       | L271
+  bundle max-active links             | HDLC捆绑接口视图       | L323
+  bundle member-priority              | POS接口视图/Serial接口视图 | L377
+  bundle min-active bandwidth         | HDLC捆绑接口视图       | L419
+  bundle min-active links             | HDLC捆绑接口视图       | L461
+  default                             | HDLC捆绑接口视图       | L511
+  description                         | HDLC捆绑接口视图       | L547
+  display bundle hdlc-bundle          | 任意视图             | L589
+  display interface hdlc-bundle       | 任意视图             | L783
+  interface hdlc-bundle               | 系统视图             | L1039
+  mtu                                 | HDLC捆绑接口视图       | L1081
+  reset counters interface            | 用户视图             | L1129
+  service                             | HDLC捆绑接口视图       | L1173
+  shutdown                            | HDLC捆绑接口视图       | L1243
+-->
 
 **HDLC \-- HDLC配置命令 \-- link-protocol hdlc**
 

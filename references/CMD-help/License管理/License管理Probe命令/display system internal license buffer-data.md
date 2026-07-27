@@ -1,3 +1,13 @@
+<!-- CMD-INDEX
+  display system internal license buffer-data | Probe视图          | L12
+  display system internal license feature-set | Probe视图          | L50
+  display system internal license fifo | Probe视图          | L90
+  display system internal license lipc | Probe视图          | L128
+  display system internal license lipc hash | Probe视图          | L166
+  display system internal license lmi-paa | Probe视图          | L204
+  license check-timer                 | Probe视图          | L242
+  license file-timer                  | Probe视图          | L294
+-->
 
 **License管理 \-- License管理Probe命令 \-- display system internal license buffer-data**
 

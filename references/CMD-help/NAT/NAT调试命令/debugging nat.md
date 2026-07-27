@@ -1,3 +1,8 @@
+<!-- CMD-INDEX
+  debugging nat                       | 用户视图             | L7
+  debugging nat alg                   | 用户视图             | L147
+  debugging nat config                | 用户视图             | L291
+-->
 
 **NAT \-- NAT调试命令 \-- debugging nat**
 

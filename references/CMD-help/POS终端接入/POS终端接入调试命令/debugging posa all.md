@@ -1,3 +1,10 @@
+<!-- CMD-INDEX
+  debugging posa all                  | 用户视图             | L9
+  debugging posa event                | 用户视图             | L57
+  debugging posa timer                | 用户视图             | L531
+  debugging posa error                | 用户视图             | L633
+  debugging posa packet               | 用户视图             | L917
+-->
 
 **POS终端接入 \-- POS终端接入调试命令 \-- debugging posa all**
 

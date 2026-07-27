@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging cfd                       | ]                | L5
+-->
 
 **CFD \-- CFD调试命令 \-- debugging cfd**
 

@@ -1,3 +1,36 @@
+<!-- CMD-INDEX
+  arp suppression enable              | VSI视图            | L35
+  bandwidth                           | VSI虚接口视图         | L87
+  default                             | VSI虚接口视图         | L141
+  description (VSI view)              | VSI视图            | L179
+  description (VSI interface view)    | VSI虚接口视图         | L225
+  display arp suppression vsi         | 任意视图             | L273
+  display interface vsi-interface     | 任意视图             | L439
+  display l2vpn mac-address           | 任意视图             | L709
+  display l2vpn service-instance      | 任意视图             | L803
+  display l2vpn vsi                   | 任意视图             | L967
+  display nvgre tunnel                | 任意视图             | L1269
+  encapsulation                       | 以太网服务实例视图        | L1359
+  flooding disable                    | VSI视图            | L1453
+  gateway vsi-interface               | VSI视图            | L1495
+  interface vsi-interface             | 系统视图             | L1547
+  l2vpn enable                        | 系统视图             | L1593
+  mac-address static                  | 系统视图             | L1633
+  mtu                                 | VSI虚接口视图         | L1681
+  nvgre                               | VSI视图            | L1723
+  reset arp suppression vsi           | 用户视图             | L1775
+  reset counters interface vsi-interface | 用户视图             | L1817
+  reset l2vpn mac-address             | 用户视图             | L1861
+  reset l2vpn statistics vsi          | 用户视图             | L1905
+  selective-flooding mac-address      | VSI视图            | L1943
+  service-instance                    | 二层以太网接口视图/二层聚合接口视图 | L1993
+  shutdown (VSI view)                 | VSI视图            | L2041
+  shutdown (VSI interface view)       | VSI虚接口视图         | L2089
+  statistics enable                   | VSI视图            | L2127
+  tunnel                              | NVGRE网络视图        | L2173
+  vsi                                 | 系统视图             | L2233
+  xconnect vsi                        | 接口视图/以太网服务实例视图   | L2283
+-->
 
 **NVGRE \-- NVGRE配置命令 \-- arp suppression enable**
 

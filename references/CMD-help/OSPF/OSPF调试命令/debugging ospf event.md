@@ -1,3 +1,13 @@
+<!-- CMD-INDEX
+  debugging ospf event                | 用户视图             | L12
+  debugging ospf lsa                  | 用户视图             | L532
+  debugging ospf non-stop-routing     | 用户视图             | L860
+  debugging ospf packet               | 用户视图             | L934
+  debugging ospf policy               | 用户视图             | L1344
+  debugging ospf redistribute         | 用户视图             | L1652
+  debugging ospf spf                  | 用户视图             | L2008
+  debugging ospf timer                | 用户视图             | L3244
+-->
 
 **OSPF \-- OSPF调试命令 \-- debugging ospf event**
 

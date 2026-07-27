@@ -1,3 +1,43 @@
+<!-- CMD-INDEX
+  cfd ais enable                      | 系统视图             | L42
+  cfd ais level                       | 系统视图             | L84
+  cfd ais period                      | 系统视图             | L136
+  cfd ais-track link-status global    | 系统视图             | L184
+  cfd ais-track link-status level     | 二层以太网接口视图/二层聚合接口视图 | L232
+  cfd ais-track link-status period    | 二层以太网接口视图/二层聚合接口视图 | L292
+  cfd ais-track link-status vlan      | 二层以太网接口视图/二层聚合接口视图 | L352
+  cfd cc enable                       | 二层以太网接口视图/三层以太网接口视图/二层聚合接口视图 | L414
+  cfd cc interval                     | 系统视图             | L466
+  cfd dm one-way                      | 任意视图             | L570
+  cfd dm two-way                      | 任意视图             | L634
+  cfd enable                          | 系统视图             | L726
+  cfd hardware-cc                     | 二层以太网接口视图        | L762
+  cfd linktrace                       | 任意视图             | L810
+  cfd linktrace auto-detection        | 系统视图             | L894
+  cfd loopback                        | 任意视图             | L948
+  cfd md                              | 系统视图             | L1042
+  cfd mep                             | 二层以太网接口视图/三层以太网接口视图/二层聚合接口视图 | L1108
+  cfd meplist                         | 系统视图             | L1182
+  cfd mip-rule                        | 系统视图             | L1240
+  cfd service-instance                | 系统视图             | L1284
+  cfd slm                             | 任意视图             | L1360
+  cfd tst                             | 任意视图             | L1464
+  display cfd ais                     | 任意视图             | L1532
+  display cfd ais-track link-status   | 任意视图             | L1678
+  display cfd dm one-way history      | 任意视图             | L1784
+  display cfd linktrace-reply         | 任意视图             | L1930
+  display cfd linktrace-reply auto-detection | 任意视图             | L2026
+  display cfd md                      | 任意视图             | L2136
+  display cfd mep                     | 任意视图             | L2238
+  display cfd meplist                 | 任意视图             | L2496
+  display cfd mp                      | 任意视图             | L2548
+  display cfd remote-mep              | 任意视图             | L2668
+  display cfd service-instance        | 任意视图             | L2760
+  display cfd status                  | 任意视图             | L2882
+  display cfd tst                     | 任意视图             | L2938
+  reset cfd dm one-way history        | 用户视图             | L3054
+  reset cfd tst                       | 用户视图             | L3096
+-->
 
 **CFD \-- CFD配置命令 \-- cfd ais enable**
 

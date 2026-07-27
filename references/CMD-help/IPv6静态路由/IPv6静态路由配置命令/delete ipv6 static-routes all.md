@@ -1,3 +1,10 @@
+<!-- CMD-INDEX
+  delete ipv6 static-routes all       | 系统视图             | L9
+  display ipv6 route-static nib       | 任意视图             | L55
+  display ipv6 route-static routing-table | 任意视图             | L307
+  ipv6 route-static                   | 系统视图             | L541
+  ipv6 route-static default-preference | 系统视图             | L639
+-->
 
 **IPv6静态路由 \-- IPv6静态路由配置命令 \-- delete ipv6 static-routes all**
 

@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  debugging mfib                      | 用户视图             | L6
+  debugging mrib                      | 用户视图             | L332
+-->
 
 **组播路由与转发 \-- 组播路由与转发调试命令 \-- debugging mfib**
 

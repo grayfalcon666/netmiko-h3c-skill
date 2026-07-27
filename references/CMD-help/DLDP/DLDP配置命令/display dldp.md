@@ -1,3 +1,15 @@
+<!-- CMD-INDEX
+  display dldp                        | 任意视图             | L14
+  display dldp statistics             | 任意视图             | L196
+  dldp authentication-mode            | 系统视图             | L296
+  dldp authentication-password        | 系统视图             | L364
+  dldp delaydown-timer                | 系统视图             | L432
+  dldp enable                         | 二层以太网接口视图/三层以太网接口视图 | L480
+  dldp global enable                  | 系统视图             | L530
+  dldp interval                       | 系统视图             | L576
+  dldp unidirectional-shutdown        | 系统视图             | L626
+  reset dldp statistics               | 用户视图             | L672
+-->
 
 **DLDP \-- DLDP配置命令 \-- display dldp**
 

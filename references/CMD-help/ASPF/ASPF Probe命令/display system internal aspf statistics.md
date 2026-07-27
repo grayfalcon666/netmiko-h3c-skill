@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  display system internal aspf statistics | Probe视图          | L6
+  reset system internal aspf statistics | Probe视图          | L58
+-->
 
 **ASPF \-- ASPF Probe命令 \-- display system internal aspf statistics**
 

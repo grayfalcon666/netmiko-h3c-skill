@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging service-loopback          | 用户视图             | L5
+-->
 
 **业务环回组 \-- 业务环回组调试命令 \-- debugging service-loopback**
 

@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging event-mib                 | 用户视图             | L5
+-->
 
 **Event MIB \-- Event MIB调试命令 \-- debugging event-mib**
 

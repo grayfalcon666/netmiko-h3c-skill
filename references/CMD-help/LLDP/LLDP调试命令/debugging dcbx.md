@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  debugging dcbx                      | 用户视图             | L6
+  debugging lldp                      | 用户视图             | L368
+-->
 
 **LLDP \-- LLDP调试命令 \-- debugging dcbx**
 

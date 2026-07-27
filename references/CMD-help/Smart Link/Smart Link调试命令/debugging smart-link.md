@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging smart-link                | 用户视图             | L5
+-->
 
 **Smart Link \-- Smart Link调试命令 \-- debugging smart-link**
 

@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  debugging ntp-service               | 用户视图             | L6
+  debugging sntp                      | 用户视图             | L568
+-->
 
 **NTP \-- NTP调试命令 \-- debugging ntp-service**
 

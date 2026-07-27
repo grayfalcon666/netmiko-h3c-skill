@@ -1,3 +1,9 @@
+<!-- CMD-INDEX
+  debugging dhcp client               | 用户视图             | L8
+  debugging dhcp relay                | 用户视图             | L638
+  debugging dhcp server               | 用户视图             | L1108
+  debugging dhcp snooping             | 用户视图             | L1634
+-->
 
 **DHCP \-- DHCP调试命令 \-- debugging dhcp client**
 

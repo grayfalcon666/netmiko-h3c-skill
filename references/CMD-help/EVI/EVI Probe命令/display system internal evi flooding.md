@@ -1,3 +1,12 @@
+<!-- CMD-INDEX
+  display system internal evi flooding | Probe视图          | L11
+  display system internal evi selective-flooding | Probe视图          | L57
+  display system internal evi statistics | Probe视图          | L103
+  display system internal evi vlan-mapping | Probe视图          | L141
+  display system internal evi vlan-status | Probe视图          | L189
+  display system internal eviisis status | Probe视图          | L233
+  display system internal evi-link data | Probe视图          | L253
+-->
 
 **EVI \-- EVI Probe命令 \-- display system internal evi flooding**
 

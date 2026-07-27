@@ -1,3 +1,8 @@
+<!-- CMD-INDEX
+  dispaly fips status                 | 任意视图             | L7
+  fips mode enable                    | 系统视图             | L43
+  fips self-test                      | 系统视图             | L165
+-->
 
 **FIPS \-- FIPS配置命令 \-- dispaly fips status**
 

@@ -1,3 +1,66 @@
+<!-- CMD-INDEX
+  bandwidth                           | VLAN接口视图         | L65
+  default                             | VLAN接口视图         | L121
+  description                         | VLAN视图/VLAN接口视图  | L155
+  display interface vlan-interface    | 任意视图             | L219
+  display vlan                        | 任意视图             | L453
+  interface vlan-interface            | 系统视图             | L589
+  mac-address                         | VLAN接口视图         | L645
+  mtu                                 | VLAN接口视图         | L693
+  name                                | VLAN视图           | L743
+  reset counters interface vlan-interface | 用户视图             | L793
+  shutdown                            | VLAN接口视图         | L835
+  vlan                                | 系统视图             | L887
+  display port                        | 任意视图             | L955
+  port                                | VLAN视图           | L1037
+  port access vlan                    | 二层以太网接口视图/二层聚合接口视图/S通道接口视图/S通道聚合接口视图/二层RPR逻辑接口视图 | L1089
+  port hybrid pvid                    | 二层以太网接口视图/二层聚合接口视图/S通道接口视图/S通道聚合接口视图/二层RPR逻辑接口视图 | L1139
+  port hybrid vlan                    | 二层以太网接口视图/二层聚合接口视图/S通道接口视图/S通道聚合接口视图/二层RPR逻辑接口视图 | L1203
+  port link-type                      | 二层以太网接口视图/二层聚合接口视图/S通道接口视图/S通道聚合接口视图/二层RPR逻辑接口视图 | L1259
+  port trunk permit vlan              | 二层以太网接口视图/二层聚合接口视图/S通道接口视图/S通道聚合接口视图/二层RPR逻辑接口视图 | L1309
+  port trunk pvid                     | 二层以太网接口视图/二层聚合接口视图/S通道接口视图/S通道聚合接口视图/二层RPR逻辑接口视图 | L1365
+  display mac-vlan                    | 任意视图             | L1425
+  display mac-vlan interface          | 任意视图             | L1529
+  mac-vlan enable                     | 二层以太网接口视图/S通道接口视图/S通道聚合接口视图/二层RPR逻辑接口视图 | L1567
+  mac-vlan mac-address                | 系统视图             | L1609
+  mac-vlan trigger enable             | 二层以太网接口视图/S通道接口视图/S通道聚合接口视图/二层RPR逻辑接口视图 | L1671
+  port pvid forbidden                 | 二层以太网接口视图/S通道接口视图/S通道聚合接口视图/二层RPR逻辑接口视图 | L1719
+  vlan precedence                     | 二层以太网接口视图/S通道接口视图/S通道聚合接口视图/二层RPR逻辑接口视图 | L1765
+  display ip-subnet-vlan interface    | 任意视图             | L1819
+  display ip-subnet-vlan vlan         | ]                | L1905
+  ip-subnet-vlan                      | VLAN视图           | L1979
+  port hybrid ip-subnet-vlan          | 二层以太网接口视图/二层聚合接口视图 | L2039
+  display protocol-vlan interface     | 任意视图             | L2123
+  display protocol-vlan vlan          | ]                | L2205
+  port hybrid protocol-vlan           | 二层以太网接口视图/二层聚合接口视图 | L2285
+  protocol-vlan                       | VLAN视图           | L2371
+  display vlan-group                  | 任意视图             | L2461
+  vlan-group                          | 系统视图             | L2531
+  vlan-list                           | VLAN组视图          | L2585
+  display supervlan                   | 任意视图             | L2633
+  subvlan                             | VLAN视图           | L2833
+  supervlan                           | VLAN视图           | L2893
+  display private-vlan                | 任意视图             | L2947
+  port private-vlan host              | 二层以太网接口视图/二层聚合接口视图 | L3143
+  port private-vlan promiscuous       | 二层以太网接口视图/二层聚合接口视图 | L3253
+  port private-vlan trunk promiscuous | 二层以太网接口视图/二层聚合接口视图 | L3391
+  port private-vlan trunk secondary   | 二层以太网接口视图/二层聚合接口视图 | L3527
+  private-vlan （VLAN interface view）  | VLAN接口视图         | L3735
+  private-vlan （VLAN view）            | VLAN视图           | L3837
+  private-vlan community              | VLAN视图           | L3903
+  private-vlan isolated               | VLAN视图           | L3987
+  private-vlan primary                | VLAN视图           | L4087
+  display voice-vlan mac-address      | 任意视图             | L4143
+  display voice-vlan state            | 任意视图             | L4213
+  voice-vlan aging                    | 系统视图             | L4319
+  voice-vlan enable                   | 二层以太网接口视图/S通道接口视图/S通道聚合接口视图/二层RPR逻辑接口视图 | L4369
+  voice-vlan mac-address              |                  | L4423
+  voice-vlan mode auto                | 二层以太网接口视图/S通道接口视图/S通道聚合接口视图/二层RPR逻辑接口视图 | L4533
+  voice-vlan qos                      | 二层以太网接口视图/S通道接口视图/S通道聚合接口视图/二层RPR逻辑接口视图 | L4579
+  voice-vlan qos trust                | 二层以太网接口视图/S通道接口视图/S通道聚合接口视图/二层RPR逻辑接口视图 | L4637
+  voice-vlan security enable          | 系统视图             | L4689
+  voice-vlan track lldp               | 系统视图             | L4733
+-->
 
 **VLAN \-- VLAN配置命令 \-- bandwidth**
 

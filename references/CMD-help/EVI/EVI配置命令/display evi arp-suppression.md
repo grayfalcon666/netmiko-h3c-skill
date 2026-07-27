@@ -1,3 +1,57 @@
+<!-- CMD-INDEX
+  display evi arp-suppression         | 任意视图             | L56
+  display evi isis brief              | 任意视图             | L176
+  display evi isis graceful-restart status | 任意视图             | L268
+  display evi isis local-mac          | 任意视图             | L408
+  display evi isis lsdb               | 任意视图             | L608
+  display evi isis peer               | 任意视图             | L800
+  display evi isis remote-mac         | 任意视图             | L942
+  display evi isis tunnel             | 任意视图             | L1050
+  display evi link                    | 任意视图             | L1164
+  display evi mac-address             | 任意视图             | L1226
+  display evi neighbor-discovery client member | 任意视图             | L1328
+  display evi neighbor-discovery client statistics | 任意视图             | L1524
+  display evi neighbor-discovery client summary | 任意视图             | L1632
+  display evi neighbor-discovery server member | 任意视图             | L1746
+  display evi neighbor-discovery server statistics | 任意视图             | L1898
+  display evi neighbor-discovery server summary | 任意视图             | L1978
+  display evi vlan-mapping            | 任意视图             | L2072
+  display interface evi-link          | 任意视图             | L2152
+  evi arp-suppression enable          | Tunnel接口视图       | L2372
+  evi designated-vlan                 | 系统视图             | L2426
+  evi enable                          | 二层以太网接口视图/三层以太网接口视图 | L2472
+  evi extend-vlan                     | Tunnel接口视图       | L2520
+  evi flooding enable                 | Tunnel接口视图       | L2562
+  evi isis ded-priority               | Tunnel接口视图       | L2622
+  evi isis preferred-vlan             | Tunnel接口视图       | L2678
+  evi isis timer csnp                 | Tunnel接口视图       | L2734
+  evi isis timer hello                | Tunnel接口视图       | L2784
+  evi isis timer holding-multiplier   | Tunnel接口视图       | L2836
+  evi isis timer lsp                  | Tunnel接口视图       | L2892
+  evi isis track                      | Tunnel接口视图       | L2944
+  evi neighbor-discovery authentication | Tunnel接口视图       | L2992
+  evi neighbor-discovery client enable | Tunnel接口视图       | L3062
+  evi neighbor-discovery client register-interval | Tunnel接口视图       | L3122
+  evi neighbor-discovery server enable | Tunnel接口视图       | L3190
+  evi network-id                      | Tunnel接口视图       | L3246
+  evi selective-flooding mac-address  | Tunnel接口视图       | L3298
+  evi site-id                         | 系统视图             | L3352
+  evi vlan-mapping                    | Tunnel接口视图       | L3404
+  evi-isis                            | 系统视图             | L3462
+  filter-policy                       | EVI IS-IS视图      | L3530
+  graceful-restart                    | EVI IS-IS视图      | L3584
+  graceful-restart interval           | EVI IS-IS视图      | L3626
+  gre key vlan-id                     | Tunnel接口视图       | L3672
+  keepalive                           | Tunnel接口视图       | L3722
+  log-peer-change enable              | EVI IS-IS视图      | L3774
+  reset evi arp-suppression           | 用户视图             | L3816
+  reset evi isis all                  | 用户视图             | L3856
+  snmp context-name                   | EVI IS-IS视图      | L3886
+  snmp-agent trap enable evi-isis     | 系统视图             | L3938
+  timer lsp-max-age                   | EVI IS-IS视图      | L4014
+  timer lsp-refresh                   | EVI IS-IS视图      | L4064
+  virtual-system                      | EVI IS-IS视图      | L4116
+-->
 
 **EVI \-- EVI配置命令 \-- display evi arp-suppression**
 

@@ -1,3 +1,9 @@
+<!-- CMD-INDEX
+  display system internal isis interface ipv6 | Probe视图          | L8
+  display system internal isis import-route ipv6 | Probe视图          | L38
+  display system internal isis nib ipv6 | Probe视图          | L80
+  display system internal isis prefix ipv6 | Probe视图          | L106
+-->
 
 **IPv6 IS-IS \-- IPv6 IS-IS probe命令 \-- display system internal isis interface ipv6**
 

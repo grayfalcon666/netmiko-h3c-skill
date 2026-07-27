@@ -1,3 +1,35 @@
+<!-- CMD-INDEX
+  display exception context           | 任意视图             | L34
+  display exception filepath          | 任意视图             | L464
+  display kernel deadloop             | 任意视图             | L530
+  display kernel deadloop configuration | 任意视图             | L858
+  display kernel exception            | 任意视图             | L946
+  display kernel reboot               | 任意视图             | L1206
+  display kernel starvation           | 任意视图             | L1468
+  display kernel starvation configuration | 任意视图             | L1724
+  display process                     | 任意视图             | L1816
+  display process cpu                 | 任意视图             | L2116
+  display process log                 | 任意视图             | L2246
+  display process memory              | 任意视图             | L2358
+  display process memory heap         | 任意视图             | L2484
+  display process memory heap address | 任意视图             | L2632
+  display process memory heap size    | 任意视图             | L2718
+  exception filepath                  | 用户视图             | L2814
+  monitor kernel deadloop enable      |                  | L2866
+  monitor kernel deadloop exclude-thread |                  | L2942
+  monitor kernel deadloop time        |                  | L3018
+  monitor kernel starvation enable    |                  | L3094
+  monitor kernel starvation exclude-thread |                  | L3172
+  monitor kernel starvation time      |                  | L3248
+  monitor process                     | 任意视图             | L3322
+  monitor thread                      | 任意视图             | L3792
+  process core                        | 用户视图             | L4108
+  reset exception context             | 用户视图             | L4186
+  reset kernel deadloop               | 用户视图             | L4236
+  reset kernel exception              | 用户视图             | L4284
+  reset kernel reboot                 | 用户视图             | L4332
+  reset kernel starvation             | 用户视图             | L4380
+-->
 
 **进程监控和维护 \-- 进程监控和维护命令 \-- display exception context**
 

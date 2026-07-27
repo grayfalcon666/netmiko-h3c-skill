@@ -1,3 +1,9 @@
+<!-- CMD-INDEX
+  display mpls static-lsp             | 任意视图             | L8
+  static-lsp egress                   | 系统视图             | L96
+  static-lsp ingress                  | 系统视图             | L146
+  static-lsp transit                  | 系统视图             | L208
+-->
 
 **静态LSP \-- 静态LSP配置命令 \-- display mpls static-lsp**
 

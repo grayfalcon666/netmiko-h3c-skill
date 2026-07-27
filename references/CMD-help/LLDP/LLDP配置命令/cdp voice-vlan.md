@@ -1,3 +1,33 @@
+<!-- CMD-INDEX
+  cdp voice-vlan                      | 二层以太网接口视图        | L32
+  dcbx version                        | 二层以太网接口视图        | L80
+  display lldp local-information      | 任意视图             | L144
+  display lldp neighbor-information   | 任意视图             | L1016
+  display lldp statistics             | ]                | L2542
+  display lldp status                 | 任意视图             | L2796
+  display lldp tlv-config             | 任意视图             | L3044
+  lldp admin-status                   | 二层以太网接口视图/二层聚合接口视图/三层以太网接口视图/三层聚合接口视图/管理以太网接口视图 | L3408
+  lldp check-change-interval          | 二层以太网接口视图/二层聚合接口视图/三层以太网接口视图/三层聚合接口视图/管理以太网接口视图 | L3474
+  lldp compliance admin-status cdp    | 二层以太网接口视图/三层以太网接口视图/管理以太网接口视图 | L3534
+  lldp compliance cdp                 | 系统视图             | L3596
+  lldp enable                         | 二层以太网接口视图/二层聚合接口视图/三层以太网接口视图/三层聚合接口视图/管理以太网接口视图 | L3646
+  lldp encapsulation snap             | 二层以太网接口视图/二层聚合接口视图/三层以太网接口视图/三层聚合接口视图/管理以太网接口视图 | L3696
+  lldp fast-count                     | 系统视图             | L3760
+  lldp global enable                  | 系统视图             | L3800
+  lldp hold-multiplier                | 系统视图             | L3844
+  lldp management-address             | 三层以太网接口视图        | L3892
+  lldp management-address-format string | 二层以太网接口视图/二层聚合接口视图/三层以太网接口视图/三层聚合接口视图/管理以太网接口视图 | L3946
+  lldp max-credit                     | 系统视图             | L4008
+  lldp mode                           | 系统视图             | L4048
+  lldp notification med-topology-change enable | 二层以太网接口视图/三层以太网接口视图/管理以太网接口视图 | L4104
+  lldp notification remote-change enable | 二层以太网接口视图/二层聚合接口视图/三层以太网接口视图/三层聚合接口视图/管理以太网接口视图 | L4146
+  lldp source-mac vlan                | 三层以太网接口视图        | L4204
+  lldp timer fast-interval            | 系统视图             | L4250
+  lldp timer notification-interval    | 系统视图             | L4290
+  lldp timer reinit-delay             | 系统视图             | L4330
+  lldp timer tx-interval              | 系统视图             | L4370
+  lldp tlv-enable                     |                  | L4410
+-->
 
 **LLDP \-- LLDP配置命令 \-- cdp voice-vlan**
 

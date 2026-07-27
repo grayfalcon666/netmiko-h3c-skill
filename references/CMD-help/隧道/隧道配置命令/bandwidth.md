@@ -1,3 +1,25 @@
+<!-- CMD-INDEX
+  bandwidth                           | Tunnel接口视图       | L24
+  default                             | Tunnel接口视图       | L70
+  description                         | Tunnel接口视图       | L106
+  destination                         | Tunnel接口视图       | L158
+  display ds-lite b4 information      | 任意视图             | L254
+  display interface tunnel            | 任意视图             | L376
+  ds-lite enable                      | 接口视图             | L756
+  encapsulation-limit                 | Tunnel接口视图       | L812
+  interface tunnel                    | 系统视图             | L868
+  mtu                                 | Tunnel接口视图       | L966
+  reset counters interface            | 用户视图             | L1018
+  service                             |                  | L1062
+  shutdown                            | Tunnel接口视图       | L1162
+  source                              | Tunnel接口视图       | L1208
+  tunnel dfbit enable                 | Tunnel接口视图       | L1304
+  tunnel discard ipv4-compatible-packet | 系统视图             | L1348
+  tunnel ipv6-fragmentation-check enable | 系统视图             | L1390
+  tunnel tos                          | Tunnel接口视图       | L1434
+  tunnel ttl                          | Tunnel接口视图       | L1484
+  tunnel vpn-instance                 | Tunnel接口视图       | L1534
+-->
 
 **隧道 \-- 隧道配置命令 \-- bandwidth**
 

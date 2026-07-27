@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging ipv6 pim                  | 用户视图             | L5
+-->
 
 **IPv6 PIM \-- IPv6 PIM调试命令 \-- debugging ipv6 pim**
 

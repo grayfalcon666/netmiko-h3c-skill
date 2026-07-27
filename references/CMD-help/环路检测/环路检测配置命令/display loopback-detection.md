@@ -1,3 +1,11 @@
+<!-- CMD-INDEX
+  display loopback-detection          | 任意视图             | L10
+  loopback-detection action           | 二层以太网接口视图/二层聚合接口视图/S通道接口视图/S通道聚合接口视图 | L98
+  loopback-detection enable           | 二层以太网接口视图/二层聚合接口视图/S通道接口视图/S通道聚合接口视图 | L162
+  loopback-detection global action    | 系统视图             | L216
+  loopback-detection global enable    | 系统视图             | L266
+  loopback-detection interval-time    | 系统视图             | L318
+-->
 
 **环路检测 \-- 环路检测配置命令 \-- display loopback-detection**
 

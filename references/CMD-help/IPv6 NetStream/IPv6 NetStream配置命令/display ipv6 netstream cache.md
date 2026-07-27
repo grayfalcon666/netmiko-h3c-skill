@@ -1,3 +1,24 @@
+<!-- CMD-INDEX
+  display ipv6 netstream cache        | 任意视图             | L23
+  display ipv6 netstream export       | 任意视图             | L405
+  display ipv6 netstream template     | 任意视图             | L509
+  enable                              | IPv6 NetStream聚合视图 | L891
+  ipv6 netstream                      | 接口视图/系统视图        | L933
+  ipv6 netstream { inbound \| outbound } filter | 接口视图             | L999
+  ipv6 netstream { inbound \| outbound } sampler | 接口视图             | L1047
+  ipv6 netstream aggregation          | 系统视图             | L1099
+  ipv6 netstream aggregation advanced | 系统视图             | L1159
+  ipv6 netstream export host          | 系统视图/IPv6 NetStream聚合视图 | L1213
+  ipv6 netstream export rate          | 系统视图             | L1291
+  ipv6 netstream export source        | 系统视图/IPv6 NetStream聚合视图 | L1331
+  ipv6 netstream export v9-template refresh-rate packet | 系统视图             | L1387
+  ipv6 netstream export v9-template refresh-rate time | 系统视图             | L1437
+  ipv6 netstream export version 9     | 系统视图             | L1487
+  ipv6 netstream max-entry            | 系统视图             | L1537
+  ipv6 netstream timeout active       | 系统视图             | L1603
+  ipv6 netstream timeout inactive     | 系统视图             | L1651
+  reset ipv6 netstream statistics     | 用户视图             | L1699
+-->
 
 **IPv6 NetStream \-- IPv6 NetStream配置命令 \-- display ipv6 netstream cache**
 

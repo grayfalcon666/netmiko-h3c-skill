@@ -1,3 +1,77 @@
+<!-- CMD-INDEX
+  ap-mode                             | SPBM视图           | L76
+  area-authentication send-only       | SPBM视图           | L128
+  area-authentication-mode            | SPBM视图           | L174
+  b-vlan                              | VSI SPB视图        | L240
+  bandwidth-reference                 | SPBM视图           | L290
+  bridge-priority                     | SPBM视图           | L344
+  circuit-cost                        | SPBM视图           | L390
+  control-address                     | SPBM视图           | L446
+  display l2vpn minm connection       | 任意视图             | L496
+  display l2vpn minm forwarding       | 任意视图             | L598
+  display l2vpn vsi                   | 任意视图             | L726
+  display spbm agreement-protocol     | 任意视图             | L940
+  display spbm b-vlan                 | 任意视图             | L1146
+  display spbm bridge                 | 任意视图             | L1242
+  display spbm bvlan-info             | 任意视图             | L1298
+  display spbm bvlan-info statistics  | 任意视图             | L1380
+  display spbm common statistics      | 任意视图             | L1498
+  display spbm ect                    | 任意视图             | L1638
+  display spbm ect-migration          | 任意视图             | L1822
+  display spbm fast-channel statistics | 任意视图             | L1890
+  display spbm graceful-restart event-log | 任意视图             | L2014
+  display spbm graceful-restart status | 任意视图             | L2160
+  display spbm interface              | 任意视图             | L2298
+  display spbm lsdb                   | 任意视图             | L2438
+  display spbm multicast-fdb          | 任意视图             | L2774
+  display spbm multicast-fib          | 任意视图             | L2872
+  display spbm multicast-fib statistics | 任意视图             | L3040
+  display spbm multicast-pw           | 任意视图             | L3244
+  display spbm non-stop-routing event-log | 任意视图             | L3322
+  display spbm non-stop-routing status | 任意视图             | L3468
+  display spbm peer                   | 任意视图             | L3532
+  display spbm summary                | 任意视图             | L4072
+  display spbm unicast-fdb            | 任意视图             | L4206
+  display spbm unicast-fib            | 任意视图             | L4302
+  display spbm unicast-fib statistics | 任意视图             | L4460
+  display spbm unicast-pw             | 任意视图             | L4628
+  display spbm unicast-tree           | 任意视图             | L4706
+  ect                                 | SPBM视图           | L4824
+  flash-flood                         | SPBM视图           | L4884
+  graceful-restart                    | SPBM视图           | L4932
+  graceful-restart suppress-sa        | SPBM视图           | L4978
+  graceful-restart t2                 | SPBM视图           | L5020
+  is-name                             | SPBM视图           | L5070
+  l2vpn enable                        | 系统视图             | L5112
+  log-peer-change                     | SPBM视图           | L5148
+  multicast replicate-mode            | VSI SPB视图        | L5186
+  multicast-bvlan enable              | SPBM视图           | L5232
+  non-stop-routing                    | SPBM视图           | L5292
+  reset spbm bvlan-info statistics    | 用户视图             | L5338
+  reset spbm database                 | 用户视图             | L5400
+  reset spbm graceful-restart event-log | 用户视图             | L5434
+  reset spbm multicast-fib statistics | 用户视图             | L5494
+  reset spbm non-stop-routing event-log | 用户视图             | L5556
+  reset spbm unicast-fib statistics   | 用户视图             | L5616
+  set-overload                        | SPBM视图           | L5678
+  snmp context-name                   | SPBM视图           | L5740
+  snmp-agent trap enable spbm         | 系统视图             | L5790
+  spb i-sid                           | VSI视图            | L5870
+  spbm                                | 系统视图             | L5922
+  spbm authentication send-only       | 二层以太网接口视图/二层聚合接口视图 | L5966
+  spbm authentication-mode            | 二层以太网接口视图/二层聚合接口视图 | L6012
+  spbm cost                           | 二层以太网接口视图/二层聚合接口视图 | L6078
+  spbm enable                         | 二层以太网接口视图/二层聚合接口视图 | L6126
+  spbm timer hello                    | 二层以太网接口视图/二层聚合接口视图 | L6172
+  spbm timer holding-multiplier       | 二层以太网接口视图/二层聚合接口视图 | L6226
+  spbm timer lsp                      | 二层以太网接口视图/二层聚合接口视图 | L6280
+  spsource                            | SPBM视图           | L6330
+  timer lsp-generation                | SPBM视图           | L6376
+  timer lsp-max-age                   | SPBM视图           | L6428
+  timer lsp-refresh                   | SPBM视图           | L6480
+  timer spf                           | SPBM视图           | L6532
+  vsi                                 | 系统视图             | L6584
+-->
 
 **SPBM \-- SPBM配置命令 \-- ap-mode**
 

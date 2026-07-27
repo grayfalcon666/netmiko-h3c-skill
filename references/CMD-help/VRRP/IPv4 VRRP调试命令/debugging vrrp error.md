@@ -1,3 +1,13 @@
+<!-- CMD-INDEX
+  debugging vrrp error                | 用户视图             | L12
+  debugging vrrp event                | 用户视图             | L68
+  debugging vrrp packet               | 用户视图             | L298
+  debugging vrrp fsm                  | 用户视图             | L454
+  debugging vrrp ipv6 error           | 用户视图             | L630
+  debugging vrrp ipv6 event           | 用户视图             | L704
+  debugging vrrp ipv6 packet          | 用户视图             | L944
+  debugging vrrp ipv6 fsm             | 用户视图             | L1100
+-->
 
 **VRRP \-- IPv4 VRRP调试命令 \-- debugging vrrp error**
 

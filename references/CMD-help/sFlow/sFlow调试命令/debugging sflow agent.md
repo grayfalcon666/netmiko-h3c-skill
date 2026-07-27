@@ -1,3 +1,12 @@
+<!-- CMD-INDEX
+  debugging sflow agent               | 用户视图             | L11
+  debugging sflow all                 | 用户视图             | L161
+  debugging sflow collector           | 用户视图             | L191
+  debugging sflow counter-polling     | 用户视图             | L491
+  debugging sflow driver              | 用户视图             | L917
+  debugging sflow flow-sampling       | 用户视图             | L993
+  debugging sflow synchronization     | 用户视图             | L1223
+-->
 
 **sFlow \-- sFlow调试命令 \-- debugging sflow agent**
 

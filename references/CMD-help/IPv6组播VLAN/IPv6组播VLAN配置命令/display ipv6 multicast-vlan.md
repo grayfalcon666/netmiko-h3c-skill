@@ -1,3 +1,14 @@
+<!-- CMD-INDEX
+  display ipv6 multicast-vlan         | 任意视图             | L13
+  display ipv6 multicast-vlan group   | 任意视图             | L91
+  display ipv6 multicast-vlan forwarding-table | 任意视图             | L243
+  ipv6 multicast-vlan                 | 系统视图             | L371
+  ipv6 multicast-vlan entry-limit     | 系统视图             | L441
+  ipv6 port multicast-vlan            | 以太网接口视图/二层聚合接口视图 | L489
+  port (IPv6 multicast-VLAN view)     | IPv6组播VLAN视图     | L539
+  reset ipv6 multicast-vlan group     | 用户视图             | L593
+  subvlan (IPv6 multicast-VLAN view)  | IPv6组播VLAN视图     | L635
+-->
 
 **IPv6组播VLAN \-- IPv6组播VLAN配置命令 \-- display ipv6 multicast-vlan**
 

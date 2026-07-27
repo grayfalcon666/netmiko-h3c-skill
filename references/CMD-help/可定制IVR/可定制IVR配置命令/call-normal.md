@@ -1,3 +1,25 @@
+<!-- CMD-INDEX
+  call-normal                         | Call节点视图         | L24
+  description                         | Call/Jump/Service节点视图 | L78
+  dial-prefix                         | Call节点视图         | L124
+  display voice ivr call-info         | 任意视图             | L188
+  display voice media-play            | 任意视图             | L268
+  display voice media-source          | 任意视图             | L346
+  global-input-error                  | IVR管理视图          | L412
+  global-timeout                      | IVR管理视图          | L464
+  input extension                     | Call节点视图         | L518
+  input-error                         | Jump/Call节点视图    | L570
+  ivr-root                            | IVR语音实体视图        | L630
+  ivr-system                          | 语音视图             | L676
+  media-file                          | 语音视图             | L716
+  media-play                          | Jump/Call节点视图    | L758
+  node                                | IVR管理视图          | L808
+  operation                           | Service节点视图      | L862
+  select-rule                         | Service节点视图      | L928
+  set-media                           | 语音媒体资源管理视图       | L982
+  timeout                             | Jump/Call节点视图    | L1030
+  user-input                          | Jump节点视图         | L1092
+-->
 
 **可定制IVR \-- 可定制IVR配置命令 \-- call-normal**
 

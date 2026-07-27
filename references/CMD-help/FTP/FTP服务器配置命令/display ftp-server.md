@@ -1,3 +1,61 @@
+<!-- CMD-INDEX
+  display ftp-server                  | 任意视图             | L60
+  display ftp-user                    | 任意视图             | L120
+  free ftp user                       | 用户视图             | L194
+  free ftp user-ip                    | 用户视图             | L228
+  free ftp user-ip ipv6               | 用户视图             | L264
+  ftp server acl                      | 系统视图             | L300
+  ftp server dscp                     | 系统视图             | L354
+  ftp server enable                   | 系统视图             | L398
+  ftp server ipv6 dscp                | 系统视图             | L434
+  ftp server ssl-server-policy        | 系统视图             | L478
+  ftp timeout                         | 系统视图             | L528
+  append                              | FTP客户端视图         | L572
+  ascii                               | FTP客户端视图         | L616
+  binary                              | FTP客户端视图         | L660
+  bye                                 | FTP客户端视图         | L704
+  cd                                  | FTP客户端视图         | L740
+  cdup                                | FTP客户端视图         | L806
+  close                               | FTP客户端视图         | L852
+  debug                               | FTP客户端视图         | L892
+  delete                              | FTP客户端视图         | L972
+  dir                                 | FTP客户端视图         | L1010
+  disconnect                          | FTP客户端视图         | L1106
+  display ftp client source           | 任意视图             | L1146
+  ftp                                 | 用户视图             | L1180
+  ftp client source                   | 系统视图             | L1248
+  ftp client ipv6 source              | 系统视图             | L1302
+  ftp ipv6                            | 用户视图             | L1356
+  get                                 | FTP客户端视图         | L1424
+  help                                | FTP客户端视图         | L1524
+  lcd                                 | FTP客户端视图         | L1602
+  ls                                  | FTP客户端视图         | L1650
+  mkdir                               | FTP客户端视图         | L1746
+  newer                               | FTP客户端视图         | L1784
+  open                                | FTP客户端视图         | L1832
+  passive                             | FTP客户端视图         | L1890
+  put                                 | FTP客户端视图         | L1938
+  pwd                                 | FTP客户端视图         | L2038
+  quit                                | FTP客户端视图         | L2074
+  reget                               | FTP客户端视图         | L2110
+  rename                              | FTP客户端视图         | L2164
+  reset                               | FTP客户端视图         | L2228
+  restart                             | FTP客户端视图         | L2254
+  rhelp                               | FTP客户端视图         | L2310
+  rmdir                               | FTP客户端视图         | L2504
+  rstatus                             | FTP客户端视图         | L2552
+  status                              | FTP客户端视图         | L2738
+  system                              | FTP客户端视图         | L2830
+  user                                | FTP客户端视图         | L2862
+  verbose                             | FTP客户端视图         | L2916
+  ?                                   | FTP客户端视图         | L2972
+  tftp                                | 用户视图             | L3052
+  tftp client source                  | 系统视图             | L3186
+  tftp ipv6                           | 用户视图             | L3240
+  tftp client ipv6 source             | 系统视图             | L3314
+  tftp-server acl                     | 系统视图             | L3368
+  tftp-server ipv6 acl                | 系统视图             | L3418
+-->
 
 **FTP \-- FTP服务器配置命令 \-- display ftp-server**
 

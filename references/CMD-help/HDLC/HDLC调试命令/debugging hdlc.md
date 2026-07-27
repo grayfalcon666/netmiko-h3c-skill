@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  debugging hdlc                      | 用户视图             | L6
+  debugging bundle                    | 用户视图             | L336
+-->
 
 **HDLC \-- HDLC调试命令 \-- debugging hdlc**
 

@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging source binding            | 用户视图             | L5
+-->
 
 **IP Source Guard \-- IP Source Guard调试命令 \-- debugging source binding**
 

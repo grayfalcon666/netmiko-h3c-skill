@@ -1,3 +1,20 @@
+<!-- CMD-INDEX
+  allocate interface                  | MDC视图            | L19
+  display mdc                         | 任意视图             | L119
+  display mdc interface               | 任意视图             | L191
+  display mdc resource                | 任意视图             | L243
+  limit-resource cpu                  | MDC视图            | L469
+  limit-resource disk                 |                  | L523
+  limit-resource memory               |                  | L619
+  location                            |                  | L713
+  switchto mdc                        | 系统视图             | L783
+  mdc                                 | 系统视图             | L841
+  mdc start                           | MDC视图            | L899
+  display mdc                         | 任意视图             | L945
+  display mdc interface               | 任意视图             | L977
+  display mdc resource                | 任意视图             | L1009
+  switchback                          | 用户视图             | L1145
+-->
 
 **MDC \-- 缺省MDC上支持的MDC配置命令 \-- allocate interface**
 

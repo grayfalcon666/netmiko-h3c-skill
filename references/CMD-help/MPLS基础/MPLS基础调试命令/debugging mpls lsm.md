@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  debugging mpls lsm                  | 用户视图             | L6
+  debugging mpls packet               | 用户视图             | L452
+-->
 
 **MPLS基础 \-- MPLS基础调试命令 \-- debugging mpls lsm**
 

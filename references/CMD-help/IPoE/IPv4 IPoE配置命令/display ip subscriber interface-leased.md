@@ -1,3 +1,75 @@
+<!-- CMD-INDEX
+  display ip subscriber interface-leased | 任意视图             | L74
+  display ip subscriber interface-leased statistics | 任意视图             | L382
+  display ip subscriber offline statistics | 任意视图             | L492
+  display ip subscriber session       | 任意视图             | L640
+  display ip subscriber session statistics | 任意视图             | L1024
+  display ip subscriber subnet-leased | 任意视图             | L1146
+  display ip subscriber subnet-leased statistics | 任意视图             | L1460
+  ip subscriber 8021p                 | 三层以太网子接口视图/三层聚合子接口视图 | L1570
+  ip subscriber dhcp domain           | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图 | L1624
+  ip subscriber dhcp max-session      | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图 | L1682
+  ip subscriber dhcp password option60 | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图 | L1736
+  ip subscriber dhcp username         | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图 | L1808
+  ip subscriber dscp                  | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图 | L1894
+  ip subscriber enable                | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图 | L1948
+  ip subscriber initiator dhcp enable | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图 | L2004
+  ip subscriber initiator unclassified-ip enable | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图 | L2058
+  ip subscriber interface-leased      | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图 | L2112
+  ip subscriber nas-port-id format    | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图 | L2176
+  ip subscriber nas-port-id nasinfo-insert | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图 | L2256
+  ip subscriber nas-port-type         | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图 | L2312
+  ip subscriber password              | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图 | L2396
+  ip subscriber service-identify      | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图 | L2454
+  ip subscriber session static        | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图 | L2526
+  ip subscriber subnet-leased         | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图 | L2594
+  ip subscriber timer quiet           | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图 | L2664
+  ip subscriber trust                 | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图 | L2710
+  ip subscriber unclassified-ip domain | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图 | L2778
+  ip subscriber unclassified-ip max-session | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图 | L2832
+  ip subscriber unclassified-ip username | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图 | L2886
+  ip subscriber user-detect           | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图 | L2964
+  ip subscriber vlan                  | 三层以太网子接口视图/三层聚合子接口视图 | L3026
+  reset ip subscriber offline statistics | 用户视图             | L3080
+  reset ip subscriber session         | 用户视图             | L3114
+  display ipv6 subscriber interface-leased | 任意视图             | L3164
+  display ipv6 subscriber interface-leased statistics | 任意视图             | L3472
+  display ipv6 subscriber offline statistics | 任意视图             | L3582
+  display ipv6 subscriber session     | 任意视图             | L3726
+  display ipv6 subscriber session statistics | 任意视图             | L4116
+  display ipv6 subscriber subnet-leased | 任意视图             | L4240
+  display ipv6 subscriber subnet-leased statistics | 任意视图             | L4554
+  ipv6 subscriber 8021p               | 三层以太网子接口视图/三层聚合子接口视图 | L4666
+  ipv6 subscriber dhcp domain         | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图 | L4720
+  ipv6 subscriber dhcp max-session    | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图 | L4780
+  ipv6 subscriber dhcp password option16 | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图 | L4834
+  ipv6 subscriber dhcp username       | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图 | L4906
+  ipv6 subscriber dscp                | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图 | L4992
+  ipv6 subscriber enable              | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图 | L5046
+  ipv6 subscriber initiator dhcp enable | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图 | L5098
+  ipv6 subscriber initiator ndrs enable | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图 | L5154
+  ipv6 subscriber initiator unclassified-ip enable | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图 | L5210
+  ipv6 subscriber interface-leased    | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图 | L5266
+  ipv6 subscriber nas-port-id format  | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图 | L5330
+  ipv6 subscriber nas-port-id nasinfo-insert | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图 | L5410
+  ipv6 subscriber nas-port-type       | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图 | L5470
+  ipv6 subscriber ndrs domain         | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图 | L5554
+  ipv6 subscriber ndrs max-session    | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图 | L5606
+  ipv6 subscriber ndrs username       | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图 | L5660
+  ipv6 subscriber password            | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图 | L5734
+  ipv6 subscriber service-identify    | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图 | L5794
+  ipv6 subscriber session static      | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图 | L5866
+  ipv6 subscriber subnet-leased       | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图 | L5934
+  ipv6 subscriber timer quiet         | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图 | L6002
+  ipv6 subscriber trust               | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图 | L6054
+  ipv6 subscriber unclassified-ip domain | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图 | L6128
+  ipv6 subscriber unclassified-ip max-session | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图 | L6182
+  ipv6 subscriber unclassified-ip username | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图 | L6236
+  ipv6 subscriber user-detect         | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图 | L6314
+  ipv6 subscriber vlan                | 三层以太网子接口视图/三层聚合子接口视图 | L6376
+  reset ipv6 subscriber offline statistics | 用户视图             | L6430
+  reset ipv6 subscriber session       | 用户视图             | L6464
+-->
 
 **IPoE \-- IPv4 IPoE配置命令 \-- display ip subscriber interface-leased**
 

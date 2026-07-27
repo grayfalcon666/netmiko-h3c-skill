@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  debugging dns                       | 用户视图             | L6
+  debugging ddns                      | 用户视图             | L464
+-->
 
 **域名解析 \-- 域名解析调试命令 \-- debugging dns**
 

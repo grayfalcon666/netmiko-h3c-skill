@@ -1,3 +1,39 @@
+<!-- CMD-INDEX
+  allow l2tp                          | L2TP组视图          | L38
+  bandwidth                           | 虚拟PPP接口视图        | L116
+  default                             | 虚拟PPP接口视图        | L162
+  description                         | 虚拟PPP接口视图        | L198
+  display interface virtual-ppp       | 任意视图             | L240
+  display l2tp session                | 任意视图             | L522
+  display l2tp tunnel                 | 任意视图             | L602
+  display l2tp va-pool                | 任意视图             | L698
+  interface virtual-ppp               | 系统视图             | L764
+  l2tp enable                         | 系统视图             | L810
+  l2tp tsa-id                         | 系统视图             | L850
+  l2tp virtual-template va-pool       | 系统视图             | L898
+  l2tp-auto-client                    | 虚拟PPP接口视图        | L962
+  l2tp-group                          | 系统视图             | L1014
+  lns-ip                              | L2TP组视图          | L1078
+  mandatory-chap                      | L2TP组视图          | L1130
+  mandatory-lcp                       | L2TP组视图          | L1188
+  mtu                                 | 虚拟PPP接口视图        | L1246
+  reset counters interface virtual-ppp | 用户视图             | L1294
+  reset l2tp tunnel                   | 用户视图             | L1334
+  service                             |                  | L1380
+  shutdown                            | 虚拟PPP接口视图        | L1466
+  source-ip                           | L2TP组视图          | L1504
+  tunnel authentication               | L2TP组视图          | L1560
+  tunnel avp-hidden                   | L2TP组视图          | L1618
+  tunnel flow-control                 | L2TP组视图          | L1672
+  tunnel name                         | L2TP组视图          | L1718
+  tunnel password                     | L2TP组视图          | L1764
+  tunnel timer hello                  | L2TP组视图          | L1820
+  ip dscp                             | L2TP组视图          | L1868
+  timer-hold                          | 虚拟PPP接口视图        | L1914
+  timer-hold retry                    | 虚拟PPP接口视图        | L1966
+  user                                | L2TP组视图          | L2018
+  vpn-instance                        | L2TP组视图          | L2072
+-->
 
 **L2TP \-- L2TP配置命令 \-- allow l2tp**
 

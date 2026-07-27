@@ -1,3 +1,57 @@
+<!-- CMD-INDEX
+  display system internal ip routing-table | Probe视图          | L56
+  display system internal ip routing-table acl | Probe视图          | L98
+  display system internal ip routing-table ip-address | Probe视图          | L142
+  display system internal ip routing-table prefix-list | Probe视图          | L198
+  display system internal ip routing-table protocol | Probe视图          | L242
+  display system internal ip routing-table statistics | Probe视图          | L288
+  display system internal ipv6 rib attribute | Probe视图          | L328
+  display system internal ipv6 rib event attribute | Probe视图          | L366
+  display system internal ipv6 rib event policy | Probe视图          | L386
+  display system internal ipv6 rib event prefix | Probe视图          | L406
+  display system internal ipv6 rib event protocol | Probe视图          | L426
+  display system internal ipv6 rib event statistics | Probe视图          | L450
+  display system internal ipv6 rib log | Probe视图          | L474
+  display system internal ipv6 rib memory | Probe视图          | L526
+  display system internal ipv6 rib nib | Probe视图          | L546
+  display system internal ipv6 rib nib log | Probe视图          | L594
+  display system internal ipv6 rib prefix | Probe视图          | L638
+  display system internal ipv6 rib summary | Probe视图          | L684
+  display system internal ipv6 route-direct interface | Probe视图          | L724
+  display system internal ipv6 route-direct log | Probe视图          | L754
+  display system internal ipv6 routing-table | Probe视图          | L784
+  display system internal ipv6 routing-table acl | Probe视图          | L824
+  display system internal ipv6 routing-table ipv6-address | Probe视图          | L866
+  display system internal ipv6 routing-table prefix-list | Probe视图          | L920
+  display system internal ipv6 routing-table protocol | Probe视图          | L962
+  display system internal ipv6 routing-table statistics | Probe视图          | L1006
+  display system internal rib attribute | Probe视图          | L1044
+  display system internal rib event attribute | Probe视图          | L1082
+  display system internal rib event policy | Probe视图          | L1102
+  display system internal rib event prefix | Probe视图          | L1122
+  display system internal rib event protocol | Probe视图          | L1142
+  display system internal rib event statistics | Probe视图          | L1166
+  display system internal rib ftn     | Probe视图          | L1190
+  display system internal rib ftn summary | Probe视图          | L1216
+  display system internal rib log     | Probe视图          | L1236
+  display system internal rib memory  | Probe视图          | L1288
+  display system internal rib nib     | Probe视图          | L1308
+  display system internal rib nib log | Probe视图          | L1356
+  display system internal rib prefix  | Probe视图          | L1400
+  display system internal rib summary | Probe视图          | L1446
+  display system internal route-direct interface | Probe视图          | L1486
+  display system internal route-direct log | Probe视图          | L1518
+  reset system internal ip routing-table statistics protocol | 用户视图             | L1548
+  reset system internal ipv6 rib log  | Probe视图          | L1584
+  reset system internal ipv6 rib nib log | Probe视图          | L1626
+  reset system internal ipv6 rib summary | Probe视图          | L1666
+  reset system internal ipv6 route-direct log | Probe视图          | L1706
+  reset system internal ipv6 routing-table statistics protocol | 用户视图             | L1734
+  reset system internal rib log       | Probe视图          | L1770
+  reset system internal rib nib log   | Probe视图          | L1812
+  reset system internal rib summary   | Probe视图          | L1852
+  reset system internal route-direct log | Probe视图          | L1892
+-->
 
 **IP路由基础 \-- IP路由基础Probe命令 \-- display system internal ip routing-table**
 

@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  debugging system internal openflow  | Probe视图          | L6
+  display system internal openflow instance | Probe视图          | L34
+-->
 
 **OpenFlow \-- OpenFlow Probe命令 \-- debugging system internal openflow**
 

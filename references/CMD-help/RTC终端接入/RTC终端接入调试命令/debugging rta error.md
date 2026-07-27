@@ -1,3 +1,8 @@
+<!-- CMD-INDEX
+  debugging rta error                 | 用户视图             | L7
+  debugging rta event                 | 用户视图             | L495
+  debugging rta packet                | 用户视图             | L977
+-->
 
 **RTC终端接入 \-- RTC终端接入调试命令 \-- debugging rta error**
 

@@ -1,3 +1,11 @@
+<!-- CMD-INDEX
+  debugging ptp all                   | 用户视图             | L10
+  debugging ptp error                 | 用户视图             | L36
+  debugging ptp event                 | 用户视图             | L368
+  debugging ptp fsm                   | 用户视图             | L526
+  debugging ptp packet                | 用户视图             | L576
+  debugging ptp timer                 | 用户视图             | L1146
+-->
 
 **PTP \-- PTP调试命令 \-- debugging ptp all**
 

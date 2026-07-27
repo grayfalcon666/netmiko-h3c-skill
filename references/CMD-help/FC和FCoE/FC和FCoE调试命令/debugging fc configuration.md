@@ -1,3 +1,23 @@
+<!-- CMD-INDEX
+  debugging fc configuration          | 用户视图             | L22
+  debugging fc exchange               | 用户视图             | L574
+  debugging fc forward                | 用户视图             | L898
+  debugging fc link                   | 用户视图             | L982
+  debugging fc name-service           | 用户视图             | L2026
+  debugging fc nport                  | 用户视图             | L2478
+  debugging fc npv                    | 用户视图             | L2794
+  debugging fc rm                     | 用户视图             | L2954
+  debugging fc zone                   | 用户视图             | L3152
+  debugging fcoe                      | 用户视图             | L3824
+  debugging fcoemgr                   | 用户视图             | L4976
+  debugging fc-port-security          | 用户视图             | L5114
+  debugging fcs                       | 用户视图             | L5376
+  debugging fdmi                      | 用户视图             | L5836
+  debugging fip-snooping              | 用户视图             | L6114
+  debugging fspf                      | 用户视图             | L6748
+  debugging san-aggregation           | 用户视图             | L7566
+  debugging vsan                      | 用户视图             | L7890
+-->
 
 **FC和FCoE \-- FC和FCoE调试命令 \-- debugging fc configuration**
 

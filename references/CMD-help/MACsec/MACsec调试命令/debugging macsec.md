@@ -1,3 +1,8 @@
+<!-- CMD-INDEX
+  debugging macsec                    | 用户视图             | L7
+  debugging macsec mka fsm            | 用户视图             | L211
+  debugging macsec mka packet         | 用户视图             | L311
+-->
 
 **MACsec \-- MACsec调试命令 \-- debugging macsec**
 

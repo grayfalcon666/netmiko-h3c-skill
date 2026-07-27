@@ -1,3 +1,12 @@
+<!-- CMD-INDEX
+  display udp-helper interface        | 任意视图             | L11
+  reset udp-helper statistics         | 用户视图             | L97
+  udp-helper broadcast-map            | 接口视图             | L127
+  udp-helper enable                   | 系统视图             | L189
+  udp-helper multicast-map            | 接口视图             | L239
+  udp-helper port                     | 系统视图             | L311
+  udp-helper server                   | 接口视图             | L369
+-->
 
 **UDP Helper \-- UDP Helper配置命令 \-- display udp-helper interface**
 

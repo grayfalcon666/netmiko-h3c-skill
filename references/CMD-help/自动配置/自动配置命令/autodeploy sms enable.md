@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  autodeploy sms enable               | 系统视图             | L6
+  autodeploy udisk enable             | 系统视图             | L46
+-->
 
 **自动配置 \-- 自动配置命令 \-- autodeploy sms enable**
 

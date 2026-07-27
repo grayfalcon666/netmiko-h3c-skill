@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  display sampler                     | 任意视图             | L6
+  sampler                             | 系统视图             | L100
+-->
 
 **Sampler \-- Sampler配置命令 \-- display sampler**
 

@@ -1,3 +1,12 @@
+<!-- CMD-INDEX
+  display system internal rawip       | Probe视图          | L11
+  display system internal tcp         | Probe视图          | L59
+  display system internal tcp-proxy statistics | Probe视图          | L107
+  display system interval tcp-proxy verbose | Probe视图          | L169
+  display system internal udp         | Probe视图          | L217
+  reset system internal tcp-proxy statistics | Probe视图          | L265
+  tcp-proxy statistics                | Probe视图          | L289
+-->
 
 **IP性能优化 \-- IP性能优化Probe配置命令 \-- display system internal rawip**
 

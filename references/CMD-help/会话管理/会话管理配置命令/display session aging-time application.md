@@ -1,3 +1,25 @@
+<!-- CMD-INDEX
+  display session aging-time application | 任意视图             | L24
+  display session aging-time state    | 任意视图             | L108
+  display session relation-table      | 任意视图             | L196
+  display session statistics          | 任意视图             | L424
+  display session table ipv4          | 任意视图             | L720
+  display session table ipv6          | 任意视图             | L1212
+  reset session table ipv4            | 用户视图             | L1568
+  reset session table ipv6            | 用户视图             | L1642
+  reset session table                 | 用户视图             | L1716
+  reset session statistics            | 用户视图             | L1772
+  reset session relation-table        | 用户视图             | L1826
+  session aging-time application      |                  | L1888
+  session aging-time state            |                  | L2012
+  session log bytes-active            | 系统视图             | L2102
+  session log enable                  | 接口视图             | L2160
+  session log packets-active          | 系统视图             | L2246
+  session log time-active             | 系统视图             | L2304
+  session statistic enable            | 系统视图             | L2362
+  session persistent acl              | 系统视图             | L2408
+  session synchronization enable      | 系统视图             | L2472
+-->
 
 **会话管理 \-- 会话管理配置命令 \-- display session aging-time application**
 

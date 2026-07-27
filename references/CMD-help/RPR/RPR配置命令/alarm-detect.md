@@ -1,3 +1,57 @@
+<!-- CMD-INDEX
+  alarm-detect                        | RPRPOS接口视图       | L56
+  bandwidth                           | 二层RPR逻辑接口视图/三层RPR逻辑接口视图/RPRGE接口视图/RPRXGE接口视图/RPRPOS接口视图 | L122
+  clock                               | RPRPOS接口视图       | L204
+  crc                                 | RPRPOS接口视图       | L256
+  dampening                           | RPRPOS接口视图       | L310
+  default                             | 二层RPR逻辑接口视图/三层RPR逻辑接口视图/RPRGE接口视图/RPRXGE接口视图/RPRPOS接口视图 | L392
+  description                         | 二层RPR逻辑接口视图/三层RPR逻辑接口视图/RPRGE接口视图/RPRXGE接口视图/RPRPOS接口视图 | L464
+  display interface                   | 任意视图             | L546
+  display rpr bind-info               | 任意视图             | L1030
+  display rpr defect                  | 任意视图             | L1142
+  display rpr fairness                | 任意视图             | L1254
+  display rpr mac-address             | 任意视图             | L1402
+  display rpr mac-address aging-time  | 任意视图             | L1578
+  display rpr protection              | 任意视图             | L1624
+  display rpr rs-table                | 任意视图             | L1776
+  display rpr statistics              | 任意视图             | L1944
+  display rpr timers                  | 任意视图             | L2018
+  display rpr topology                | 任意视图             | L2142
+  flag c2                             | RPRPOS接口视图       | L3052
+  flag j0                             | RPRPOS接口视图       | L3108
+  flag j1                             | RPRPOS接口视图       | L3170
+  flag j1 ignore                      | RPRPOS接口视图       | L3234
+  flow-interval                       | 系统视图/RPRGE接口视图/RPRXGE接口视图/RPRPOS接口视图 | L3280
+  frame-format                        | RPRPOS接口视图       | L3356
+  interface                           | 系统视图             | L3414
+  link-delay                          | RPRPOS接口视图       | L3502
+  mtu                                 | 三层RPR逻辑接口视图      | L3562
+  reset counters interface            | 用户视图             | L3612
+  reset rpr protection statistics     | 用户视图             | L3682
+  rpr admin-request                   | 二层RPR逻辑接口视图/三层RPR逻辑接口视图 | L3712
+  rpr bind                            | 二层RPR逻辑接口视图/三层RPR逻辑接口视图/RPRGE接口视图/RPRXGE接口视图/RPRPOS接口视图 | L3780
+  rpr default-rs ringlet1             | 二层RPR逻辑接口视图/三层RPR逻辑接口视图 | L3874
+  rpr echo mac                        | 二层RPR逻辑接口视图/三层RPR逻辑接口视图 | L3930
+  rpr mac-address                     | 二层RPR逻辑接口视图      | L4034
+  rpr mac-address timer               | 系统视图             | L4096
+  rpr mate smart-connect              | 二层RPR逻辑接口视图/三层RPR逻辑接口视图 | L4148
+  rpr port-type                       | RPRXGE接口视图/RPRPOS接口视图 | L4206
+  rpr protect-mode wrap               | 二层RPR逻辑接口视图/三层RPR逻辑接口视图 | L4270
+  rpr rate-limit                      | 二层RPR逻辑接口视图/三层RPR逻辑接口视图 | L4324
+  rpr reversion-mode non-revertive    | 二层RPR逻辑接口视图/三层RPR逻辑接口视图 | L4398
+  rpr static-rs                       | 二层RPR逻辑接口视图/三层RPR逻辑接口视图 | L4446
+  rpr station-name                    | 二层RPR逻辑接口视图/三层RPR逻辑接口视图 | L4506
+  rpr timer                           | 二层RPR逻辑接口视图/三层RPR逻辑接口视图 | L4560
+  rpr weight                          | 二层RPR逻辑接口视图/三层RPR逻辑接口视图 | L4634
+  scramble                            | RPRPOS接口视图       | L4692
+  service                             | 二层RPR逻辑接口视图/三层RPR逻辑接口视图 | L4738
+  shutdown                            | 二层RPR逻辑接口视图/三层RPR逻辑接口视图/RPRGE接口视图/RPRXGE接口视图/RPRPOS接口视图 | L4852
+  snmp-agent trap enable { b1-tca \| b2-tca \| b3-tca } | RPRPOS接口视图       | L4926
+  threshold                           | RPRPOS接口视图       | L4986
+  threshold { b1-tca \| b2-tca \| b3-tca } | RPRPOS接口视图       | L5042
+  timer-hold                          | RPRPOS接口视图       | L5110
+  timer-hold retry                    | RPRPOS接口视图       | L5166
+-->
 
 **RPR \-- RPR配置命令 \-- alarm-detect**
 

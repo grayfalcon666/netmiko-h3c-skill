@@ -1,3 +1,8 @@
+<!-- CMD-INDEX
+  display hardware internal transceiver register interface | Probe视图          | L7
+  display system internal dbm         | ]                | L39
+  display transceiver information interface | Probe视图          | L83
+-->
 
 **设备管理 \-- 设备管理Probe命令 \-- display hardware internal transceiver register interface**
 

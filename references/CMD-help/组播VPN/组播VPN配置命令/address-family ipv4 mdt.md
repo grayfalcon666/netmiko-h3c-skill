@@ -1,3 +1,19 @@
+<!-- CMD-INDEX
+  address-family ipv4 mdt             | BGP视图            | L18
+  data-delay                          | MD视图             | L68
+  data-group                          | MD视图             | L114
+  data-holddown                       | MD视图             | L180
+  default-group                       | MD视图             | L226
+  display bgp routing-table ipv4 mdt  | 任意视图             | L276
+  display multicast-domain data-group receive | 任意视图             | L528
+  display multicast-domain data-group send | 任意视图             | L670
+  display multicast-domain default-group | 任意视图             | L790
+  log data-group-reuse                | MD视图             | L884
+  multicast-domain                    | 系统视图             | L928
+  multicast rpf-proxy-vector compatible | 系统视图             | L970
+  rpf proxy vector                    | MRIB视图           | L1012
+  source                              | MD视图             | L1056
+-->
 
 **组播VPN \-- 组播VPN配置命令 \-- address-family ipv4 mdt**
 

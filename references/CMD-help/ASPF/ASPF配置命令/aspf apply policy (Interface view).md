@@ -1,3 +1,16 @@
+<!-- CMD-INDEX
+  aspf apply policy (Interface view)  | 接口视图             | L15
+  aspf apply policy (Zonepair view)   | 安全域间实例视图         | L75
+  aspf policy                         | 系统视图             | L145
+  detect                              | ASPF策略视图         | L193
+  display aspf all                    | 任意视图             | L309
+  display aspf interface              | 任意视图             | L415
+  display aspf policy                 | 任意视图             | L477
+  display aspf session                | 任意视图             | L567
+  icmp-error drop                     | ASPF策略视图         | L1365
+  reset aspf session                  | 用户视图             | L1417
+  tcp syn-check                       | ASPF策略视图         | L1483
+-->
 
 **ASPF \-- ASPF配置命令 \-- aspf apply policy (Interface view)**
 

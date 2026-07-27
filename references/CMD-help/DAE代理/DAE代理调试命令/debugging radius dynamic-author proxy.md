@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging radius dynamic-author proxy | 用户视图             | L5
+-->
 
 **DAE代理 \-- DAE代理调试命令 \-- debugging radius dynamic-author proxy**
 

@@ -1,3 +1,17 @@
+<!-- CMD-INDEX
+  client forwarding-mode（仅AC）         | 无线服务模板视图         | L16
+  display wlan client                 | 任意视图             | L74
+  display wlan service-template       | 任意视图             | L482
+  service-template                    |                  | L842
+  service-template enable             | 无线服务模板视图         | L928
+  ssid                                | 无线服务模板视图         | L970
+  vlan                                | 无线服务模板视图         | L1018
+  wlan service-template               | 系统视图             | L1068
+  client forwarding-location          | 无线服务模板视图         | L1114
+  broadcast-probe reply (仅AC)         | AP视图             | L1166
+  client idle-timeout                 | AP视图             | L1210
+  client keep-alive                   | AP视图             | L1256
+-->
 
 **WLAN接入 \-- WLAN接入配置命令 \-- client forwarding-mode（仅AC）**
 

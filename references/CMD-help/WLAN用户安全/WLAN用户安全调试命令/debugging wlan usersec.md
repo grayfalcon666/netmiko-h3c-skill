@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging wlan usersec              | 用户视图             | L5
+-->
 
 **WLAN用户安全 \-- WLAN用户安全调试命令 \-- debugging wlan usersec**
 

@@ -1,3 +1,11 @@
+<!-- CMD-INDEX
+  display wlan measure-report         | 任意视图             | L10
+  measure                             | AC设备：Radio视图/AP组Radio视图 | L48
+  measure-duration                    | AC设备：Radio视图/AP组Radio视图 | L140
+  measure-interval                    | AC设备：Radio视图/AP组Radio视图 | L212
+  resource-measure                    | Radio视图          | L284
+  rm-capability mode                  | Radio视图          | L334
+-->
 
 **射频资源测量 \-- 射频资源测量配置命令 \-- display wlan measure-report**
 

@@ -1,3 +1,10 @@
+<!-- CMD-INDEX
+  display system internal ipv6 fast-forwarding cache verbose | probe视图          | L9
+  display system internal ipv6 fast-forwarding service-information | probe视图          | L55
+  display system internal ipv6 max-ecmp-num | probe视图          | L75
+  display system internal ipv6 fast-forwarding statistics | probe视图          | L119
+  reset system internal ipv6 fast-forwarding statistics | probe视图          | L163
+-->
 
 **IPv6快速转发 \-- IPv6快速转发Probe配置命令 \-- display system internal ipv6 fast-forwarding cache verbose**
 

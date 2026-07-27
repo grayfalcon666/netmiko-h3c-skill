@@ -1,3 +1,9 @@
+<!-- CMD-INDEX
+  debugging l2protocol all            | 用户视图             | L8
+  debugging l2protocol error          | 用户视图             | L38
+  debugging l2protocol event          | 用户视图             | L108
+  debugging l2protocol packet         | 用户视图             | L222
+-->
 
 **L2PT \-- L2PT调试命令 \-- debugging l2protocol all**
 

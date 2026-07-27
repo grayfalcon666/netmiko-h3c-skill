@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  debugging route-static nib          | 用户视图             | L6
+  debugging route-static process      | 用户视图             | L266
+-->
 
 **静态路由 \-- 静态路由调试命令 \-- debugging route-static nib**
 

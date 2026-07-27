@@ -1,3 +1,58 @@
+<!-- CMD-INDEX
+  address                             | NAT地址组视图         | L57
+  block-size                          | NAT端口块组视图        | L117
+  display nat all                     | 任意视图             | L167
+  display nat address-group           | 任意视图             | L1869
+  display nat dns-map                 | 任意视图             | L2023
+  display nat eim                     | 任意视图             | L2129
+  display nat inbound                 | 任意视图             | L2389
+  display nat log                     | 任意视图             | L2617
+  display nat no-pat                  | 任意视图             | L2709
+  display nat outbound                | 任意视图             | L3007
+  display nat outbound port-block-group | 任意视图             | L3263
+  display nat port-block              | 任意视图             | L3389
+  display nat port-block-group        | 任意视图             | L3527
+  display nat server                  | 任意视图             | L3703
+  display nat server-group            | 任意视图             | L4105
+  display nat session                 | 任意视图             | L4197
+  display nat static                  | 任意视图             | L4683
+  display nat statistics              | 任意视图             | L5177
+  global-ip-pool                      | NAT端口块组视图        | L5509
+  inside ip                           | 内部服务器组视图         | L5565
+  local-ip-address                    | NAT端口块组视图        | L5619
+  nat address-group                   | 系统视图             | L5679
+  nat alg                             | 系统视图             | L5735
+  nat dns-map                         | 系统视图             | L5815
+  nat hairpin enable                  | 接口视图             | L5881
+  nat inbound                         | 接口视图             | L5927
+  nat log alarm                       | 系统视图             | L6043
+  nat log enable                      | 系统视图             | L6097
+  nat log flow-active                 | 系统视图             | L6161
+  nat log flow-begin                  | 系统视图             | L6217
+  nat log flow-end                    | 系统视图             | L6265
+  nat log port-block-assign           | 系统视图             | L6313
+  nat log port-block-withdraw         | 系统视图             | L6365
+  nat mapping-behavior                | 系统视图             | L6417
+  nat outbound                        | 接口视图             | L6491
+  nat outbound ds-lite-b4             | 接口视图             | L6623
+  nat outbound port-block-group       | 接口视图             | L6695
+  nat port-block synchronization enable | 系统视图             | L6753
+  nat port-block-group                | 系统视图             | L6797
+  nat server                          |                  | L6869
+  nat server-group                    | 系统视图             | L7103
+  nat service                         |                  | L7157
+  nat static-load-balance enable      | 系统视图             | L7245
+  nat static enable                   | 接口视图             | L7289
+  nat static inbound                  | 系统视图             | L7343
+  nat static inbound net-to-net       | 系统视图             | L7417
+  nat static outbound                 | 系统视图             | L7499
+  nat static outbound net-to-net      | 系统视图             | L7585
+  port-block                          | NAT地址组视图         | L7675
+  port-range                          | NAT地址组视图/NAT端口块组视图 | L7727
+  reset nat session                   | 用户视图             | L7789
+  reset nat static-load-balance       | 用户视图             | L7859
+  reset nat dynamic-load-balance      | 用户视图             | L7891
+-->
 
 **NAT命令 \-- NAT配置命令 \-- address**
 

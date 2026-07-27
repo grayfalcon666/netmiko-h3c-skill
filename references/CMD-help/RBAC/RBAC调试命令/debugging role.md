@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging role                      | 用户视图             | L5
+-->
 
 **RBAC \-- RBAC调试命令 \-- debugging role**
 

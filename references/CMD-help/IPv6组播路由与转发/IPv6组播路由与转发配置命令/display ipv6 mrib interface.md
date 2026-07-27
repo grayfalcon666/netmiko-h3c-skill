@@ -1,3 +1,24 @@
+<!-- CMD-INDEX
+  display ipv6 mrib interface         | 任意视图             | L23
+  display ipv6 multicast boundary     | 任意视图             | L153
+  display ipv6 multicast forwarding df-info | 任意视图             | L229
+  display ipv6 multicast forwarding event | 任意视图             | L413
+  display ipv6 multicast forwarding-table | 任意视图             | L539
+  display ipv6 multicast forwarding-table df-list | 任意视图             | L761
+  display ipv6 multicast routing-table | 任意视图             | L875
+  display ipv6 multicast rpf-info     | 任意视图             | L1001
+  ipv6 multicast boundary             | 接口视图             | L1101
+  ipv6 multicast forwarding supervlan community | VLAN接口视图         | L1199
+  ipv6 multicast routing              | 系统视图             | L1249
+  ipv6 multicast rpf-fail-pkt bridging | VLAN接口视图         | L1305
+  ipv6 multicast rpf-fail-pkt flooding | 系统视图             | L1361
+  ipv6 multicast rpf-fail-pkt trap-to-cpu | 系统视图             | L1411
+  load-splitting (IPv6 MRIB view)     | IPv6 MRIB视图      | L1461
+  longest-match (IPv6 MRIB view)      | IPv6 MRIB视图      | L1509
+  reset ipv6 multicast forwarding event | 用户视图             | L1547
+  reset ipv6 multicast forwarding-table | 用户视图             | L1581
+  reset ipv6 multicast routing-table  | 用户视图             | L1631
+-->
 
 **IPv6组播路由与转发 \-- IPv6组播路由与转发配置命令 \-- display ipv6 mrib interface**
 

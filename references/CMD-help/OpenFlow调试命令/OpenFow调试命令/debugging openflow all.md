@@ -1,3 +1,9 @@
+<!-- CMD-INDEX
+  debugging openflow all              | 用户视图             | L8
+  debugging openflow error            | 用户视图             | L44
+  debugging openflow event            | 用户视图             | L106
+  debugging openflow packet           | 用户视图             | L184
+-->
 
 **OpenFlow调试命令 \-- OpenFow调试命令 \-- debugging openflow all**
 

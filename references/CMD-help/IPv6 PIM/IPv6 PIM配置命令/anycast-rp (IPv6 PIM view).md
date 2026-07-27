@@ -1,3 +1,63 @@
+<!-- CMD-INDEX
+  anycast-rp (IPv6 PIM view)          | IPv6 PIM视图       | L62
+  bidir-pim enable (IPv6 PIM view)    | IPv6 PIM视图       | L116
+  bidir-rp-limit (IPv6 PIM view)      | IPv6 PIM视图       | L166
+  bsm-fragment enable (IPv6 PIM view) | IPv6 PIM视图       | L212
+  bsr-policy (IPv6 PIM view)          | IPv6 PIM视图       | L254
+  c-bsr (IPv6 PIM view)               | IPv6 PIM视图       | L310
+  c-rp (IPv6 PIM view)                | IPv6 PIM视图       | L364
+  crp-policy (IPv6 PIM view)          | IPv6 PIM视图       | L434
+  display ipv6 pim bsr-info           | 任意视图             | L492
+  display ipv6 pim claimed-route      | 任意视图             | L640
+  display ipv6 pim c-rp               | 任意视图             | L740
+  display ipv6 pim df-info            | 任意视图             | L854
+  display ipv6 pim interface          | 任意视图             | L952
+  display ipv6 pim nbma-link          | 任意视图             | L1180
+  display ipv6 pim neighbor           | 任意视图             | L1276
+  display ipv6 pim routing-table      | 任意视图             | L1422
+  display ipv6 pim rp-info            | 任意视图             | L1762
+  display ipv6 pim statistics         | 任意视图             | L1962
+  hello-option dr-priority (IPv6 PIM view) | IPv6 PIM视图       | L2094
+  hello-option holdtime (IPv6 PIM view) | IPv6 PIM视图       | L2144
+  hello-option lan-delay (IPv6 PIM view) | IPv6 PIM视图       | L2194
+  hello-option neighbor-tracking (IPv6 PIM view) | IPv6 PIM视图       | L2248
+  hello-option override-interval (IPv6 PIM view) | IPv6 PIM视图       | L2294
+  holdtime join-prune (IPv6 PIM view) | IPv6 PIM视图       | L2348
+  ipv6 pim                            | 系统视图             | L2402
+  ipv6 pim bfd enable                 | 接口视图             | L2456
+  ipv6 pim bsr-boundary               | 接口视图             | L2528
+  ipv6 pim dm                         | 接口视图             | L2584
+  ipv6 pim hello-option dr-priority   | 接口视图             | L2650
+  ipv6 pim hello-option holdtime      | 接口视图             | L2712
+  ipv6 pim hello-option lan-delay     | 接口视图             | L2774
+  ipv6 pim hello-option neighbor-tracking | 接口视图             | L2840
+  ipv6 pim hello-option override-interval | 接口视图             | L2930
+  ipv6 pim holdtime join-prune        | 接口视图             | L2996
+  ipv6 pim nbma-mode                  | ADVPN隧道接口视图      | L3062
+  ipv6 pim neighbor-policy            | 接口视图             | L3100
+  ipv6 pim require-genid              | 接口视图             | L3170
+  ipv6 pim sm                         | 接口视图             | L3220
+  ipv6 pim state-refresh-capable      | 接口视图             | L3286
+  ipv6 pim timer graft-retry          | 接口视图             | L3344
+  ipv6 pim timer hello                | 接口视图             | L3398
+  ipv6 pim timer join-prune           | 接口视图             | L3460
+  ipv6 pim triggered-hello-delay      | 接口视图             | L3528
+  jp-pkt-size (IPv6 PIM view)         | IPv6 PIM视图       | L3582
+  register-policy (IPv6 PIM view)     | IPv6 PIM视图       | L3624
+  register-suppression-timeout (IPv6 PIM view) | IPv6 PIM视图       | L3676
+  register-whole-checksum (IPv6 PIM view) | IPv6 PIM视图       | L3718
+  snmp-agent trap enable pim6         | 系统视图             | L3756
+  source-lifetime (IPv6 PIM view)     | IPv6 PIM视图       | L3806
+  source-policy (IPv6 PIM view)       | IPv6 PIM视图       | L3848
+  spt-switch-threshold (IPv6 PIM view) | IPv6 PIM视图       | L3908
+  ssm-policy (IPv6 PIM view)          | IPv6 PIM视图       | L3972
+  state-refresh-hoplimit (IPv6 PIM view) | IPv6 PIM视图       | L4026
+  state-refresh-interval (IPv6 PIM view) | IPv6 PIM视图       | L4076
+  state-refresh-rate-limit (IPv6 PIM view) | IPv6 PIM视图       | L4126
+  static-rp (IPv6 PIM view)           | IPv6 PIM视图       | L4176
+  timer hello (IPv6 PIM view)         | IPv6 PIM视图       | L4244
+  timer join-prune (IPv6 PIM view)    | IPv6 PIM视图       | L4294
+-->
 
 **IPv6 PIM \-- IPv6 PIM配置命令 \-- anycast-rp (IPv6 PIM view)**
 

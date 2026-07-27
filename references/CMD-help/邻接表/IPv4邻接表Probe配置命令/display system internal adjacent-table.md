@@ -1,3 +1,15 @@
+<!-- CMD-INDEX
+  display system internal adjacent-table | Probe视图          | L14
+  display system internal adj4 statistics | probe视图          | L52
+  reset system internal adj4 statistics | probe视图          | L90
+  display system internal adj4 entry  | probe视图          | L128
+  display system internal ipv6 adjacent-table | probe视图          | L170
+  display system internal adj6 statistics | probe视图          | L208
+  reset system internal adj6 statistics | probe视图          | L246
+  display system internal adj6 entry  | probe视图          | L284
+  debugging system internal adj4      | probe视图          | L326
+  debugging system internal adj6      | probe视图          | L364
+-->
 
 **邻接表 \-- IPv4邻接表Probe配置命令 \-- display system internal adjacent-table**
 

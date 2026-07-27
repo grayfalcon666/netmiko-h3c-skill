@@ -1,3 +1,80 @@
+<!-- CMD-INDEX
+  chassis convert mode irf            | 系统视图             | L79
+  display irf                         | 任意视图             | L147
+  display irf configuration           | 任意视图             | L271
+  display irf link                    | 任意视图             | L365
+  display irf topology                | 任意视图             | L517
+  display irf-port load-sharing mode  | 任意视图             | L605
+  display mad                         | 任意视图             | L739
+  easy-irf                            | 系统视图             | L881
+  irf auto-merge enable               | 系统视图             | L1043
+  irf auto-update enable              | 系统视图             | L1103
+  irf domain                          | 任意视图             | L1151
+  irf link-delay                      | 系统视图             | L1199
+  irf isolate member                  | 系统视图             | L1243
+  irf mac-address persistent          | 系统视图             | L1289
+  irf member                          | 系统视图             | L1347
+  irf member description              | 系统视图             | L1403
+  irf member priority                 | 系统视图             | L1449
+  irf member renumber                 | 系统视图             | L1499
+  irf priority                        | 系统视图             | L1557
+  irf-port                            | 系统视图             | L1613
+  irf-port global load-sharing mode   | 系统视图             | L1677
+  irf-port load-sharing mode          | IRF端口视图          | L1767
+  irf-port port-number                | 系统视图             | L1857
+  irf-port-configuration active       | 系统视图             | L1907
+  mad arp enable                      | VLAN接口视图         | L1987
+  mad bfd enable                      | VLAN接口视图         | L2049
+  mad enable                          | 聚合接口视图           | L2105
+  mad exclude interface               | 系统视图             | L2189
+  mad ip address                      | VLAN接口视图         | L2245
+  mad nd enable                       | VLAN接口视图         | L2313
+  mad restore                         | 系统视图             | L2375
+  port group interface                | IRF端口视图          | L2417
+  chassis convert mode irf            | 系统视图             | L2495
+  display irf                         | 任意视图             | L2571
+  display irf configuration           | 任意视图             | L2687
+  display irf link                    | 任意视图             | L2761
+  display irf topology                | 任意视图             | L2913
+  display irf-port load-sharing mode  | 任意视图             | L2991
+  display mad                         | 任意视图             | L3147
+  display port restricted             | 任意视图             | L3301
+  easy-irf                            | 系统视图             | L3359
+  irf auto-merge enable               | 系统视图             | L3521
+  irf auto-update enable              | 系统视图             | L3579
+  irf domain                          | 系统视图             | L3633
+  irf link-delay                      | 系统视图             | L3681
+  irf isolate member                  | 系统视图             | L3727
+  irf mac-address persistent          | 系统视图             | L3773
+  irf member                          | 系统视图             | L3833
+  irf member description              | 系统视图             | L3885
+  irf member priority                 | 系统视图             | L3931
+  irf member renumber                 | 系统视图             | L3985
+  irf mode enhanced                   | 系统视图             | L4055
+  irf priority                        | 系统视图             | L4123
+  irf slot member                     | 用户视图             | L4175
+  irf-port load-sharing mode          | 系统视图/IRF端口视图     | L4225
+  irf-port member-id/port-number      | 系统视图             | L4321
+  irf-port port-number                | 系统视图             | L4371
+  irf-port-configuration active       | 系统视图             | L4417
+  mad arp enable                      | 三层接口视图           | L4497
+  mad bfd enable                      | 三层接口视图           | L4553
+  mad enable                          | 聚合接口视图           | L4609
+  mad exclude interface               | 系统视图             | L4683
+  mad ip address                      | 三层接口视图           | L4733
+  mad nd enable                       | VLAN接口视图         | L4795
+  mad restore                         | 系统视图             | L4857
+  port group interface                | IRF端口视图          | L4897
+  associate                           | PEX端口视图          | L4991
+  description                         | PEX端口视图          | L5057
+  display pex working-mode (Centralized IRF devices) | 任意视图             | L5099
+  display pex working-mode (Distributed devices--In IRF mode) | 任意视图             | L5191
+  display pex-port                    | 任意视图             | L5265
+  pex working-mode (Centralized IRF devices) | 系统视图             | L5433
+  pex working-mode (Distributed devices--In IRF mode) | 系统视图             | L5491
+  port group interface                | PEX端口视图          | L5561
+  pex-port                            | 系统视图             | L5649
+-->
 
 **IRF \-- IRF2配置命令（集中式IRF设备） \-- chassis convert mode irf**
 

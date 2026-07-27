@@ -1,3 +1,8 @@
+<!-- CMD-INDEX
+  debugging tunnel                    | 用户视图             | L7
+  debugging tunnel4                   | 用户视图             | L381
+  debugging tunnel6                   | 用户视图             | L603
+-->
 
 **隧道 \-- 隧道调试命令 \-- debugging tunnel**
 

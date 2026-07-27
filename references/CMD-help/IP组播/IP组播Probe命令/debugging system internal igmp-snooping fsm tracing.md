@@ -1,3 +1,53 @@
+<!-- CMD-INDEX
+  debugging system internal igmp-snooping fsm tracing |                  | L52
+  debugging system internal mld-snooping fsm tracing |                  | L114
+  display system internal igmp user-authorization record | Probe视图          | L176
+  display system internal igmp user-authorization statistics | Probe视图          | L200
+  display system internal ipv6 l2-multicast ip forwarding verbose | Probe视图          | L224
+  display system internal ipv6 l2-multicast ip verbose | Probe视图          | L274
+  display system internal ipv6 l2-multicast ipc statistics | Probe视图          | L324
+  display system internal ipv6 l2-multicast mac forwarding verbose | Probe视图          | L368
+  display system internal ipv6 l2-multicast mac verbose | Probe视图          | L416
+  display system internal ipv6 l2-multicast trill-offload-table | Probe视图          | L464
+  display system internal ipv6 mrib interface statistics | Probe视图          | L512
+  display system internal ipv6 mrib mbr | Probe视图          | L536
+  display system internal ipv6 multicast forwarding vlan reference | Probe视图          | L566
+  display system internal ipv6 multicast forwarding-table dummy | Probe视图          | L616
+  display system internal ipv6 multicast forwarding-table verbose | Probe视图          | L670
+  display system internal ipv6 multicast-vlan forwarding-table verbose | Probe视图          | L734
+  display system internal ipv6 pim interface | Probe视图          | L788
+  display system internal ipv6 pim rp | Probe视图          | L824
+  display system internal ipv6 pim thread | Probe视图          | L848
+  display system internal l2-multicast ip forwarding verbose | Probe视图          | L876
+  display system internal l2-multicast ip verbose | Probe视图          | L926
+  display system internal l2-multicast ipc statistics | Probe视图          | L976
+  display system internal l2-multicast mac forwarding verbose | Probe视图          | L1020
+  display system internal l2-multicast mac verbose | Probe视图          | L1068
+  display system internal l2-multicast trill-offload-table | Probe视图          | L1116
+  display system internal mld user-authorization record | Probe视图          | L1164
+  display system internal mld user-authorization statistics | Probe视图          | L1188
+  display system internal mrib interface statistics | Probe视图          | L1212
+  display system internal mrib mbr    | Probe视图          | L1236
+  display system internal multicast capability | Probe视图          | L1266
+  display system internal multicast forwarding vlan reference | Probe视图          | L1308
+  display system internal multicast forwarding-table dummy | Probe视图          | L1358
+  display system internal multicast forwarding-table verbose | Probe视图          | L1414
+  display system internal multicast record | ]                | L1480
+  display system internal multicast-vlan forwarding-table verbose | Probe视图          | L1592
+  display system internal pim interface | Probe视图          | L1648
+  display system internal pim rp      | Probe视图          | L1680
+  display system internal pim thread  | ]                | L1704
+  igmp user-authorization record limit | Probe视图          | L1732
+  mld user-authorization record limit | Probe视图          | L1764
+  multicast record limit              | Probe视图          | L1796
+  reset system internal igmp user-authorization record | Probe视图          | L1830
+  reset system internal igmp user-authorization statistics | Probe视图          | L1854
+  reset system internal ipv6 multicast forwarding-table dummy | Probe视图          | L1878
+  reset system internal mld user-authorization record | Probe视图          | L1932
+  reset system internal mld user-authorization statistics | Probe视图          | L1956
+  reset system internal multicast forwarding-table dummy | Probe视图          | L1980
+  reset system internal multicast record | Probe视图          | L2036
+-->
 
 **IP组播 \-- IP组播Probe命令 \-- debugging system internal igmp-snooping fsm tracing**
 

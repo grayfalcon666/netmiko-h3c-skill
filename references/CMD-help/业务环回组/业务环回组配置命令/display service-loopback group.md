@@ -1,3 +1,8 @@
+<!-- CMD-INDEX
+  display service-loopback group      | 任意视图             | L7
+  port service-loopback group         | 二层以太网接口视图        | L71
+  service-loopback group              | 系统视图             | L125
+-->
 
 **业务环回组 \-- 业务环回组配置命令 \-- display service-loopback group**
 

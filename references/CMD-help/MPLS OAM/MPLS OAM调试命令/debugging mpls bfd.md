@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging mpls bfd                  | 用户视图             | L5
+-->
 
 **MPLS OAM \-- MPLS OAM调试命令 \-- debugging mpls bfd**
 

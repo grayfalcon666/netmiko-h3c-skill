@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  display adjacent-table              | 任意视图             | L6
+  display ipv6 adjacent-table         | 任意视图             | L176
+-->
 
 **邻接表 \-- IPv4邻接表配置命令 \-- display adjacent-table**
 

@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging loopback-detection        | 用户视图             | L5
+-->
 
 **环路检测 \-- 环路检测调试命令 \-- debugging loopback-detection**
 

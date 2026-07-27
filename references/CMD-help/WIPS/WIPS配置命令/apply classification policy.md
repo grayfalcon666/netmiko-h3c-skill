@@ -1,3 +1,74 @@
+<!-- CMD-INDEX
+  apply classification policy         | VSD视图            | L73
+  apply countermeasure policy         | VSD视图            | L117
+  apply detect policy                 | VSD视图            | L161
+  ap-rate-limit                       | 攻击检测策略视图         | L205
+  ap-spoofing                         | 攻击检测策略视图         | L253
+  ap-timer                            | 攻击检测策略视图         | L301
+  block mac-address                   | 分类策略视图           | L351
+  classification policy               | WIPS视图           | L397
+  client-rate-limit                   | 攻击检测策略视图         | L439
+  client-spoofing                     | 攻击检测策略视图         | L487
+  client-timer                        | 攻击检测策略视图         | L535
+  countermeasure external-ap          | 反制策略视图           | L585
+  countermeasure misassociation-client | 反制策略视图           | L625
+  countermeasure misconfigured-ap     | 反制策略视图           | L665
+  countermeasure policy               | WIPS视图           | L705
+  countermeasure potential-authorized-ap | 反制策略视图           | L749
+  countermeasure potential-external-ap | 反制策略视图           | L789
+  countermeasure potential-rogue-ap   | 反制策略视图           | L829
+  countermeasure rogue-ap             | 反制策略视图           | L869
+  countermeasure unauthorized-client  | 反制策略视图           | L909
+  countermeasure uncategorized-ap     | 反制策略视图           | L949
+  countermeasure uncategorized-client | 反制策略视图           | L989
+  detect policy                       | WIPS视图           | L1029
+  display wips sensor                 | 任意视图             | L1073
+  display wips statistics receive     | 任意视图             | L1139
+  display wips virtual-security-domain | 任意视图             | L1407
+  display wips virtual-security-domain countermeasure record | 任意视图             | L1771
+  flood association-request           | 攻击检测策略视图         | L1867
+  flood authentication                | 攻击检测策略视图         | L1915
+  flood beacon                        | 攻击检测策略视图         | L1963
+  flood block-ack                     | 攻击检测策略视图         | L2011
+  flood cts                           | 攻击检测策略视图         | L2059
+  flood deauthentication              | 攻击检测策略视图         | L2107
+  flood disassociation                | 攻击检测策略视图         | L2155
+  flood eapol-start                   | 攻击检测策略视图         | L2203
+  flood null-data                     | 攻击检测策略视图         | L2251
+  flood probe-request                 | 攻击检测策略视图         | L2299
+  flood reassociation-request         | 攻击检测策略视图         | L2347
+  flood rts                           | 攻击检测策略视图         | L2395
+  import oui                          | WIPS视图           | L2443
+  invalid-oui-classify illegal        | 分类策略视图           | L2495
+  malformed duplicated-ie             | 攻击检测策略视图         | L2539
+  malformed fata-jack                 | 攻击检测策略视图         | L2587
+  malformed illegal-ibss-ess          | 攻击检测策略视图         | L2635
+  malformed invalid-address-combination | 攻击检测策略视图         | L2683
+  malformed invalid-assoc-req         | 攻击检测策略视图         | L2731
+  malformed invalid-auth              | 攻击检测策略视图         | L2779
+  malformed invalid-deauth-code       | 攻击检测策略视图         | L2833
+  malformed invalid-disassoc-code     | 攻击检测策略视图         | L2881
+  malformed invalid-ht-ie             | 攻击检测策略视图         | L2929
+  malformed invalid-ie-length         | 攻击检测策略视图         | L2981
+  malformed invalid-pkt-length        | 攻击检测策略视图         | L3029
+  malformed large-duration            | 攻击检测策略视图         | L3077
+  malformed null-probe-resp           | 攻击检测策略视图         | L3127
+  malformed overflow-eapol-key        | 攻击检测策略视图         | L3175
+  malformed overflow-ssid             | 攻击检测策略视图         | L3223
+  malformed redundant-ie              | 攻击检测策略视图         | L3271
+  manual-classify mac-address         | 分类策略视图           | L3319
+  reset wips statistics               | 用户视图             | L3373
+  reset wips virtual-security-domain  | ]                | L3403
+  reset wips virtual-security-domain countermeasure record | 用户视图             | L3453
+  trust mac-address                   | 分类策略视图           | L3487
+  trust oui                           | 分类策略视图           | L3533
+  trust ssid                          | 分类策略视图           | L3581
+  virtual-security-domain             | WIPS视图           | L3627
+  weak-iv                             | 攻击检测策略视图         | L3671
+  wips                                | 系统视图             | L3719
+  wips enable                         | Radio视图          | L3757
+  wips virtual-security-domain        | AP视图             | L3797
+-->
 
 **WIPS \-- WIPS配置命令 \-- apply classification policy**
 

@@ -1,3 +1,12 @@
+<!-- CMD-INDEX
+  buffer apply                        | 系统视图             | L11
+  buffer queue guaranteed             |                  | L49
+  buffer queue shared                 | 系统视图             | L147
+  buffer total-shared                 | 系统视图             | L237
+  burst-mode enable                   | 系统视图             | L325
+  display buffer                      | 任意视图             | L371
+  display buffer usage                | 任意视图             | L547
+-->
 
 **数据缓冲区 \-- 数据缓冲区配置命令 \-- buffer apply**
 

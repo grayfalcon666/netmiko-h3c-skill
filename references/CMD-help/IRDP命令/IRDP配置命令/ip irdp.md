@@ -1,3 +1,11 @@
+<!-- CMD-INDEX
+  ip irdp                             | 接口视图             | L10
+  ip irdp address                     | 接口视图             | L64
+  ip irdp lifetime                    | 接口视图             | L130
+  ip irdp interval                    | 接口视图             | L196
+  ip irdp multicast                   | 接口视图             | L264
+  ip irdp preference                  | 接口视图             | L318
+-->
 
 **IRDP命令 \-- IRDP配置命令 \-- ip irdp**
 

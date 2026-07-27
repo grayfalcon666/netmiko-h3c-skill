@@ -1,3 +1,12 @@
+<!-- CMD-INDEX
+  debugging ospfv3 event              | 用户视图             | L11
+  debugging ospfv3 lsa                | 用户视图             | L541
+  debugging ospfv3 packet             | 用户视图             | L731
+  debugging ospfv3 policy             | 用户视图             | L1075
+  debugging ospfv3 redistribute       | 用户视图             | L1371
+  debugging ospfv3 spf                | 用户视图             | L1707
+  debugging ospfv3 timer              | 用户视图             | L2173
+-->
 
 **OSPFv3 \-- OSPFv3调试命令 \-- debugging ospfv3 event**
 

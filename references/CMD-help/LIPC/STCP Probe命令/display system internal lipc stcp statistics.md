@@ -1,3 +1,42 @@
+<!-- CMD-INDEX
+  display system internal lipc stcp statistics | Probe视图          | L41
+  display system internal lipc stcp performance | Probe视图          | L69
+  display system internal lipc stcp links | Probe视图          | L105
+  display system internal lipc stcp status | Probe视图          | L145
+  display system internal lipc stcp global-server | Probe视图          | L173
+  display system internal lipc stcp event | Probe视图          | L201
+  display system internal lipc stream | Probe视图          | L237
+  display system internal lipc mtcp statistics | Probe视图          | L273
+  display system internal lipc mtcp performance | Probe视图          | L301
+  display system internal lipc mtcp group | Probe视图          | L337
+  display system internal lipc lgmp statistics | Probe视图          | L373
+  display system internal lipc lgmp group-list | Probe视图          | L401
+  display system internal lipc lgmp group | Probe视图          | L429
+  display system internal lipc lgmp physical-group-list | Probe视图          | L459
+  display system internal lipc lgmp physical-group | Probe视图          | L487
+  display system internal lipc publish statistics | Probe视图          | L517
+  display system internal lipc publish global-cb | Probe视图          | L545
+  display system internal lipc lcmp statistics | Probe视图          | L577
+  display system internal lipc lip statistics | Probe视图          | L605
+  display system internal lipc topology link | Probe视图          | L633
+  display system internal lipc topology history | Probe视图          | L661
+  display system internal lipc topology status | Probe视图          | L689
+  display system internal lipc topology statistics | Probe视图          | L717
+  display system internal lipc topology node | Probe视图          | L745
+  display system internal lipc topology process-time | Probe视图          | L779
+  display system internal lipc physical | Probe视图          | L807
+  display system internal lipc loop statistics | Probe视图          | L835
+  display system internal lipc pcb mbuf statistics | Probe视图          | L863
+  display system internal lipc pcb statistics | Probe视图          | L887
+  display system internal lipc sudp statistics | Probe视图          | L915
+  display system internal lipc sudp { global-port \| local-port } | Probe视图          | L943
+  display system internal lipc sudp pcb-info | Probe视图          | L971
+  debugging lipc                      | 用户视图             | L1007
+  lipc ping                           | Probe视图          | L1051
+  lipc timeout                        | Probe视图          | L1087
+  lipc performance                    | Probe视图          | L1123
+  lipc dump-port                      | Probe视图          | L1161
+-->
 
 **LIPC \-- STCP Probe命令 \-- display system internal lipc stcp statistics**
 

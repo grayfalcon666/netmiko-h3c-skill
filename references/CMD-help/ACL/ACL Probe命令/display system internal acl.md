@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  display system internal acl         | ]                | L5
+-->
 
 **ACL \-- ACL Probe命令 \-- display system internal acl**
 

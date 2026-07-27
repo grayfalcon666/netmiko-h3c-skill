@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging mld                       | 用户视图             | L5
+-->
 
 **MLD \-- MLD调试命令 \-- debugging mld**
 

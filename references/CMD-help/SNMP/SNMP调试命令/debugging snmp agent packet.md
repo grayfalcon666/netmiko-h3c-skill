@@ -1,3 +1,9 @@
+<!-- CMD-INDEX
+  debugging snmp agent packet         | 用户视图             | L8
+  debugging snmp agent process        | 用户视图             | L304
+  debugging snmp trap packet          | 用户视图             | L1598
+  debugging snmp trap process         | 用户视图             | L1712
+-->
 
 **SNMP \-- SNMP调试命令 \-- debugging snmp agent packet**
 

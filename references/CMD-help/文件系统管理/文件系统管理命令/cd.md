@@ -1,3 +1,30 @@
+<!-- CMD-INDEX
+  cd                                  | 用户视图             | L29
+  copy                                | 用户视图             | L147
+  delete                              | 用户视图             | L323
+  dir                                 | 用户视图             | L511
+  fdisk                               | 用户视图             | L727
+  file prompt                         | 系统视图             | L871
+  fixdisk                             | 用户视图             | L917
+  format                              | 用户视图             | L961
+  gunzip                              | 用户视图             | L1015
+  gzip                                | 用户视图             | L1073
+  md5sum                              | 用户视图             | L1131
+  mkdir                               | 用户视图             | L1169
+  more                                | 用户视图             | L1243
+  mount                               | 用户视图             | L1375
+  move                                | 用户视图             | L1469
+  pwd                                 | 用户视图             | L1517
+  rename                              | 用户视图             | L1545
+  reset recycle-bin                   | 用户视图             | L1585
+  rmdir                               | 用户视图             | L1641
+  sha256sum                           | 用户视图             | L1679
+  tar create                          | 用户视图             | L1717
+  tar extract                         | 用户视图             | L1787
+  tar list                            | 用户视图             | L1869
+  umount                              | 用户视图             | L1917
+  undelete                            | 用户视图             | L2011
+-->
 
 **文件系统管理 \-- 文件系统管理命令 \-- cd**
 

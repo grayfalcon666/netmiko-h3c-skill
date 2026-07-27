@@ -1,3 +1,11 @@
+<!-- CMD-INDEX
+  display ip fast-forwarding aging-time | 任意视图             | L10
+  display ip fast-forwarding cache    | 任意视图             | L56
+  display ip fast-forwarding fragcache | 任意视图             | L172
+  ip fast-forwarding aging-time       | 系统视图             | L284
+  ip fast-forwarding load-shaing      | 系统视图             | L328
+  reset ip fast-forwarding cache      | 用户视图             | L370
+-->
 
 **快速转发 \-- 快速转发配置命令 \-- display ip fast-forwarding aging-time**
 

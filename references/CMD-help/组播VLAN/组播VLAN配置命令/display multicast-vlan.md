@@ -1,3 +1,14 @@
+<!-- CMD-INDEX
+  display multicast-vlan              | 任意视图             | L13
+  display multicast-vlan group        | 任意视图             | L91
+  display multicast-vlan forwarding-table | 任意视图             | L243
+  multicast-vlan                      | 系统视图             | L371
+  multicast-vlan entry-limit          | 系统视图             | L441
+  port (multicast-VLAN view)          | 组播VLAN视图         | L489
+  port multicast-vlan                 | 以太网接口视图/二层聚合接口视图 | L543
+  reset multicast-vlan group          | 用户视图             | L593
+  subvlan (multicast-VLAN view)       | 组播VLAN视图         | L635
+-->
 
 **组播VLAN \-- 组播VLAN配置命令 \-- display multicast-vlan**
 

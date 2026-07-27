@@ -1,3 +1,24 @@
+<!-- CMD-INDEX
+  bandwidth                           | Tunnel-Bundle接口视图 | L23
+  default                             | Tunnel-Bundle接口视图 | L77
+  description                         | Tunnel-Bundle接口视图 | L113
+  destination                         | Tunnel-Bundle 接口视图 | L165
+  display interface tunnel-bundle     | 任意视图             | L219
+  display mpls forwarding protection  | 任意视图             | L485
+  display mpls protection             | 任意视图             | L617
+  display tunnel-bundle               | 任意视图             | L899
+  interface tunnel-bundle protection  | 系统视图             | L1017
+  member interface                    | Tunnel-Bundle接口视图 | L1089
+  mpls protection                     | 系统视图             | L1145
+  protection holdoff                  | Tunnel-Bundle接口视图 | L1191
+  protection revertive                | Tunnel-Bundle接口视图 | L1243
+  protection switch                   | Tunnel-Bundle接口视图 | L1305
+  protection switching-mode bidirectional | Tunnel-Bundle接口视图 | L1379
+  psc message-interval                | MPLS保护倒换视图       | L1443
+  reset counters interface            | 用户视图             | L1499
+  service                             |                  | L1547
+  shutdown                            | Tunnel-Bundle接口视图 | L1629
+-->
 
 **MPLS保护倒换 \-- MPLS保护倒换配置命令 \-- bandwidth**
 

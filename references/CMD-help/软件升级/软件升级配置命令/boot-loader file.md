@@ -1,3 +1,22 @@
+<!-- CMD-INDEX
+  boot-loader file                    | ]                | L21
+  boot-loader blade file              | 用户视图             | L245
+  boot-loader pex file                | 用户视图             | L409
+  boot-loader update                  | 用户视图             | L609
+  bootrom backup                      | 用户视图             | L759
+  bootrom read                        | 用户视图             | L837
+  bootrom restore                     | 用户视图             | L911
+  bootrom update                      | 用户视图             | L983
+  bootrom-update security-check enable | 系统视图             | L1061
+  display boot-loader                 | 任意视图             | L1103
+  display boot-loader blade           | 任意视图             | L1373
+  display boot-loader pex             | 任意视图             | L1435
+  firmware update                     | 用户视图             | L1485
+  reset boot-loader blade             | 用户视图             | L1587
+  reset boot-loader pex               | 用户视图             | L1633
+  version auto-update enable          | 系统视图             | L1679
+  version check ignore                | 系统视图             | L1727
+-->
 
 **软件升级 \-- 软件升级配置命令 \-- boot-loader file**
 

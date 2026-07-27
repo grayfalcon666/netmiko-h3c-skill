@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging msdp                      | 用户视图             | L5
+-->
 
 **MSDP \-- MSDP调试命令 \-- debugging msdp**
 

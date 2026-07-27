@@ -1,3 +1,17 @@
+<!-- CMD-INDEX
+  display smart-link flush            | 任意视图             | L16
+  display smart-link group            | 任意视图             | L86
+  flush enable                        | Smart Link组视图    | L210
+  port                                | Smart Link组视图    | L264
+  port smart-link group               | 二层以太网接口视图/二层聚合接口视图 | L330
+  port smart-link group track         | 二层以太网接口视图/二层聚合接口视图 | L412
+  preemption delay                    | Smart Link组视图    | L502
+  preemption mode                     | Smart Link组视图    | L556
+  protected-vlan                      | Smart Link组视图    | L614
+  reset smart-link statistics         | 用户视图             | L684
+  smart-link flush enable             | 二层以太网接口视图/二层聚合接口视图 | L714
+  smart-link group                    | 系统视图             | L768
+-->
 
 **Smart Link \-- Smart Link配置命令 \-- display smart-link flush**
 

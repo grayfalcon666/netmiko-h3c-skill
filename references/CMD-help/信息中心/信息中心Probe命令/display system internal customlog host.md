@@ -1,3 +1,9 @@
+<!-- CMD-INDEX
+  display system internal customlog host | Probe视图          | L8
+  display system internal customlog mbuf dump | Probe视图          | L86
+  display system internal customlog mbuf usage | Probe视图          | L136
+  display system internal customlog test | Probe视图          | L214
+-->
 
 **信息中心 \-- 信息中心Probe命令 \-- display system internal customlog host**
 

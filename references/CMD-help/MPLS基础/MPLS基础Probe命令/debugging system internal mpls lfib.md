@@ -1,3 +1,16 @@
+<!-- CMD-INDEX
+  debugging system internal mpls lfib |                  | L15
+  display system internal mpls forwarding temporary-ilm | Probe视图          | L83
+  display system internal mpls lfib ilm | Probe视图          | L129
+  display system internal mpls lfib nhlfe | Probe视图          | L175
+  display system internal mpls lfib nhlfe reflist | Probe视图          | L221
+  display system internal mpls lfib record | Probe视图          | L267
+  display system internal mpls lfib statistics | Probe视图          | L317
+  display system internal mpls lsp-pending | Probe视图          | L361
+  display system internal mpls statistics | Probe视图          | L381
+  mpls lfib record size               | Probe视图          | L401
+  reset system internal mpls lfib record | Probe视图          | L451
+-->
 
 **MPLS基础 \-- MPLS基础Probe命令 \-- debugging system internal mpls lfib**
 

@@ -1,3 +1,170 @@
+<!-- CMD-INDEX
+  bandwidth                           | 串口视图/串口子接口视图/AM接口视图/FCM接口视图/ISDN BRI接口视图/E1-F接口视图/T1-F接口视图 | L169
+  default                             | 串口视图/串口子接口视图/AM接口视图/FCM接口视图/ISDN BRI接口视图/E1-F接口视图/T1-F接口视图/CE3接口视图/CT3接口视图 | L215
+  description                         | 串口视图/串口子接口视图/AM接口视图/FCM接口视图/ISDN BRI接口视图/E1-F接口视图/T1-F接口视图/CE3接口视图/CT3接口视图 | L255
+  shutdown                            | 串口视图/串口子接口视图/AM接口视图/FCM接口视图/ISDN BRI接口视图/E1-F接口视图/T1-F接口视图/CE3接口视图/CT3接口视图 | L301
+  timer-hold                          | 串口视图/AM接口视图/FCM接口视图/ISDN BRI接口视图/E1-F接口视图/T1-F接口视图 | L343
+  timer-hold retry                    | 串口视图/AM接口视图/FCM接口视图/ISDN BRI接口视图/E1-F接口视图/T1-F接口视图 | L395
+  async-mode                          | 异步串口视图           | L447
+  baudrate                            | 同步串口视图           | L509
+  clock                               | 同步串口视图           | L579
+  code                                | 同步串口视图           | L709
+  crc                                 | 同步串口视图           | L753
+  detect dcd                          | 同步串口视图           | L799
+  detect dsr-dtr                      | 同步串口视图/异步串口视图    | L845
+  display interface async             | 任意视图             | L903
+  display interface serial            | 任意视图             | L1247
+  eliminate-pulse                     | 异步串口视图           | L1609
+  idle-code                           | 同步串口视图           | L1671
+  interface async                     | 系统视图             | L1719
+  interface serial                    | 系统视图             | L1753
+  invert receive-clock                | 同步串口视图           | L1809
+  invert transmit-clock               | 同步串口视图           | L1855
+  itf                                 | 同步串口视图           | L1901
+  link-protocol                       | 同步串口视图           | L1943
+  loopback                            | 同步串口视图/异步串口视图    | L1987
+  mtu                                 | 同步串口视图/异步串口视图/串口子接口视图 | L2039
+  phy-mru                             | 异步串口视图           | L2097
+  physical-mode                       | 同/异步串口视图         | L2165
+  reset counters interface            | 用户视图             | L2209
+  reset counters interface            | 用户视图             | L2253
+  reverse-rts                         | 同步串口视图           | L2297
+  sub-interface rate-statistic        | 同步串口视图           | L2341
+  virtualbaudrate                     | 同步串口视图           | L2397
+  async-mode                          | AM接口视图           | L2463
+  display interface analogmodem       | 任意视图             | L2507
+  eliminate-pulse                     | AM接口视图           | L2849
+  interface analogmodem               | 系统视图             | L2895
+  loopback                            | AM接口视图           | L2939
+  mtu                                 | AM接口视图           | L2981
+  phy-mru                             | AM接口视图           | L3027
+  reset counters interface            | 用户视图             | L3079
+  display interface fcm               | 任意视图             | L3123
+  interface fcm                       | 系统视图             | L3423
+  mtu                                 | FCM接口视图          | L3467
+  pcm                                 | FCM接口视图          | L3515
+  reset counters interface            | 用户视图             | L3565
+  activate                            | ISDN BRI接口视图     | L3611
+  display interface bri               | 任意视图             | L3649
+  interface bri                       | 系统视图             | L3979
+  loopback                            | ISDN BRI接口视图     | L4013
+  mtu                                 | ISDN BRI接口视图     | L4063
+  reset counters interface            | 用户视图             | L4109
+  alarm-detect                        | CE1/PRI接口视图      | L4155
+  cable (CE1/PRI interface)           | CE1/PRI接口视图      | L4201
+  cem-set (CE1/PRI interface)         | CE1/PRI接口视图      | L4245
+  channel-set (CE1/PRI interface)     | CE1/PRI接口视图      | L4305
+  clock (CE1/PRI interface)           | CE1/PRI接口视图      | L4365
+  clock-change auto                   | CE1/PRI接口视图      | L4413
+  code (CE1/PRI interface)            | CE1/PRI接口视图      | L4455
+  controller e1                       | 系统视图             | L4509
+  data-coding (CE1/PRI interface)     | CE1/PRI接口视图      | L4543
+  detect-ais                          | CE1/PRI接口视图      | L4593
+  display controller e1               | 任意视图             | L4635
+  frame-format (CE1/PRI interface)    | CE1/PRI接口视图      | L4783
+  idle-code (CE1/PRI interface)       | CE1/PRI接口视图      | L4831
+  itf (CE1/PRI interface)             | CE1/PRI接口视图      | L4881
+  loopback (CE1/PRI interface)        | CE1/PRI接口视图      | L4945
+  pri-set (CE1/PRI interface)         | CE1/PRI接口视图      | L4997
+  reset counters controller e1        | 用户视图             | L5055
+  using (CE1/PRI interface)           | CE1/PRI接口视图      | L5095
+  work-mode                           | CE1/PRI接口视图      | L5151
+  alarm-detect                        | CT1/PRI接口视图      | L5209
+  alarm-threshold                     | CT1/PRI接口视图      | L5255
+  bert (CT1/PRI interface)            | CT1/PRI接口视图      | L5305
+  cable (CT1/PRI interface)           | CT1/PRI接口视图      | L5359
+  cem-set (CT1/PRI interface)         | CT1/PRI接口视图      | L5407
+  channel-set (CT1/PRI interface)     | CT1/PRI接口视图      | L5467
+  clock (CT1/PRI interface)           | CT1/PRI接口视图      | L5527
+  code (CT1/PRI interface)            | CT1/PRI接口视图      | L5577
+  controller t1                       | 系统视图             | L5631
+  data-coding (CT1/PRI interface)     | CT1/PRI接口视图      | L5665
+  display controller t1               | 任意视图             | L5715
+  fdl                                 | CT1/PRI接口视图      | L6079
+  frame-format (CT1/PRI interface)    | CT1/PRI接口视图      | L6133
+  idle-code (CT1/PRI interface)       | CT1/PRI接口视图      | L6181
+  itf (CT1/PRI interface)             | CT1/PRI接口视图      | L6231
+  loopback (CT1/PRI interfacei)       | CT1/PRI接口视图      | L6293
+  pri-set (CT1/PRI interface)         | CT1/PRI接口视图      | L6345
+  reset counters controller t1        | 用户视图             | L6403
+  sendloopcode                        | CT1/PRI接口视图      | L6443
+  using cem                           | CT1/PRI接口视图      | L6503
+  clock-change auto                   | E1-F接口视图         | L6549
+  crc                                 | E1-F接口视图         | L6591
+  display fe1                         | 任意视图             | L6637
+  fe1 alarm-detect                    | E1-F接口视图         | L6785
+  fe1 cable                           | E1-F接口视图         | L6835
+  fe1 clock                           | E1-F接口视图         | L6879
+  fe1 code                            | E1-F接口视图         | L6931
+  fe1 data-coding                     | E1-F接口视图         | L6985
+  fe1 detect-ais                      | E1-F接口视图         | L7039
+  fe1 frame-format                    | E1-F接口视图         | L7085
+  fe1 idle-code                       | E1-F接口视图         | L7137
+  fe1 itf                             | E1-F接口视图         | L7187
+  fe1 loopback                        | E1-F接口视图         | L7249
+  fe1 timeslot-list                   | E1-F接口视图         | L7301
+  fe1 unframed                        | E1-F接口视图         | L7359
+  mtu                                 | E1-F接口视图         | L7407
+  reset counters interface            | 用户视图             | L7455
+  crc                                 | T1-F接口视图         | L7495
+  display ft1                         | 任意视图             | L7541
+  ft1 alarm-detect                    | T1-F接口视图         | L7917
+  ft1 alarm-threshold                 | T1-F接口视图         | L7967
+  ft1 bert                            | T1-F接口视图         | L8021
+  ft1 cable                           | T1-F接口视图         | L8079
+  ft1 clock                           | T1-F接口视图         | L8131
+  ft1 code                            | T1-F接口视图         | L8181
+  ft1 data-coding                     | T1-F接口视图         | L8235
+  ft1 fdl                             | T1-F接口视图         | L8289
+  ft1 frame-format                    | T1-F接口视图         | L8347
+  ft1 idle-code                       | T1-F接口视图         | L8399
+  ft1 itf                             | T1-F接口视图         | L8449
+  ft1 loopback                        | T1-F接口视图         | L8519
+  ft1 sendloopcode                    | T1-F接口视图         | L8571
+  ft1 timeslot-list                   | T1-F接口视图         | L8639
+  mtu                                 | T1-F接口视图         | L8689
+  reset counters interface            | 用户视图             | L8737
+  bert                                | CE3接口视图          | L8777
+  clock                               | CE3接口视图          | L8839
+  controller e3                       | 系统视图             | L8889
+  display controller e3               | 任意视图             | L8923
+  e1 bert                             | CE3接口视图          | L9227
+  e1 channel-set                      | CE3接口视图          | L9293
+  e1 clock                            | CE3接口视图          | L9349
+  e1 frame-format                     | CE3接口视图          | L9399
+  e1 loopback                         | CE3接口视图          | L9453
+  e1 shutdown                         | CE3接口视图          | L9505
+  e1 unframed                         | CE3接口视图          | L9551
+  fe3                                 | ]                | L9601
+  loopback                            | CE3接口视图          | L9667
+  national-bit                        | CE3接口视图          | L9719
+  reset counters controller e3        | 用户视图             | L9763
+  using                               | CE3接口视图          | L9803
+  alarm                               | CT3接口视图          | L9853
+  bert                                | CT3接口视图          | L9923
+  cable                               | CT3接口视图          | L9985
+  clock                               | CT3接口视图          | L10031
+  controller t3                       | 系统视图             | L10081
+  display controller t3               | 任意视图             | L10115
+  feac                                | CT3接口视图          | L10515
+  frame-format                        | CT3接口视图          | L10589
+  ft3                                 | CT3接口视图          | L10641
+  loopback                            | CT3接口视图          | L10713
+  mdl                                 | CT3接口视图          | L10765
+  reset counters controller t3        | 用户视图             | L10847
+  t1 alarm                            | ]                | L10887
+  t1 bert                             | CT3接口视图          | L10955
+  t1 channel-set                      | CT3接口视图          | L11021
+  t1 clock                            | CT3接口视图          | L11077
+  t1 fdl                              | CT3接口视图          | L11127
+  t1 frame-format                     | CT3接口视图          | L11187
+  t1 loopback                         | CT3接口视图          | L11241
+  t1 sendloopcode                     | CT3接口视图          | L11295
+  t1 show                             | CT3接口视图          | L11349
+  t1 shutdown                         | CT3接口视图          | L11489
+  t1 unframed                         | CT3接口视图          | L11535
+  using                               | CT3接口视图          | L11585
+-->
 
 **WAN接口 \-- WAN接口公共命令 \-- bandwidth**
 

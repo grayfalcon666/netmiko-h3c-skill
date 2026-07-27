@@ -1,3 +1,21 @@
+<!-- CMD-INDEX
+  debugging evi isis adj-packet       | 用户视图             | L20
+  debugging evi isis all              | 用户视图             | L166
+  debugging evi isis error            | 用户视图             | L204
+  debugging evi isis event            | 用户视图             | L500
+  debugging evi isis graceful-restart | 用户视图             | L756
+  debugging evi isis ha               | 用户视图             | L886
+  debugging evi isis local-mac        | 用户视图             | L1040
+  debugging evi isis misc             | 用户视图             | L1106
+  debugging evi isis route            | 用户视图             | L1302
+  debugging evi isis self-originate-update | 用户视图             | L1382
+  debugging evi isis snp-packet       | 用户视图             | L1522
+  debugging evi isis timer            | 用户视图             | L1686
+  debugging evi isis update-packet    | 用户视图             | L1784
+  debugging evi mac-address           | 用户视图             | L1998
+  debugging evi neighbor-discovery client | 用户视图             | L2134
+  debugging evi neighbor-discovery server | 用户视图             | L2398
+-->
 
 **EVI \-- EVI调试命令 \-- debugging evi isis adj-packet**
 

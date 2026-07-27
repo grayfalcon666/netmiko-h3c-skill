@@ -1,3 +1,16 @@
+<!-- CMD-INDEX
+  display wlan ap-list                | 任意视图             | L15
+  display wlan bas-ac                 | 任意视图             | L75
+  display wlan client                 | 任意视图             | L163
+  mac-address                         | AP列表视图           | L231
+  wlan ap-list                        | 系统视图             | L277
+  wlan bas-ac ap aging-time           | 系统视图             | L325
+  wlan bas-ac authentication          | 系统视图             | L365
+  wlan bas-ac client aging-time       | 系统视图             | L419
+  wlan load-balance ap ap-list        | 系统视图             | L459
+  wlan master-ac enable               | 系统视图             | L505
+  wlan master-ac port                 | 系统视图             | L541
+-->
 
 **MAC-BAC \-- MAC-BAC配置命令 \-- display wlan ap-list**
 

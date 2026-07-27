@@ -1,3 +1,73 @@
+<!-- CMD-INDEX
+  abr-summary (OSPFv3 area view)      | OSPFv3区域视图       | L72
+  area                                | OSPFv3视图         | L128
+  asbr-summary (OSPFv3 view)          | OSPFv3视图         | L172
+  bandwidth-reference (OSPFv3 view)   | OSPFv3视图         | L232
+  default tag                         | OSPFv3视图         | L280
+  default-cost (OSPFv3 area view)     | OSPFv3区域视图       | L334
+  default-route-advertise (OSPFv3 view) | OSPFv3视图         | L390
+  display ospfv3                      | 任意视图             | L450
+  display ospfv3 abr-asbr             | 任意视图             | L1068
+  display ospfv3 abr-summary          | 任意视图             | L1154
+  display ospfv3 asbr-summary         | 任意视图             | L1296
+  display ospfv3 graceful-restart     | 任意视图             | L1464
+  display ospfv3 interface            | 任意视图             | L1878
+  display ospfv3 lsdb                 | 任意视图             | L2122
+  display ospfv3 nexthop              | 任意视图             | L2520
+  display ospfv3 non-stop-routing     | 任意视图             | L2602
+  display ospfv3 peer                 | 任意视图             | L2676
+  display ospfv3 request-queue        | 任意视图             | L3044
+  display ospfv3 retrans-queue        | 任意视图             | L3160
+  display ospfv3 routing              | 任意视图             | L3270
+  display ospfv3 spf-tree             | 任意视图             | L3412
+  display ospfv3 statistics           | 任意视图             | L3702
+  display ospfv3 vlink                | 任意视图             | L4054
+  enable ipsec-profile                | OSPFv3区域视图       | L4170
+  filter (OSPFv3 area view)           | OSPFv3区域视图       | L4222
+  filter-policy export (OSPFv3 View)  | OSPFv3视图         | L4280
+  filter-policy import (OSPFv3 View)  | OSPFv3视图         | L4352
+  graceful-restart enable             | OSPFv3视图         | L4424
+  graceful-restart helper enable      | OSPFv3视图         | L4486
+  graceful-restart helper strict-lsa-checking | OSPFv3视图         | L4540
+  graceful-restart interval           | OSPFv3视图         | L4590
+  import-route (OSPFv3 view)          | OSPFv3视图         | L4644
+  log-peer-change                     | OSPFv3视图         | L4732
+  lsa-generation-interval             | OSPFv3视图         | L4774
+  maximum load-balancing (OSPFv3 view) | OSPFv3视图         | L4830
+  non-stop-routing                    | OSPFv3视图         | L4886
+  nssa (OSPFv3 area view)             | OSPFv3区域视图       | L4934
+  ospfv3                              | 系统视图             | L5008
+  ospfv3 area                         | 接口视图             | L5060
+  ospfv3 bfd enable                   | 接口视图             | L5118
+  ospfv3 cost                         | 接口视图             | L5182
+  ospfv3 dr-priority                  | 接口视图             | L5238
+  ospfv3 ipsec-profile                | 接口视图             | L5298
+  ospfv3 mib-binding                  | 系统视图             | L5362
+  ospfv3 mtu-ignore                   | 接口视图             | L5408
+  ospfv3 network-type                 | 接口视图             | L5466
+  ospfv3 peer                         | 接口视图             | L5550
+  ospfv3 prefix-suppression           | 接口视图             | L5620
+  ospfv3 timer dead                   | 接口视图             | L5684
+  ospfv3 timer hello                  | 接口视图             | L5746
+  ospfv3 timer poll                   | 接口视图             | L5810
+  ospfv3 timer retransmit             | 接口视图             | L5876
+  ospfv3 trans-delay                  | 接口视图             | L5938
+  preference                          | OSPFv3视图         | L5998
+  prefix-suppression                  | OSPFv3视图         | L6048
+  reset ospfv3 process                | 用户视图             | L6104
+  reset ospfv3 redistribution         | 用户视图             | L6150
+  reset ospfv3 statistics             | 用户视图             | L6180
+  router-id                           | OSPFv3视图         | L6210
+  silent-interface (OSPFv3 view)      | OSPFv3视图         | L6264
+  snmp-agent trap enable ospfv3       | 系统视图             | L6344
+  snmp context-name                   | OSPFv3视图         | L6406
+  snmp trap rate-limit                | OSPFv3视图         | L6452
+  spf-schedule-interval               | OSPFv3视图         | L6496
+  stub (OSPFv3 area view)             | OSPFv3区域视图       | L6550
+  stub-router                         | OSPFv3视图         | L6606
+  transmit-pacing                     | OSPFv3视图         | L6670
+  vlink-peer (OSPFv3 area view)       | OSPFv3区域视图       | L6714
+-->
 
 **OSPFv3 \-- OSPFv3配置命令 \-- abr-summary (OSPFv3 area view)**
 

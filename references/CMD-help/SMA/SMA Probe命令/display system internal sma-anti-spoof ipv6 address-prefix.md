@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  display system internal sma-anti-spoof ipv6 address-prefix | Probe视图          | L6
+  display system internal sma-anti-spoof ipv6 packet-tag | Probe视图          | L52
+-->
 
 **SMA \-- SMA Probe命令 \-- display system internal sma-anti-spoof ipv6 address-prefix**
 

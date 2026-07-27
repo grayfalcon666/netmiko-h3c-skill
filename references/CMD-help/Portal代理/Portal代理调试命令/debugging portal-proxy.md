@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging portal-proxy              | 用户视图             | L5
+-->
 
 **Portal代理 \-- Portal代理调试命令 \-- debugging portal-proxy**
 

@@ -1,3 +1,38 @@
+<!-- CMD-INDEX
+  checkzero                           | RIPng视图          | L37
+  default cost                        | RIPng视图          | L79
+  display ripng                       | 任意视图             | L129
+  display ripng database              | 任意视图             | L243
+  display ripng graceful-restart      | 任意视图             | L313
+  display ripng interface             | 任意视图             | L387
+  display ripng neighbor              | 任意视图             | L481
+  display ripng non-stop-routing      | 任意视图             | L539
+  display ripng route                 | 任意视图             | L607
+  enable ipsec-profile                | RIPng视图          | L787
+  filter-policy export                | RIPng视图          | L837
+  filter-policy import                | RIPng视图          | L909
+  graceful-restart                    | RIPng视图          | L973
+  graceful-restart interval           | RIPng视图          | L1019
+  import-route                        | RIPng视图          | L1061
+  maximum load-balancing              | RIPng视图          | L1117
+  non-stop-routing                    | RIPng视图          | L1169
+  output-delay                        | RIPng视图          | L1211
+  preference                          | RIPng视图          | L1263
+  reset ripng process                 | 用户视图             | L1315
+  reset ripng statistics              | 用户视图             | L1351
+  ripng                               | 系统视图             | L1385
+  ripng default-route                 | 接口视图             | L1435
+  ripng enable                        | 接口视图             | L1517
+  ripng ipsec-profile                 | 接口视图             | L1571
+  ripng metricin                      | 接口视图             | L1633
+  ripng metricout                     | 接口视图             | L1687
+  ripng output-delay                  | 接口视图             | L1741
+  ripng poison-reverse                | 接口视图             | L1805
+  ripng split-horizon                 | 接口视图             | L1855
+  ripng summary-address               | 接口视图             | L1915
+  timer triggered                     | RIPng视图          | L1979
+  timers                              | RIPng视图          | L2031
+-->
 
 **RIPng \-- RIPng配置命令 \-- checkzero**
 

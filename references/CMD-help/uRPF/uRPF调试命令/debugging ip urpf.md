@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  debugging ip urpf                   | 用户视图             | L6
+  debugging ipv6 urpf                 | 用户视图             | L65
+-->
 
 **uRPF \-- uRPF调试命令 \-- debugging ip urpf**
 

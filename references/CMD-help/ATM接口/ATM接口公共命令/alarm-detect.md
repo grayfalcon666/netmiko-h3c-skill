@@ -1,3 +1,71 @@
+<!-- CMD-INDEX
+  alarm-detect                        | ATM接口视图（包括13种物理类型：E1、T1、E3、T3、OC-3c/STM-1、OC-12c/STM-4、25M、ADSL、ADSL 2+、G.SHDSL、SHDSL_4WIRE、SHDSL_4WIRE_BIS、SHDSL_8WIRE_BIS） | L70
+  bandwidth                           | ATM接口视图（包括13种物理类型：E1、T1、E3、T3、OC-3c/STM-1、OC-12c/STM-4、25M、ADSL、ADSL 2+、G.SHDSL、SHDSL_4WIRE、SHDSL_4WIRE_BIS、SHDSL_8WIRE_BIS） | L134
+  default                             | ATM接口视图（包括13种物理类型：E1、T1、E3、T3、OC-3c/STM-1、OC-12c/STM-4、25M、ADSL、ADSL 2+、G.SHDSL、SHDSL_4WIRE、SHDSL_4WIRE_BIS、SHDSL_8WIRE_BIS） | L186
+  description                         | ATM接口视图（包括13种物理类型：E1、T1、E3、T3、OC-3c/STM-1、OC-12c/STM-4、25M、ADSL、ADSL 2+、G.SHDSL、SHDSL_4WIRE、SHDSL_4WIRE_BIS、SHDSL_8WIRE_BIS） | L228
+  display counters                    | 任意视图             | L276
+  display counters rate               | 任意视图             | L378
+  display interface atm               | 任意视图             | L476
+  interface atm                       | 系统视图             | L870
+  mtu                                 | ATM接口视图（包括13种物理类型：E1、T1、E3、T3、OC-3c/STM-1、OC-12c/STM-4、25M、ADSL、ADSL 2+、G.SHDSL、SHDSL_4WIRE、SHDSL_4WIRE_BIS、SHDSL_8WIRE_BIS） | L926
+  reset counters interface            | 用户视图             | L978
+  shutdown                            | ATM接口视图（包括13种物理类型：E1、T1、E3、T3、OC-3c/STM-1、OC-12c/STM-4、25M、ADSL、ADSL 2+、G.SHDSL、SHDSL_4WIRE、SHDSL_4WIRE_BIS、SHDSL_8WIRE_BIS） | L1020
+  clock                               | ATM 25M接口视图      | L1064
+  flag                                | ]                | L1118
+  frame-format                        | ATM OC-3c/STM-1接口视图 | L1182
+  link-delay                          | ATM 25M接口视图      | L1236
+  loopback                            | ATM 25M接口视图      | L1286
+  scramble                            | ATM OC-3c/STM-1接口视图 | L1340
+  threshold                           | ATM OC-3c/STM-1接口视图 | L1386
+  cable                               | ATM E1接口视图/ATM T1接口视图 | L1444
+  clock                               | ATM E1接口视图/ATM T1接口视图 | L1488
+  clock-change auto                   | ATM E1接口视图       | L1538
+  code                                | ATM E1接口视图/ATM T1接口视图 | L1584
+  frame-format                        | ATM E1接口视图/ATM T1接口视图 | L1648
+  loopback                            | ATM E1接口视图/ATM T1接口视图 | L1710
+  scramble                            | ATM E1接口视图/ATM T1接口视图 | L1762
+  cable                               | ATM T3接口视图       | L1806
+  clock                               | ATM E3接口视图/ATM T3接口视图 | L1850
+  frame-format                        | ATM E3接口视图/ATM T3接口视图 | L1900
+  loopback                            | ATM E3接口视图/ATM T3接口视图 | L1962
+  scramble                            | ATM E3接口视图/ATM T3接口视图 | L2014
+  activate                            | ATM ADSL接口视图/ATM ADSL 2+接口视图 | L2058
+  adsl standard                       | ATM ADSL接口视图/ATM ADSL 2+接口视图 | L2110
+  adsl tx-attenuation                 | ATM ADSL接口视图/ATM ADSL 2+接口视图 | L2178
+  display dsl configuration           | 任意视图             | L2224
+  display dsl status                  | 任意视图             | L2386
+  display dsl version                 | 任意视图             | L2500
+  activate                            | ATM G.SHDSL接口视图/ATM SHDSL_4WIRE接口视图/ATM SHDSL_4WIRE_BIS接口视图/ATM SHDSL_8WIRE_BIS接口视图 | L2632
+  display dsl configuration           | 任意视图             | L2684
+  display dsl status                  | 任意视图             | L2832
+  display dsl version                 | 任意视图             | L3202
+  shdsl annex                         | ATM G.SHDSL接口视图/ATM SHDSL_4WIRE接口视图/ATM SHDSL_4WIRE_BIS接口视图/ATM SHDSL_8WIRE_BIS接口视图 | L3314
+  shdsl capability                    | ATM G.SHDSL接口视图/ATM SHDSL_4WIRE接口视图/ATM SHDSL_4WIRE_BIS接口视图/ATM SHDSL_8WIRE_BIS接口视图 | L3364
+  shdsl line-probing                  | ATM G.SHDSL接口视图/ATM SHDSL_4WIRE接口视图/ATM SHDSL_4WIRE_BIS接口视图/ATM SHDSL_8WIRE_BIS接口视图 | L3426
+  shdsl mode                          | ATM G.SHDSL接口视图/ATM SHDSL_4WIRE接口视图/ATM SHDSL_4WIRE_BIS接口视图/ATM SHDSL_8WIRE_BIS接口视图 | L3472
+  shdsl pam                           | ATM G.SHDSL接口视图/ATM SHDSL_4WIRE接口视图/ATM SHDSL_4WIRE_BIS接口视图/ATM SHDSL_8WIRE_BIS接口视图 | L3520
+  shdsl pbo                           | ATM G.SHDSL接口视图/ATM SHDSL_4WIRE接口视图/ATM SHDSL_4WIRE_BIS接口视图/ATM SHDSL_8WIRE_BIS接口视图 | L3576
+  shdsl psd                           | ATM G.SHDSL接口视图/ATM SHDSL_4WIRE接口视图/ATM SHDSL_4WIRE_BIS接口视图/ATM SHDSL_8WIRE_BIS接口视图 | L3624
+  shdsl rate                          | ATM G.SHDSL接口视图/ATM SHDSL_4WIRE接口视图/ATM SHDSL_4WIRE_BIS接口视图/ATM SHDSL_8WIRE_BIS接口视图 | L3672
+  shdsl snr-margin                    | ATM G.SHDSL接口视图/ATM SHDSL_4WIRE接口视图/ATM SHDSL_4WIRE_BIS接口视图/ATM SHDSL_8WIRE_BIS接口视图 | L3728
+  shdsl wire                          |                  | L3776
+  display dsl configuration           | 任意视图             | L3846
+  display dsl status                  | 任意视图             | L3994
+  display dsl version                 | 任意视图             | L4364
+  display interface efm               | 任意视图             | L4476
+  interface efm                       | 系统视图             | L4804
+  shdsl annex                         | EFM G.SHDSL接口视图/EFM SHDSL_4WIRE接口视图/EFM SHDSL_4WIRE_BIS接口视图/EFM SHDSL_8WIRE_BIS接口视图 | L4856
+  shdsl capability                    | EFM G.SHDSL接口视图/EFM SHDSL_4WIRE接口视图/EFM SHDSL_4WIRE_BIS接口视图/EFM SHDSL_8WIRE_BIS接口视图 | L4904
+  shdsl line-probing                  | EFM G.SHDSL接口视图/EFM SHDSL_4WIRE接口视图/EFM SHDSL_4WIRE_BIS接口视图/EFM SHDSL_8WIRE_BIS接口视图 | L4966
+  shdsl mode                          | EFM G.SHDSL接口视图/EFM SHDSL_4WIRE接口视图/EFM SHDSL_4WIRE_BIS接口视图/EFM SHDSL_8WIRE_BIS接口视图 | L5008
+  shdsl pam                           | EFM G.SHDSL接口视图/EFM SHDSL_4WIRE接口视图/EFM SHDSL_4WIRE_BIS接口视图/EFM SHDSL_8WIRE_BIS接口视图 | L5056
+  shdsl pbo                           | EFM G.SHDSL接口视图/EFM SHDSL_4WIRE接口视图/EFM SHDSL_4WIRE_BIS接口视图/EFM SHDSL_8WIRE_BIS接口视图 | L5112
+  shdsl psd                           | EFM G.SHDSL接口视图/EFM SHDSL_4WIRE接口视图/EFM SHDSL_4WIRE_BIS接口视图/EFM SHDSL_8WIRE_BIS接口视图 | L5160
+  shdsl rate                          | EFM G.SHDSL接口视图/EFM SHDSL_4WIRE接口视图/EFM SHDSL_4WIRE_BIS接口视图/EFM SHDSL_8WIRE_BIS接口视图 | L5208
+  shdsl snr-margin                    | EFM G.SHDSL接口视图/EFM SHDSL_4WIRE接口视图/EFM SHDSL_4WIRE_BIS接口视图/EFM SHDSL_8WIRE_BIS接口视图 | L5264
+  shdsl wire                          |                  | L5312
+  sub-interface rate-statistic        | EFM G.SHDSL接口视图/EFM SHDSL_4WIRE接口视图/EFM SHDSL_4WIRE_BIS接口视图/EFM SHDSL_8WIRE_BIS接口视图 | L5382
+-->
 
 **ATM接口 \-- ATM接口公共命令 \-- alarm-detect**
 

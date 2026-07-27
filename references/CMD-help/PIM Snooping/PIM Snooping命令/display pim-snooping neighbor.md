@@ -1,3 +1,13 @@
+<!-- CMD-INDEX
+  display pim-snooping neighbor       | 任意视图             | L12
+  display pim-snooping router-port    | 任意视图             | L184
+  display pim-snooping routing-table  | 任意视图             | L318
+  display pim-snooping statistics     | 任意视图             | L538
+  pim-snooping enable                 | VLAN视图/VSI视图     | L608
+  pim-snooping graceful-restart join-aging-time | VLAN视图/VSI视图     | L678
+  pim-snooping graceful-restart neighbor-aging-time | VLAN视图/VSI视图     | L758
+  reset pim-snooping statistics       | 用户视图             | L838
+-->
 
 **PIM Snooping \-- PIM Snooping命令 \-- display pim-snooping neighbor**
 

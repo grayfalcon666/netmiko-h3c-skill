@@ -1,3 +1,25 @@
+<!-- CMD-INDEX
+  a-mpdu enable                       | AC设备：Radio视图/AP组Radio视图 | L24
+  a-msdu enable                       | AC设备：Radio视图/AP组Radio视图 | L92
+  ap-model                            | AP组视图            | L162
+  beacon-interval                     | AC设备：Radio视图/AP组Radio视图 | L210
+  channel                             | AC设备：Radio视图/AP组Radio视图 | L292
+  channel band-width                  | AC设备：Radio视图/AP组Radio视图 | L382
+  client dot11n-only enable           | AC设备：Radio视图/AP组Radio视图 | L448
+  display wlan ap-model               | 任意视图             | L518
+  distance                            | AC设备：Radio视图/AP组Radio视图 | L616
+  dot11n mandatory maximum-mcs        | AC设备：Radio视图/AP组Radio视图 | L698
+  dot11n multicast-mcs                | AC设备：Radio视图/AP组Radio视图 | L770
+  dot11n support maximum-mcs          | AC设备：Radio视图/AP组Radio视图 | L848
+  max-power                           | AC设备：Radio视图/AP组Radio视图 | L916
+  power-lock enable                   | AC设备：Radio视图/AP组Radio视图 | L1002
+  preamble                            | AC设备：Radio视图/AP组Radio视图 | L1074
+  radio enable                        | AC设备：Radio视图/AP组Radio视图 | L1160
+  radio                               | AC设备：AP视图/AP组ap-model视图 | L1224
+  rate                                |                  | L1270
+  short-gi enable                     | AC设备：Radio视图/AP组Radio视图 | L1428
+  type                                | AC设备：Radio视图/AP组Radio视图 | L1496
+-->
 
 **射频管理 \-- 射频管理命令 \-- a-mpdu enable**
 

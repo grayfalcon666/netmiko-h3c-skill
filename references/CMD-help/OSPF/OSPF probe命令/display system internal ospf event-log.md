@@ -1,3 +1,20 @@
+<!-- CMD-INDEX
+  display system internal ospf event-log | Probe视图          | L19
+  display system internal ospf flood-list | Probe视图          | L77
+  display system internal ospf interface | Probe视图          | L109
+  display system internal ospf interface standby | Probe视图          | L147
+  display system internal ospf lsdb   | Probe视图          | L189
+  display system internal ospf lsdb standby | Probe视图          | L227
+  display system internal ospf nib    | Probe视图          | L293
+  display system internal ospf peer standby | Probe视图          | L325
+  display system internal ospf peer statistics standby | 任意视图             | L369
+  display system internal ospf prefix | Probe视图          | L407
+  display system internal ospf router | Probe视图          | L443
+  display system internal ospf statistics | Probe视图          | L473
+  display system internal ospf status | Probe视图          | L511
+  display system internal ospf vlink standby | Probe视图          | L537
+  reset system internal ospf event-log | Probe视图          | L575
+-->
 
 **OSPF \-- OSPF probe命令 \-- display system internal ospf event-log**
 

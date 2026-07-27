@@ -1,3 +1,25 @@
+<!-- CMD-INDEX
+  diagnostic bootup level             | 系统视图             | L24
+  diagnostic bootup enable test       |                  | L74
+  diagnostic event-log size           | 系统视图             | L170
+  diagnostic monitor enable           |                  | L214
+  diagnostic monitor interval         |                  | L320
+  diagnostic ondemand failure         | 用户视图             | L418
+  diagnostic ondemand repeating       | 用户视图             | L474
+  diagnostic ondemand start           | 用户视图             | L524
+  diagnostic ondemand stop            | ]                | L634
+  diagnostic simulation               |                  | L712
+  display diagnostic bootup           | 任意视图             | L806
+  display diagnostic bootup level     | 任意视图             | L906
+  display diagnostic content          | 任意视图             | L938
+  display diagnostic event-log        | 任意视图             | L1324
+  display diagnostic ondemand configuration | 任意视图             | L1380
+  display diagnostic result           | 任意视图             | L1424
+  display diagnostic result statistics | 任意视图             | L1644
+  display diagnostic simulation       | 任意视图             | L1832
+  reset diagnostic event-log          | 用户视图             | L1920
+  reset diagnostic result             | 用户视图             | L1948
+-->
 
 **GOLD \-- GOLD配置命令 \-- diagnostic bootup level**
 

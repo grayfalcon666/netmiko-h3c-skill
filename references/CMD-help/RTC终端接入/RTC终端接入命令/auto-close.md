@@ -1,3 +1,46 @@
+<!-- CMD-INDEX
+  auto-close                          | 终端模板视图           | L45
+  auto-link                           | 终端模板视图           | L95
+  bind vpn-instance                   | 终端模板视图           | L145
+  display rta                         | 任意视图             | L193
+  display rta relay statistics        | 任意视图             | L575
+  display rta relay status            | 任意视图             | L657
+  driverbuf save                      | 终端模板视图           | L737
+  driverbuf size                      | 终端模板视图           | L783
+  idle-timeout                        | 终端模板视图           | L833
+  link-protocol stlp                  | 接口视图             | L879
+  resetkey                            | 终端模板视图           | L921
+  reset rta connection                | 用户视图             | L969
+  reset rta relay statistics          | 用户视图             | L1007
+  reset rta statistics                | 用户视图             | L1039
+  rta relay buffer-size               | 系统视图             | L1075
+  rta relay disconnect                | 系统视图             | L1123
+  rta relay enable                    | 系统视图             | L1161
+  rta relay listen-port               | 系统视图             | L1201
+  rta relay tcp                       | 系统视图             | L1255
+  rta relay tcp keepalive             | 系统视图             | L1309
+  rta relay tcp nodelay               | 系统视图             | L1361
+  rta rtc compatibility               | 系统视图             | L1407
+  rta rtc-server listen-port          | 系统视图             | L1447
+  rta server enable                   | 系统视图             | L1495
+  rta source-ip                       | 系统视图             | L1535
+  rta template                        | 系统视图             | L1583
+  rta terminal                        | 异步串口视图           | L1629
+  rta terminal backup                 | 接口视图             | L1679
+  rtc-multipeer remote                | 终端模板视图           | L1727
+  sendbuf bufsize                     | 终端模板视图           | L1793
+  sendbuf threshold                   | 终端模板视图           | L1843
+  tcp                                 | 终端模板视图           | L1893
+  update changed-config               | 终端模板视图           | L1969
+  vty description                     | 终端模板视图           | L2013
+  vty hotkey                          | 终端模板视图           | L2061
+  vty password                        | 终端模板视图           | L2111
+  vty rtc-client remote               | 终端模板视图           | L2171
+  vty rtc-client remote remote-port   | 终端模板视图           | L2229
+  vty rtc-multipeer                   | 终端模板视图           | L2287
+  vty rtc-server remote               | 终端模板视图           | L2343
+  vty rtc-server remote udp           | 终端模板视图           | L2397
+-->
 
 **RTC终端接入 \-- RTC终端接入命令 \-- auto-close**
 

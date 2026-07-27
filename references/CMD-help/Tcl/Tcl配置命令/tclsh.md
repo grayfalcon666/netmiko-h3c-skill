@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  tclsh                               | 用户视图             | L6
+  tclquit                             | Tcl配置视图          | L46
+-->
 
 **Tcl \-- Tcl配置命令 \-- tclsh**
 

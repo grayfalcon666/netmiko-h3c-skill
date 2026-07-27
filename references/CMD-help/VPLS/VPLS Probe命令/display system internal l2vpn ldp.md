@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  display system internal l2vpn ldp   | 任意视图             | L5
+-->
 
 **VPLS \-- VPLS Probe命令 \-- display system internal l2vpn ldp**
 

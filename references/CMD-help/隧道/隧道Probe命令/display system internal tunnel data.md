@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  display system internal tunnel data | Probe视图          | L5
+-->
 
 **隧道 \-- 隧道Probe命令 \-- display system internal tunnel data**
 

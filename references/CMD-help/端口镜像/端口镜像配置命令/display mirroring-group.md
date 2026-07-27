@@ -1,3 +1,17 @@
+<!-- CMD-INDEX
+  display mirroring-group             | 任意视图             | L16
+  mirroring-group                     | 系统视图             | L184
+  mirroring-group mirroring-cpu       |                  | L240
+  mirroring-group mirroring-port (interface view) | 接口视图             | L324
+  mirroring-group mirroring-port (system view) | 系统视图             | L404
+  mirroring-group mirroring-vlan      | 系统视图             | L476
+  mirroring-group monitor-egress      |                  | L548
+  mirroring-group monitor-port (interface view) | 接口视图             | L634
+  mirroring-group monitor-port (system view) | 系统视图             | L714
+  mirroring-group reflector-port      |                  | L788
+  mirroring-group remote-probe vlan   | 系统视图             | L880
+  mirror-to                           |                  | L956
+-->
 
 **端口镜像 \-- 端口镜像配置命令 \-- display mirroring-group**
 

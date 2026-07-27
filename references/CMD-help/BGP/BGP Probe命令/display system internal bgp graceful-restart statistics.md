@@ -1,3 +1,31 @@
+<!-- CMD-INDEX
+  display system internal bgp graceful-restart statistics | Probe视图          | L30
+  display system internal bgp instance statistics |                  | L50
+  display system internal bgp interface | Probe视图          | L132
+  display system internal bgp l2vpn auto-discovery advertise-info | Probe视图          | L172
+  display system internal bgp l2vpn auto-discovery standby | Probe视图          | L228
+  display system internal bgp l2vpn auto-discovery verbose | Probe视图          | L290
+  display system internal bgp l2vpn signaling advertise-info | Probe视图          | L346
+  display system internal bgp l2vpn signaling standby | Probe视图          | L404
+  display system internal bgp l2vpn signaling verbose | Probe视图          | L468
+  display system internal bgp nib     | Probe视图          | L526
+  display system internal bgp nib log | Probe视图          | L556
+  display system internal bgp peer standby |                  | L576
+  display system internal bgp peer statistics |                  | L658
+  display system internal bgp protocol statistics | Probe视图          | L764
+  display system internal bgp routing-table advertise-info |                  | L820
+  display system internal bgp routing-table ipv4 multicast standby | Probe视图          | L916
+  display system internal bgp routing-table ipv4 unicast outlabel standby | Probe视图          | L998
+  display system internal bgp routing-table ipv4 unicast standby | Probe视图          | L1044
+  display system internal bgp routing-table ipv6 multicast standby | Probe视图          | L1130
+  display system internal bgp routing-table ipv6 unicast outlabel standby | Probe视图          | L1196
+  display system internal bgp routing-table ipv6 unicast standby | Probe视图          | L1240
+  display system internal bgp routing-table verbose |                  | L1316
+  display system internal bgp routing-table vpnv4 outlabel standby | Probe视图          | L1416
+  display system internal bgp routing-table vpnv4 standby | Probe视图          | L1458
+  display system internal bgp routing-table vpnv6 outlabel standby | Probe视图          | L1550
+  display system internal bgp routing-table vpnv6 standby | Probe视图          | L1592
+-->
 
 **BGP \-- BGP Probe命令 \-- display system internal bgp graceful-restart statistics**
 

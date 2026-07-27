@@ -1,3 +1,68 @@
+<!-- CMD-INDEX
+  auto-cost enable                    | TRILL视图          | L67
+  display trill adjacent-table        | 任意视图             | L115
+  display trill brief                 | 任意视图             | L183
+  display trill fib                   | 任意视图             | L323
+  display trill graceful-restart status | 任意视图             | L413
+  display trill ingress-route         | 任意视图             | L545
+  display trill interface             | 任意视图             | L635
+  display trill lsdb                  | 任意视图             | L823
+  display trill mfib ingress          | 任意视图             | L1069
+  display trill mfib transit          | 任意视图             | L1163
+  display trill multicast-route       | 任意视图             | L1293
+  display trill neighbor-table        | 任意视图             | L1471
+  display trill peer                  | 任意视图             | L1531
+  display trill rpf-table             | 任意视图             | L1619
+  display trill topology              | 任意视图             | L1681
+  display trill unicast-route         | 任意视图             | L1883
+  display trill vr                    | 任意视图             | L1979
+  display trill vr-adjacent-table     | 任意视图             | L2137
+  display trill vr-fib                | 任意视图             | L2205
+  display trill vr-route              | 任意视图             | L2285
+  flash-flood                         | TRILL视图          | L2359
+  flush-policy difference             | TRILL视图          | L2407
+  graceful-restart                    | TRILL视图          | L2453
+  graceful-restart interval           | TRILL视图          | L2491
+  graceful-restart suppress-sa        | TRILL视图          | L2533
+  ingress assign-delay                | TRILL视图          | L2575
+  ingress assign-rule load-balancing  | TRILL视图          | L2625
+  log-peer-change enable              | TRILL视图          | L2669
+  lsp-length originate                | TRILL视图          | L2711
+  lsp-length receive                  | TRILL视图          | L2763
+  max-unicast-load-balancing          | TRILL视图          | L2813
+  multicast multi-thread enable       | TRILL视图          | L2855
+  multicast-ecmp enable               | TRILL视图          | L2907
+  nickname                            | TRILL视图          | L2955
+  reset trill                         | 用户视图             | L3003
+  set ingress-load-balancing          | TRILL视图          | L3029
+  set overload                        | TRILL视图          | L3069
+  snmp context-name                   | TRILL视图          | L3115
+  snmp-agent trap enable trill        | 系统视图             | L3161
+  system-id                           | TRILL视图          | L3237
+  timer lsp-generation                | TRILL视图          | L3283
+  timer lsp-max-age                   | TRILL视图          | L3333
+  timer lsp-refresh                   | TRILL视图          | L3387
+  timer spf                           | TRILL视图          | L3441
+  tree-root priority                  | TRILL视图          | L3493
+  trees calculate                     | TRILL视图          | L3535
+  trill                               | 系统视图             | L3577
+  trill announcing-vlan               | 二层以太网接口视图/二层聚合接口视图 | L3615
+  trill bypass-pseudonode enable      | 二层以太网接口视图/二层聚合接口视图 | L3683
+  trill cost                          | 二层以太网接口视图/二层聚合接口视图 | L3725
+  trill designated-vlan               | 二层以太网接口视图/二层聚合接口视图 | L3777
+  trill drb-priority                  | 二层以太网接口视图/二层聚合接口视图 | L3835
+  trill enable                        | 二层以太网接口视图/二层聚合接口视图 | L3883
+  trill link-type                     | 二层以太网接口视图/二层聚合接口视图 | L3937
+  trill timer avf-inhibited           | 二层以太网接口视图/二层聚合接口视图 | L3989
+  trill timer csnp                    | 二层以太网接口视图/二层聚合接口视图 | L4037
+  trill timer hello                   | 二层以太网接口视图/二层聚合接口视图 | L4085
+  trill timer holding-multiplier      | 二层以太网接口视图/二层聚合接口视图 | L4145
+  trill timer lsp                     | 二层以太网接口视图/二层聚合接口视图 | L4201
+  trill track                         | 二层以太网接口视图/二层聚合接口视图 | L4251
+  trill vr ipv6 vrid                  | VLAN接口视图         | L4293
+  trill vr vrid                       | VLAN接口视图         | L4351
+  trill vr vrid track                 | VLAN接口视图         | L4405
+-->
 
 **TRILL \-- TRILL配置命令 \-- auto-cost enable**
 

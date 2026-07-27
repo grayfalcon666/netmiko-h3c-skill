@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  display system internal service-loopback running | Probe视图          | L6
+  display system internal service-loopback interface-list | Probe视图          | L46
+-->
 
 **业务环回组 \-- 业务环回组Probe命令 \-- display system internal service-loopback running**
 

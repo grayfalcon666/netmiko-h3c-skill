@@ -1,3 +1,8 @@
+<!-- CMD-INDEX
+  scan idle-time                      | AC设备：Radio视图/AP组Radio视图 | L7
+  scan max-service-time               | AC设备：Radio视图/AP组Radio视图 | L69
+  scan scan-time                      | AC设备：Radio视图/AP组Radio视图 | L125
+-->
 
 **信道扫描 \-- 信道扫描配置命令 \-- scan idle-time**
 

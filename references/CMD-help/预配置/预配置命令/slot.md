@@ -1,3 +1,9 @@
+<!-- CMD-INDEX
+  slot                                | 系统视图             | L8
+  chassis slot                        | 系统视图             | L60
+  provision                           | slot视图           | L102
+  display provision failed-config     | 任意视图             | L174
+-->
 
 **预配置 \-- 预配置命令 \-- slot**
 

@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  debugging mac-forwarding            | 用户视图             | L6
+  debugging bridge                    | 用户视图             | L172
+-->
 
 **二层转发调试命令 \-- 普通二层转发 \-- debugging mac-forwarding**
 

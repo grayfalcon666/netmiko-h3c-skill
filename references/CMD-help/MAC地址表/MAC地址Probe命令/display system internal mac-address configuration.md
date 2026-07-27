@@ -1,3 +1,10 @@
+<!-- CMD-INDEX
+  display system internal mac-address configuration | Probe视图          | L9
+  display system internal mac-address learned | Probe视图          | L63
+  display system internal mac-address protocol | Probe视图          | L121
+  display system internal mac-address statistics | Probe视图          | L179
+  reset system internal mac-address statistics | Probe视图          | L223
+-->
 
 **MAC地址表 \-- MAC地址Probe命令 \-- display system internal mac-address configuration**
 

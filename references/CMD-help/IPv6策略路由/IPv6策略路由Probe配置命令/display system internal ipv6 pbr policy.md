@@ -1,3 +1,8 @@
+<!-- CMD-INDEX
+  display system internal ipv6 pbr policy | Probe视图          | L7
+  display system internal ipv6 pbr kernel policy | Probe视图          | L55
+  display system internal ipv6 pbr fib | Probe视图          | L103
+-->
 
 **IPv6策略路由 \-- IPv6策略路由Probe配置命令 \-- display system internal ipv6 pbr policy**
 

@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  display system internal dot11 characteristics | Probe视图          | L6
+  display system internal dot11 verbose | Probe视图          | L58
+-->
 
 **802.11 \-- 802.11命令 \-- display system internal dot11 characteristics**
 

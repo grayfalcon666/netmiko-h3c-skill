@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  display system internal ethernet controlblock | Probe视图          | L6
+  display system internal ethernet character | Probe视图          | L52
+-->
 
 **以太网接口 \-- 以太网接口 Probe命令 \-- display system internal ethernet controlblock**
 

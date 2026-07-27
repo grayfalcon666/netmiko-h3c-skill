@@ -1,3 +1,9 @@
+<!-- CMD-INDEX
+  debugging ha                        | 用户视图             | L8
+  display system internal ha service  | Probe视图          | L56
+  display system internal ha service-group | Probe视图          | L80
+  display system internal ha statistics | ]                | L106
+-->
 
 **HA \-- HA Probe命令 \-- debugging ha**
 

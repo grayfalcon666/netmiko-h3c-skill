@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  debugging ip netstream event        | 用户视图             | L6
+  debugging ip netstream packet       | 用户视图             | L472
+-->
 
 **NetStream \-- NetStream调试命令 \-- debugging ip netstream event**
 

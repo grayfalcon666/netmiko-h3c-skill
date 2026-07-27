@@ -1,3 +1,21 @@
+<!-- CMD-INDEX
+  aging-time                          | ANCP邻居视图         | L20
+  ancp access-loop-configure          | 系统视图             | L68
+  ancp enable                         | 系统视图             | L226
+  ancp neighbor                       | 系统视图             | L274
+  ancp oam                            | 系统视图             | L324
+  ancp session interval               | 系统视图             | L496
+  ancp session retransmit             | 系统视图             | L540
+  ancp source-interface               | 系统视图             | L584
+  display ancp access-loop            | 任意视图             | L642
+  display ancp neighbor               | 任意视图             | L886
+  display ancp statistic              | 任意视图             | L1034
+  peer-id                             | ANCP邻居视图         | L1270
+  reset ancp access-loop              | 用户视图             | L1326
+  reset ancp neighbor                 | 用户视图             | L1370
+  reset ancp statistic                | 用户视图             | L1404
+  source-interface                    | ANCP邻居视图         | L1438
+-->
 
 **ANCP \-- ANCP配置命令 \-- aging-time**
 

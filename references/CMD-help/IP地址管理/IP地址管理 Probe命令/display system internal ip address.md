@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  display system internal ip address  | Probe视图          | L5
+-->
 
 **IP地址管理 \-- IP地址管理 Probe命令 \-- display system internal ip address**
 

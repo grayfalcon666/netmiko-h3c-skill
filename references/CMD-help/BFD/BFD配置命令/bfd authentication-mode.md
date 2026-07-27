@@ -1,3 +1,25 @@
+<!-- CMD-INDEX
+  bfd authentication-mode             | 接口视图/BFD模板视图     | L24
+  bfd demand enable                   | 接口视图             | L108
+  bfd detect-interface                | 接口视图             | L166
+  bfd detect-multiplier               | 接口视图/BFD模板视图     | L222
+  bfd echo enable                     | 接口视图             | L282
+  bfd echo-source-ip                  | 系统视图             | L340
+  bfd echo-source-ipv6                | 系统视图             | L384
+  bfd min-echo-receive-interval       | 接口视图             | L430
+  bfd min-receive-interval            | 接口视图/BFD模板视图     | L488
+  bfd min-transmit-interval           | 接口视图/BFD模板视图     | L548
+  bfd multi-hop authentication-mode   | 系统视图             | L606
+  bfd multi-hop destination-port      | 系统视图             | L676
+  bfd multi-hop detect-multiplier     | 系统视图             | L716
+  bfd multi-hop min-receive-interval  | 系统视图             | L762
+  bfd multi-hop min-transmit-interval | 系统视图             | L806
+  bfd session init-mode               | 系统视图             | L850
+  bfd template                        | 系统视图             | L898
+  display bfd session                 | 任意视图             | L944
+  reset bfd session statistics        | 用户视图             | L1194
+  snmp-agent trap enable bfd          | 系统视图             | L1220
+-->
 
 **BFD \-- BFD配置命令 \-- bfd authentication-mode**
 

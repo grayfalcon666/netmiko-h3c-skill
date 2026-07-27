@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  display system internal httpd service | Probe视图          | L6
+  debugging system internal httpd     | Probe视图          | L96
+-->
 
 **HTTPD \-- HTTPD Probe命令 \-- display system internal httpd service**
 

@@ -1,3 +1,9 @@
+<!-- CMD-INDEX
+  display ip urpf                     | 任意视图             | L8
+  ip urpf                             | 系统视图/接口视图        | L128
+  display ipv6 urpf                   | 任意视图             | L224
+  ipv6 urpf                           | 系统视图/接口视图        | L336
+-->
 
 **IPv4 uRPF \-- IPv4 uRPF配置命令 \-- display ip urpf**
 

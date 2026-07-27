@@ -1,3 +1,55 @@
+<!-- CMD-INDEX
+  address-family ipv4 (VPN instance view) | VPN实例视图          | L54
+  address-family vpnv4                | BGP视图/BGP-VPN实例视图 | L98
+  description (VPN instance view)     | VPN实例视图          | L162
+  display bgp routing-table ipv4 unicast inlabel | 任意视图             | L208
+  display bgp routing-table ipv4 unicast outlabel | 任意视图             | L298
+  display bgp routing-table vpnv4     | 任意视图             | L384
+  display bgp routing-table vpnv4 inlabel | 任意视图             | L1082
+  display bgp routing-table vpnv4 outlabel | 任意视图             | L1180
+  display ospf sham-link              | 任意视图             | L1284
+  display ip vpn-instance             | 任意视图             | L1444
+  domain-id                           | OSPF视图           | L1618
+  export route-policy                 | VPN实例视图/IPv4 VPN视图/IPv6 VPN视图 | L1674
+  ext-community-type                  | OSPF视图           | L1754
+  import route-policy                 | VPN实例视图/IPv4 VPN视图/IPv6 VPN视图 | L1804
+  ip binding vpn-instance             | 接口视图             | L1884
+  ip vpn-instance (System view)       | 系统视图             | L1954
+  nesting-vpn                         | BGP VPNv4地址族视图   | L2000
+  peer next-hop-invariable            | BGP VPNv4地址族视图   | L2046
+  peer upe                            | BGP VPNv4地址族视图   | L2104
+  peer upe route-policy               | BGP VPNv4地址族视图   | L2156
+  policy vpn-target                   | BGP VPNv4地址族视图   | L2224
+  reserve-vlan (VPN instance view)    | VPN实例视图          | L2268
+  route-distinguisher (VPN instance view) | VPN实例视图          | L2328
+  route-tag                           | OSPF视图           | L2382
+  routing-table limit                 | VPN实例视图/IPv4 VPN视图/IPv6 VPN视图 | L2450
+  rr-filter                           | BGP VPNv4地址族视图   | L2532
+  sham-link                           | OSPF区域视图         | L2580
+  snmp context-name                   | VPN实例视图          | L2676
+  snmp-agent trap enable l3vpn        | 系统视图             | L2758
+  tnl-policy (VPN instance view/IPv4 VPN view/IPv6 VPN view) | VPN实例视图/IPv4 VPN视图/IPv6 VPN视图 | L2800
+  vpn popgo                           | BGP视图            | L2892
+  vpn-id                              | VPN实例视图          | L2944
+  vpn-instance-capability simple      | OSPF视图           | L2996
+  vpn-target (VPN Instance view/IPv4 VPN view/IPv6 VPN view) | VPN实例视图/IPv4 VPN视图/IPv6 VPN视图 | L3040
+  address-family ipv6 (VPN instance view) | VPN实例视图          | L3142
+  address-family vpnv6                | BGP视图            | L3186
+  disable-dn-bit-check                | OSPFv3视图         | L3234
+  disable-dn-bit-set                  | OSPFv3视图         | L3290
+  display bgp routing-table vpnv6     | 任意视图             | L3346
+  display bgp routing-table vpnv6 inlabel | 任意视图             | L3888
+  display bgp routing-table vpnv6 outlabel | 任意视图             | L3990
+  display ospfv3 sham-link            | 任意视图             | L4094
+  domain-id                           | OSPFv3视图         | L4268
+  ext-community-type                  | OSPFv3视图         | L4338
+  policy vpn-target                   | BGP VPNv6地址族视图   | L4392
+  route-tag                           | OSPFv3视图         | L4436
+  route-tag-check enable              | OSPFv3视图         | L4508
+  rr-filter                           | BGP VPNv6地址族视图   | L4560
+  sham-link                           | OSPFv3区域视图       | L4608
+  vpn-instance-capability simple      | OSPFv3视图         | L4676
+-->
 
 **MPLS L3VPN \-- MPLS L3VPN配置命令 \-- address-family ipv4 (VPN instance view)**
 

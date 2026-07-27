@@ -1,3 +1,17 @@
+<!-- CMD-INDEX
+  display system internal rip database standby | Probe视图          | L16
+  display system internal rip graceful-restart event-log | Probe视图          | L58
+  display system internal rip interface | Probe视图          | L94
+  display system internal rip interface standby | Probe视图          | L126
+  display system internal rip neighbor standby | Probe视图          | L166
+  display system internal rip nib     | Probe视图          | L206
+  display system internal rip nib log | Probe视图          | L232
+  display system internal rip non-stop-routing event-log | Probe视图          | L252
+  display system internal rip route standby | Probe视图          | L288
+  display system internal rip status  | Probe视图          | L336
+  reset system internal rip graceful-restart event-log | Probe视图          | L356
+  reset system internal rip non-stop-routing event-log | Probe视图          | L392
+-->
 
 **RIP \-- RIP probe命令 \-- display system internal rip database standby**
 

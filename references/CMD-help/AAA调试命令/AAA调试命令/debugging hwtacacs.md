@@ -1,3 +1,9 @@
+<!-- CMD-INDEX
+  debugging hwtacacs                  | 用户视图             | L8
+  debugging ldap                      | 用户视图             | L1022
+  debugging local-server              | 用户视图             | L1452
+  debugging radius                    | 用户视图             | L1638
+-->
 
 **AAA调试命令 \-- AAA调试命令 \-- debugging hwtacacs**
 

@@ -1,3 +1,10 @@
+<!-- CMD-INDEX
+  xml                                 | 用户视图             | L9
+  netconf soap http enable            | 系统视图             | L69
+  netconf soap https enable           | 系统视图             | L109
+  netconf ssh server enable           | 系统视图             | L147
+  netconf ssh server port             | 系统视图             | L189
+-->
 
 **NETCONF \-- NETCONF配置命令 \-- xml**
 

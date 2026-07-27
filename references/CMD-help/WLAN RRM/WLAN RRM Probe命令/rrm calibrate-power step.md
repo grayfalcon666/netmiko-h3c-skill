@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  rrm calibrate-power step            | Probe视图          | L5
+-->
 
 **WLAN RRM \-- WLAN RRM Probe命令 \-- rrm calibrate-power step**
 

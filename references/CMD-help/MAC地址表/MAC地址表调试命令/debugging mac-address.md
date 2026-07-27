@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging mac-address               | 用户视图             | L5
+-->
 
 **MAC地址表 \-- MAC地址表调试命令 \-- debugging mac-address**
 

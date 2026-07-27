@@ -1,3 +1,29 @@
+<!-- CMD-INDEX
+  delete ip rpf-route-static          | 系统视图             | L28
+  display mac-address multicast       | 任意视图             | L72
+  display mrib interface              | 任意视图             | L166
+  display multicast boundary          | 任意视图             | L296
+  display multicast forwarding df-info | 任意视图             | L362
+  display multicast forwarding event  | 任意视图             | L546
+  display multicast forwarding-table  | 任意视图             | L672
+  display multicast forwarding-table df-list | 任意视图             | L898
+  display multicast routing-table     | 任意视图             | L1012
+  display multicast routing-table static | 任意视图             | L1140
+  display multicast rpf-info          | 任意视图             | L1226
+  ip rpf-route-static                 | 系统视图             | L1328
+  load-splitting (MRIB view)          | MRIB视图           | L1396
+  longest-match (MRIB view)           | MRIB视图           | L1444
+  mac-address multicast               |                  | L1482
+  multicast boundary                  | 接口视图             | L1558
+  multicast forwarding supervlan community | VLAN接口视图         | L1632
+  multicast routing                   | 系统视图             | L1684
+  multicast rpf-fail-pkt bridging     | VLAN接口视图         | L1740
+  multicast rpf-fail-pkt flooding     | 系统视图             | L1796
+  multicast rpf-fail-pkt trap-to-cpu  | 系统视图             | L1846
+  reset multicast forwarding event    | 用户视图             | L1896
+  reset multicast forwarding-table    | 用户视图             | L1930
+  reset multicast routing-table       | 用户视图             | L1982
+-->
 
 **组播路由与转发 \-- 组播路由与转发配置命令 \-- delete ip rpf-route-static**
 

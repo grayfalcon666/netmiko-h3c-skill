@@ -1,3 +1,10 @@
+<!-- CMD-INDEX
+  display system internal mac-forwarding controlblock | Probe视图          | L9
+  display system internal mac-forwarding cache ip verbose | probe视图          | L59
+  display system internal mac-forwarding cache ipv6 verbose | probe视图          | L109
+  display system internal bridge cache ip verbose | probe视图          | L159
+  display system internal bridge cache ipv6 verbose | probe视图          | L209
+-->
 
 **二层转发 \-- 普通二层转发Probe命令 \-- display system internal mac-forwarding controlblock**
 

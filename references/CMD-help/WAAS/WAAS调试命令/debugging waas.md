@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging waas                      | 用户视图             | L5
+-->
 
 **WAAS \-- WAAS调试命令 \-- debugging waas**
 

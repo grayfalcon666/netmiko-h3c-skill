@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging pim                       | 用户视图             | L5
+-->
 
 **PIM \-- PIM调试命令 \-- debugging pim**
 

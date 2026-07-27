@@ -1,3 +1,11 @@
+<!-- CMD-INDEX
+  auto-report                         | DCN视图            | L10
+  dcn                                 | 系统视图             | L48
+  display dcn                         | 任意视图             | L92
+  display dcn ne-info                 | 任意视图             | L164
+  ne-id                               | DCN视图            | L228
+  ne-ip                               | DCN视图            | L278
+-->
 
 **DCN \-- DCN配置命令 \-- auto-report**
 

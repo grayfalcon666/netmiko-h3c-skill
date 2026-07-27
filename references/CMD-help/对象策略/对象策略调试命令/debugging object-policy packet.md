@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging object-policy packet      | 用户视图             | L5
+-->
 
 **对象策略 \-- 对象策略调试命令 \-- debugging object-policy packet**
 

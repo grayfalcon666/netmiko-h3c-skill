@@ -1,3 +1,11 @@
+<!-- CMD-INDEX
+  display mac-forced-forwarding interface | 任意视图             | L10
+  display mac-forced-forwarding vlan  | 任意视图             | L96
+  mac-forced-forwarding               | VLAN视图           | L174
+  mac-forced-forwarding gateway probe | VLAN视图           | L232
+  mac-forced-forwarding network-port  | 二层以太网接口视图/二层聚合接口视图 | L278
+  mac-forced-forwarding server        | VLAN视图           | L328
+-->
 
 **MFF \-- MFF配置命令 \-- display mac-forced-forwarding interface**
 

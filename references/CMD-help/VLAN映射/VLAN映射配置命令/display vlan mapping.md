@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  display vlan mapping                | 任意视图             | L6
+  vlan mapping                        | 二层以太网接口视图/二层聚合接口视图 | L102
+-->
 
 **VLAN映射 \-- VLAN映射配置命令 \-- display vlan mapping**
 

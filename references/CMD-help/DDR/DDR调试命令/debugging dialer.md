@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging dialer                    | 用户视图             | L5
+-->
 
 **DDR \-- DDR调试命令 \-- debugging dialer**
 

@@ -1,3 +1,8 @@
+<!-- CMD-INDEX
+  view                                | Probe视图          | L7
+  list                                | Probe视图          | L55
+  probe                               | 系统视图             | L99
+-->
 
 **Probe基础配置 \-- Probe基础配置命令 \-- view**
 

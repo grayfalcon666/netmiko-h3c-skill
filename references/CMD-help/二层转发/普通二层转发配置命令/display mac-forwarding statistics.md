@@ -1,3 +1,20 @@
+<!-- CMD-INDEX
+  display mac-forwarding statistics   | 任意视图             | L19
+  reset mac-forwarding statistics     | 用户视图             | L205
+  display mac-forwarding cache ip     | 任意视图             | L241
+  display mac-forwarding cache ip fragment | 任意视图             | L351
+  display mac-forwarding cache ipv6   | 任意视图             | L461
+  cut-through enable                  | 系统视图             | L577
+  add interface                       | 反射模式Bridge视图/透传模式Bridge视图 | L625
+  add vlan                            | 跨VLAN模式Bridge视图  | L681
+  bridge                              | 系统视图             | L739
+  bridge mac-address timer aging      | 系统视图             | L817
+  display bridge mac-address          | 任意视图             | L873
+  mac-address max-mac-count           | 跨VLAN模式Bridge视图  | L997
+  display bridge cache ip             | 任意视图             | L1047
+  display bridge cache ip fragment    | 任意视图             | L1157
+  display bridge cache ipv6           | 任意视图             | L1263
+-->
 
 **二层转发 \-- 普通二层转发配置命令 \-- display mac-forwarding statistics**
 

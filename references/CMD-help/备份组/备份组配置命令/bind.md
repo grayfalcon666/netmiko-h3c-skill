@@ -1,3 +1,8 @@
+<!-- CMD-INDEX
+  bind                                | 备份组视图            | L7
+  display failover group              | 任意视图             | L85
+  failover group                      | 系统视图             | L161
+-->
 
 **备份组 \-- 备份组配置命令 \-- bind**
 

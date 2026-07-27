@@ -1,3 +1,12 @@
+<!-- CMD-INDEX
+  dot1q ethernet-type                 | 三层以太网接口视图/三层聚合接口视图/三层虚拟以太网接口视图/L3VE接口视图/VLAN接口视图 | L11
+  second-dot1q                        | 三层以太网子接口视图/三层聚合子接口视图/三层虚拟以太网子接口视图/L3VE子接口视图/VLAN接口视图 | L137
+  vlan-termination broadcast enable   | 三层以太网子接口视图/三层聚合子接口视图/三层虚拟以太网子接口视图/L3VE子接口视图/VLAN接口视图 | L321
+  vlan-type dot1q default             | 三层以太网子接口视图/三层聚合子接口视图/三层虚拟以太网子接口视图/L3VE子接口视图 | L411
+  vlan-type dot1q untagged            | 三层以太网子接口视图/三层聚合子接口视图/三层虚拟以太网子接口视图/L3VE子接口视图 | L461
+  vlan-type dot1q vid                 | 三层以太网子接口视图/三层聚合子接口视图/三层虚拟以太网子接口视图/L3VE子接口视图 | L511
+  vlan-type dot1q vid second-dot1q    | 三层以太网子接口视图/三层聚合子接口视图/三层虚拟以太网子接口视图/L3VE子接口视图 | L609
+-->
 
 **VLAN终结 \-- VLAN终结配置命令 \-- dot1q ethernet-type**
 

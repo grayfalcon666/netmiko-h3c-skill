@@ -1,3 +1,81 @@
+<!-- CMD-INDEX
+  display ipv6 dhcp duid              | 任意视图             | L80
+  ipv6 dhcp dscp                      | 系统视图             | L116
+  ipv6 dhcp log enable                | 系统视图             | L156
+  ipv6 dhcp select                    | 接口视图             | L198
+  address range                       | DHCPv6地址池视图      | L286
+  display ipv6 dhcp option-group      | 任意视图             | L352
+  display ipv6 dhcp pool              | 任意视图             | L546
+  display ipv6 dhcp prefix-pool       | 任意视图             | L760
+  display ipv6 dhcp server            | 任意视图             | L898
+  display ipv6 dhcp server conflict   | 任意视图             | L1014
+  display ipv6 dhcp server database   | 任意视图             | L1082
+  display ipv6 dhcp server expired    | 任意视图             | L1160
+  display ipv6 dhcp server ip-in-use  | 任意视图             | L1236
+  display ipv6 dhcp server pd-in-use  | 任意视图             | L1398
+  display ipv6 dhcp server statistics | 任意视图             | L1558
+  dns-server                          | DHCPv6地址池视图/DHCPv6选项组视图 | L1702
+  domain-name                         | DHCPv6地址池视图/DHCPv6选项组视图 | L1752
+  ipv6 dhcp option-group              | 系统视图             | L1802
+  ipv6 dhcp pool                      | 系统视图             | L1852
+  ipv6 dhcp prefix-pool               | 系统视图             | L1906
+  ipv6 dhcp server                    | 接口视图             | L1980
+  ipv6 dhcp server apply pool         | 接口视图             | L2050
+  ipv6 dhcp server database filename  | 系统视图             | L2130
+  ipv6 dhcp server database update interval | 系统视图             | L2214
+  ipv6 dhcp server database update now | 系统视图             | L2270
+  ipv6 dhcp server database update stop | 系统视图             | L2312
+  ipv6 dhcp server forbidden-address  | 系统视图             | L2356
+  ipv6 dhcp server forbidden-prefix   | 系统视图             | L2418
+  network                             | DHCPv6地址池视图      | L2476
+  option                              | DHCPv6地址池视图/DHCPv6选项组视图 | L2572
+  option-group                        | DHCPv6地址池视图      | L2644
+  prefix-pool                         | DHCPv6地址池视图      | L2692
+  reset ipv6 dhcp server conflict     | 用户视图             | L2760
+  reset ipv6 dhcp server expired      | 用户视图             | L2800
+  reset ipv6 dhcp server ip-in-use    | 用户视图             | L2842
+  reset ipv6 dhcp server pd-in-use    | 用户视图             | L2894
+  reset ipv6 dhcp server statistics   | 用户视图             | L2946
+  sip-server                          | DHCPv6地址池视图/DHCPv6选项组视图 | L2980
+  static-bind                         | DHCPv6地址池视图      | L3036
+  temporary address range             | DHCPv6地址池视图      | L3106
+  vpn-instance                        | DHCPv6地址池视图      | L3170
+  display ipv6 dhcp relay server-address | 任意视图             | L3218
+  display ipv6 dhcp relay statistics  | 任意视图             | L3340
+  gateway-list                        | DHCPv6地址池视图      | L3576
+  ipv6 dhcp relay gateway             | 接口视图             | L3622
+  ipv6 dhcp relay interface-id        | 接口视图             | L3688
+  ipv6 dhcp relay server-address      | 接口视图             | L3744
+  remote-server                       | DHCPv6地址池视图      | L3824
+  reset ipv6 dhcp relay statistics    | 用户视图             | L3876
+  display ipv6 dhcp client            | 任意视图             | L3910
+  display ipv6 dhcp client statistics | 任意视图             | L4194
+  ipv6 address dhcp-alloc             | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图/VLAN接口视图 | L4358
+  ipv6 dhcp client dscp               | 系统视图             | L4418
+  ipv6 dhcp client pd                 | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图/三层RPR逻辑接口视图/VLAN接口视图 | L4462
+  ipv6 dhcp client stateless enable   | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图/三层RPR逻辑接口视图/VLAN接口视图 | L4524
+  ipv6 dhcp client stateful           | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图/三层RPR逻辑接口视图/VLAN接口视图 | L4578
+  reset ipv6 dhcp client statistics   | 用户视图             | L4650
+  display ipv6 dhcp snooping binding  | 任意视图             | L4684
+  display ipv6 dhcp snooping binding database | 任意视图             | L4768
+  display ipv6 dhcp snooping packet statistics | 任意视图             | L4846
+  display ipv6 dhcp snooping trust    | 任意视图             | L4928
+  ipv6 dhcp snooping binding database filename | 系统视图             | L4972
+  ipv6 dhcp snooping binding database update interval | 系统视图             | L5058
+  ipv6 dhcp snooping binding database update now | 系统视图             | L5108
+  ipv6 dhcp snooping binding record   | 二层以太网接口视图/二层聚合接口视图/WLAN-BSS接口/WLAN-ESS接口/S通道接口视图/S通道聚合接口视图/VSI接口视图/VSI聚合接口视图 | L5146
+  ipv6 dhcp snooping check request-message | 二层以太网接口视图/二层聚合接口视图/WLAN-BSS接口视图/WLAN-ESS接口视图/S通道接口视图/S通道聚合接口视图/VSI接口视图/VSI聚合接口视图 | L5188
+  ipv6 dhcp snooping enable           | 系统视图             | L5232
+  ipv6 dhcp snooping max-learning-num | 二层以太网接口视图/二层聚合接口视图/S通道接口视图/S通道聚合接口视图/VSI接口视图/VSI聚合接口视图 | L5274
+  ipv6 dhcp snooping option interface-id enable | 二层以太网接口视图/二层聚合接口视图/WLAN-BSS接口/WLAN-ESS接口视图/S通道接口视图/S通道聚合接口视图/VSI接口视图/VSI聚合接口视图 | L5316
+  ipv6 dhcp snooping option interface-id string | 二层以太网端口视图/二层聚合接口视图/S通道接口视图/S通道聚合接口视图/VSI接口视图/VSI聚合接口视图 | L5366
+  ipv6 dhcp snooping option remote-id enable | 二层以太网接口视图/二层聚合接口视图/WLAN-BSS接口/WLAN-ESS接口视图/S通道接口视图/S通道聚合接口视图/VSI接口视图/VSI聚合接口视图 | L5420
+  ipv6 dhcp snooping option remote-id string | 二层以太网端口视图/二层聚合接口视图/S通道接口视图/S通道聚合接口视图/VSI接口视图/VSI聚合接口视图 | L5470
+  ipv6 dhcp snooping rate-limit       | 二层以太网接口视图/二层聚合接口视图/S通道接口视图/S通道聚合接口视图/VSI接口视图/VSI聚合接口视图 | L5524
+  ipv6 dhcp snooping trust            | 二层以太网接口视图/二层聚合接口视图 | L5582
+  reset ipv6 dhcp snooping binding    | ]                | L5628
+  reset ipv6 dhcp snooping packet statistics | 用户视图             | L5670
+-->
 
 **DHCPv6 \-- DHCPv6公共命令 \-- display ipv6 dhcp duid**
 

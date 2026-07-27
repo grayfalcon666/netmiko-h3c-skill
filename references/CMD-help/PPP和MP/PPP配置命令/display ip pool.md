@@ -1,3 +1,97 @@
+<!-- CMD-INDEX
+  display ip pool                     | 任意视图             | L96
+  display ppp access-user             | 任意视图             | L228
+  display ppp compression iphc        | 任意视图             | L630
+  ip address ppp-negotiate            | 接口视图             | L900
+  ip pool                             | 系统视图             | L948
+  ip pool gateway                     | 系统视图             | L1016
+  link-protocol ppp                   | 接口视图             | L1074
+  nas-port-type                       | 虚拟模板接口视图         | L1108
+  ppp accm                            | 接口视图             | L1202
+  ppp account-statistics enable       | 接口视图             | L1252
+  ppp acfc local-request              | 接口视图             | L1298
+  ppp acfc remote-reject              | 接口视图             | L1342
+  ppp authentication-mode             | 接口视图             | L1386
+  ppp chap password                   | 接口视图             | L1482
+  ppp chap user                       | 接口视图             | L1536
+  ppp compression iphc enable         | 接口视图             | L1586
+  ppp compression iphc rtp-connections | 接口视图             | L1644
+  ppp compression iphc tcp-connections | 接口视图             | L1702
+  ppp ipcp dns                        | 接口视图             | L1760
+  ppp ipcp dns admit-any              | 接口视图             | L1810
+  ppp ipcp dns request                | 接口视图             | L1858
+  ppp ipcp remote-address match       | 接口视图             | L1902
+  ppp ip-pool route                   | 系统视图             | L1944
+  ppp lqm                             | 接口视图             | L2006
+  ppp pap local-user                  | 接口视图             | L2056
+  ppp pfc local-request               | 接口视图             | L2116
+  ppp pfc remote-reject               | 接口视图             | L2160
+  ppp timer negotiate                 | 接口视图             | L2204
+  remote address                      | 接口视图             | L2250
+  reset ppp compression iphc          | 用户视图             | L2322
+  timer-hold                          | 接口视图             | L2360
+  timer-hold retry                    | 接口视图             | L2412
+  reset ppp access-user               | 用户视图             | L2462
+  bandwidth                           | 虚拟模板接口视图/MP-group接口视图 | L2506
+  default                             | 虚拟模板接口视图/MP-group接口视图 | L2560
+  description                         | 虚拟模板接口视图/MP-group接口视图 | L2604
+  display interface mp-group          | 任意视图             | L2654
+  display interface virtual-access    | 任意视图             | L2926
+  display interface virtual-template  | 任意视图             | L3196
+  display ppp mp                      | 任意视图             | L3408
+  interface mp-group                  | 系统视图             | L3552
+  interface virtual-template          | 系统视图             | L3598
+  mtu                                 | 虚拟模板接口视图/MP-group接口视图 | L3644
+  ppp mp                              | 接口视图             | L3700
+  ppp mp binding-mode                 | 虚拟模板接口视图/Dialer接口视图 | L3742
+  ppp mp endpoint                     | 接口视图             | L3798
+  ppp mp fragment disable             | 虚拟模板接口视图/Dialer接口视图/MP-group接口视图 | L3850
+  ppp mp lfi delay-per-frag           | 虚拟模板接口视图/Dialer接口视图/MP-group接口视图 | L3900
+  ppp mp lfi enable                   | 虚拟模板接口视图/Dialer接口视图/MP-group接口视图 | L3948
+  ppp mp lfi size-per-frag            | 虚拟模板接口视图/Dialer接口视图/MP-group接口视图 | L4002
+  ppp mp max-bind                     | 虚拟模板接口视图/Dialer接口视图/MP-group接口视图 | L4050
+  ppp mp min-bind                     | Dialer接口视图       | L4100
+  ppp mp min-fragment                 | 虚拟模板接口视图/Dialer接口视图/MP-group接口视图 | L4154
+  ppp mp mp-group                     | 接口视图             | L4200
+  ppp mp short-sequence               | 接口视图             | L4250
+  ppp mp soft-binding                 | 同步串口视图           | L4298
+  ppp mp sort-buffer-size             | 虚拟模板接口视图/Dialer接口视图/MP-group接口视图 | L4352
+  ppp mp timer lost-fragment          | 虚拟模板接口视图/Dialer接口视图/MP-group接口视图 | L4400
+  ppp mp user                         | 系统视图             | L4446
+  ppp mp virtual-template             | 接口视图             | L4506
+  reset counters interface mp-group   | 用户视图             | L4558
+  reset counters interface virtual-access | 用户视图             | L4604
+  service                             |                  | L4650
+  shutdown                            | MP-group接口视图     | L4734
+  display pppoe-server session packet | ]                | L4774
+  display pppoe-server session summary | ]                | L4990
+  display pppoe-server throttled-mac  | ]                | L5354
+  display pppoe-server va-pool        | 任意视图             | L5510
+  pppoe-server access-delay           | 三层以太网接口视图/三层以太网子接口视图/三层VE接口视图/三层VE子接口视图/VLAN接口视图/三层聚合接口视图/三层聚合子接口视图/VE-L3VPN接口视图/VE-L3VPN子接口视图/EFM接口视图/EFM子接口视图 | L5592
+  pppoe-server access-line-id bas-info | 三层以太网接口视图/三层以太网子接口视图/三层VE接口视图/三层VE子接口视图/VLAN接口视图/三层聚合接口视图/三层聚合子接口视图/VE-L3VPN接口视图/VE-L3VPN子接口视图/EFM接口视图/EFM子接口视图 | L5642
+  pppoe-server access-line-id circuit-id parse-mode | 三层以太网接口视图/三层以太网子接口视图/三层VE接口视图/三层VE子接口视图/VLAN接口视图/三层聚合接口视图/三层聚合子接口视图/VE-L3VPN接口视图/VE-L3VPN子接口视图/EFM接口视图/EFM子接口视图 | L5734
+  pppoe-server access-line-id circuit-id trans-format | 三层以太网接口视图/三层以太网子接口视图/三层VE接口视图/三层VE子接口视图/VLAN接口视图/三层聚合接口视图/三层聚合子接口视图/VE-L3VPN接口视图/VE-L3VPN子接口视图/EFM接口视图/EFM子接口视图 | L5810
+  pppoe-server access-line-id content | 三层以太网接口视图/三层以太网子接口视图/三层VE接口视图/三层VE子接口视图/VLAN接口视图/三层聚合接口视图/三层聚合子接口视图/VE-L3VPN接口视图/VE-L3VPN子接口视图/EFM接口视图/EFM子接口视图 | L5868
+  pppoe-server access-line-id remote-id trans-format | 三层以太网接口视图/三层以太网子接口视图/三层VE接口视图/三层VE子接口视图/VLAN接口视图/三层聚合接口视图/三层聚合子接口视图/VE-L3VPN接口视图/VE-L3VPN子接口视图/EFM接口视图/EFM子接口视图 | L5946
+  pppoe-server access-line-id trust   | 三层以太网接口视图/三层以太网子接口视图/三层VE接口视图/三层VE子接口视图/VLAN接口视图/三层聚合接口视图/三层聚合子接口视图/VE-L3VPN接口视图/VE-L3VPN子接口视图/EFM接口视图/EFM子接口视图 | L5998
+  pppoe-server bind                   | 三层以太网接口视图/三层以太网子接口视图/三层VE接口视图/三层VE子接口视图/VLAN接口视图/三层聚合接口视图/三层聚合子接口视图/VE-L3VPN接口视图/VE-L3VPN子接口视图/EFM接口视图/EFM子接口视图 | L6054
+  pppoe-server session-limit          | 三层以太网接口视图/三层以太网子接口视图/三层VE接口视图/三层VE子接口视图/VLAN接口视图/三层聚合接口视图/三层聚合子接口视图/VE-L3VPN接口视图/VE-L3VPN子接口视图/EFM接口视图/EFM子接口视图 | L6108
+  pppoe-server session-limit per-mac  | 三层以太网接口视图/三层以太网子接口视图/三层VE接口视图/三层VE子接口视图/VLAN接口视图/三层聚合接口视图/三层聚合子接口视图/VE-L3VPN接口视图/VE-L3VPN子接口视图/EFM接口视图/EFM子接口视图 | L6180
+  pppoe-server session-limit per-vlan | 三层以太网接口视图/三层以太网子接口视图/三层VE接口视图/三层VE子接口视图/VLAN接口视图/三层聚合接口视图/三层聚合子接口视图/VE-L3VPN接口视图/VE-L3VPN子接口视图/EFM接口视图/EFM子接口视图 | L6254
+  pppoe-server session-limit total    |                  | L6326
+  pppoe-server tag ac-name            | 三层以太网接口视图/三层以太网子接口视图/三层VE接口视图/三层VE子接口视图/VLAN接口视图/三层聚合接口视图/三层聚合子接口视图/VE-L3VPN接口视图/VE-L3VPN子接口视图/EFM接口视图/EFM子接口视图 | L6444
+  pppoe-server tag ppp-max-payload    | 三层以太网接口视图/三层以太网子接口视图/三层VE接口视图/三层VE子接口视图/VLAN接口视图/三层聚合接口视图/三层聚合子接口视图/VE-L3VPN接口视图/VE-L3VPN子接口视图/EFM接口视图/EFM子接口视图 | L6496
+  pppoe-server tag service-name       | 三层以太网接口视图/三层以太网子接口视图/三层VE接口视图/三层VE子接口视图/VLAN接口视图/三层聚合接口视图/三层聚合子接口视图/VE-L3VPN接口视图/VE-L3VPN子接口视图/EFM接口视图/EFM子接口视图 | L6556
+  pppoe-server throttle per-mac       | 三层以太网接口视图/三层以太网子接口视图/三层VE接口视图/三层VE子接口视图/VLAN接口视图/三层聚合接口视图/三层聚合子接口视图/VE-L3VPN接口视图/VE-L3VPN子接口视图/EFM接口视图/EFM子接口视图 | L6624
+  pppoe-server virtual-template va-pool |                  | L6690
+  reset pppoe-server                  | ]                | L6780
+  dialer diagnose                     | Dialer接口视图       | L6814
+  display pppoe-client session packet | 任意视图             | L6874
+  display pppoe-client session summary | 任意视图             | L6972
+  pppoe-client                        | 三层以太网接口视图/三层以太网子接口视图/三层虚拟以太网接口视图/三层虚拟以太网子接口视图/VLAN接口视图/WLAN以太网接口视图 | L7054
+  reset pppoe-client                  | 用户视图             | L7122
+  reset pppoe-client session packet   | 用户视图             | L7164
+-->
 
 **PPP和MP \-- PPP配置命令 \-- display ip pool**
 

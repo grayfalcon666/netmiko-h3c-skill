@@ -1,3 +1,42 @@
+<!-- CMD-INDEX
+  display igmp group                  | 任意视图             | L41
+  display igmp interface              | 任意视图             | L315
+  display igmp proxy group            | 任意视图             | L595
+  display igmp proxy routing-table    | 任意视图             | L717
+  display igmp ssm-mapping            | 任意视图             | L925
+  display igmp user-authorization     | 任意视图             | L987
+  igmp                                | 系统视图             | L1137
+  igmp access-policy                  | User-Profile视图   | L1183
+  igmp authorization-enable           | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图/VT接口视图 | L1243
+  igmp enable                         | 接口视图             | L1285
+  igmp fast-leave                     | 接口视图             | L1353
+  igmp group-policy                   | 接口视图             | L1411
+  igmp join-by-session                | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图 | L1487
+  igmp last-member-query-count        | 接口视图             | L1535
+  igmp last-member-query-interval     | 接口视图             | L1597
+  igmp max-response-time              | 接口视图             | L1659
+  igmp other-querier-present-interval | 接口视图             | L1721
+  igmp proxy enable                   | 接口视图             | L1783
+  igmp proxy forwarding               | 接口视图             | L1849
+  igmp query-interval                 | 接口视图             | L1903
+  igmp robust-count                   | 接口视图             | L1965
+  igmp startup-query-count            | 接口视图             | L2029
+  igmp startup-query-interval         | 接口视图             | L2091
+  igmp static-group                   | 接口视图             | L2153
+  igmp user-vlan-aggregation dot1q    | 三层以太网子接口视图/三层聚合子接口视图 | L2251
+  igmp version                        | 接口视图             | L2303
+  last-member-query-count (IGMP view) | IGMP视图           | L2357
+  last-member-query-interval (IGMP view) | IGMP视图           | L2407
+  max-response-time (IGMP view)       | IGMP视图           | L2457
+  other-querier-present-interval (IGMP view) | IGMP视图           | L2507
+  proxy multipath (IGMP view)         | IGMP视图           | L2557
+  query-interval (IGMP view)          | IGMP视图           | L2603
+  reset igmp group                    | 用户视图             | L2653
+  robust-count (IGMP view)            | IGMP视图           | L2727
+  ssm-mapping (IGMP view)             | IGMP视图           | L2779
+  startup-query-count (IGMP view)     | IGMP视图           | L2839
+  startup-query-interval (IGMP view)  | IGMP视图           | L2889
+-->
 
 **IGMP \-- IGMP配置命令 \-- display igmp group**
 

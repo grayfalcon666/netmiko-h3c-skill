@@ -1,3 +1,8 @@
+<!-- CMD-INDEX
+  display system internal nat         | Probe视图          | L7
+  display system internal nat controller | Probe视图          | L51
+  display system internal nat flow    | ]                | L85
+-->
 
 **NAT \-- NAT Probe命令 \-- display system internal nat**
 

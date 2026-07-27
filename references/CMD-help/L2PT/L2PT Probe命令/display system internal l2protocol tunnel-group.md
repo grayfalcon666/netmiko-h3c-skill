@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  display system internal l2protocol tunnel-group | Probe视图          | L5
+-->
 
 **L2PT \-- L2PT Probe命令 \-- display system internal l2protocol tunnel-group**
 

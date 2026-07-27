@@ -1,3 +1,14 @@
+<!-- CMD-INDEX
+  fax cng-switch enable               | POTS/VoIP语音实体视图  | L13
+  fax ecm                             | POTS/VoIP语音实体视图  | L55
+  fax level                           | POTS/VoIP语音实体视图  | L101
+  fax local-train threshold           | POTS/VoIP语音实体视图  | L151
+  fax nsf                             | POTS/VoIP语音实体视图  | L205
+  fax protocol                        | POTS/VoIP语音实体视图  | L251
+  fax rate                            | POTS/VoIP语音实体视图  | L325
+  fax train-mode                      | POTS/VoIP语音实体视图  | L397
+  modem passthrough                   | POTS/VoIP语音实体视图  | L449
+-->
 
 **Fax over IP \-- Fax over IP配置命令 \-- fax cng-switch enable**
 

@@ -1,3 +1,13 @@
+<!-- CMD-INDEX
+  debugging route-policy all          | 用户视图             | L12
+  debugging route-policy as-path      | 用户视图             | L48
+  debugging route-policy community    | 用户视图             | L108
+  debugging route-policy ext-community | 用户视图             | L174
+  debugging route-policy ip-prefix4   | 用户视图             | L236
+  debugging route-policy ip-prefix6   | 用户视图             | L292
+  debugging route-policy mac-list     | 用户视图             | L348
+  debugging route-policy policy       | 用户视图             | L404
+-->
 
 **路由策略 \-- 路由策略调试命令 \-- debugging route-policy all**
 

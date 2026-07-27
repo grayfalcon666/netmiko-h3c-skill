@@ -1,3 +1,9 @@
+<!-- CMD-INDEX
+  debugging mvrp error                | 用户视图             | L8
+  debugging mvrp event                | 用户视图             | L208
+  debugging mvrp packet               | 用户视图             | L280
+  debugging mvrp state                | 用户视图             | L354
+-->
 
 **MVRP \-- MVRP调试命令 \-- debugging mvrp error**
 

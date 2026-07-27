@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging mac-forced-forwarding     | 用户视图             | L5
+-->
 
 **MFF \-- MFF调试命令 \-- debugging mac-forced-forwarding**
 

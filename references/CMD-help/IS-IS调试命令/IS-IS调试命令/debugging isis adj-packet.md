@@ -1,3 +1,20 @@
+<!-- CMD-INDEX
+  debugging isis adj-packet           | 用户视图             | L19
+  debugging isis all                  | 用户视图             | L311
+  debugging isis bfd-event            | 用户视图             | L349
+  debugging isis error                | 用户视图             | L433
+  debugging isis event                | 用户视图             | L1337
+  debugging isis graceful-restart     | 用户视图             | L1577
+  debugging isis ha-event             | 用户视图             | L2041
+  debugging isis miscellaneous-errors | 用户视图             | L2161
+  debugging isis redistribute         | 用户视图             | L2215
+  debugging isis self-originate-update | 用户视图             | L2477
+  debugging isis snp-packet           | 用户视图             | L2931
+  debugging isis spf                  | 用户视图             | L3185
+  debugging isis timer                | 用户视图             | L4287
+  debugging isis update-packet        | 用户视图             | L4457
+  debugging osi                       | 用户视图             | L4847
+-->
 
 **IS-IS调试命令 \-- IS-IS调试命令 \-- debugging isis adj-packet**
 

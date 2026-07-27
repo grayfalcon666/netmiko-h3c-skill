@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging port-security             | 用户视图             | L5
+-->
 
 **端口安全 \-- 端口安全调试命令 \-- debugging port-security**
 

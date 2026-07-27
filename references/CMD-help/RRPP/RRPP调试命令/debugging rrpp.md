@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging rrpp                      | 用户视图             | L5
+-->
 
 **RRPP \-- RRPP调试命令 \-- debugging rrpp**
 

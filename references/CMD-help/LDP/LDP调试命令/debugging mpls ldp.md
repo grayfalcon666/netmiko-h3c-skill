@@ -1,3 +1,9 @@
+<!-- CMD-INDEX
+  debugging mpls ldp                  | 用户视图             | L8
+  debugging mpls ldp peer             | 用户视图             | L284
+  debugging isis mpls ldp sync        | 用户视图             | L550
+  debugging ospf mpls ldp sync        | 用户视图             | L788
+-->
 
 **LDP \-- LDP调试命令 \-- debugging mpls ldp**
 

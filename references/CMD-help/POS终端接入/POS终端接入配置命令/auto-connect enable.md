@@ -1,3 +1,55 @@
+<!-- CMD-INDEX
+  auto-connect enable                 | POS应用模板视图        | L54
+  backup app                          | POS应用模板视图        | L104
+  caller-number enable                | POS应用模板视图        | L162
+  description                         | POS应用模板视图        | L212
+  display fcm statistics              | 任意视图             | L254
+  display posa connection terminal    | 任意视图             | L330
+  display posa statistics app         | 任意视图             | L466
+  display posa statistics terminal    | 任意视图             | L552
+  display posa status app             | 任意视图             | L646
+  display posa status terminal        | 任意视图             | L764
+  hello enable                        | POS应用模板视图        | L858
+  ip                                  | POS应用模板视图        | L914
+  mode                                | POS应用模板视图        | L972
+  negotiation hookoff                 | FCM接口视图          | L1032
+  negotiation no-carrier-detect retry | FCM接口视图          | L1074
+  negotiation scramble-binary1        | FCM接口视图          | L1116
+  negotiation silence                 | FCM接口视图          | L1158
+  negotiation unscramble-binary1      | FCM接口视图          | L1208
+  posa app                            | 系统视图             | L1250
+  posa auto-stop-service enable       | 系统视图             | L1318
+  posa bind app                       | 异步接口视图/同异步接口视图   | L1362
+  posa bind terminal                  | 异步接口视图/同异步接口视图/物理AM接口视图/物理FCM接口视图 | L1434
+  posa bind terminal first-terminal-id | 通道化AM接口视图/通道化FCM接口视图 | L1496
+  posa connection-threshold terminal  | 系统视图             | L1564
+  posa fcm                            | 系统视图             | L1616
+  posa map                            | ]                | L1672
+  posa server enable                  | 系统视图             | L1744
+  posa statistics caller-id           | 系统视图             | L1788
+  posa statistics caller-ip           | 系统视图             | L1836
+  posa terminal                       | 系统视图             | L1888
+  posa terminal description           | 系统视图             | L1946
+  posa tpdu-replace                   | 系统视图             | L1996
+  posa trade-limit tcp                | 系统视图             | L2062
+  posa trade-timeout                  | 系统视图             | L2112
+  reset fcm statistics                | 用户视图             | L2158
+  reset posa connection terminal      | 用户视图             | L2192
+  reset posa statistics               | 用户视图             | L2236
+  snmp-agent trap enable posa         | 系统视图             | L2280
+  source ip                           | POS应用模板视图        | L2348
+  source port                         | POS应用模板视图        | L2398
+  tcp keepalive                       | POS应用模板视图        | L2454
+  tcp linking-time                    | POS应用模板视图        | L2504
+  threshold answer-tone               | FCM接口视图          | L2554
+  threshold rlsdoff                   | FCM接口视图          | L2596
+  threshold rlsdon                    | FCM接口视图          | L2638
+  threshold txpower                   | FCM接口视图          | L2680
+  timer auto-connect                  | POS应用模板视图        | L2722
+  timer hello                         | POS应用模板视图        | L2774
+  timer quiet                         | POS应用模板视图        | L2824
+  tpdu-change                         | POS应用模板视图        | L2876
+-->
 
 **POS终端接入 \-- POS终端接入配置命令 \-- auto-connect enable**
 

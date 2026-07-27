@@ -1,3 +1,19 @@
+<!-- CMD-INDEX
+  bfd discriminator                   | VSI LDP PW视图     | L18
+  display l2vpn pw bfd                | 任意视图             | L94
+  display mpls bfd                    | 任意视图             | L234
+  mpls bfd enable                     | 系统视图             | L408
+  mpls bfd (for LSP)                  | 系统视图             | L448
+  mpls bfd (for TE tunnel)            | Tunnel接口视图       | L538
+  mpls periodic-tracert (for LSP)     | 系统视图             | L618
+  ping mpls ipv4                      | 任意视图             | L692
+  ping mpls pw                        | 任意视图             | L860
+  ping mpls te                        | 任意视图             | L932
+  tracert mpls ipv4                   | 任意视图             | L1002
+  tracert mpls te                     | 任意视图             | L1156
+  vccv bfd                            | PW模板视图           | L1216
+  vccv cc                             | PW模板视图           | L1286
+-->
 
 **MPLS OAM \-- MPLS OAM配置命令 \-- bfd discriminator**
 

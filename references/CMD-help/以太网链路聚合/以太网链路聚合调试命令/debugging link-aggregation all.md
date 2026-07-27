@@ -1,3 +1,10 @@
+<!-- CMD-INDEX
+  debugging link-aggregation all      | 用户视图             | L9
+  debugging link-aggregation error    | 用户视图             | L39
+  debugging link-aggregation event    | 用户视图             | L187
+  debugging link-aggregation lacp fsm | 用户视图             | L269
+  debugging link-aggregation lacp packet | 用户视图             | L433
+-->
 
 **以太网链路聚合 \-- 以太网链路聚合调试命令 \-- debugging link-aggregation all**
 

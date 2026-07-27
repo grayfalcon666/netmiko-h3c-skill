@@ -1,3 +1,15 @@
+<!-- CMD-INDEX
+  display license                     | 任意视图             | L14
+  display license feature             | 任意视图             | L392
+  display license device-id           |                  | L600
+  license activation-file install     | 系统视图             | L726
+  license activation-file uninstall   | 系统视图             | L824
+  license activation-key install      | 系统视图             | L938
+  license activation-key unistall     | 系统视图             | L1036
+  license compress                    | 系统视图             | L1146
+  license license-key install         | 系统视图             | L1258
+  license license-key uninstall       | 系统视图             | L1354
+-->
 
 **License管理 \-- License管理命令 \-- display license**
 

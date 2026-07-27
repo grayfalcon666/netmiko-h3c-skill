@@ -1,3 +1,25 @@
+<!-- CMD-INDEX
+  apply access-vpn vpn-instance       | 策略节点视图           | L24
+  apply continue                      | 策略节点视图           | L78
+  apply default-next-hop              | 策略节点视图           | L126
+  apply default-output-interface      | 策略节点视图           | L194
+  apply ip-df                         | 策略节点视图           | L258
+  apply loadshare                     | 策略节点视图           | L310
+  apply next-hop                      | 策略节点视图           | L410
+  apply output-interface              | 策略节点视图           | L482
+  apply precedence                    | 策略节点视图           | L546
+  display ip policy-based-route       | 任意视图             | L632
+  display ip policy-based-route interface | 任意视图             | L704
+  display ip policy-based-route local | 任意视图             | L890
+  display ip policy-based-route setup | 任意视图             | L1014
+  if-match acl                        | 策略节点视图           | L1066
+  if-match packet-length              | 策略节点视图           | L1122
+  ip local policy-based-route         | 系统视图             | L1174
+  ip policy-based-route               | 接口视图             | L1226
+  policy-based-route                  | 系统视图             | L1292
+  reset ip policy-based-route statistics | 用户视图             | L1350
+  snmp-agent trap enable policy-based-route | 系统视图             | L1390
+-->
 
 **策略路由 \-- 策略路由配置命令 \-- apply access-vpn vpn-instance**
 

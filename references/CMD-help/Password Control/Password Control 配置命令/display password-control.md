@@ -1,3 +1,24 @@
+<!-- CMD-INDEX
+  display password-control            | 任意视图             | L23
+  display password-control blacklist  | 任意视图             | L159
+  password-control { aging \| composition \| history \| length } enable | 系统视图             | L243
+  password-control aging              | 系统视图/用户组视图/本地用户视图 | L319
+  password-control alert-before-expire | 系统视图             | L389
+  password-control complexity         | 系统视图/用户组视图/本地用户视图 | L437
+  password-control composition        | 系统视图/用户组视图/本地用户视图 | L495
+  password-control enable             | 系统视图             | L575
+  password-control expired-user-login | 系统视图             | L635
+  password-control history            | 系统视图             | L685
+  password-control length             | 系统视图/用户组视图/本地用户视图 | L739
+  password-control login idle-time    | 系统视图             | L815
+  password-control login-attempt      | 系统视图/用户组视图/本地用户视图 | L863
+  password-control super aging        | 系统视图             | L967
+  password-control super composition  | 系统视图             | L1013
+  password-control super length       | 系统视图             | L1071
+  password-control update-interval    | 系统视图             | L1123
+  reset password-control blacklist    | 用户视图             | L1171
+  reset password-control history-record | 用户视图             | L1211
+-->
 
 **Password Control \-- Password Control 配置命令 \-- display password-control**
 

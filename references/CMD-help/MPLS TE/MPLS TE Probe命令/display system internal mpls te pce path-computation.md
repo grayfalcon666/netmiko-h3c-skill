@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  display system internal mpls te pce path-computation | Probe视图          | L6
+  mpls te path-calculation            | Probe视图          | L32
+-->
 
 **MPLS TE \-- MPLS TE Probe命令 \-- display system internal mpls te pce path-computation**
 

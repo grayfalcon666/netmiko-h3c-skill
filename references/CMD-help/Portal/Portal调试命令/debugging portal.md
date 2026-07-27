@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  debugging portal                    | 用户视图             | L6
+  debugging portal interface          | 用户视图             | L1156
+-->
 
 **Portal \-- Portal调试命令 \-- debugging portal**
 

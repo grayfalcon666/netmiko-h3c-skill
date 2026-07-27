@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  display system internal nvgre forwarding tunnel | Probe视图          | L5
+-->
 
 **NVGRE \-- NVGRE Probe命令 \-- display system internal nvgre forwarding tunnel**
 

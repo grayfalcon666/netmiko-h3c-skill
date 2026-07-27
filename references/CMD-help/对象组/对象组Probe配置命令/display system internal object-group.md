@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  display system internal object-group | Probe视图          | L5
+-->
 
 **对象组 \-- 对象组Probe配置命令 \-- display system internal object-group**
 

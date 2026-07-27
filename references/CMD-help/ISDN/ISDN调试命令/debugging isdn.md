@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging isdn                      | ]                | L5
+-->
 
 **ISDN \-- ISDN调试命令 \-- debugging isdn**
 

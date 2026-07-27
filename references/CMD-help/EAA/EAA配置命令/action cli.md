@@ -1,3 +1,25 @@
+<!-- CMD-INDEX
+  action cli                          | CLI监控策略视图        | L24
+  action reboot                       |                  | L78
+  action switchover                   | CLI监控策略视图        | L172
+  action syslog                       | CLI监控策略视图        | L220
+  commit                              | CLI监控策略视图        | L274
+  display rtm environment             | 任意视图             | L312
+  display rtm policy                  | 任意视图             | L364
+  event cli                           | CLI监控策略视图        | L482
+  event hotplug                       | CLI监控策略视图        | L556
+  event interface                     | CLI监控策略视图        | L652
+  event process                       | CLI监控策略视图        | L794
+  event snmp oid                      | CLI监控策略视图        | L874
+  event snmp-notification             | CLI监控策略视图        | L944
+  event syslog                        | CLI监控策略视图        | L998
+  rtm cli-policy                      | 系统视图             | L1050
+  rtm environment                     |                  | L1104
+  rtm scheduler suspend               | 系统视图             | L1230
+  rtm tcl-policy                      | 系统视图             | L1266
+  running-time                        | CLI监控策略视图        | L1316
+  user-role                           | CLI监控策略视图        | L1362
+-->
 
 **EAA \-- EAA配置命令 \-- action cli**
 

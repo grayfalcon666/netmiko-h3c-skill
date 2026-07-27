@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  debugging system internal mpls forwarding protection |                  | L6
+  display system internal mpls protection statistics | Probe视图          | L68
+-->
 
 **MPLS保护倒换 \-- MPLS保护倒换Probe命令 \-- debugging system internal mpls forwarding protection**
 

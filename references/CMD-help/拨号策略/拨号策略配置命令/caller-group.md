@@ -1,3 +1,25 @@
+<!-- CMD-INDEX
+  caller-group                        | POTS/VoIP/IVR语音实体视图 | L24
+  caller-permit                       | POTS/VoIP/IVR语音实体视图 | L80
+  description                         | 用户组视图            | L192
+  dial-prefix                         | POTS语音实体视图       | L238
+  dial-program                        | 语音视图             | L310
+  dot-match                           | 语音号码变换视图         | L344
+  entity hunt                         | 语音拨号视图           | L408
+  first-rule                          | 语音号码变换视图         | L498
+  match-template                      | 用户组视图            | L554
+  max-conn                            | POTS/VoIP/IVR语音实体视图 | L660
+  number-match                        | 语音拨号策略视图         | L706
+  number-substitute                   | 语音拨号策略视图         | L756
+  priority                            | POTS/VoIP/IVR语音实体视图 | L804
+  private-line                        | FXS/FXO/E&M/数字语音用户线视图 | L854
+  rule                                | 语音号码变换视图         | L900
+  send-number                         | POTS语音实体视图       | L1218
+  subscriber-group                    | 语音拨号视图           | L1272
+  substitute (Voice entity view/Voice subscriber-line view) | POTS/VoIP/IVR语音实体视图/语音用户线视图 | L1324
+  substitute (Voice dial-program view) | 语音拨号策略视图         | L1390
+  terminator                          | 语音拨号策略视图         | L1468
+-->
 
 **拨号策略 \-- 拨号策略配置命令 \-- caller-group**
 

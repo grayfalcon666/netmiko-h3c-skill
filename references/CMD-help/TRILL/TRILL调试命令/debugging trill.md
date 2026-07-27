@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging trill                     | ]                | L5
+-->
 
 **TRILL \-- TRILL调试命令 \-- debugging trill**
 

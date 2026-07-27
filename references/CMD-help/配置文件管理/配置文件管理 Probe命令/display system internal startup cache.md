@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  display system internal startup cache | Probe视图          | L5
+-->
 
 **配置文件管理 \-- 配置文件管理 Probe命令 \-- display system internal startup cache**
 

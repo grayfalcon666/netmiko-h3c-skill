@@ -1,3 +1,57 @@
+<!-- CMD-INDEX
+  checkzero                           | RIP视图            | L56
+  default cost                        | RIP视图            | L98
+  default-route                       | RIP视图            | L148
+  display rip                         | 任意视图             | L204
+  display rip database                | 任意视图             | L420
+  display rip graceful-restart        | 任意视图             | L506
+  display rip interface               | 任意视图             | L584
+  display rip neighbor                | 任意视图             | L710
+  display rip non-stop-routing        | 任意视图             | L798
+  display rip route                   | 任意视图             | L870
+  fast-reroute                        | RIP视图            | L1058
+  filter-policy export                | RIP视图            | L1144
+  filter-policy import                | RIP视图            | L1242
+  graceful-restart                    | RIP视图            | L1336
+  graceful-restart interval           | RIP视图            | L1382
+  host-route                          | RIP视图            | L1428
+  import-route                        | RIP视图            | L1472
+  maximum load-balancing              | RIP视图            | L1540
+  network                             | RIP视图            | L1598
+  non-stop-routing                    | RIP视图            | L1654
+  output-delay                        | RIP视图            | L1700
+  peer                                | RIP视图            | L1744
+  preference                          | RIP视图            | L1796
+  reset rip process                   | 用户视图             | L1848
+  reset rip statistics                | 用户视图             | L1884
+  rip                                 | 系统视图             | L1918
+  rip authentication-mode             | ]                | L1968
+  rip bfd enable                      | 接口视图             | L2054
+  rip bfd enable destination          | 接口视图             | L2118
+  rip default-route                   | 接口视图             | L2180
+  rip enable                          | 接口视图             | L2266
+  rip input                           | 接口视图             | L2330
+  rip max-packet-length               | 接口视图             | L2380
+  rip metricin                        | 接口视图             | L2448
+  rip metricout                       | 接口视图             | L2538
+  rip mib-binding                     | 系统视图             | L2628
+  rip output                          | 接口视图             | L2674
+  rip output-delay                    | 接口视图             | L2724
+  rip poison-reverse                  | 接口视图             | L2784
+  rip primary-path-detect bfd echo    | 接口视图             | L2834
+  rip split-horizon                   | 接口视图             | L2910
+  rip summary-address                 | 接口视图             | L2968
+  rip triggered                       | 接口视图             | L3034
+  rip version                         | 接口视图             | L3082
+  silent-interface                    | RIP视图            | L3166
+  summary                             | RIP视图            | L3230
+  timer triggered                     | RIP视图            | L3278
+  timers                              | RIP视图            | L3330
+  trip retransmit count               | RIP视图            | L3398
+  trip retransmit timer               | RIP视图            | L3446
+  validate-source-address             | RIP视图            | L3494
+  version                             | RIP视图            | L3532
+-->
 
 **RIP \-- RIP配置命令 \-- checkzero**
 

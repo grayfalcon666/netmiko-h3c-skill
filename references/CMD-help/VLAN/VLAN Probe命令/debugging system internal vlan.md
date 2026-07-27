@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  debugging system internal vlan      | Probe视图          | L6
+  display system internal vlan        | Probe视图          | L46
+-->
 
 **VLAN \-- VLAN Probe命令 \-- debugging system internal vlan**
 

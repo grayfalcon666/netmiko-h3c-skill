@@ -1,3 +1,42 @@
+<!-- CMD-INDEX
+  display mld group                   | 任意视图             | L41
+  display mld interface               | 任意视图             | L307
+  display mld proxy group             | 任意视图             | L551
+  display mld proxy routing-table     | 任意视图             | L679
+  display mld ssm-mapping             | 任意视图             | L885
+  display mld user-authorization      | 任意视图             | L947
+  last-listener-query-count (MLD view) | MLD视图            | L1097
+  last-listener-query-interval (MLD view) | MLD视图            | L1147
+  max-response-time (MLD view)        | MLD视图            | L1197
+  mld                                 | 系统视图             | L1247
+  mld access-policy                   | User-Profile视图   | L1293
+  mld authorization-enable            | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图/VT接口视图 | L1353
+  mld enable                          | 接口视图             | L1395
+  mld fast-leave                      | 接口视图             | L1463
+  mld group-policy                    | 接口视图             | L1521
+  mld join-by-session                 | 三层以太网接口视图/三层以太网子接口视图/三层聚合接口视图/三层聚合子接口视图 | L1597
+  mld last-listener-query-count       | 接口视图             | L1645
+  mld last-listener-query-interval    | 接口视图             | L1707
+  mld max-response-time               | 接口视图             | L1769
+  mld other-querier-present-timeout   | 接口视图             | L1831
+  mld proxy enable                    | 接口视图             | L1893
+  mld proxy forwarding                | 接口视图             | L1959
+  mld query-interval                  | 接口视图             | L2013
+  mld robust-count                    | 接口视图             | L2075
+  mld startup-query-count             | 接口视图             | L2139
+  mld startup-query-interval          | 接口视图             | L2201
+  mld static-group                    | 接口视图             | L2263
+  mld user-vlan-aggregation dot1q     | 三层以太网子接口视图/三层聚合子接口视图 | L2361
+  mld version                         | 接口视图             | L2413
+  other-querier-present-timeout (MLD view) | MLD视图            | L2467
+  proxy multipath (MLD view)          | MLD视图            | L2517
+  query-interval (MLD view)           | MLD视图            | L2563
+  reset mld group                     | 用户视图             | L2613
+  robust-count (MLD view)             | MLD视图            | L2685
+  ssm-mapping (MLD view)              | MLD视图            | L2737
+  startup-query-count (MLD view)      | MLD视图            | L2797
+  startup-query-interval (MLD view)   | MLD视图            | L2847
+-->
 
 **MLD \-- MLD配置命令 \-- display mld group**
 

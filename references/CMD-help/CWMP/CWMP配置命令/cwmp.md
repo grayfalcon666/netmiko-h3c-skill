@@ -1,3 +1,26 @@
+<!-- CMD-INDEX
+  cwmp                                | 系统视图             | L25
+  cwmp acs default password           | CWMP视图           | L57
+  cwmp acs default url                | CWMP视图           | L117
+  cwmp acs default username           | CWMP视图           | L173
+  cwmp acs password                   | CWMP视图           | L227
+  cwmp acs url                        | CWMP视图           | L287
+  cwmp acs username                   | CWMP视图           | L337
+  cwmp cpe connect interface          | CWMP视图           | L389
+  cwmp cpe connect retry              | CWMP视图           | L437
+  cwmp cpe inform interval            | CWMP视图           | L483
+  cwmp cpe inform interval enable     | CWMP视图           | L539
+  cwmp cpe inform time                | CWMP视图           | L585
+  cwmp cpe password                   | CWMP视图           | L631
+  cwmp cpe provision-code             | CWMP视图           | L689
+  cwmp cpe stun enable                | CWMP视图           | L737
+  cwmp cpe username                   | CWMP视图           | L785
+  cwmp cpe wait timeout               | CWMP视图           | L837
+  cwmp enable                         | CWMP视图           | L883
+  display cwmp configuration          | 任意视图             | L929
+  display cwmp status                 | 任意视图             | L1059
+  ssl client-policy                   | CWMP视图           | L1169
+-->
 
 **CWMP \-- CWMP配置命令 \-- cwmp**
 

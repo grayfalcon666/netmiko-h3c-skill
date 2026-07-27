@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  display system internal ptp irf-port | Probe视图          | L6
+  display system internal ptp irf-statistics | Probe视图          | L32
+-->
 
 **PTP \-- PTP Probe命令 \-- display system internal ptp irf-port**
 

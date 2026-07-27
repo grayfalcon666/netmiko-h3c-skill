@@ -1,3 +1,37 @@
+<!-- CMD-INDEX
+  bandwidth                           | 二层聚合接口视图/三层聚合接口视图/三层聚合子接口视图 | L36
+  default                             | 二层聚合接口视图/三层聚合接口视图/三层聚合子接口视图 | L92
+  description                         | 二层聚合接口视图/三层聚合接口视图/三层聚合子接口视图 | L128
+  display interface                   | 任意视图             | L170
+  display lacp system-id              | 任意视图             | L530
+  display link-aggregation load-sharing mode | 任意视图             | L580
+  display link-aggregation member-port | 任意视图             | L716
+  display link-aggregation summary    | 任意视图             | L882
+  display link-aggregation verbose    | 任意视图             | L998
+  interface bridge-aggregation        | 系统视图             | L1206
+  interface route-aggregation         | 系统视图             | L1254
+  lacp edge-port                      | 二层聚合接口视图/三层聚合接口视图 | L1318
+  lacp mode                           | 二层以太网接口视图/三层以太网接口视图 | L1366
+  lacp period short                   | 二层以太网接口视图/三层以太网接口视图 | L1410
+  lacp system-priority                | 系统视图             | L1452
+  link-aggregation global load-sharing mode | 系统视图             | L1496
+  link-aggregation ignore vlan        | 二层聚合接口视图         | L1576
+  link-aggregation irf-enhanced       | 系统视图             | L1622
+  link-aggregation lacp traffic-redirect-notification enable | 系统视图             | L1676
+  link-aggregation load-sharing mode  | 二层聚合接口视图/三层聚合接口视图 | L1734
+  link-aggregation load-sharing mode local-first | 系统视图             | L1820
+  link-aggregation mode               | 二层聚合接口视图/三层聚合接口视图 | L1864
+  link-aggregation port-priority      | 二层以太网接口视图/三层以太网接口视图 | L1902
+  link-aggregation selected-port maximum | 二层聚合接口视图/三层聚合接口视图 | L1956
+  link-aggregation selected-port minimum | 二层聚合接口视图/三层聚合接口视图 | L2018
+  mac-address                         | 二层聚合接口视图/三层聚合接口视图/三层聚合子接口视图 | L2074
+  mtu                                 | 三层聚合接口视图/三层聚合子接口视图 | L2122
+  port link-aggregation group         | 二层以太网接口视图/三层以太网接口视图 | L2172
+  reset counters interface            | 用户视图             | L2230
+  reset lacp statistics               | 用户视图             | L2276
+  service                             |                  | L2310
+  shutdown                            | 二层聚合接口视图/三层聚合接口视图/三层聚合子接口视图 | L2382
+-->
 
 **以太网链路聚合 \-- 以太网链路聚合配置命令 \-- bandwidth**
 

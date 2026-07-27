@@ -1,3 +1,22 @@
+<!-- CMD-INDEX
+  archive configuration               | 用户视图             | L21
+  archive configuration interval      | 系统视图             | L75
+  archive configuration location      | 系统视图             | L141
+  archive configuration max           | 系统视图             | L211
+  backup startup-configuration        | 用户视图             | L271
+  configuration encrypt               | 系统视图             | L313
+  configuration replace file          | 系统视图             | L359
+  display archive configuration       | 任意视图             | L403
+  display current-configuration       | 任意视图             | L513
+  display default-configuration       | 任意视图             | L591
+  display saved-configuration         | 任意视图             | L627
+  display startup                     | 任意视图             | L709
+  display this                        | 任意视图             | L881
+  reset saved-configuration           | 用户视图             | L969
+  restore startup-configuration       | 用户视图             | L1091
+  save                                |                  | L1171
+  startup saved-configuration         | 用户视图             | L1397
+-->
 
 **配置文件管理 \-- 配置文件管理命令 \-- archive configuration**
 

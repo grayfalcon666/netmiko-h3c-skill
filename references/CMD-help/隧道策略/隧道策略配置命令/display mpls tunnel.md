@@ -1,3 +1,9 @@
+<!-- CMD-INDEX
+  display mpls tunnel                 | 任意视图             | L8
+  preferred-path                      | 隧道策略视图           | L114
+  select-seq load-balance-number      | 隧道策略视图           | L172
+  tunnel-policy                       | 系统视图             | L232
+-->
 
 **隧道策略 \-- 隧道策略配置命令 \-- display mpls tunnel**
 

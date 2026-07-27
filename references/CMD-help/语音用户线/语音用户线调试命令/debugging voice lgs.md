@@ -1,3 +1,9 @@
+<!-- CMD-INDEX
+  debugging voice lgs                 | 用户视图             | L8
+  debugging voice em                  | 用户视图             | L498
+  debugging voice r2                  | 用户视图             | L1236
+  debugging voice iva                 | 用户视图             | L1998
+-->
 
 **语音用户线 \-- 语音用户线调试命令 \-- debugging voice lgs**
 

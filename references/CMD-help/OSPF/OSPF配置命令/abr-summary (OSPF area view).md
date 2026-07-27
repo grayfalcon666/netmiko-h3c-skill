@@ -1,3 +1,96 @@
+<!-- CMD-INDEX
+  abr-summary (OSPF area view)        | OSPF区域视图         | L95
+  area (OSPF view)                    | OSPF视图           | L157
+  asbr-summary                        | OSPF视图           | L201
+  authentication-mode                 | OSPF区域视图         | L269
+  bandwidth-reference (OSPF view)     | OSPF视图           | L353
+  default                             | OSPF视图           | L415
+  default-cost (OSPF area view)       | OSPF区域视图         | L465
+  default-route-advertise (OSPF view) | OSPF视图           | L521
+  discard-route                       | ]                | L585
+  description (OSPF/OSPF area view)   | OSPF视图/OSPF区域视图  | L637
+  display ospf                        | 任意视图             | L693
+  display ospf abr-asbr               | 任意视图             | L1335
+  display ospf abr-summary            | 任意视图             | L1449
+  display ospf asbr-summary           | 任意视图             | L1591
+  display ospf event-log              | 任意视图             | L1719
+  display ospf fast-reroute lfa-candidate | 任意视图             | L2001
+  display ospf graceful-restart       | 任意视图             | L2083
+  display ospf interface              | 任意视图             | L2363
+  display ospf lsdb                   | 任意视图             | L2587
+  display ospf nexthop                | 任意视图             | L2867
+  display ospf non-stop-routing status | 任意视图             | L2943
+  display ospf peer                   | 任意视图             | L3019
+  display ospf peer statistics        | 任意视图             | L3295
+  display ospf request-queue          | 任意视图             | L3395
+  display ospf retrans-queue          | 任意视图             | L3497
+  display ospf routing                | 任意视图             | L3599
+  display ospf spf-tree               | 任意视图             | L3853
+  display ospf statistics             | 任意视图             | L4153
+  display ospf vlink                  | 任意视图             | L4585
+  display router id                   | 任意视图             | L4699
+  dscp                                | OSPF视图           | L4731
+  enable link-local-signaling         | OSPF视图           | L4773
+  enable out-of-band-resynchronization | OSPF视图           | L4815
+  event-log                           | OSPF视图           | L4867
+  fast-reroute (OSPF view)            | OSPF视图           | L4915
+  filter (OSPF area View)             | OSPF区域视图         | L4973
+  filter-policy export (OSPF View)    | OSPF视图           | L5031
+  filter-policy import (OSPF View)    | OSPF视图           | L5109
+  graceful-restart (OSPF view)        | OSPF视图           | L5183
+  graceful-restart helper enable      | OSPF视图           | L5267
+  graceful-restart helper strict-lsa-checking | OSPF视图           | L5317
+  graceful-restart interval (OSPF view) | OSPF视图           | L5363
+  host-advertise                      | OSPF区域视图         | L5417
+  import-route (OSPF view)            | OSPF视图           | L5463
+  ispf                                | OSPF视图           | L5547
+  log-peer-change                     | OSPF视图           | L5589
+  lsa-arrival-interval                | OSPF视图           | L5631
+  lsa-generation-interval             | OSPF视图           | L5683
+  lsdb-overflow-interval              | OSPF视图           | L5739
+  lsdb-overflow-limit                 | OSPF视图           | L5789
+  maximum load-balancing (OSPF view)  | OSPF视图           | L5831
+  network (OSPF area view)            | OSPF区域视图         | L5887
+  non-stop-routing                    | OSPF视图           | L5941
+  nssa                                | OSPF区域视图         | L5983
+  opaque-capability enable            | OSPF视图           | L6055
+  ospf                                | 系统视图             | L6097
+  ospf area                           | 接口视图             | L6149
+  ospf authentication-mode            | 接口视图             | L6217
+  ospf bfd enable                     | 接口视图             | L6331
+  ospf cost                           | 接口视图             | L6405
+  ospf dr-priority                    | 接口视图             | L6467
+  ospf fast-reroute lfa-backup        | 接口视图             | L6525
+  ospf mib-binding                    | 系统视图             | L6583
+  ospf mtu-enable                     | 接口视图             | L6629
+  ospf network-type                   | 接口视图             | L6685
+  ospf prefix-suppression             | 接口视图             | L6771
+  ospf primary-path-detect bfd echo   | 接口视图             | L6837
+  ospf timer dead                     | 接口视图             | L6945
+  ospf timer hello                    | 接口视图             | L7007
+  ospf timer poll                     | 接口视图             | L7069
+  ospf timer retransmit               | 接口视图             | L7133
+  ospf trans-delay                    | 接口视图             | L7193
+  peer                                | OSPF视图           | L7251
+  pic                                 | OSPF视图           | L7309
+  preference                          | OSPF视图           | L7357
+  prefix-priority                     | OSPF视图           | L7427
+  prefix-suppression                  | OSPF视图           | L7485
+  reset ospf statistics               | 用户视图             | L7541
+  reset ospf event-log                | 用户视图             | L7575
+  reset ospf process                  | 用户视图             | L7619
+  reset ospf redistribution           | 用户视图             | L7669
+  rfc1583 compatible                  | OSPF视图           | L7703
+  router id                           | 系统视图             | L7755
+  silent-interface (OSPF view)        | OSPF视图           | L7813
+  snmp-agent trap enable ospf         | 系统视图             | L7873
+  snmp trap rate-limit                | OSPF视图           | L7951
+  spf-schedule-interval               | OSPF视图           | L7995
+  stub (OSPF area view)               | OSPF区域视图         | L8049
+  stub-router                         | OSPF视图           | L8105
+  transmit-pacing                     | OSPF视图           | L8161
+  vlink-peer (OSPF area view)         | OSPF区域视图         | L8205
+-->
 
 **OSPF \-- OSPF配置命令 \-- abr-summary (OSPF area view)**
 

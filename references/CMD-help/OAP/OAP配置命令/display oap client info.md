@@ -1,3 +1,12 @@
+<!-- CMD-INDEX
+  display oap client info             | 任意视图             | L11
+  display oap client summary          | 任意视图             | L163
+  oap client close                    | 系统视图             | L269
+  oap client reboot                   | 系统视图             | L319
+  oap enable                          | 二层以太网接口视图/二层聚合接口视图/三层以太网接口视图/三层聚合接口视图 | L367
+  oap timer clock-sync                | 系统视图             | L409
+  oap timer monitor                   | 系统视图             | L453
+-->
 
 **OAP \-- OAP配置命令 \-- display oap client info**
 

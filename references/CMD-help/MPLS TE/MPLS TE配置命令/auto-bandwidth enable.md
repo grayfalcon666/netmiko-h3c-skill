@@ -1,3 +1,86 @@
+<!-- CMD-INDEX
+  auto-bandwidth enable               | MPLS TE视图        | L85
+  auto-tunnel backup                  | MPLS TE视图        | L147
+  destination                         | Tunnel-Bundle接口视图 | L207
+  disable                             | 显式路径视图           | L259
+  display explicit-path               | 任意视图             | L301
+  display isis mpls te advertisement  | 任意视图             | L383
+  display isis mpls te configured-sub-tlvs | 任意视图             | L743
+  display isis mpls te network        | 任意视图             | L803
+  display isis mpls te tunnel         | 任意视图             | L921
+  display mpls te ds-te               | 任意视图             | L1029
+  display mpls te link-management bandwidth-allocation | 任意视图             | L1133
+  display mpls te pce discovery       | 任意视图             | L1311
+  display mpls te pce peer            | 任意视图             | L1549
+  display mpls te pce statistics      | 任意视图             | L1777
+  display mpls te tedb                | 任意视图             | L1989
+  display mpls te tunnel-interface    | 任意视图             | L2593
+  display ospf mpls te advertisement  | 任意视图             | L2967
+  display ospf mpls te network        | 任意视图             | L3243
+  display ospf mpls te pce            | 任意视图             | L3327
+  display ospf mpls te tunnel         | 任意视图             | L3495
+  display tunnel-bundle               | 任意视图             | L3591
+  ds-te bc-model                      | MPLS TE视图        | L3707
+  ds-te te-class                      |                  | L3767
+  ds-te mode                          | MPLS TE视图        | L3887
+  explicit-path                       | 系统视图             | L3949
+  fast-reroute timer                  | MPLS TE视图        | L4005
+  interface tunnel-bundle             | 系统视图             | L4053
+  link-management periodic-flooding timer | MPLS TE视图        | L4107
+  member interface                    | Tunnel-Bundle接口视图 | L4161
+  mpls te                             | 系统视图             | L4215
+  mpls te affinity-attribute          | Tunnel接口视图       | L4263
+  mpls te auto-bandwidth              | Tunnel接口视图       | L4325
+  mpls te auto-tunnel backup disable  | 接口视图             | L4399
+  mpls te backup                      | Tunnel接口视图       | L4459
+  mpls te backup bandwidth            | Tunnel接口视图       | L4515
+  mpls te backup-path                 | Tunnel接口视图       | L4597
+  mpls te bandwidth                   | Tunnel接口视图       | L4671
+  mpls te bandwidth change thresholds | 接口视图             | L4741
+  mpls te bidirectional               | Tunnel接口视图       | L4807
+  mpls te enable (Interface view)     | 接口视图             | L4913
+  mpls te enable (IS-IS view)         | IS-IS视图          | L4975
+  mpls te enable (OSPF area view)     | OSPF区域视图         | L5035
+  mpls te fast-reroute                | Tunnel接口视图       | L5083
+  mpls te fast-reroute bypass-tunnel  | 接口视图             | L5147
+  mpls te igp advertise               | Tunnel接口视图/Tunnel-Bundle接口视图 | L5219
+  mpls te igp metric                  | Tunnel接口视图/Tunnel-Bundle接口视图 | L5293
+  mpls te igp shortcut                | Tunnel接口视图/Tunnel-Bundle接口视图 | L5345
+  mpls te link-attribute              | 接口视图             | L5411
+  mpls te loop-detection              | Tunnel接口视图       | L5479
+  mpls te max-link-bandwidth          | 接口视图             | L5521
+  mpls te max-reservable-bandwidth    | 接口视图             | L5591
+  mpls te max-reservable-bandwidth mam | 接口视图             | L5669
+  mpls te max-reservable-bandwidth rdm | 接口视图             | L5753
+  mpls te metric                      | 接口视图             | L5835
+  mpls te path                        | Tunnel接口视图       | L5899
+  mpls te path-metric-type            | Tunnel接口视图       | L5969
+  mpls te priority                    | Tunnel接口视图       | L6027
+  mpls te record-route                | Tunnel接口视图       | L6087
+  mpls te reoptimization (Tunnel Interface view) | Tunnel接口视图       | L6137
+  mpls te reoptimization (User view)  | 用户视图             | L6193
+  mpls te resv-style                  | Tunnel接口视图       | L6227
+  mpls te retry                       | Tunnel接口视图       | L6285
+  mpls te route-pinning               | Tunnel接口视图       | L6337
+  mpls te signaling                   | Tunnel接口视图       | L6387
+  mpls te static-cr-lsp               | Tunnel接口视图       | L6443
+  mpls te timer retry                 | Tunnel接口视图       | L6503
+  nexthop                             | 显式路径视图           | L6555
+  nhop-only                           | MPLS TE自动隧道备份视图  | L6631
+  path-metric-type                    | MPLS TE视图        | L6683
+  pce address                         | MPLS TE视图        | L6739
+  pce deadtimer                       | MPLS TE视图        | L6789
+  pce keepalive                       | MPLS TE视图        | L6843
+  pce request-timeout                 | MPLS TE视图        | L6897
+  pce static                          | MPLS TE视图        | L6953
+  pce tolerance                       | MPLS TE视图        | L6999
+  reset mpls te auto-bandwidth-adjustment timers | 用户视图             | L7057
+  reset mpls te pce statistics        | 用户视图             | L7097
+  snmp-agent trap enable te           | 系统视图             | L7131
+  te-subtlv                           | IS-IS视图          | L7173
+  timers removal unused               | MPLS TE自动隧道备份视图  | L7231
+  tunnel-number                       | MPLS TE自动隧道备份视图  | L7287
+-->
 
 **MPLS TE \-- MPLS TE配置命令 \-- auto-bandwidth enable**
 

@@ -1,3 +1,15 @@
+<!-- CMD-INDEX
+  display system internal ifmgr brief | ]                | L14
+  display system internal ifmgr down  | Probe视图          | L58
+  display system internal ifmgr entry | Probe视图          | L102
+  display system internal ifmgr event | Probe视图          | L150
+  display system internal ifmgr hotplug | Probe视图          | L198
+  display system internal ifmgr index | Probe视图          | L246
+  display system internal ifmgr list  | Probe视图          | L294
+  display system internal ifmgr mdc   | Probe视图          | L348
+  display system internal ifmgr name  | Probe视图          | L396
+  display system internal ifmgr type  | Probe视图          | L444
+-->
 
 **接口管理 \-- 接口管理Probe命令 \-- display system internal ifmgr brief**
 

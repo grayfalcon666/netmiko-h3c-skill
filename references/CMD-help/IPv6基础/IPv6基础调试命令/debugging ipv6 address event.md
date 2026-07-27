@@ -1,3 +1,13 @@
+<!-- CMD-INDEX
+  debugging ipv6 address event        | 用户视图             | L12
+  debugging ipv6 error                | 用户视图             | L92
+  debugging ipv6 icmp                 | 用户视图             | L162
+  debugging ipv6 nd                   | 用户视图             | L260
+  debugging ipv6 nd snooping          | 用户视图             | L552
+  debugging ipv6 packet               | 用户视图             | L792
+  debugging ipv6 pathmtu              | 用户视图             | L1132
+  debugging tcp-proxy                 | 用户视图             | L1296
+-->
 
 **IPv6基础 \-- IPv6基础调试命令 \-- debugging ipv6 address event**
 

@@ -1,3 +1,30 @@
+<!-- CMD-INDEX
+  class                               | WAAS策略视图         | L29
+  display waas class                  | 任意视图             | L115
+  display waas policy                 | 任意视图             | L179
+  display waas session                | 任意视图             | L271
+  display waas statistics dre         | 任意视图             | L645
+  display waas status                 | 任意视图             | L913
+  display waas tfo auto-discovery blacklist | 任意视图             | L1037
+  match tcp                           | WAAS类视图          | L1129
+  optimize                            | WAAS策略类动作视图      | L1217
+  passthrough                         | WAAS策略类动作视图      | L1289
+  reset waas cache dre                | 用户视图             | L1343
+  reset waas statistics dre           | 用户视图             | L1381
+  reset waas tfo auto-discovery blacklist | 用户视图             | L1419
+  waas apply policy                   | 接口视图             | L1457
+  waas class                          | 系统视图             | L1511
+  waas config remove-all              | 系统视图             | L1567
+  waas config restore-default         | 系统视图             | L1601
+  waas policy                         | 系统视图             | L1637
+  waas tfo auto-discovery blacklist enable | 系统视图             | L2971
+  waas tfo auto-discovery blacklist hold-time | 系统视图             | L3021
+  waas tfo base-congestion-window     | 系统视图             | L3071
+  waas tfo keepalive                  | 系统视图             | L3115
+  waas tfo optimize dre               | 系统视图             | L3155
+  waas tfo optimize lz                | 系统视图             | L3199
+  waas tfo receive-buffer             | 系统视图             | L3243
+-->
 
 **WAAS \-- WAAS配置命令 \-- class**
 

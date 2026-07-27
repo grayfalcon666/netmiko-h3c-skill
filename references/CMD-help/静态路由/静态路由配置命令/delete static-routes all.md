@@ -1,3 +1,12 @@
+<!-- CMD-INDEX
+  delete static-routes all            | 系统视图             | L11
+  display route-static nib            | 任意视图             | L61
+  display route-static routing-table  | 任意视图             | L319
+  ip route-static                     | 系统视图             | L557
+  ip route-static default-preference  | 系统视图             | L671
+  ip route-static fast-reroute auto   | 系统视图             | L721
+  ip route-static primary-path-detect bfd echo | 系统视图             | L757
+-->
 
 **静态路由 \-- 静态路由配置命令 \-- delete static-routes all**
 

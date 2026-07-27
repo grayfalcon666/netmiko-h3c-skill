@@ -1,3 +1,39 @@
+<!-- CMD-INDEX
+  bandwidth                           | VE接口视图/VE子接口视图   | L38
+  broadcast                           | PVC视图/PVC-group视图 | L84
+  default                             | VE接口视图/VE子接口视图   | L132
+  description                         | VE接口视图/VE子接口视图   | L168
+  display atm map-info                | 任意视图             | L210
+  display atm pvc-group               | 任意视图             | L330
+  display atm pvc-info                | 任意视图             | L752
+  display interface virtual-ethernet  | 任意视图             | L1082
+  encapsulation                       | PVC视图/PVC-group视图 | L1316
+  interface virtual-ethernet          | 系统视图             | L1386
+  mac-address                         | VE接口视图           | L1442
+  map bridge                          | PVC视图/PVC-group视图 | L1488
+  map ip                              | PVC视图/PVC-group视图 | L1564
+  map ppp                             | PVC视图/PVC-group视图 | L1652
+  mtu                                 | VE接口视图/VE子接口视图   | L1720
+  oam ais-rdi                         | PVC视图/PVC-group下PVC视图 | L1768
+  oam cc                              | PVC视图/PVC-group下PVC视图 | L1830
+  oam loopback                        | PVC视图/PVC-group下PVC视图 | L1896
+  oam ping                            | 任意视图             | L1966
+  precedence                          | PVC-group下PVC视图  | L2082
+  pvc                                 | ATM接口视图/ATM子接口视图/PVC-group视图 | L2142
+  pvc-group                           | ATM接口视图/ATM子接口视图 | L2294
+  remark atm-clp                      | 流行为视图            | L2362
+  reset atm interface                 | 用户视图             | L2414
+  reset counters interface virtual-ethernet | 用户视图             | L2448
+  service cbr                         | PVC视图/PVC-group下PVC视图 | L2490
+  service ubr                         | PVC视图/PVC-group下PVC视图 | L2630
+  service vbr-nrt                     | PVC视图/PVC-group下PVC视图 | L2698
+  service vbr-rt                      | PVC视图/PVC-group下PVC视图 | L2770
+  shutdown                            | VE接口视图/VE子接口视图   | L2844
+  shutdown                            | PVC视图/PVC-group下PVC视图 | L2882
+  sub-interface rate-statistic        | VE接口视图           | L2940
+  transmit-priority                   | PVC视图/PVC-group下PVC视图 | L2986
+  vp limit                            | ATM接口视图          | L3048
+-->
 
 **ATM \-- ATM配置命令 \-- bandwidth**
 

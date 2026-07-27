@@ -1,3 +1,48 @@
+<!-- CMD-INDEX
+  attribute                           | 证书属性组视图          | L47
+  ca identifier                       | PKI域视图           | L171
+  certificate request entity          | PKI域视图           | L217
+  certificate request from            | PKI域视图           | L269
+  certificate request mode            | PKI域视图           | L319
+  certificate request polling         | PKI域视图           | L393
+  certificate request url             | PKI域视图           | L449
+  common-name                         | PKI实体视图          | L507
+  country                             | PKI实体视图          | L549
+  crl check                           | PKI域视图           | L591
+  crl url                             | PKI域视图           | L641
+  display pki certificate access-control-policy | 任意视图             | L707
+  display pki certificate attribute-group | 任意视图             | L801
+  display pki certificate domain      | 任意视图             | L951
+  display pki certificate request-status | 任意视图             | L1361
+  display pki crl                     | 任意视图             | L1483
+  fqdn                                | PKI实体视图          | L1651
+  ip                                  | PKI实体视图          | L1697
+  ldap-server                         | PKI域视图           | L1745
+  locality                            | PKI实体视图          | L1815
+  organization                        | PKI实体视图          | L1857
+  organization-unit                   | PKI实体视图          | L1899
+  pki abort-certificate-request       | 系统视图             | L1941
+  pki certificate access-control-policy | 系统视图             | L1987
+  pki certificate attribute-group     | 系统视图             | L2039
+  pki delete-certificate              | 系统视图             | L2093
+  pki domain                          | 系统视图             | L2179
+  pki entity                          | 系统视图             | L2225
+  pki export                          | 系统视图             | L2275
+  pki import                          | 系统视图             | L2831
+  pki request-certificate             | 系统视图             | L3105
+  pki retrieve-certificate            | 系统视图             | L3183
+  pki retrieve-crl                    | 系统视图             | L3263
+  pki storage                         | 系统视图             | L3315
+  pki validate-certificate            | 系统视图             | L3373
+  public-key dsa                      | PKI域视图           | L3511
+  public-key ecdsa                    | PKI域视图           | L3575
+  public-key rsa                      | PKI域视图           | L3641
+  root-certificate fingerprint        | PKI域视图           | L3727
+  rule                                | 证书访问控制策略视图       | L3803
+  source                              | PKI域视图           | L3867
+  state                               | PKI实体视图          | L3945
+  usage                               | PKI域视图           | L3987
+-->
 
 **PKI \-- PKI配置命令 \-- attribute**
 

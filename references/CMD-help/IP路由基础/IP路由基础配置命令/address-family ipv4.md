@@ -1,3 +1,39 @@
+<!-- CMD-INDEX
+  address-family ipv4                 | RIB视图            | L38
+  address-family ipv6                 | RIB视图            | L82
+  display ecmp mode                   | 任意视图             | L126
+  display ip routing-table            | 任意视图             | L178
+  display ip routing-table acl        | 任意视图             | L544
+  display ip routing-table ip-address | 任意视图             | L760
+  display ip routing-table prefix-list | 任意视图             | L922
+  display ip routing-table protocol   | 任意视图             | L1026
+  display ip routing-table statistics | 任意视图             | L1128
+  display ipv6 ecmp mode              | 任意视图             | L1210
+  display ipv6 rib attribute          | 任意视图             | L1262
+  display ipv6 rib graceful-restart   | 任意视图             | L1330
+  display ipv6 rib nib                | 任意视图             | L1386
+  display ipv6 route-direct nib       | 任意视图             | L1528
+  display ipv6 routing-table          | 任意视图             | L1776
+  display ipv6 routing-table acl      | 任意视图             | L2154
+  display ipv6 routing-table ipv6-address | 任意视图             | L2292
+  display ipv6 routing-table prefix-list | 任意视图             | L2446
+  display ipv6 routing-table protocol | 任意视图             | L2550
+  display ipv6 routing-table statistics | 任意视图             | L2652
+  display max-ecmp-num                | 任意视图             | L2732
+  display rib attribute               | 任意视图             | L2784
+  display rib graceful-restart        | 任意视图             | L2936
+  display rib nib                     | 任意视图             | L3094
+  display route-direct nib            | 任意视图             | L3424
+  ecmp mode enhanced                  | 系统视图             | L3668
+  fib lifetime                        | RIB IPv4地址族视图/RIB IPv6地址族视图 | L3718
+  ipv6 ecmp mode enhanced             | 系统视图             | L3770
+  max-ecmp-num                        | 系统视图             | L3820
+  non-stop-routing                    | RIB IPv4地址族视图/RIB IPv6地址族视图 | L3866
+  protocol lifetime                   | RIB IPv4地址族视图/RIB IPv6地址族视图 | L3910
+  reset ip routing-table statistics protocol | 用户视图             | L3964
+  reset ipv6 routing-table statistics protocol | 用户视图             | L4000
+  rib                                 | 系统视图             | L4034
+-->
 
 **IP路由基础 \-- IP路由基础配置命令 \-- address-family ipv4**
 

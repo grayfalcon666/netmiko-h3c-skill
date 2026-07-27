@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging crypto-engine             | 用户视图             | L5
+-->
 
 **加密引擎 \-- 加密引擎调试命令 \-- debugging crypto-engine**
 

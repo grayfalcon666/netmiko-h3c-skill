@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  debugging ipv6 l2mf                 | 用户视图             | L6
+  debugging mld-snooping              | 用户视图             | L222
+-->
 
 **MLD Snooping \-- MLD Snooping调试命令 \-- debugging ipv6 l2mf**
 

@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging vlan-termination          | 用户视图             | L5
+-->
 
 **VLAN终结 \-- VLAN终结调试命令 \-- debugging vlan-termination**
 

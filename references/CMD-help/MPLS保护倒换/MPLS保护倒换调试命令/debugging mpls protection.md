@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  debugging mpls protection           | ]                | L6
+  debugging tunnel-bundle             | ]                | L368
+-->
 
 **MPLS保护倒换 \-- MPLS保护倒换调试命令 \-- debugging mpls protection**
 

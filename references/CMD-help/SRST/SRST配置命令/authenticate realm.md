@@ -1,3 +1,44 @@
+<!-- CMD-INDEX
+  authenticate realm                  | 全局注册视图           | L43
+  authenticate register               | 全局注册视图           | L99
+  caller-group                        | 注册池视图            | L149
+  codec                               | 注册池视图            | L209
+  display voice register entity       | 任意视图             | L347
+  display voice register pool all brief | 任意视图             | L451
+  id                                  | 注册池视图            | L531
+  max-dn                              | 全局注册视图           | L591
+  max-pool                            | 全局注册视图           | L643
+  mode                                | 全局注册视图           | L695
+  number(DN view)                     | DN视图             | L745
+  number(Register pool view)          | 注册池视图            | L793
+  outband                             | 注册池视图            | L855
+  priority                            | DN视图/注册池视图       | L901
+  proxy                               | 注册池视图            | L965
+  registrar server                    | SIP视图            | L1029
+  registration-timer                  | 注册池视图            | L1091
+  substitute                          | 注册池视图            | L1145
+  username                            | 注册池视图            | L1205
+  voice register dn                   | 语音视图             | L1267
+  voice register global               | 语音视图             | L1319
+  voice register pool                 | 语音视图             | L1363
+  voice-class codec                   | 注册池视图            | L1417
+  voice-class sip options-keepalive   | 注册池视图            | L1473
+  after-hours block pattern           | 语音视图             | L1535
+  after-hours date                    | 语音视图             | L1651
+  after-hours day                     | 语音视图             | L1713
+  after-hours exempt                  | DN视图/注册池视图       | L1773
+  call-forward b2bua                  | DN视图/注册池视图       | L1827
+  display voice fac                   | 任意视图             | L1919
+  dnd                                 | 注册池视图            | L2063
+  fac custom                          | 语音视图             | L2109
+  fac standard                        | 语音视图             | L2199
+  fac terminator                      | 语音视图             | L2247
+  moh file                            | 全局注册视图           | L2297
+  multicast moh                       | 全局注册视图           | L2357
+  mwi                                 | DN视图             | L2409
+  pickup-call any-group               | DN视图             | L2455
+  pickup-group                        | DN视图             | L2501
+-->
 
 **SRST \-- SRST配置命令 \-- authenticate realm**
 

@@ -1,3 +1,8 @@
+<!-- CMD-INDEX
+  display system internal ip subscriber cache statistics | Probe视图          | L7
+  display system internal ipv6 subscriber cache statistics | Probe视图          | L31
+  display system internal ppp sync-session | Probe视图          | L55
+-->
 
 **多机备份 \-- IPoE支持多机备份Probe功能 \-- display system internal ip subscriber cache statistics**
 

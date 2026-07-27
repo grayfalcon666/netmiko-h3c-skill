@@ -1,3 +1,17 @@
+<!-- CMD-INDEX
+  display mvrp running-status         | 任意视图             | L16
+  display mvrp state                  | 任意视图             | L192
+  display mvrp statistics             | 任意视图             | L290
+  mrp timer join                      | 二层以太网接口视图/二层聚合接口视图 | L494
+  mrp timer leave                     | 二层以太网接口视图/二层聚合接口视图 | L542
+  mrp timer leaveall                  | 二层以太网接口视图/二层聚合接口视图 | L592
+  mrp timer periodic                  | 二层以太网接口视图/二层聚合接口视图 | L648
+  mvrp enable                         | 二层以太网接口视图/二层聚合接口视图 | L698
+  mvrp global enable                  | 系统视图             | L748
+  mvrp gvrp-compliance enable         | 系统视图             | L794
+  mvrp registration                   | 二层以太网接口视图/二层聚合接口视图 | L834
+  reset mvrp statistics               | 用户视图             | L884
+-->
 
 **MVRP \-- MVRP配置命令 \-- display mvrp running-status**
 

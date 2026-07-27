@@ -1,3 +1,15 @@
+<!-- CMD-INDEX
+  ap radio                            | 负载均衡组视图          | L14
+  description                         | 负载均衡组视图          | L66
+  display wlan load-balance group     | 任意视图             | L108
+  wlan load-balance access-denial     | 系统视图             | L206
+  wlan load-balance enable            | 系统视图             | L250
+  wlan load-balance group             | 系统视图             | L286
+  wlan load-balance mode bandwidth    | 系统视图             | L338
+  wlan load-balance mode session      | 系统视图             | L388
+  wlan load-balance mode traffic      | 系统视图             | L434
+  wlan load-balance rssi-threshold    | 系统视图             | L480
+-->
 
 **负载均衡 \-- 负载均衡配置命令 \-- ap radio**
 

@@ -1,3 +1,34 @@
+<!-- CMD-INDEX
+  display qos forwarding-class        | 任意视图             | L33
+  remark forwarding-class             | 流行为视图            | L99
+  display qos forwarding-group        | 任意视图             | L151
+  forwarding-class profile            | 转发组视图            | L235
+  forwarding-group profile            | 转发组匹配规则视图        | L291
+  match                               | 转发组视图            | L349
+  qos forwarding-group                | 系统视图             | L437
+  display qos drop-profile            | 任意视图             | L487
+  green                               | 丢弃策略视图           | L569
+  qos drop-profile                    | 系统视图             | L623
+  red                                 | 丢弃策略视图           | L675
+  weighting-constant                  | 丢弃策略视图           | L729
+  yellow                              | 丢弃策略视图           | L779
+  bandwidth                           | 转发策略视图           | L835
+  display qos forwarding-profile      | 任意视图             | L883
+  drop-profile                        | 转发策略视图           | L977
+  gts cir                             | 转发策略视图           | L1029
+  qos forwarding-profile              | 系统视图             | L1077
+  sp                                  | 转发策略视图           | L1123
+  wfq                                 | 转发策略视图           | L1167
+  wrr                                 | 转发策略视图           | L1217
+  display qos scheduler-policy        | 任意视图             | L1267
+  display qos scheduler-policy diagnosis interface | 任意视图             | L1501
+  display qos scheduler-policy interface | 任意视图             | L1801
+  forwarding-group profile (scheduler-policy match view) | 调度策略匹配规则视图       | L2445
+  match                               | 调度策略视图           | L2511
+  qos apply scheduler-policy          | 接口视图             | L2599
+  qos scheduler-policy                | 系统视图             | L2659
+  scheduler-unit                      | 调度策略视图           | L2703
+-->
 
 **HQoS \-- 转发类配置命令 \-- display qos forwarding-class**
 

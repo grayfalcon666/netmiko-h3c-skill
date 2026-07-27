@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  debugging fr                        | 用户视图             | L6
+  debugging fr compression iphc       | 用户视图             | L706
+-->
 
 **帧中继 \-- 帧中继调试命令 \-- debugging fr**
 

@@ -1,3 +1,9 @@
+<!-- CMD-INDEX
+  display qinq                        | 任意视图             | L8
+  qinq enable                         | 二层以太网接口视图/二层聚合接口视图 | L96
+  qinq ethernet-type                  | 系统视图/二层以太网接口视图/二层聚合接口视图 | L138
+  qinq transparent-vlan               | 二层以太网接口视图/二层聚合接口视图 | L280
+-->
 
 **QinQ \-- QinQ配置命令 \-- display qinq**
 

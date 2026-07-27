@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging udp-helper packet         | 任意视图             | L5
+-->
 
 **UDP Helper \-- UDP Helper调试命令 \-- debugging udp-helper packet**
 

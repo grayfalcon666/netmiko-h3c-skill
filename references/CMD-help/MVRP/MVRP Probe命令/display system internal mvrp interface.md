@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  display system internal mvrp interface | Probe视图          | L6
+  display system internal mvrp map-count | Probe视图          | L32
+-->
 
 **MVRP \-- MVRP Probe命令 \-- display system internal mvrp interface**
 

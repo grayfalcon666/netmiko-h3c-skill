@@ -1,3 +1,14 @@
+<!-- CMD-INDEX
+  debugging bfd all                   | 用户视图             | L13
+  debugging bfd error                 | 用户视图             | L51
+  debugging bfd event                 | 用户视图             | L371
+  debugging bfd fsm                   | 用户视图             | L541
+  debugging bfd ha                    | 用户视图             | L607
+  debugging bfd ntfy                  | 用户视图             | L665
+  debugging bfd packet                | 用户视图             | L727
+  debugging bfd scm                   | 用户视图             | L969
+  debugging bfd timer                 | 用户视图             | L1039
+-->
 
 **BFD \-- BFD调试命令 \-- debugging bfd all**
 

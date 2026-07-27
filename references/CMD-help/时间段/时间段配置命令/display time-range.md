@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  display time-range                  | 任意视图             | L6
+  time-range                          | 系统视图             | L74
+-->
 
 **时间段 \-- 时间段配置命令 \-- display time-range**
 

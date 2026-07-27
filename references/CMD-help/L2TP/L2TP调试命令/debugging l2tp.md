@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging l2tp                      | 用户视图             | L5
+-->
 
 **L2TP \-- L2TP调试命令 \-- debugging l2tp**
 

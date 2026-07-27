@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  debugging ip subscriber             | 用户视图             | L6
+  debugging ipv6 subscriber           | 用户视图             | L2508
+-->
 
 **IPoE调试命令 \-- IPoE调试命令 \-- debugging ip subscriber**
 

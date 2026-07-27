@@ -1,3 +1,33 @@
+<!-- CMD-INDEX
+  display dns domain                  | 任意视图             | L32
+  display dns host                    | 任意视图             | L104
+  display dns server                  | 任意视图             | L212
+  display ipv6 dns server             | 任意视图             | L284
+  dns domain                          | 系统视图             | L358
+  dns dscp                            | 系统视图             | L414
+  dns proxy enable                    | 系统视图             | L456
+  dns server                          | 系统视图             | L496
+  dns source-interface                | 系统视图             | L552
+  dns spoofing                        | 系统视图             | L616
+  dns spoofing track                  | 系统视图             | L670
+  dns trust-interface                 | 系统视图             | L730
+  ip host                             | 系统视图             | L792
+  ipv6 dns dscp                       | 系统视图             | L848
+  ipv6 dns server                     | 系统视图             | L890
+  ipv6 dns spoofing                   | 系统视图             | L948
+  ipv6 host                           | 系统视图             | L1004
+  reset dns host                      | 用户视图             | L1060
+  ddns apply policy                   | 接口视图             | L1107
+  ddns dscp                           | 系统视图             | L1175
+  ddns policy                         | 系统视图             | L1215
+  display ddns policy                 | 任意视图             | L1265
+  interval                            | DDNS策略视图         | L1409
+  method                              | DDNS策略视图         | L1469
+  password                            | DDNS策略视图         | L1529
+  ssl-client-policy                   | DDNS策略视图         | L1589
+  url                                 | DDNS策略视图         | L1649
+  username                            | DDNS策略视图         | L1789
+-->
 
 **域名解析 \-- 域名解析配置命令 \-- display dns domain**
 

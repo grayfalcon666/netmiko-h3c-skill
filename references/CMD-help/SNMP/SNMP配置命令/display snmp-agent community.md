@@ -1,3 +1,44 @@
+<!-- CMD-INDEX
+  display snmp-agent community        | 任意视图             | L43
+  display snmp-agent context          | 任意视图             | L181
+  display snmp-agent group            | 任意视图             | L223
+  display snmp-agent local-engineid   | 任意视图             | L317
+  display snmp-agent mib-node         | 任意视图             | L357
+  display snmp-agent mib-view         | 任意视图             | L921
+  display snmp-agent remote           | 任意视图             | L1057
+  display snmp-agent statistics       | 任意视图             | L1129
+  display snmp-agent sys-info         | 任意视图             | L1285
+  display snmp-agent trap queue       | 任意视图             | L1343
+  display snmp-agent trap-list        | 任意视图             | L1397
+  display snmp-agent usm-user         | 任意视图             | L1431
+  enable snmp trap updown             | 接口视图             | L1571
+  snmp-agent                          | 系统视图             | L1623
+  snmp-agent calculate-password       | 系统视图             | L1663
+  snmp-agent community                | 系统视图             | L1735
+  snmp-agent community-map            | 系统视图             | L1883
+  snmp-agent context                  | 系统视图             | L1935
+  snmp-agent group                    |                  | L1985
+  snmp-agent local-engineid           | 系统视图             | L2085
+  snmp-agent log                      | 系统视图             | L2141
+  snmp-agent mib-view                 | 系统视图             | L2195
+  snmp-agent packet max-size          | 系统视图             | L2271
+  snmp-agent port                     | 系统视图             | L2315
+  snmp-agent remote                   | 系统视图             | L2365
+  snmp-agent { inform \| trap } source | 系统视图             | L2421
+  snmp-agent sys-info contact         | 系统视图             | L2489
+  snmp-agent sys-info location        | 系统视图             | L2537
+  snmp-agent sys-info version         | 系统视图             | L2585
+  snmp-agent target-host              |                  | L2649
+  snmp-agent trap enable              | 系统视图             | L2747
+  snmp-agent trap if-mib link extended | 系统视图             | L2815
+  snmp-agent trap log                 | 系统视图             | L2857
+  snmp-agent trap life                | 系统视图             | L2897
+  snmp-agent trap periodical-interval | 系统视图             | L2949
+  snmp-agent trap queue-size          | 系统视图             | L3015
+  snmp-agent usm-user { v1 \| v2c }   | 系统视图             | L3067
+  snmp-agent usm-user v3              |                  | L3179
+  snmp-agent usm-user v3 user-role    | 系统视图             | L3421
+-->
 
 **SNMP \-- SNMP配置命令 \-- display snmp-agent community**
 

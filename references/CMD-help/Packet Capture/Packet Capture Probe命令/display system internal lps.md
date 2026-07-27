@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  display system internal lps         | Probe视图          | L5
+-->
 
 **Packet Capture \-- Packet Capture Probe命令 \-- display system internal lps**
 

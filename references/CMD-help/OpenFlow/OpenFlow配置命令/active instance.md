@@ -1,3 +1,37 @@
+<!-- CMD-INDEX
+  active instance                     | OpenFlow实例视图/OpenFlow OAP实例视图 | L36
+  classification                      | OpenFlow实例视图     | L78
+  controller address                  | OpenFlow实例视图     | L140
+  controller auxiliary                | OpenFlow实例视图     | L210
+  controller connect interval         | OpenFlow实例视图     | L270
+  controller echo-request interval    | OpenFlow实例视图/OpenFlow OAP实例视图 | L312
+  controller mode                     | OpenFlow实例视图     | L354
+  datapath-id                         | OpenFlow实例视图/OpenFlow OAP实例视图 | L404
+  default table-miss permit           | OpenFlow实例视图/OpenFlow OAP实例视图 | L446
+  description                         | OpenFlow实例视图/OpenFlow OAP实例视图 | L488
+  display openflow auxiliary          | 任意视图             | L530
+  display openflow controller         | 任意视图             | L658
+  display openflow flow-table         | 任意视图             | L810
+  display openflow group              | 任意视图             | L1472
+  display openflow instance           | 任意视图             | L1624
+  display openflow meter              | 任意视图             | L2026
+  display openflow oap-context        | 任意视图             | L2170
+  display openflow summary            | 任意视图             | L2272
+  fail-open mode                      | OpenFlow实例视图     | L2366
+  flow-entry max-limit                | OpenFlow实例视图/OpenFlow OAP实例视图 | L2410
+  flow-table                          | OpenFlow实例视图     | L2452
+  forbidden port                      | OpenFlow实例视图     | L2510
+  in-band management vlan             | OpenFlow实例视图     | L2558
+  listening port                      | OpenFlow实例视图/OpenFlow OAP实例视图 | L2604
+  mac-ip dynamic-mac aware            | OpenFlow实例视图     | L2654
+  mac-learning forbidden              | OpenFlow实例视图     | L2696
+  openflow instance                   | 系统视图             | L2734
+  openflow instance oap-instance      | 系统视图             | L2776
+  openflow lossless enable            | 系统视图             | L2814
+  openflow-instance                   | 接口视图             | L2868
+  port                                | OpenFlow实例视图     | L2910
+  reset openflow instance controller statistics | 用户视图             | L2952
+-->
 
 **OpenFlow \-- OpenFlow配置命令 \-- active instance**
 

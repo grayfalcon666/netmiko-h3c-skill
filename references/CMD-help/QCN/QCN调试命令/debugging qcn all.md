@@ -1,3 +1,10 @@
+<!-- CMD-INDEX
+  debugging qcn all                   | 用户视图             | L9
+  debugging qcn error                 | 用户视图             | L35
+  debugging qcn event                 | 用户视图             | L179
+  debugging qcn fsm                   | 用户视图             | L237
+  debugging qcn packet                | 用户视图             | L301
+-->
 
 **QCN \-- QCN调试命令 \-- debugging qcn all**
 

@@ -1,3 +1,16 @@
+<!-- CMD-INDEX
+  display system internal fib prefix  | Probe视图          | L15
+  display system internal fib prefix ip | Probe视图          | L63
+  display system internal fib prefix entry-status | Probe视图          | L115
+  display system internal fib running-status | Probe视图          | L163
+  display system internal fib statistics | Probe视图          | L207
+  display system internal fib vn      | Probe视图          | L251
+  display system internal fib vn reference | Probe视图          | L307
+  display system internal fib vn entry-status | Probe视图          | L357
+  reset system internal fib statistics | Probe视图          | L403
+  debugging system internal fib prefix |                  | L447
+  debugging system internal fib vn    |                  | L509
+-->
 
 **IP转发基础 \-- IP转发基础Probe配置命令 \-- display system internal fib prefix**
 

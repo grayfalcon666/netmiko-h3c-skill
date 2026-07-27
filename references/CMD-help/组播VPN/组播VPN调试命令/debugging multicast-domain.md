@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging multicast-domain          | 用户视图             | L5
+-->
 
 **组播VPN \-- 组播VPN调试命令 \-- debugging multicast-domain**
 

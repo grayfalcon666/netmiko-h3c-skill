@@ -1,3 +1,90 @@
+<!-- CMD-INDEX
+  ah authentication-algorithm         | IPsec安全提议视图      | L89
+  description                         | IPsec安全策略视图/IPsec安全策略模板视图/IPsec安全框架视图 | L147
+  display ipsec { ipv6-policy \| policy } | 任意视图             | L193
+  display ipsec { ipv6-policy-template \| policy-template } | 任意视图             | L627
+  display ipsec profile               | 任意视图             | L797
+  display ipsec sa                    | 任意视图             | L953
+  display ipsec statistics            | 任意视图             | L1369
+  display ipsec transform-set         | 任意视图             | L1549
+  display ipsec tunnel                | 任意视图             | L1655
+  encapsulation-mode                  | IPsec安全提议视图      | L1899
+  esp authentication-algorithm        | IPsec安全提议视图      | L1957
+  esp encryption-algorithm            |                  | L2019
+  ike-profile                         | IPsec安全策略视图/IPsec安全策略模板视图 | L2095
+  ipsec anti-replay check             | 系统视图             | L2147
+  ipsec anti-replay window            | 系统视图             | L2195
+  ipsec decrypt-check enable          | 系统视图             | L2245
+  ipsec logging packet enable         | 系统视图             | L2285
+  ipsec df-bit                        | 接口视图             | L2325
+  ipsec global-df-bit                 | 系统视图             | L2385
+  ipsec apply                         | 接口视图             | L2441
+  ipsec { ipv6-policy \| policy }     | 系统视图             | L2499
+  ipsec { ipv6-policy \| policy } isakmp template | 系统视图             | L2577
+  ipsec { ipv6-policy \| policy } local-address | 系统视图             | L2637
+  ipsec { ipv6-policy-template \| policy-template } | 系统视图             | L2701
+  ipsec profile                       | 系统视图             | L2767
+  ipsec redundancy enable             | 系统视图             | L2833
+  ipsec sa global-duration            | 系统视图             | L2881
+  ipsec sa idle-time                  | 系统视图             | L2941
+  ipsec transform-set                 | 系统视图             | L2993
+  local-address                       | IPsec安全策略视图/IPsec安全策略模板视图 | L3043
+  pfs                                 | IPsec安全提议视图      | L3097
+  protocol                            | IPsec安全提议视图      | L3163
+  qos pre-classify                    | IPsec安全策略视图/IPsec安全策略模板视图 | L3213
+  redundancy replay-interval          | IPsec安全策略视图/IPsec安全策略模板视图 | L3255
+  remote-address                      | IPsec安全策略视图/IPsec安全策略模板视图 | L3317
+  reset ipsec sa                      | 用户视图             | L3403
+  reset ipsec statistics              | 用户视图             | L3493
+  reverse-route dynamic               | IPsec安全策略视图/IPsec安全策略模板视图 | L3527
+  reverse-route preference            | IPsec安全策略视图/IPsec安全策略模板视图 | L3599
+  reverse-route tag                   | IPsec安全策略视图/IPsec安全策略模板视图 | L3651
+  sa duration                         | IPsec安全策略视图/IPsec安全策略模板视图/IPsec安全框架视图 | L3703
+  sa hex-key authentication           | IPsec安全策略视图/IPsec安全框架视图 | L3767
+  sa hex-key encryption               | IPsec安全策略视图/IPsec安全框架视图 | L3843
+  sa idle-time                        | IPsec安全策略视图/IPsec安全策略模板视图/IPsec安全框架视图 | L3917
+  sa spi                              | IPsec安全策略视图/IPsec安全框架视图 | L3971
+  sa string-key                       | IPsec安全策略视图/IPsec安全框架视图 | L4041
+  security acl                        | IPsec安全策略视图/IPsec安全策略模板视图 | L4133
+  snmp-agent trap enable ipsec        | 系统视图             | L4225
+  transform-set                       | IPsec安全策略视图/IPsec安全策略模板视图/IPsec安全框架视图 | L4299
+  tunnel protection ipsec             | Tunnel接口视图       | L4361
+  authentication-algorithm            | IKE提议视图          | L4417
+  authentication-method               | IKE提议视图          | L4473
+  certificate domain                  | IKE profile视图    | L4539
+  dh                                  |                  | L4601
+  display ike proposal                | 任意视图             | L4673
+  display ike sa                      | 任意视图             | L4783
+  dpd                                 | IKE profile视图    | L5091
+  encryption-algorithm                |                  | L5151
+  exchange-mode                       | IKE profile视图    | L5223
+  ike dpd                             | 系统视图             | L5283
+  ike identity                        | 系统视图             | L5347
+  ike invalid-spi-recovery enable     | 系统视图             | L5407
+  ike keepalive interval              | 系统视图             | L5451
+  ike keepalive timeout               | 系统视图             | L5505
+  ike keychain                        | 系统视图             | L5557
+  ike limit                           | 系统视图             | L5611
+  ike nat-keepalive                   | 系统视图             | L5669
+  ike profile                         | 系统视图             | L5719
+  ike proposal                        | 系统视图             | L5761
+  ike signature-identity from-certificate | 系统视图             | L5823
+  inside-vpn                          | IKE profile视图    | L5871
+  keychain                            | IKE profile视图    | L5917
+  local-identity                      | IKE profile视图    | L5967
+  match local address (IKE keychain view) | IKE keychain视图   | L6033
+  match local address (IKE profile view) | IKE profile视图    | L6089
+  match remote                        | IKE profile视图    | L6145
+  pre-shared-key                      | IKE keychain视图   | L6221
+  priority (IKE keychain view)        | IKE keychain视图   | L6303
+  priority (IKE profile view)         | IKE-Profile视图    | L6349
+  proposal                            | IKE profile视图    | L6395
+  reset ike sa                        | 用户视图             | L6445
+  reset ike statistics                | 用户视图             | L6513
+  sa duration                         | IKE提议视图          | L6543
+  snmp-agent trap enable ike          | 系统视图             | L6595
+  tunnel protection                   | Tunnel接口视图       | L6683
+-->
 
 **IPsec \-- IPsec配置命令 \-- ah authentication-algorithm**
 

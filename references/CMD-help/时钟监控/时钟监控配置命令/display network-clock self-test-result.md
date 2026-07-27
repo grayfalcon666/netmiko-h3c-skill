@@ -1,3 +1,23 @@
+<!-- CMD-INDEX
+  display network-clock self-test-result | 任意视图             | L22
+  display network-clock source        | 任意视图             | L152
+  display network-clock status        | 任意视图             | L348
+  display network-clock version       | 任意视图             | L494
+  network-clock lpuport               | 系统视图             | L606
+  network-clock source direction      |                  | L660
+  network-clock source forcessm       |                  | L734
+  network-clock source frequency      |                  | L814
+  network-clock source priority       |                  | L890
+  network-clock source sa-bit         | 系统视图             | L972
+  network-clock source ssm            |                  | L1046
+  network-clock ssmcontrol            | 系统视图             | L1140
+  network-clock work-mode             | 系统视图             | L1212
+  network-clock work-mode manual mdc  |                  | L1292
+  display esmc                        | 任意视图             | L1362
+  esmc enable                         | 二层以太网接口视图/三层以太网接口视图 | L1526
+  synce state                         | 二层以太网接口视图/三层以太网接口视图 | L1574
+  synchronous mode                    | 二层以太网接口视图/三层以太网接口视图 | L1626
+-->
 
 **时钟监控 \-- 时钟监控配置命令 \-- display network-clock self-test-result**
 

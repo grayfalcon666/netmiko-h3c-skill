@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging system internal sib sflow | Probe视图          | L5
+-->
 
 **Context \-- Context Probe命令 \-- debugging system internal sib sflow**
 

@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  display system internal mbuf relay statistics | Probe视图          | L6
+  reset system internal mbuf relay statistics | Probe视图          | L54
+-->
 
 **MBUF \-- MBUF Probe命令 \-- display system internal mbuf relay statistics**
 

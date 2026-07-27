@@ -1,3 +1,11 @@
+<!-- CMD-INDEX
+  if-match mpls-exp                   | 类视图              | L10
+  if-match mpls-label                 | 类视图              | L54
+  if-match second-mpls-exp            | 类视图              | L104
+  if-match second-mpls-label          | 类视图              | L148
+  remark mpls-exp                     | 流行为视图            | L198
+  remark imposition-mpls-exp          | 流行为视图            | L252
+-->
 
 **MPLS QoS \-- MPLS QoS配置命令 \-- if-match mpls-exp**
 

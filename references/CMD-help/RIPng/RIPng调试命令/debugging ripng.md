@@ -1,3 +1,12 @@
+<!-- CMD-INDEX
+  debugging ripng                     | 用户视图             | L11
+  debugging ripng brief               | 用户视图             | L47
+  debugging ripng event               | 用户视图             | L139
+  debugging ripng packet              | 用户视图             | L247
+  debugging ripng receive             | 用户视图             | L503
+  debugging ripng send                | 用户视图             | L715
+  debugging ripng timer               | 用户视图             | L843
+-->
 
 **RIPng \-- RIPng调试命令 \-- debugging ripng**
 

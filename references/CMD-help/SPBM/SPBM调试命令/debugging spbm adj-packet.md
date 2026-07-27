@@ -1,3 +1,20 @@
+<!-- CMD-INDEX
+  debugging spbm adj-packet           | 用户视图             | L19
+  debugging spbm agreement-protocol   | 用户视图             | L261
+  debugging spbm error                | 用户视图             | L433
+  debugging spbm event                | 用户视图             | L895
+  debugging spbm flush                | 用户视图             | L1477
+  debugging spbm graceful-restart     | 用户视图             | L1881
+  debugging spbm ha-event             | 用户视图             | L2153
+  debugging spbm self-originate-update | 用户视图             | L2421
+  debugging spbm snp-packet           | 用户视图             | L2609
+  debugging spbm spf                  | 用户视图             | L2743
+  debugging spbm timer                | 用户视图             | L4152
+  debugging spbm update-packet        | 用户视图             | L4298
+  debugging spbm-fdb bvlan-info       | 用户视图             | L4538
+  debugging spbm-fdb multicast-fib    | 用户视图             | L4808
+  debugging spbm-fdb unicast-fib      | 用户视图             | L5016
+-->
 
 **SPBM \-- SPBM调试命令 \-- debugging spbm adj-packet**
 

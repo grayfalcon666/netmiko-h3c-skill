@@ -1,3 +1,9 @@
+<!-- CMD-INDEX
+  debugging ipv6 dhcp client          | 用户视图             | L8
+  debugging ipv6 dhcp relay           | 用户视图             | L478
+  debugging ipv6 dhcp server          | 用户视图             | L818
+  debugging ipv6 dhcp snooping        | 用户视图             | L1266
+-->
 
 **DHCPv6 \-- DHCPv6调试命令 \-- debugging ipv6 dhcp client**
 

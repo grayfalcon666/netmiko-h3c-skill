@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging wlan rrm                  | 用户视图             | L5
+-->
 
 **WLAN RRM \-- WLAN RRM调试命令 \-- debugging wlan rrm**
 

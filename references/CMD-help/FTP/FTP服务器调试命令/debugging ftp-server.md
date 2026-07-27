@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging ftp-server                | 用户视图             | L5
+-->
 
 **FTP \-- FTP服务器调试命令 \-- debugging ftp-server**
 

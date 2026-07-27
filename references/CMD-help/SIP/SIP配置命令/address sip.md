@@ -1,3 +1,50 @@
+<!-- CMD-INDEX
+  address sip                         | VoIP语音实体视图       | L49
+  asserted-id                         | SIP视图            | L101
+  bind                                | SIP视图            | L147
+  crypto                              | SIP视图            | L233
+  display voice ip address trusted list | 任意视图             | L293
+  display voice sip call              | 任意视图             | L391
+  display voice sip connection        | 任意视图             | L585
+  display voice sip map               | 任意视图             | L681
+  display voice sip register-status   | 任意视图             | L927
+  ip                                  | 可信节点列表视图         | L1005
+  ip address trusted authenticate     | SIP视图            | L1053
+  ip address trusted list             | SIP视图            | L1099
+  ip qos dscp                         | SIP视图            | L1141
+  min-se                              | SIP视图            | L1327
+  options-ping                        | SIP视图            | L1383
+  outband sip                         | POTS/VoIP语音实体视图  | L1437
+  privacy                             | SIP视图            | L1483
+  proxy                               | SIP视图            | L1523
+  register-number                     | POTS语音实体视图       | L1581
+  registrar                           | SIP视图            | L1635
+  rel1xx                              | SIP视图            | L1723
+  remote-party-id                     | SIP视图            | L1775
+  reset voice sip connection          | 用户视图             | L1815
+  session refresh                     | SIP视图            | L1853
+  session transport                   | SIP视图/VoIP语音实体视图 | L1901
+  set pstn-cause                      |                  | L1965
+  set sip-status                      |                  | L2295
+  signaling forward rawmsg            | VoIP语音实体视图       | L2647
+  sip                                 | 语音视图             | L2697
+  srtp                                | SIP视图/VoIP语音实体视图 | L2733
+  timers connection aging             | SIP视图            | L2793
+  timers options                      | SIP视图            | L2841
+  transport                           | SIP视图            | L2893
+  url                                 | SIP视图            | L2967
+  user                                | SIP视图/POTS语音实体视图 | L3021
+  voice-class sip bind                | VoIP语音实体视图       | L3105
+  voice-class sip options-keepalive   | VoIP语音实体视图       | L3165
+  voice-class sip options-ping        | VoIP语音实体视图       | L3227
+  voice-class sip session refresh     | VoIP语音实体视图       | L3299
+  voice-class sip url                 | VoIP语音实体视图       | L3371
+  allow-connections                   | 语音视图             | L3427
+  codec transparent                   | VoIP语音实体视图       | L3469
+  credential                          | SIP视图            | L3515
+  media flow-around                   | VoIP语音实体视图       | L3581
+  voice-class sip early-offer forced  | VoIP语音实体视图       | L3627
+-->
 
 **SIP \-- SIP配置命令 \-- address sip**
 

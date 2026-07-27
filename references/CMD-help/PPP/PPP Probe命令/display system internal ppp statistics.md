@@ -1,3 +1,9 @@
+<!-- CMD-INDEX
+  display system internal ppp statistics | ]                | L8
+  display system internal pppoe-server statistics | Probe视图          | L64
+  reset system internal ppp statistics | ]                | L118
+  reset system internal pppoe-server statistics | Probe视图          | L174
+-->
 
 **PPP \-- PPP Probe命令 \-- display system internal ppp statistics**
 

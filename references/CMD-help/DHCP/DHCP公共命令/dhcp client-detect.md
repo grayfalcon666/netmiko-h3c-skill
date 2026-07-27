@@ -1,3 +1,110 @@
+<!-- CMD-INDEX
+  dhcp client-detect                  | 接口视图             | L109
+  dhcp dscp                           | 系统视图             | L153
+  dhcp enable                         | 系统视图             | L193
+  dhcp log enable                     | 系统视图             | L235
+  dhcp rate-limit                     | 接口视图             | L277
+  dhcp select                         | 接口视图             | L335
+  address range                       | DHCP地址池视图        | L403
+  bims-server                         | DHCP地址池视图        | L469
+  bootfile-name                       | DHCP地址池视图        | L529
+  class option-group                  | DHCP地址池视图        | L595
+  class range                         | DHCP地址池视图        | L649
+  dhcp class                          | 系统视图             | L723
+  dhcp option-group                   | 系统视图             | L777
+  dhcp server always-broadcast        | 系统视图             | L825
+  dhcp server apply ip-pool           | 接口视图             | L869
+  dhcp server bootp ignore            | 系统视图             | L935
+  dhcp server bootp reply-rfc-1048    | 系统视图             | L975
+  dhcp server database filename       | 系统视图             | L1019
+  dhcp server database update interval | 系统视图             | L1103
+  dhcp server database update now     | 系统视图             | L1159
+  dhcp server database update stop    | 系统视图             | L1201
+  dhcp server forbidden-ip            | 系统视图             | L1245
+  dhcp server ip-pool                 | 系统视图             | L1307
+  dhcp server ping packets            | 系统视图             | L1359
+  dhcp server ping timeout            | 系统视图             | L1413
+  dhcp server relay information enable | 系统视图             | L1467
+  display dhcp server conflict        | 任意视图             | L1507
+  display dhcp server database        | 任意视图             | L1577
+  display dhcp server expired         | 任意视图             | L1655
+  display dhcp server free-ip         | 任意视图             | L1727
+  display dhcp server ip-in-use       | 任意视图             | L1817
+  display dhcp server pool            | 任意视图             | L1921
+  display dhcp server statistics      | 任意视图             | L2141
+  dns-list                            | DHCP地址池视图        | L2289
+  domain-name                         | DHCP地址池视图        | L2341
+  expired                             | DHCP地址池视图        | L2391
+  forbidden-ip                        | DHCP地址池视图        | L2453
+  gateway-list                        | DHCP地址池视图/DHCP从网段视图 | L2509
+  if-match                            | DHCP用户类视图        | L2569
+  ip-in-use threshold                 | DHCP地址池视图        | L2679
+  nbns-list                           | DHCP地址池视图        | L2729
+  netbios-type                        | DHCP地址池视图        | L2783
+  network                             | DHCP地址池视图        | L2841
+  next-server                         | DHCP地址池视图        | L2919
+  option                              | DHCP地址池视图/DHCP选项组视图 | L2971
+  reset dhcp server conflict          | 用户视图             | L3045
+  reset dhcp server expired           | 用户视图             | L3085
+  reset dhcp server ip-in-use         | 用户视图             | L3127
+  reset dhcp server statistics        | 用户视图             | L3171
+  static-bind                         | DHCP地址池视图        | L3205
+  tftp-server domain-name             | DHCP地址池视图        | L3271
+  tftp-server ip-address              | DHCP地址池视图        | L3323
+  valid class                         | DHCP地址池视图        | L3373
+  verify class                        | DHCP地址池视图        | L3425
+  voice-config                        | DHCP地址池视图        | L3473
+  vpn-instance                        | DHCP地址池视图        | L3539
+  dhcp relay check mac-address        | 接口视图             | L3587
+  dhcp relay check mac-address aging-time | 系统视图             | L3651
+  dhcp relay client-information record | 系统视图             | L3695
+  dhcp relay client-information refresh | 系统视图             | L3743
+  dhcp relay client-information refresh enable | 系统视图             | L3795
+  dhcp relay gateway                  | 接口视图             | L3851
+  dhcp relay information circuit-id   | 接口视图             | L3917
+  dhcp relay information enable       | 接口视图             | L4031
+  dhcp relay information remote-id    | 接口视图             | L4097
+  dhcp relay information strategy     | 接口视图             | L4183
+  dhcp relay release ip               | 系统视图             | L4259
+  dhcp relay server-address           | 接口视图             | L4297
+  display dhcp relay check mac-address | 任意视图             | L4365
+  display dhcp relay client-information | 任意视图             | L4419
+  display dhcp relay information      | 任意视图             | L4523
+  display dhcp relay server-address   | 任意视图             | L4647
+  display dhcp relay statistics       | 任意视图             | L4703
+  gateway-list                        | DHCP地址池视图        | L4849
+  remote-server                       | DHCP地址池视图        | L4897
+  reset dhcp relay client-information | 用户视图             | L4945
+  reset dhcp relay statistics         | 用户视图             | L4987
+  dhcp client dad enable              | 系统视图             | L5021
+  dhcp client dscp                    | 系统视图             | L5061
+  dhcp client identifier              | 接口视图             | L5101
+  display dhcp client                 | 任意视图             | L5165
+  ip address dhcp-alloc               | 接口视图             | L5385
+  dhcp snooping binding database filename | 系统视图             | L5445
+  dhcp snooping binding database update interval | 系统视图             | L5531
+  dhcp snooping binding database update now | 系统视图             | L5581
+  dhcp snooping binding record        | 二层以太网接口视图/二层聚合接口视图/WLAN-BSS接口视图/WLAN-ESS接口视图/S通道接口视图/S通道聚合接口视图/VSI接口视图/VSI聚合接口视图 | L5619
+  dhcp snooping check mac-address     | 二层以太网接口视图/二层聚合接口视图/WLAN-BSS接口视图/WLAN-ESS接口视图/S通道接口视图/S通道聚合接口视图/VSI接口视图/VSI聚合接口视图 | L5661
+  dhcp snooping check request-message | 二层以太网接口视图/二层聚合接口视图/WLAN-BSS接口视图/WLAN-ESS接口视图/S通道接口视图/S通道聚合接口视图/VSI接口视图/VSI聚合接口视图 | L5703
+  dhcp snooping enable                | 系统视图             | L5747
+  dhcp snooping information circuit-id | 二层以太网接口视图/二层聚合接口视图/WLAN-BSS接口视图/WLAN-ESS接口视图 | L5789
+  dhcp snooping information enable    | 二层以太网接口视图/二层聚合接口视图/WLAN-BSS接口视图/WLAN-ESS接口视图 | L5887
+  dhcp snooping information remote-id | 二层以太网接口视图/二层聚合接口视图/WLAN-BSS接口视图/WLAN-ESS接口视图 | L5943
+  dhcp snooping information strategy  | 二层以太网接口视图/二层聚合接口视图/WLAN-BSS接口视图/WLAN-ESS接口视图 | L6019
+  dhcp snooping max-learning-num      | 二层以太网接口视图/二层聚合接口视图/S通道接口视图/S通道聚合接口视图/VSI接口视图/VSI聚合接口视图 | L6085
+  dhcp snooping rate-limit            | 二层以太网接口视图/二层聚合接口视图/S通道接口视图/S通道聚合接口视图/VSI接口视图/VSI聚合接口视图 | L6127
+  dhcp snooping trust                 | 二层以太网接口视图/二层聚合接口视图/WLAN-BSS接口视图/WLAN-ESS接口视图/S通道接口/S通道聚合接口/VSI接口/VSI聚合接口 | L6183
+  display dhcp snooping binding       | 任意视图             | L6229
+  display dhcp snooping binding database | 任意视图             | L6319
+  display dhcp snooping information   | 任意视图             | L6397
+  display dhcp snooping packet statistics | 任意视图             | L6513
+  display dhcp snooping trust         | 任意视图             | L6595
+  reset dhcp snooping binding         | 用户视图             | L6659
+  reset dhcp snooping packet statistics | 用户视图             | L6701
+  display bootp client                | 任意视图             | L6755
+  ip address bootp-alloc              | 接口视图             | L6843
+-->
 
 **DHCP \-- DHCP公共命令 \-- dhcp client-detect**
 

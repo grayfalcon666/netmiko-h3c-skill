@@ -1,3 +1,17 @@
+<!-- CMD-INDEX
+  display system internal ripng database standby | Probe视图          | L16
+  display system internal ripng graceful-restart event-log | Probe视图          | L56
+  display system internal ripng interface | Probe视图          | L92
+  display system internal ripng interface standby | Probe视图          | L122
+  display system internal ripng neighbor standby | Probe视图          | L162
+  display system internal ripng nib   | Probe视图          | L202
+  display system internal ripng nib log | Probe视图          | L228
+  display system internal ripng non-stop-routing event-log | Probe视图          | L248
+  display system internal ripng route standby | Probe视图          | L284
+  display system internal ripng status | Probe视图          | L322
+  reset system internal ripng graceful-restart event-log | Probe视图          | L342
+  reset system internal ripng non-stop-routing event-log | Probe视图          | L378
+-->
 
 **RIPng \-- RIPng probe命令 \-- display system internal ripng database standby**
 

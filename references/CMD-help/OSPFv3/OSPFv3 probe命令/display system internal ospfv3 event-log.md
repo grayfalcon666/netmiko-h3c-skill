@@ -1,3 +1,16 @@
+<!-- CMD-INDEX
+  display system internal ospfv3 event-log | Probe视图          | L15
+  display system internal ospfv3 interface | Probe视图          | L49
+  display system internal ospfv3 interface standby | Probe视图          | L85
+  display system internal ospfv3 lsdb | Probe视图          | L139
+  display system internal ospfv3 lsdb standby | Probe视图          | L181
+  display system internal ospfv3 nib  | Probe视图          | L259
+  display system internal ospfv3 peer standby | Probe视图          | L291
+  display system internal ospfv3 prefix | Probe视图          | L353
+  display system internal ospfv3 standby | Probe视图          | L389
+  display system internal ospfv3 status | Probe视图          | L435
+  display system internal ospfv3 vlink standby | Probe视图          | L461
+-->
 
 **OSPFv3 \-- OSPFv3 probe命令 \-- display system internal ospfv3 event-log**
 

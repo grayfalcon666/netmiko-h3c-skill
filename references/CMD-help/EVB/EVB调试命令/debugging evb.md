@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging evb                       | ]                | L5
+-->
 
 **EVB \-- EVB调试命令 \-- debugging evb**
 

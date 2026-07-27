@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  display system internal sflow statistics | probe视图          | L6
+  reset system internal sflow statistics | probe视图          | L50
+-->
 
 **sFlow \-- sFlow Probe命令 \-- display system internal sflow statistics**
 

@@ -1,3 +1,9 @@
+<!-- CMD-INDEX
+  crypto-engine accelerator disable   | 系统视图             | L8
+  display crypto-engine               | 任意视图             | L60
+  display crypto-engine statistics    | 任意视图             | L216
+  reset crypto-engine statistics      | 用户视图             | L404
+-->
 
 **加密引擎 \-- 加密引擎配置命令 \-- crypto-engine accelerator disable**
 

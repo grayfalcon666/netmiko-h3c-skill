@@ -1,3 +1,21 @@
+<!-- CMD-INDEX
+  accelerate                          | 对象策略视图           | L20
+  description                         | 对象策略视图           | L70
+  display object-policy accelerate    | 任意视图             | L122
+  display object-policy ip            | 任意视图             | L212
+  display object-policy ipv6          | 任意视图             | L286
+  display object-policy statistics zone-pair security | 任意视图             | L362
+  display object-policy zone-pair security | 任意视图             | L446
+  move rule                           | 对象策略视图           | L506
+  object-policy apply ip              | 安全域间实例视图         | L550
+  object-policy apply ipv6            | 安全域间实例视图         | L610
+  object-policy ip                    | 系统视图             | L670
+  object-policy ipv6                  | 系统视图             | L726
+  reset object-policy statistics      | 用户视图             | L782
+  rule comment                        | 对象策略视图           | L824
+  rule(ipv4 object-policy view)       | IPv4对象策略视图       | L882
+  rule(ipv6 object-policy view)       | IPv6对象策略视图       | L966
+-->
 
 **对象策略 \-- 对象策略配置命令 \-- accelerate**
 

@@ -1,3 +1,13 @@
+<!-- CMD-INDEX
+  display system internal irf global  | Probe视图          | L12
+  display system internal irf msg     | Probe视图          | L44
+  display system internal irf roledb  | Probe视图          | L78
+  display system internal irf topodb  | Probe视图          | L110
+  irf link-status auto-recovery enable | Probe视图          | L142
+  irf link-status detect enable       | Probe视图          | L186
+  reset system internal irf msg       | Probe视图          | L226
+  display system internal pex-port verbose | Probe视图          | L258
+-->
 
 **IRF \-- IRF2 Probe命令 \-- display system internal irf global**
 

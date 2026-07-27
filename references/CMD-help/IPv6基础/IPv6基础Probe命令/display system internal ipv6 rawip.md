@@ -1,3 +1,33 @@
+<!-- CMD-INDEX
+  display system internal ipv6 rawip  | Probe视图          | L32
+  display system internal ipv6 tcp    | Probe视图          | L76
+  display system internal ipv6 udp    | Probe视图          | L120
+  display system internal tcp-proxy statistics | Probe视图          | L164
+  display system interval ipv6 tcp-proxy verbose | Probe视图          | L226
+  reset system internal tcp-proxy statistics | Probe视图          | L274
+  tcp-proxy statistics                | Probe视图          | L298
+  debugging system internal nd        | Probe视图          | L336
+  debugging system internal nd sub-features | Probe视图          | L368
+  display system internal nd dad      | Probe视图          | L402
+  display system internal nd entry    | Probe视图          | L446
+  display system internal nd ifcb     | Probe视图          | L490
+  display system internal nd machash  | Probe视图          | L536
+  display system internal nd probe    | Probe视图          | L584
+  display system internal nd rbhash   | Probe视图          | L628
+  display system internal nd reload   | Probe视图          | L676
+  display system internal nd rule     | Probe视图          | L720
+  display system internal nd snooping | Probe视图          | L770
+  display system internal nd static   | Probe视图          | L820
+  display system internal nd statistics | Probe视图          | L846
+  display system internal nd suppression xconnect-group verbose | Probe视图          | L890
+  reset system internal nd statistics | Probe视图          | L934
+  display system internal ipv6 address | Probe视图          | L978
+  display system internal ipv6 pathmtu | Probe视图          | L1028
+  debugging system internal ipv6 fib prefix |                  | L1080
+  display system internal ipv6 fib prefix | Probe视图          | L1142
+  display system internal ipv6 fib prefix entry-status | Probe视图          | L1188
+  display system internal ipv6 fib prefix ipv6 | Probe视图          | L1236
+-->
 
 **IPv6基础 \-- IPv6基础Probe命令 \-- display system internal ipv6 rawip**
 

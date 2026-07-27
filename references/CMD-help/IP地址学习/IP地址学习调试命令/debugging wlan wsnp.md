@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging wlan wsnp                 | 用户视图             | L5
+-->
 
 **IP地址学习 \-- IP地址学习调试命令 \-- debugging wlan wsnp**
 

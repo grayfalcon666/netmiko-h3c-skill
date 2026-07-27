@@ -1,3 +1,36 @@
+<!-- CMD-INDEX
+  controller cellular                 | 系统视图             | L35
+  description                         | Cellular接口视图     | L69
+  display cellular                    | 任意视图             | L111
+  display controller cellular         | 任意视图             | L1337
+  dm-port open                        | Cellular接口视图     | L1495
+  mode                                | Cellular接口视图     | L1541
+  modem reboot                        | Cellular接口视图     | L1605
+  modem response                      | Cellular接口视图     | L1639
+  pin modify                          | Cellular接口视图     | L1689
+  pin unlock                          | Cellular接口视图     | L1751
+  pin verification enable             | Cellular接口视图     | L1817
+  pin verify                          | Cellular接口视图     | L1881
+  plmn search                         | Cellular接口视图     | L1941
+  plmn select                         | Cellular接口视图     | L2035
+  profile create                      | Cellular接口视图     | L2091
+  profile delete                      | Cellular接口视图     | L2161
+  profile main                        | Cellular接口视图     | L2201
+  reset counters controller cellular  | 用户视图             | L2255
+  sendat                              | Cellular接口视图     | L2297
+  shutdown                            | Cellular接口视图     | L2363
+  serial-set                          | Cellular接口视图     | L2401
+  bandwidth                           | 以太网通道接口视图        | L2443
+  default                             | 以太网通道接口视图        | L2489
+  description                         | 以太网通道接口视图        | L2525
+  display interface eth-channel       | 任意视图             | L2573
+  eth-channel                         | Cellular接口视图     | L2823
+  interface eth-channel               | 系统视图             | L2865
+  ip address cellular-alloc           | 以太网通道接口视图        | L2899
+  mtu                                 | 以太网通道接口视图        | L2949
+  reset counters interface            | 用户视图             | L2991
+  shutdown                            | 以太网通道接口视图        | L3033
+-->
 
 **3G/4G Modem管理 \-- 3G/4G Modem管理公共配置命令 \-- controller cellular**
 

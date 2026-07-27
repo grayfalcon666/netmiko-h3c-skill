@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  display system internal link-aggregation global | Probe视图          | L6
+  display system internal link-aggregation interface | Probe视图          | L48
+-->
 
 **以太网链路聚合 \-- 以太网链路聚合Probe命令 \-- display system internal link-aggregation global**
 

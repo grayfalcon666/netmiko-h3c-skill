@@ -1,3 +1,26 @@
+<!-- CMD-INDEX
+  description                         | 用户角色视图           | L25
+  display role                        | 任意视图             | L77
+  display role feature                | 任意视图             | L989
+  display role feature-group          | 任意视图             | L1221
+  feature                             | 特性组视图            | L1475
+  interface policy deny               | 用户角色视图           | L1531
+  permit interface                    | 接口策略视图           | L1595
+  permit security-zone                | 安全域策略视图          | L1691
+  permit vlan                         | VLAN策略视图         | L1787
+  permit vpn-instance                 | VPN策略视图          | L1883
+  role                                | 系统视图             | L1975
+  role default-role enable            | 系统视图             | L2035
+  role feature-group                  | 系统视图             | L2091
+  rule                                | 用户角色视图           | L2147
+  super                               | 用户视图             | L2317
+  super authentication-mode           | 系统视图             | L2369
+  super default role                  | 系统视图             | L2427
+  super password                      | 系统视图             | L2481
+  security-zone policy deny           | 用户角色视图           | L2563
+  vlan policy deny                    | 用户角色视图           | L2631
+  vpn-instance policy deny            | 用户角色视图           | L2695
+-->
 
 **RBAC \-- RBAC配置命令 \-- description**
 

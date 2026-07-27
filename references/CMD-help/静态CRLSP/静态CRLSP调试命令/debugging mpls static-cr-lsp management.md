@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging mpls static-cr-lsp management | 用户视图             | L5
+-->
 
 **静态CRLSP \-- 静态CRLSP调试命令 \-- debugging mpls static-cr-lsp management**
 

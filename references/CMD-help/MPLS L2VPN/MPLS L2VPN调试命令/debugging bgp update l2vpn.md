@@ -1,3 +1,11 @@
+<!-- CMD-INDEX
+  debugging bgp update l2vpn          | 用户视图             | L10
+  debugging bgp update-group l2vpn    | 用户视图             | L196
+  debugging l2vpn management          | 用户视图             | L362
+  debugging l2vpn packet              | ]                | L776
+  debugging mpls ldpvc                | 用户视图             | L1112
+  debugging mpls bgpvc                | 用户视图             | L1516
+-->
 
 **MPLS L2VPN \-- MPLS L2VPN调试命令 \-- debugging bgp update l2vpn**
 

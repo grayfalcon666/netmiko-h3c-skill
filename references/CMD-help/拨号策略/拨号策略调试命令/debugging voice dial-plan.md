@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging voice dial-plan           | 用户视图             | L5
+-->
 
 **拨号策略 \-- 拨号策略调试命令 \-- debugging voice dial-plan**
 

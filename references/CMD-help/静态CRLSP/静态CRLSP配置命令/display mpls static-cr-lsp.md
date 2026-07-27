@@ -1,3 +1,9 @@
+<!-- CMD-INDEX
+  display mpls static-cr-lsp          | 任意视图             | L8
+  static-cr-lsp egress                | 系统视图             | L174
+  static-cr-lsp ingress               | 系统视图             | L228
+  static-cr-lsp transit               | 系统视图             | L300
+-->
 
 **静态CRLSP \-- 静态CRLSP配置命令 \-- display mpls static-cr-lsp**
 

@@ -1,3 +1,14 @@
+<!-- CMD-INDEX
+  bandwidth                           | L2VE接口视图/L2VE子接口视图/L3VE接口视图/L3VE子接口视图 | L13
+  default                             | L2VE接口视图/L2VE子接口视图/L3VE接口视图/L3VE子接口视图 | L75
+  description                         | L2VE接口视图/L2VE子接口视图/L3VE接口视图/L3VE子接口视图 | L123
+  display interface                   | 任意视图             | L179
+  interface ve-l2vpn                  | 系统视图             | L467
+  interface ve-l3vpn                  | 系统视图             | L537
+  mtu                                 | L2VE接口视图/L2VE子接口视图/L3VE接口视图/L3VE子接口视图 | L603
+  reset counters interface            | 用户视图             | L653
+  shutdown                            | L2VE接口视图/L2VE子接口视图/L3VE接口视图/L3VE子接口视图 | L707
+-->
 
 **L2VPN接入L3VPN或IP骨干网 \-- L2VPN接入L3VPN或IP骨干网配置命令 \-- bandwidth**
 

@@ -1,3 +1,30 @@
+<!-- CMD-INDEX
+  allocate context                    | MDC视图            | L29
+  allocate interface                  | Context视图        | L89
+  allocate vlan                       | Context视图        | L157
+  blade-controller-team               | 系统视图             | L231
+  capability object-policy-rule maximum | Context视图        | L287
+  capability session maximum          | Context视图        | L345
+  capability session rate             | Context视图        | L401
+  capability throughput               | Context视图        | L457
+  context                             | 系统视图             | L519
+  context start                       | Context视图        | L591
+  description                         | Context视图        | L641
+  display blade-controller-team       | 任意视图             | L685
+  display context                     | 任意视图             | L803
+  display context interface           | 任意视图             | L893
+  display context resource            | 任意视图             | L953
+  display context vlan                | 任意视图             | L1157
+  join mdc                            | Context视图        | L1229
+  limit-resource cpu                  | Context视图        | L1287
+  limit-resource disk                 |                  | L1333
+  limit-resource memory               |                  | L1431
+  location blade-controller           |                  | L1527
+  location blade-controller-team (Context view) | Context视图        | L1669
+  location blade-controller-team (MDC view) | MDC视图            | L1733
+  reset blade-controller-team         | 用户视图             | L1801
+  switchto context                    | 系统视图             | L1861
+-->
 
 **Context \-- Context命令 \-- allocate context**
 

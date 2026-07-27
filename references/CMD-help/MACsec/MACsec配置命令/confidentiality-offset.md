@@ -1,3 +1,25 @@
+<!-- CMD-INDEX
+  confidentiality-offset              | MKA策略视图          | L24
+  display macsec                      | 任意视图             | L80
+  display mka policy                  | 任意视图             | L292
+  display mka session                 | 任意视图             | L382
+  display mka statistics              | 任意视图             | L618
+  macsec confidentiality-offset       | 以太网接口视图          | L728
+  macsec desire                       | 以太网接口视图          | L788
+  macsec replay-protection enable     | 以太网接口视图          | L830
+  macsec replay-protection window-size | 以太网接口视图          | L886
+  macsec validation mode              | 以太网接口视图          | L948
+  mka apply policy                    | 以太网接口视图          | L1008
+  mka enable                          | 以太网接口视图          | L1072
+  mka policy                          | 系统视图             | L1120
+  mka priority                        | 以太网接口视图          | L1186
+  mka psk                             | 以太网接口视图          | L1242
+  replay-protection enable            | MKA策略视图          | L1304
+  replay-protection window-size       | MKA策略视图          | L1356
+  reset mka session                   | 用户视图             | L1416
+  reset mka statistics                | 用户视图             | L1454
+  validation mode                     | MKA策略视图          | L1488
+-->
 
 **MACsec \-- MACsec配置命令 \-- confidentiality-offset**
 

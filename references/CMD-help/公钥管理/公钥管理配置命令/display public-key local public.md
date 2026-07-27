@@ -1,3 +1,14 @@
+<!-- CMD-INDEX
+  display public-key local public     | 任意视图             | L13
+  display public-key peer             | 任意视图             | L347
+  peer-public-key end                 | 公钥视图             | L467
+  public-key local create             | 系统视图             | L535
+  public-key local destroy            | 系统视图             | L779
+  public-key local export dsa         | 系统视图             | L875
+  public-key local export rsa         | 系统视图             | L985
+  public-key peer                     | 系统视图             | L1099
+  public-key peer import sshkey       | 系统视图             | L1163
+-->
 
 **公钥管理 \-- 公钥管理配置命令 \-- display public-key local public**
 

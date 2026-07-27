@@ -1,3 +1,9 @@
+<!-- CMD-INDEX
+  debugging atm all                   | 用户视图             | L8
+  debugging atm error                 | 用户视图             | L46
+  debugging atm event                 | 用户视图             | L376
+  debugging atm packet                | 用户视图             | L700
+-->
 
 **ATM \-- ATM调试命令 \-- debugging atm all**
 

@@ -1,3 +1,10 @@
+<!-- CMD-INDEX
+  debugging esmc all                  | 用户视图             | L9
+  debugging esmc error                | 用户视图             | L39
+  debugging esmc event                | 用户视图             | L133
+  debugging esmc packet               | 用户视图             | L187
+  debugging esmc timer                | 用户视图             | L301
+-->
 
 **同步以太网 \-- 同步以太网调试命令 \-- debugging esmc all**
 

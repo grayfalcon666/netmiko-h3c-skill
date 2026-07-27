@@ -1,3 +1,8 @@
+<!-- CMD-INDEX
+  display interface range             | 任意视图             | L7
+  interface range                     | 系统视图             | L51
+  interface range name                | 系统视图             | L107
+-->
 
 **接口批量配置 \-- 接口批量配置命令 \-- display interface range**
 

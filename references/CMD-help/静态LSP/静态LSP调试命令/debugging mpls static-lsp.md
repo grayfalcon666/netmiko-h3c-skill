@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging mpls static-lsp           | 用户视图             | L5
+-->
 
 **静态LSP \-- 静态LSP调试命令 \-- debugging mpls static-lsp**
 

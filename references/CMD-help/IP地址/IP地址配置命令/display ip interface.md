@@ -1,3 +1,9 @@
+<!-- CMD-INDEX
+  display ip interface                | 任意视图             | L8
+  display ip interface brief          | 任意视图             | L300
+  ip address                          | 接口视图             | L454
+  ip address unnumbered               | 接口视图             | L536
+-->
 
 **IP地址 \-- IP地址配置命令 \-- display ip interface**
 

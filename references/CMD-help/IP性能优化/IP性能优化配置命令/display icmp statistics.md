@@ -1,3 +1,34 @@
+<!-- CMD-INDEX
+  display icmp statistics             | 任意视图             | L33
+  display ip statistics               | 任意视图             | L219
+  display rawip                       | 任意视图             | L389
+  display rawip verbose               | 任意视图             | L513
+  display tcp                         | 任意视图             | L893
+  display tcp-proxy                   | 任意视图             | L1055
+  display tcp statistics              | 任意视图             | L1173
+  display tcp verbose                 | 任意视图             | L1637
+  display udp                         | 任意视图             | L2115
+  display udp statistics              | 任意视图             | L2229
+  display udp verbose                 | 任意视图             | L2355
+  ip forward-broadcast                | 接口视图             | L2731
+  ip icmp error-interval              | 系统视图             | L2799
+  ip icmp fragment discarding         | 系统视图             | L2847
+  ip icmp source                      | 系统视图             | L2891
+  ip mtu                              | 接口视图             | L2939
+  ip reassemble local enable          | 系统视图             | L3005
+  ip redirects enable                 | 系统视图             | L3047
+  ip ttl-expires enable               | 系统视图             | L3099
+  ip unreachables enable              | 系统视图             | L3147
+  reset ip statistics                 | 用户视图             | L3199
+  reset tcp statistics                | 用户视图             | L3259
+  reset udp statistics                | 用户视图             | L3289
+  tcp mss                             | 接口视图             | L3319
+  tcp path-mtu-discovery              | 系统视图             | L3383
+  tcp syn-cookie enable               | 系统视图             | L3431
+  tcp timer fin-timeout               | 系统视图             | L3477
+  tcp timer syn-timeout               | 系统视图             | L3521
+  tcp window                          | 系统视图             | L3565
+-->
 
 **IP性能优化 \-- IP性能优化配置命令 \-- display icmp statistics**
 

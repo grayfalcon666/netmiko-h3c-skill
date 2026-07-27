@@ -1,3 +1,12 @@
+<!-- CMD-INDEX
+  debugging stp all                   | 用户视图             | L11
+  debugging stp error                 | 用户视图             | L47
+  debugging stp event                 | 用户视图             | L253
+  debugging stp fsm                   | 用户视图             | L345
+  debugging stp packet                | 用户视图             | L437
+  debugging stp roles                 | 用户视图             | L653
+  debugging stp tc                    | 用户视图             | L715
+-->
 
 **生成树 \-- 生成树调试命令 \-- debugging stp all**
 

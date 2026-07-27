@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debuggging mac-authentication       | 用户视图             | L5
+-->
 
 **MAC地址认证 \-- MAC地址认证调试命令 \-- debuggging mac-authentication**
 

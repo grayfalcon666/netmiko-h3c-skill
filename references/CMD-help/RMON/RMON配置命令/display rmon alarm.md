@@ -1,3 +1,16 @@
+<!-- CMD-INDEX
+  display rmon alarm                  | 任意视图             | L15
+  display rmon event                  | 任意视图             | L129
+  display rmon eventlog               | 任意视图             | L223
+  display rmon history                | 任意视图             | L343
+  display rmon prialarm               | 任意视图             | L539
+  display rmon statistics             | 任意视图             | L669
+  rmon alarm                          | 系统视图             | L825
+  rmon event                          | 系统视图             | L919
+  rmon history                        | 以太网接口视图          | L987
+  rmon prialarm                       | 系统视图             | L1051
+  rmon statistics                     | 以太网接口视图          | L1149
+-->
 
 **RMON \-- RMON配置命令 \-- display rmon alarm**
 

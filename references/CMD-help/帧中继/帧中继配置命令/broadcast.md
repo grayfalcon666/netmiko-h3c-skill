@@ -1,3 +1,32 @@
+<!-- CMD-INDEX
+  broadcast                           | 帧中继DLCI视图        | L31
+  display fr compression iphc         | 任意视图             | L75
+  display fr inarp-info               | 任意视图             | L267
+  display fr lmi-info                 | 任意视图             | L341
+  display fr map-info                 | 任意视图             | L451
+  display fr pvc-info                 | 任意视图             | L535
+  fr compression iphc enable          | 接口视图/帧中继DLCI视图   | L681
+  fr compression iphc rtp-connections | 接口视图/帧中继DLCI视图   | L757
+  fr compression iphc tcp-connections | 接口视图/帧中继DLCI视图   | L829
+  fr dlci                             | 接口视图（包括主接口和子接口）  | L901
+  fr encapsulation                    | 接口视图/帧中继DLCI视图   | L957
+  fr inarp                            | 接口视图             | L1021
+  fr inarp interval                   | 接口视图             | L1083
+  fr interface-type                   | 接口视图             | L1135
+  fr lmi n391dte                      | 接口视图             | L1181
+  fr lmi n392dce                      | 接口视图             | L1233
+  fr lmi n392dte                      | 接口视图             | L1293
+  fr lmi n393dce                      | 接口视图             | L1353
+  fr lmi n393dte                      | 接口视图             | L1413
+  fr lmi t392dce                      | 接口视图             | L1473
+  fr lmi type                         | 接口视图             | L1529
+  fr map ip                           | 接口视图（包括主接口和P2MP子接口） | L1581
+  link-protocol fr                    | 接口视图             | L1645
+  reset fr compression iphc           | 用户视图             | L1679
+  reset fr inarp                      | 用户视图             | L1719
+  reset fr pvc                        | 用户视图             | L1759
+  timer-hold                          | 接口视图             | L1791
+-->
 
 **帧中继 \-- 帧中继配置命令 \-- broadcast**
 

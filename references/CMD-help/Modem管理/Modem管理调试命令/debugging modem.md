@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging modem                     | 用户视图             | L5
+-->
 
 **Modem管理 \-- Modem管理调试命令 \-- debugging modem**
 

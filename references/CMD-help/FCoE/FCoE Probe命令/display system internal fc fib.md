@@ -1,3 +1,9 @@
+<!-- CMD-INDEX
+  display system internal fc fib      | Probe视图          | L8
+  display system internal fcoe vfcinfo | Probe视图          | L52
+  display system internal fcoe vsaninfo | Probe视图          | L96
+  display system internal zone acl    | Probe视图          | L146
+-->
 
 **FCoE \-- FCoE Probe命令 \-- display system internal fc fib**
 

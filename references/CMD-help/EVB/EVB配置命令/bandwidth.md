@@ -1,3 +1,27 @@
+<!-- CMD-INDEX
+  bandwidth                           | S通道接口视图/S通道聚合接口视图/VSI接口视图/VSI聚合接口视图 | L26
+  default                             | S通道接口视图/S通道聚合接口视图/VSI接口视图/VSI聚合接口视图 | L92
+  description                         | S通道接口视图/S通道聚合接口视图/VSI接口视图/VSI聚合接口视图 | L152
+  display evb cdcp                    | 任意视图             | L218
+  display evb evb-tlv                 | 任意视图             | L316
+  display evb s-channel               | 任意视图             | L476
+  display evb summary                 | 任意视图             | L560
+  display evb vsi                     | ]                | L624
+  display interface                   | ]                | L772
+  evb default-manager                 | 系统视图             | L1036
+  evb enable                          | 二层以太网接口视图/二层聚合接口视图 | L1088
+  evb mac-learning forbidden          | S通道接口视图/S通道聚合接口视图 | L1158
+  evb reflective-relay                | S通道接口视图/S通道聚合接口视图 | L1218
+  evb s-channel                       | 二层以太网接口视图/二层聚合接口视图 | L1268
+  evb vdp timer keepalive exponent    | 二层以太网接口视图/二层聚合接口视图 | L1342
+  evb vdp timer resource-wait-delay exponent | 二层以太网接口视图/二层聚合接口视图 | L1516
+  evb vsi                             | S通道接口视图/S通道聚合接口视图 | L1680
+  evb vsi active                      | VSI接口视图/VSI聚合接口视图 | L1754
+  evb vsi filter                      | VSI接口视图/VSI聚合接口  | L1810
+  interface                           | ]                | L1896
+  reset counters interface            | ]                | L1960
+  shutdown                            | S通道接口视图/S通道聚合接口视图 | L2020
+-->
 
 **EVB \-- EVB配置命令 \-- bandwidth**
 

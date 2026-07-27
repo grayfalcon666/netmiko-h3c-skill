@@ -1,3 +1,35 @@
+<!-- CMD-INDEX
+  alarm-detect                        | POS接口视图          | L34
+  bandwidth                           | POS接口视图/POS子接口视图/POS通道接口视图 | L100
+  clock                               | POS接口视图          | L146
+  crc                                 | POS接口视图/POS通道接口视图 | L200
+  dampening                           | POS接口视图          | L248
+  default                             | POS接口视图/POS子接口视图/POS通道接口视图 | L326
+  description                         | POS接口视图/POS子接口视图/POS通道接口视图 | L362
+  display interface pos               | 任意视图             | L404
+  flag c2                             | POS接口视图/POS通道接口视图 | L802
+  flag j0                             | POS接口视图          | L854
+  flag j1                             | POS接口视图/POS通道接口视图 | L912
+  flag j1 ignore                      | POS接口视图/POS通道接口视图 | L972
+  flow-interval                       | 系统视图/POS接口视图/POS子接口视图/POS通道接口视图 | L1018
+  frame-format                        | POS接口视图          | L1076
+  interface pos                       | 系统视图             | L1130
+  link-delay                          | POS接口视图/POS通道接口视图 | L1186
+  link-protocol                       | POS接口视图/POS通道接口视图 | L1246
+  loopback                            | POS接口视图          | L1288
+  mtu                                 | POS接口视图/POS子接口视图/POS通道接口视图 | L1344
+  port-type switch                    | POS接口视图/三层GE接口视图 | L1392
+  reset counters interface            | 用户视图             | L1448
+  scramble                            | POS接口视图/POS通道接口视图 | L1496
+  shutdown                            | POS接口视图/POS子接口视图/POS通道接口视图 | L1538
+  snmp-agent trap enable { b1-tca \| b2-tca \| b3-tca } | POS接口视图          | L1576
+  speed                               | POS接口视图          | L1636
+  sub-interface rate-statistic        | POS接口视图/POS通道接口视图 | L1678
+  threshold                           | POS接口视图          | L1730
+  threshold { b1-tca \| b2-tca \| b3-tca } | POS接口视图          | L1786
+  timer-hold                          | POS接口视图/POS通道接口视图 | L1854
+  timer-hold retry                    | POS接口视图/POS通道接口视图 | L1906
+-->
 
 **POS接口 \-- POS接口配置命令 \-- alarm-detect**
 

@@ -1,3 +1,41 @@
+<!-- CMD-INDEX
+  display ntp-service ipv6 sessions   | 任意视图             | L40
+  display ntp-service sessions        | 任意视图             | L384
+  display ntp-service status          | 任意视图             | L732
+  display ntp-service trace           | 任意视图             | L908
+  ntp-service acl                     | 系统视图             | L976
+  ntp-service authentication enable   | 系统视图             | L1044
+  ntp-service authentication-keyid    | 系统视图             | L1092
+  ntp-service broadcast-client        | 接口视图             | L1162
+  ntp-service broadcast-server        | 接口视图             | L1222
+  ntp-service dscp                    | 系统视图             | L1288
+  ntp-service enable                  | 系统视图             | L1332
+  ntp-service inbound enable          | 接口视图             | L1368
+  ntp-service ipv6 acl                | 系统视图             | L1422
+  ntp-service ipv6 dscp               | 系统视图             | L1490
+  ntp-service ipv6 inbound enable     | 接口视图             | L1534
+  ntp-service ipv6 multicast-client   | 接口视图             | L1588
+  ntp-service ipv6 multicast-server   | 接口视图             | L1652
+  ntp-service ipv6 source             | 系统视图             | L1720
+  ntp-service ipv6 unicast-peer       | 系统视图             | L1784
+  ntp-service ipv6 unicast-server     | 系统视图             | L1862
+  ntp-service max-dynamic-sessions    | 系统视图             | L1930
+  ntp-service multicast-client        | 接口视图             | L1980
+  ntp-service multicast-server        | 接口视图             | L2044
+  ntp-service refclock-master         | 系统视图             | L2114
+  ntp-service reliable authentication-keyid | 系统视图             | L2168
+  ntp-service source                  | 系统视图             | L2228
+  ntp-service unicast-peer            | 系统视图             | L2292
+  ntp-service unicast-server          | 系统视图             | L2370
+  display sntp ipv6 sessions          | 任意视图             | L2440
+  display sntp sessions               | 任意视图             | L2514
+  sntp authentication enable          | 系统视图             | L2572
+  sntp authentication-keyid           | 系统视图             | L2620
+  sntp enable                         | 系统视图             | L2690
+  sntp ipv6 unicast-server            | 系统视图             | L2726
+  sntp reliable authentication-keyid  | 系统视图             | L2792
+  sntp unicast-server                 | 系统视图             | L2850
+-->
 
 **NTP \-- NTP配置命令 \-- display ntp-service ipv6 sessions**
 

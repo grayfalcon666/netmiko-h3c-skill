@@ -1,3 +1,48 @@
+<!-- CMD-INDEX
+  display ssh server                  | 任意视图             | L47
+  display ssh user-information        | 任意视图             | L205
+  scp server enable                   | 系统视图             | L285
+  sftp server enable                  | 系统视图             | L325
+  sftp server idle-timeout            | 系统视图             | L365
+  ssh server acl                      | 系统视图             | L413
+  ssh server authentication-retries   | 系统视图             | L475
+  ssh server authentication-timeout   | 系统视图             | L531
+  ssh server compatible-ssh1x enable  | 系统视图             | L581
+  ssh server dscp                     | 系统视图             | L631
+  ssh server enable                   | 系统视图             | L675
+  ssh server ipv6 acl                 | 系统视图             | L715
+  ssh server ipv6 dscp                | 系统视图             | L783
+  ssh server rekey-interval           | 系统视图             | L827
+  ssh user                            | 系统视图             | L881
+  bye                                 | SFTP客户端视图        | L997
+  cd                                  | SFTP客户端视图        | L1029
+  cdup                                | SFTP客户端视图        | L1073
+  delete                              | SFTP客户端视图        | L1115
+  dir                                 | SFTP客户端视图        | L1151
+  display sftp client source          | 任意视图             | L1217
+  display ssh client source           | 任意视图             | L1257
+  exit                                | SFTP客户端视图        | L1297
+  get                                 | SFTP客户端视图        | L1329
+  help                                | SFTP客户端视图        | L1369
+  ls                                  | SFTP客户端视图        | L1447
+  mkdir                               | SFTP客户端视图        | L1513
+  put                                 | SFTP客户端视图        | L1543
+  pwd                                 | SFTP客户端视图        | L1583
+  quit                                | SFTP客户端视图        | L1613
+  remove                              | SFTP客户端视图        | L1645
+  rename                              | SFTP客户端视图        | L1681
+  rmdir                               | SFTP客户端视图        | L1721
+  scp                                 | 用户视图             | L1751
+  scp ipv6                            | 用户视图             | L1863
+  sftp                                | 用户视图             | L1977
+  sftp client ipv6 source             | 系统视图             | L2083
+  sftp client source                  | 系统视图             | L2137
+  sftp ipv6                           | 用户视图             | L2191
+  ssh client ipv6 source              | 系统视图             | L2301
+  ssh client source                   | 系统视图             | L2355
+  ssh2                                | 用户视图             | L2409
+  ssh2 ipv6                           | 用户视图             | L2525
+-->
 
 **SSH \-- SSH服务器端配置命令 \-- display ssh server**
 

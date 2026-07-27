@@ -1,3 +1,36 @@
+<!-- CMD-INDEX
+  display oam                         | 任意视图             | L35
+  display oam configuration           | 任意视图             | L479
+  display oam critical-event          | 任意视图             | L635
+  display oam link-event              | 任意视图             | L727
+  oam enable                          | 二层以太网接口视图/三层以太网接口视图 | L961
+  oam errored-frame threshold         | 二层以太网接口视图/三层以太网接口视图 | L999
+  oam errored-frame window            | 二层以太网接口视图/三层以太网接口视图 | L1053
+  oam errored-frame-period threshold  | 二层以太网接口视图/三层以太网接口视图 | L1107
+  oam errored-frame-period window     | 二层以太网接口视图/三层以太网接口视图 | L1161
+  oam errored-frame-seconds threshold | 二层以太网接口视图/三层以太网接口视图 | L1215
+  oam errored-frame-seconds window    | 二层以太网接口视图/三层以太网接口视图 | L1273
+  oam errored-symbol-period threshold | 二层以太网接口视图/三层以太网接口视图 | L1331
+  oam errored-symbol-period window    | 二层以太网接口视图/三层以太网接口视图 | L1385
+  oam global errored-frame threshold  | 系统视图             | L1439
+  oam global errored-frame window     | 系统视图             | L1491
+  oam global errored-frame-period threshold | 系统视图             | L1543
+  oam global errored-frame-period window | 系统视图             | L1595
+  oam global errored-frame-seconds threshold | 系统视图             | L1647
+  oam global errored-frame-seconds window | 系统视图             | L1703
+  oam global errored-symbol-period threshold | 系统视图             | L1759
+  oam global errored-symbol-period window | 系统视图             | L1811
+  oam global timer hello              | 系统视图             | L1863
+  oam global timer keepalive          | 系统视图             | L1915
+  oam mode                            | 二层以太网接口视图/三层以太网接口视图 | L1967
+  oam remote-failure action           | 二层以太网接口视图/三层以太网接口视图 | L2021
+  oam remote-loopback                 | 二层以太网接口视图/三层以太网接口视图 | L2071
+  oam remote-loopback interface       | 用户视图/系统视图        | L2127
+  oam remote-loopback reject-request  | 二层以太网接口视图/三层以太网接口视图 | L2189
+  oam timer hello                     | 二层以太网接口视图/三层以太网接口视图 | L2231
+  oam timer keepalive                 | 二层以太网接口视图/三层以太网接口视图 | L2285
+  reset oam                           | 用户视图             | L2339
+-->
 
 **以太网OAM \-- 以太网OAM配置命令 \-- display oam**
 

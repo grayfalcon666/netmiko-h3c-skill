@@ -1,3 +1,10 @@
+<!-- CMD-INDEX
+  display sma-anti-spoof ipv6 address-prefix | 任意视图             | L9
+  display sma-anti-spoof ipv6 packet-tag | 任意视图             | L75
+  sma-anti-spoof ipv6 enable          | 系统视图             | L153
+  sma-anti-spoof ipv6 port-type       | 接口视图             | L197
+  sma-anti-spoof ipv6 server          | 系统视图             | L253
+-->
 
 **SMA \-- SMA配置命令 \-- display sma-anti-spoof ipv6 address-prefix**
 

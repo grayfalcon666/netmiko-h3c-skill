@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  packet-capture interface            | 用户视图             | L6
+  packet-capture read                 | 用户视图             | L88
+-->
 
 **Packet Capture \-- Packet Capture配置命令 \-- packet-capture interface**
 

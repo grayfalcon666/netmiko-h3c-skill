@@ -1,3 +1,27 @@
+<!-- CMD-INDEX
+  display mpls forwarding ilm         | 任意视图             | L26
+  display mpls forwarding nhlfe       | 任意视图             | L178
+  display mpls interface              | 任意视图             | L336
+  display mpls label                  | 任意视图             | L400
+  display mpls lsp                    | 任意视图             | L472
+  display mpls lsp statistics         | 任意视图             | L912
+  display mpls nib                    | 任意视图             | L1002
+  display mpls nid                    | 任意视图             | L1082
+  display mpls summary                | 任意视图             | L1166
+  ftn enable                          | RIB IPv4地址族视图    | L1264
+  mpls-forwarding statistics prefix-list | RIB IPv4地址族视图    | L1318
+  mpls enable                         | 接口视图             | L1386
+  mpls forwarding split-horizon       | 系统视图             | L1440
+  mpls label advertise                | 系统视图             | L1480
+  mpls lsr-id                         | 系统视图             | L1538
+  mpls mtu                            | 接口视图             | L1586
+  mpls statistics                     | 系统视图             | L1656
+  mpls statistics interval            | 系统视图             | L1726
+  mpls ttl expiration enable          | 系统视图             | L1782
+  mpls ttl propagate                  | 系统视图             | L1828
+  reset mpls statistics               | 用户视图             | L1884
+  snmp-agent trap enable mpls         | 系统视图             | L1936
+-->
 
 **MPLS基础 \-- MPLS基础配置命令 \-- display mpls forwarding ilm**
 

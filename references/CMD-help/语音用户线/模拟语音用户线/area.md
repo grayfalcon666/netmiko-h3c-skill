@@ -1,3 +1,103 @@
+<!-- CMD-INDEX
+  area                                | 语音视图             | L102
+  busytone-detect auto                | 语音视图             | L152
+  busytone-detect custom              | 语音视图             | L200
+  busytone-detect period              | FXO语音用户线视图       | L274
+  busytone-hookon                     | FXO语音用户线视图       | L320
+  calling-name                        | FXS语音用户线视图       | L366
+  cable                               | E&M语音用户线视图       | L422
+  cid display                         | FXS语音用户线视图       | L470
+  cid receive                         | FXO语音用户线视图       | L516
+  cid ring                            | FXO语音用户线视图       | L558
+  cid send                            | FXS/FXO语音用户线视图   | L606
+  cid type                            | FXS语音用户线视图       | L648
+  cid standard-type                   | FXS语音用户线视图       | L710
+  cptone                              | 语音视图             | L764
+  cptone tone-type                    | 语音视图             | L1108
+  cng-on                              | FXS/FXO/E&M语音用户线视图 | L1164
+  default                             | FXS/FXO/E&M语音用户线视图 | L1206
+  delay hold                          | E&M语音用户线视图       | L1242
+  delay rising                        | E&M语音用户线视图       | L1290
+  delay send-dtmf                     | E&M语音用户线视图       | L1338
+  delay send-wink                     | E&M语音用户线视图       | L1386
+  delay start-dial                    | FXS/FXO语音用户线视图   | L1434
+  delay wink-hold                     | E&M语音用户线视图       | L1476
+  delay wink-rising                   | E&M语音用户线视图       | L1524
+  description                         | FXS/FXO/E&M语音用户线视图 | L1576
+  disconnect lcfo                     | FXS语音用户线视图       | L1618
+  display voice subscriber-line       | 任意视图             | L1664
+  dtmf amplitude                      | 语音视图             | L1790
+  dtmf sensitivity-level              | FXS/FXO语音用户线视图   | L1832
+  dtmf time                           | 语音视图             | L1884
+  dtmf threshold analog               | ]                | L1932
+  echo-canceler                       | 语音视图             | L2096
+  echo-canceler delay                 | FXS/FXO/E&M语音用户线视图 | L2156
+  echo-canceler enable                | FXS/FXO/E&M语音用户线视图 | L2206
+  echo-canceler tail-length           | FXS/FXO/E&M语音用户线视图 | L2250
+  hookoff-mode delay bind             | FXO语音用户线视图       | L2304
+  hookoff-mode                        | FXO语音用户线视图       | L2354
+  hookoff-time                        | FXO语音用户线视图       | L2398
+  impedance                           | FXS/FXO语音用户线视图   | L2452
+  monitor enable                      | 语音视图             | L2578
+  nlp-on                              | FXS/FXO/E&M语音用户线视图 | L2620
+  open-trunk                          | E&M语音用户线视图       | L2666
+  passthrough                         | E&M语音用户线视图       | L2728
+  pcm-passthrough                     |                  | L2770
+  plc-mode                            | FXS/FXO语音用户线视图   | L2842
+  receive gain                        | FXS/FXO/E&M语音用户线视图 | L2886
+  ring-detect debounce                | FXO语音用户线视图       | L2938
+  ring-detect frequency               | FXO语音用户线视图       | L2994
+  send-busytone enable                | FXO语音用户线视图       | L3042
+  send-busytone time                  | FXO语音用户线视图       | L3088
+  shutdown                            | FXS/FXO/E&M语音用户线视图 | L3140
+  signal                              | E&M语音用户线视图       | L3178
+  silence-detect threshold            | FXO语音用户线视图       | L3228
+  slic-gain                           | E&M语音用户线视图       | L3280
+  subscriber-line                     | 系统视图             | L3328
+  timer dial-interval                 | FXS/FXO/E&M语音用户线视图 | L3362
+  timer disconnect-pulse              | FXS语音用户线视图       | L3410
+  timer first-dial                    | FXS/FXO语音用户线视图   | L3456
+  timer hookflash-detect              | FXS语音用户线视图       | L3502
+  timer hookoff-interval              | FXO语音用户线视图       | L3544
+  timer ring-back                     | FXS/FXO/E&M语音用户线视图 | L3594
+  timer wait-digit                    | E&M语音用户线视图       | L3640
+  transmit gain                       | FXS/FXO/E&M语音用户线视图 | L3688
+  type                                | E&M语音用户线视图       | L3740
+  ani                                 | R2信令视图           | L3794
+  ani-digit                           | R2信令视图           | L3846
+  answer enable                       | R2信令视图           | L3904
+  callmode                            | R2信令视图           | L3950
+  cas                                 | E1语音/T1语音接口视图    | L3998
+  clear-forward-ack enable            | R2信令视图           | L4048
+  display voice subscriber-line       | 任意视图             | L4090
+  dl-bits                             |                  | L4272
+  dtmf enable                         | R2信令视图           | L4396
+  final-callednum enable              | R2信令视图           | L4454
+  group-b enable                      | R2信令视图           | L4500
+  line                                | POTS语音实体视图       | L4546
+  metering enable                     | R2信令视图           | L4598
+  mode                                | R2信令视图           | L4644
+  pcm                                 | 数字语音用户线视图        | L4728
+  re-answer enable                    | R2信令视图           | L4776
+  register-value                      | R2信令视图           | L4822
+  renew                               | R2信令视图           | L4926
+  reverse                             | R2信令视图           | L4982
+  select-mode                         | R2信令视图           | L5032
+  seizure-ack enable                  | R2信令视图           | L5084
+  send ringbusy enable                | R2信令视图           | L5130
+  special-character                   | R2信令视图           | L5180
+  subscriber-line                     | 系统视图             | L5234
+  tdm-clock                           | E1语音/T1语音接口视图    | L5288
+  timer                               | R2信令视图           | L5358
+  timer dl                            |                  | L5412
+  timer dtmf-delay                    | R2信令视图           | L5480
+  timer group-b                       | R2信令视图           | L5538
+  timer register-pulse                | R2信令视图           | L5588
+  timeslot-set                        | E1语音/T1语音接口视图    | L5634
+  trunk-direction                     | R2信令视图           | L5686
+  ts                                  | R2信令视图           | L5746
+  voice call disc-pi-off              | 语音视图             | L5792
+-->
 
 **语音用户线 \-- 模拟语音用户线 \-- area**
 

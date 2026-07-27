@@ -1,3 +1,21 @@
+<!-- CMD-INDEX
+  app-group                           | 系统视图             | L20
+  application statistics enable       | 三层接口视图           | L74
+  copy app-group                      | 应用组视图            | L174
+  description                         | 应用组视图            | L218
+  display app-group                   | 用户视图             | L264
+  display application                 | 用户视图             | L474
+  display application statistics      | 用户视图             | L668
+  display application statistics top  | 用户视图             | L892
+  display port-mapping pre-defined    | 用户视图             | L1080
+  display port-mapping user-defined   | 用户视图             | L1148
+  include application                 | 应用组视图            | L1254
+  port-mapping                        | 系统视图             | L1310
+  port-mapping acl                    | 系统视图             | L1378
+  port-mapping host                   | 系统视图             | L1448
+  port-mapping subnet                 | 系统视图             | L1532
+  reset application statistics        | 用户视图             | L1618
+-->
 
 **APR \-- APR配置命令 \-- app-group**
 

@@ -1,3 +1,16 @@
+<!-- CMD-INDEX
+  bvlan                               | VSI PBB视图        | L15
+  display l2vpn minm connection       | 任意视图             | L69
+  display l2vpn minm forwarding       | 任意视图             | L165
+  display l2vpn vsi                   | 任意视图             | L291
+  display pbb connection              | 任意视图             | L517
+  encapsulation                       | VSI PBB视图        | L615
+  l2vpn enable                        | 系统视图             | L669
+  pbb i-sid                           | VSI视图            | L705
+  pbb uplink                          | 二层以太网接口视图/二层聚合接口视图 | L763
+  reset pbb connection                | ]                | L845
+  vsi                                 | 系统视图             | L887
+-->
 
 **PBB \-- PBB配置命令 \-- bvlan**
 

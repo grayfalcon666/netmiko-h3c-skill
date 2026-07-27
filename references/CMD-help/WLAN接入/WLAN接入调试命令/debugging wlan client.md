@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  debugging wlan client               | 任意视图             | L6
+  debugging wlan client mac           | 任意视图             | L470
+-->
 
 **WLAN接入 \-- WLAN接入调试命令 \-- debugging wlan client**
 

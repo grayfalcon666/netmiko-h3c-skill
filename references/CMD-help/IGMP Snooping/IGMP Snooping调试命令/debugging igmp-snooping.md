@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  debugging igmp-snooping             | 用户视图             | L6
+  debugging l2mf                      | 用户视图             | L1054
+-->
 
 **IGMP Snooping \-- IGMP Snooping调试命令 \-- debugging igmp-snooping**
 

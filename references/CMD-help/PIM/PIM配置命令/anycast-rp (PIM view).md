@@ -1,3 +1,64 @@
+<!-- CMD-INDEX
+  anycast-rp (PIM view)               | PIM视图            | L63
+  bidir-pim enable (PIM view)         | PIM视图            | L117
+  bidir-rp-limit (PIM view)           | PIM视图            | L167
+  bsm-fragment enable (PIM view)      | PIM视图            | L213
+  bsr-policy (PIM view)               | PIM视图            | L255
+  c-bsr (PIM view)                    | PIM视图            | L311
+  c-rp (PIM view)                     | PIM视图            | L369
+  crp-policy (PIM view)               | PIM视图            | L439
+  display interface register-tunnel   | 任意视图             | L497
+  display pim bsr-info                | 任意视图             | L667
+  display pim claimed-route           | 任意视图             | L815
+  display pim c-rp                    | 任意视图             | L923
+  display pim df-info                 | 任意视图             | L1045
+  display pim interface               | 任意视图             | L1143
+  display pim nbma-link               | 任意视图             | L1375
+  display pim neighbor                | 任意视图             | L1471
+  display pim routing-table           | 任意视图             | L1615
+  display pim rp-info                 | 任意视图             | L1921
+  display pim statistics              | 任意视图             | L2123
+  hello-option dr-priority (PIM view) | PIM视图            | L2255
+  hello-option holdtime (PIM view)    | PIM视图            | L2305
+  hello-option lan-delay (PIM view)   | PIM视图            | L2355
+  hello-option neighbor-tracking (PIM view) | PIM视图            | L2409
+  hello-option override-interval (PIM view) | PIM视图            | L2455
+  holdtime join-prune (PIM view)      | PIM视图            | L2509
+  jp-pkt-size (PIM view)              | PIM视图            | L2563
+  pim                                 | 系统视图             | L2605
+  pim bfd enable                      | 接口视图             | L2659
+  pim bsr-boundary                    | 接口视图             | L2731
+  pim dm                              | 接口视图             | L2787
+  pim hello-option dr-priority        | 接口视图             | L2853
+  pim hello-option holdtime           | 接口视图             | L2915
+  pim hello-option lan-delay          | 接口视图             | L2977
+  pim hello-option neighbor-tracking  | 接口视图             | L3043
+  pim hello-option override-interval  | 接口视图             | L3133
+  pim holdtime join-prune             | 接口视图             | L3199
+  pim nbma-mode                       | ADVPN隧道接口视图      | L3265
+  pim neighbor-policy                 | 接口视图             | L3307
+  pim require-genid                   | 接口视图             | L3377
+  pim sm                              | 接口视图             | L3427
+  pim state-refresh-capable           | 接口视图             | L3493
+  pim timer graft-retry               | 接口视图             | L3551
+  pim timer hello                     | 接口视图             | L3605
+  pim timer join-prune                | 接口视图             | L3667
+  pim triggered-hello-delay           | 接口视图             | L3735
+  register-policy (PIM view)          | PIM视图            | L3789
+  register-suppression-timeout (PIM view) | PIM视图            | L3841
+  register-whole-checksum (PIM view)  | PIM视图            | L3883
+  snmp-agent trap enable pim          | 系统视图             | L3921
+  source-lifetime (PIM view)          | PIM视图            | L3971
+  source-policy (PIM view)            | PIM视图            | L4013
+  spt-switch-threshold (PIM view)     | PIM视图            | L4071
+  ssm-policy (PIM view)               | PIM视图            | L4135
+  state-refresh-interval (PIM view)   | PIM视图            | L4189
+  state-refresh-rate-limit (PIM view) | PIM视图            | L4239
+  state-refresh-ttl (PIM view)        | PIM视图            | L4289
+  static-rp (PIM view)                | PIM视图            | L4339
+  timer hello (PIM view)              | PIM视图            | L4407
+  timer join-prune (PIM view)         | PIM视图            | L4457
+-->
 
 **PIM \-- PIM配置命令 \-- anycast-rp (PIM view)**
 

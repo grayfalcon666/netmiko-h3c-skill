@@ -1,3 +1,10 @@
+<!-- CMD-INDEX
+  display monitor-link group          | 任意视图             | L9
+  downlink up-delay                   | Monitor Link组视图  | L117
+  monitor-link group                  | 系统视图             | L163
+  port                                | Monitor Link组视图  | L205
+  port monitor-link group             | 二层以太网接口视图/三层以太网接口视图/三层以太网子接口视图/二层聚合接口视图/三层聚合接口视图/三层聚合子接口视图/S通道接口视图/S通道聚合接口视图 | L273
+-->
 
 **Monitor Link \-- Monitor Link配置命令 \-- display monitor-link group**
 

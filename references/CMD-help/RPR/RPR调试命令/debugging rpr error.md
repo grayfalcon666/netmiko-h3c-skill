@@ -1,3 +1,10 @@
+<!-- CMD-INDEX
+  debugging rpr error                 | 用户视图             | L9
+  debugging rpr event                 | 用户视图             | L107
+  debugging rpr fsm                   | 用户视图             | L211
+  debugging rpr packet                | 用户视图             | L323
+  debugging rpr timer                 | 用户视图             | L419
+-->
 
 **RPR \-- RPR调试命令 \-- debugging rpr error**
 

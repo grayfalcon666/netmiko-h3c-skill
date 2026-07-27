@@ -1,3 +1,8 @@
+<!-- CMD-INDEX
+  display system internal ip fast-forwarding cache verbose | probe视图          | L7
+  display system internal ip fast-forwarding service-sequece | probe视图          | L53
+  display system internal max-ecmp-num | probe视图          | L73
+-->
 
 **快速转发 \-- 快速转发Probe配置命令 \-- display system internal ip fast-forwarding cache verbose**
 

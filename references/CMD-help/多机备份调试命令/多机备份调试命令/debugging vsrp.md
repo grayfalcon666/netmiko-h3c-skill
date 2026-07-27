@@ -1,3 +1,9 @@
+<!-- CMD-INDEX
+  debugging vsrp                      | 用户视图             | L8
+  debugging ppp vsrp                  | 用户视图             | L90
+  debugging pppoe-server vsrp         | 用户视图             | L334
+  debugging l2tp vsrp                 | ]                | L520
+-->
 
 **多机备份调试命令 \-- 多机备份调试命令 \-- debugging vsrp**
 

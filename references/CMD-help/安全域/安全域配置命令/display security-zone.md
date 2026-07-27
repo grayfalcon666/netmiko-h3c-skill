@@ -1,3 +1,15 @@
+<!-- CMD-INDEX
+  display security-zone               | 任意视图             | L14
+  display zone-pair security          | 任意视图             | L122
+  import interface                    | 安全域视图            | L172
+  import interface vlan               | 安全域视图            | L224
+  import ip                           | 安全域视图            | L282
+  import ipv6                         | 安全域视图            | L360
+  import vlan                         | 安全域视图            | L428
+  security-zone                       | 系统视图             | L484
+  zone-pair security                  | ]                | L542
+  security-zone intra-zone default permit | 系统视图             | L600
+-->
 
 **安全域 \-- 安全域配置命令 \-- display security-zone**
 

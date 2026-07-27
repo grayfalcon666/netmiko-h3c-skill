@@ -1,3 +1,9 @@
+<!-- CMD-INDEX
+  debugging attack-defense            | 用户视图             | L8
+  debugging client-verify tcp         | 用户视图             | L192
+  debugging client-verify dns         | 用户视图             | L388
+  debugging client-verify http        | 用户视图             | L584
+-->
 
 **攻击检测与防范 \-- 攻击检测与防范调试命令 \-- debugging attack-defense**
 

@@ -1,3 +1,11 @@
+<!-- CMD-INDEX
+  ipv6 nd check log enable            | 系统视图             | L10
+  ipv6 nd mac-check enable            | 系统视图             | L52
+  display ipv6 nd detection statistics | 任意视图             | L92
+  ipv6 nd detection enable            | VLAN视图           | L156
+  ipv6 nd detection trust             | 二层以太网接口视图/二层聚合接口视图 | L194
+  reset ipv6 nd detection statistics  | 用户视图             | L240
+-->
 
 **ND攻击防御 \-- ND协议报文源MAC地址一致性检查命令 \-- ipv6 nd check log enable**
 

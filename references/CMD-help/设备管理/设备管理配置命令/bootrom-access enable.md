@@ -1,3 +1,96 @@
+<!-- CMD-INDEX
+  bootrom-access enable               | 用户视图             | L95
+  brand                               | 用户视图             | L139
+  card-mode                           | 系统视图             | L201
+  clock datetime                      | 用户视图             | L323
+  clock protocol                      | 系统视图             | L377
+  clock summer-time                   | 系统视图             | L433
+  clock timezone                      | 系统视图             | L503
+  command                             | Job视图            | L561
+  copyright-info enable               | 系统视图             | L629
+  display alarm                       | 任意视图             | L711
+  display bootrom-access              | 任意视图             | L893
+  display brand                       | 任意视图             | L925
+  display clock                       | 任意视图             | L973
+  display copyright                   | 任意视图             | L1031
+  display cpu-usage                   | 任意视图             | L1065
+  display cpu-usage configuration     | 任意视图             | L1241
+  display cpu-usage history           | 任意视图             | L1305
+  display device                      | 任意视图             | L1477
+  display device manuinfo             | 任意视图             | L1881
+  display device manuinfo chassis-only | 任意视图             | L2131
+  display device manuinfo fan         |                  | L2209
+  display device manuinfo power       | 任意视图             | L2319
+  display device manuinfo power-monitor | 任意视图             | L2427
+  display diagnostic-information      | 任意视图             | L2535
+  display environment                 |                  | L2629
+  display fabric utilization          | 任意视图             | L2817
+  display fan                         | 任意视图             | L2929
+  display lpu-type                    | 任意视图             | L2987
+  display memory                      | 任意视图             | L3031
+  display memory-threshold            | 任意视图             | L3159
+  display power                       |                  | L3343
+  display power-supply                | 任意视图             | L3405
+  display rps                         |                  | L3459
+  display save-power                  | 任意视图             | L3523
+  display scheduler job               | 任意视图             | L3587
+  display scheduler logfile           | 任意视图             | L3635
+  display scheduler reboot            | 任意视图             | L3719
+  display scheduler schedule          | 任意视图             | L3757
+  display system-working-mode         | 任意视图             | L3861
+  display transceiver alarm           | 任意视图             | L3899
+  display transceiver diagnosis       | 任意视图             | L4445
+  display transceiver interface       | 任意视图             | L4547
+  display transceiver manuinfo        | 任意视图             | L4661
+  display version                     | 任意视图             | L4725
+  display version-update-record       | 任意视图             | L4755
+  display xbar                        | 任意视图             | L4841
+  fabric load-sharing mode            |                  | L4919
+  fan auto-control-mode               |                  | L5013
+  fan prefer-direction                |                  | L5077
+  forward-path-detection enable       | 系统视图             | L5163
+  hardware-failure-detection          | 系统视图             | L5209
+  hardware-failure-protection aggregation | 系统视图             | L5275
+  hardware-failure-protection auto-down | 以太网接口视图          | L5341
+  header                              | 系统视图             | L5399
+  job                                 | Schedule视图       | L5503
+  locator blink                       |                  | L5557
+  lpu-type                            | 系统视图             | L5637
+  memory-threshold                    |                  | L5695
+  memory-threshold usage              |                  | L5777
+  monitor cpu-usage enable            |                  | L5851
+  monitor cpu-usage interval          | 系统视图             | L5923
+  monitor cpu-usage threshold         |                  | L5989
+  password-recovery enable            | 系统视图             | L6063
+  power-supply off                    | 用户视图             | L6105
+  power-supply on                     | 用户视图             | L6163
+  power-supply policy enable          |                  | L6215
+  power-supply policy priority        | 系统视图             | L6273
+  power-supply policy redundant       |                  | L6335
+  reboot                              | 用户视图             | L6399
+  restore factory-default             | 用户视图             | L6625
+  reset scheduler logfile             | 用户视图             | L6665
+  reset version-update-record         | 系统视图             | L6699
+  save-power delay-timer              | 系统视图             | L6743
+  save-power enable                   | 系统视图             | L6797
+  save-power mode                     | 用户视图             | L6843
+  scheduler job                       | 系统视图             | L6889
+  scheduler logfile size              | 系统视图             | L6941
+  scheduler reboot at                 | 用户视图             | L6985
+  scheduler reboot delay              | 用户视图             | L7051
+  scheduler schedule                  | 系统视图             | L7101
+  shutdown-interval                   | 系统视图             | L7167
+  sysname                             | 系统视图             | L7219
+  system-working-mode                 | 系统视图             | L7265
+  temperature-limit                   |                  | L7325
+  time at                             | Schedule视图       | L7439
+  time once                           | Schedule视图       | L7499
+  time repeating                      | Schedule视图       | L7587
+  usb disable                         | 系统视图             | L7693
+  user-role                           | Schedule视图       | L7753
+  warm-reboot                         | 用户视图             | L7807
+  xbar                                | 系统视图             | L7923
+-->
 
 **设备管理 \-- 设备管理配置命令 \-- bootrom-access enable**
 

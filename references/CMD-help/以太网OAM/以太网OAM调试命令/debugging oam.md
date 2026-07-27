@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging oam                       | 用户视图             | L5
+-->
 
 **以太网OAM \-- 以太网OAM调试命令 \-- debugging oam**
 

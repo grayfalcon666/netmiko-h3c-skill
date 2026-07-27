@@ -1,3 +1,16 @@
+<!-- CMD-INDEX
+  affinity location-set               | 分布策略视图           | L15
+  affinity location-type              | 分布策略视图           | L91
+  affinity program                    | 分布策略视图           | L155
+  affinity self                       | 分布策略视图           | L215
+  display ha service-group            | 任意视图             | L277
+  display placement location          | 任意视图             | L443
+  display placement policy            | 任意视图             | L613
+  display placement program           | 任意视图             | L695
+  display placement reoptimize        | 任意视图             | L763
+  placement program                   | 系统视图             | L853
+  placement reoptimize                | 系统视图             | L919
+-->
 
 **进程分布优化 \-- 进程分布优化配置命令 \-- affinity location-set**
 

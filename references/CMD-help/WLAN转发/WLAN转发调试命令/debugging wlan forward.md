@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging wlan forward              | 用户视图             | L5
+-->
 
 **WLAN转发 \-- WLAN转发调试命令 \-- debugging wlan forward**
 

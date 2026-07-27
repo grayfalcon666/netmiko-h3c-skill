@@ -1,3 +1,20 @@
+<!-- CMD-INDEX
+  alias                               |                  | L19
+  display \| { begin \| exclude \| include } | 任意视图             | L169
+  display \| by-linenum               | 任意视图             | L221
+  display \>                          | 任意视图             | L291
+  display \>\>                        | 任意视图             | L353
+  display alias                       | 任意视图             | L435
+  display history-command             | 任意视图             | L523
+  display history-command all         | 任意视图             | L569
+  display hotkey                      | 任意视图             | L645
+  hotkey                              | 系统视图             | L833
+  quit                                | 任意视图             | L899
+  repeat                              | 任意视图             | L937
+  return                              | 除用户视图外的任意视图      | L1027
+  screen-length disable               | 用户视图             | L1063
+  system-view                         | 用户视图             | L1107
+-->
 
 **CLI \-- CLI命令 \-- alias**
 

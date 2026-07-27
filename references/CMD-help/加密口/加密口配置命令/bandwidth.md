@@ -1,3 +1,11 @@
+<!-- CMD-INDEX
+  bandwidth                           | 加密口视图            | L10
+  description                         | 加密口视图            | L56
+  display interface encrypt           | 任意视图             | L98
+  interface encrypt                   | 系统视图             | L320
+  reset counters interface            | 用户视图             | L354
+  shutdown                            | 加密口视图            | L400
+-->
 
 **加密口 \-- 加密口配置命令 \-- bandwidth**
 

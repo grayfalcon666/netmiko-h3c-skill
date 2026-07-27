@@ -1,3 +1,12 @@
+<!-- CMD-INDEX
+  description                         | 对象组视图            | L11
+  display object-group                | ]                | L57
+  network (IPv4 address object group view) | IPv4地址对象组视图      | L221
+  network (IPv6 address object group view) | IPv6地址对象组视图      | L337
+  object-group                        | 系统视图             | L445
+  port (port object group view)       | 端口对象组视图          | L521
+  service(service object group view)  | 服务对象组视图          | L629
+-->
 
 **对象组 \-- 对象组配置命令 \-- description**
 

@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  debugging ipv6 route-static nib     | 用户视图             | L6
+  debugging ipv6 route-static process | 用户视图             | L254
+-->
 
 **IPv6静态路由调试命令 \-- IPv6静态路由调试命令 \-- debugging ipv6 route-static nib**
 

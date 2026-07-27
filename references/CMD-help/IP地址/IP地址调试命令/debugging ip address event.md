@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging ip address event          | 用户视图             | L5
+-->
 
 **IP地址 \-- IP地址调试命令 \-- debugging ip address event**
 

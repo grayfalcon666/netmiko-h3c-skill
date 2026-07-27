@@ -1,3 +1,69 @@
+<!-- CMD-INDEX
+  activation-key                      | 用户线视图/用户线类视图     | L68
+  authentication-mode                 | 用户线视图/用户线类视图     | L134
+  auto-execute command                | 用户线视图/用户线类视图     | L234
+  command accounting                  | 用户线视图/用户线类视图     | L340
+  command authorization               | 用户线视图/用户线类视图     | L392
+  databits                            | 用户线视图            | L444
+  display ip http                     | 任意视图             | L498
+  display ip https                    | 任意视图             | L564
+  display line                        | 任意视图             | L646
+  display telnet client               | 任意视图             | L816
+  display user-interface              | 任意视图             | L858
+  display users                       | 任意视图             | L1032
+  display web menu                    | 任意视图             | L1132
+  display web users                   | 任意视图             | L1228
+  escape-key                          | 用户线视图/用户线类视图     | L1312
+  flow-control                        |                  | L1394
+  free line                           | 用户视图             | L1492
+  free user-interface                 | 用户视图             | L1566
+  free web users                      | 用户视图             | L1642
+  history-command max-size            | 用户线视图/用户线类视图     | L1688
+  idle-timeout                        | 用户线视图/用户线类视图     | L1740
+  ip alias                            | 系统视图             | L1794
+  ip http acl                         | 系统视图             | L1848
+  ip http enable                      | 系统视图             | L1912
+  ip http port                        | 系统视图             | L1964
+  ip https acl                        | 系统视图             | L2014
+  ip https certificate access-control-policy | 系统视图             | L2078
+  ip https enable                     | 系统视图             | L2130
+  ip https port                       | 系统视图             | L2182
+  ip https ssl-server-policy          | 系统视图             | L2230
+  line                                | 系统视图             | L2284
+  line class                          | 系统视图             | L2350
+  lock                                | 用户视图             | L2468
+  parity                              | 用户线视图            | L2518
+  protocol inbound                    | VTY用户线视图/VTY用户线类视图 | L2574
+  redirect disconnect                 | AUX/TTY用户线视图     | L2702
+  redirect enable                     | AUX/TTY用户线视图     | L2738
+  redirect listen-port                | AUX/TTY用户线视图     | L2792
+  redirect passthrough                | AUX/TTY用户线视图     | L2844
+  redirect refuse-negotiation         | AUX/TTY用户线视图     | L2888
+  redirect timeout                    | AUX/TTY用户线视图     | L2930
+  screen-length                       | 用户线视图/用户线类视图     | L2980
+  send                                | 用户视图             | L3036
+  set authentication password         | 用户线视图/用户线类视图     | L3102
+  shell                               | 用户线视图/用户线类视图     | L3166
+  speed                               | 用户线视图            | L3224
+  stopbit-error intolerance           | 用户线视图            | L3272
+  stopbits                            | 用户线视图            | L3320
+  telnet                              | 用户视图             | L3372
+  telnet client source                | 系统视图             | L3426
+  telnet ipv6                         | 用户视图             | L3480
+  telnet server acl                   | 系统视图             | L3534
+  telnet server dscp                  | 系统视图             | L3600
+  telnet server enable                | 系统视图             | L3644
+  telnet server ipv6 acl              | 系统视图             | L3686
+  telnet server ipv6 dscp             | 系统视图             | L3752
+  terminal type                       | 用户线视图/用户线类视图     | L3796
+  user-interface                      | 系统视图             | L3846
+  user-interface class                | 系统视图             | L3914
+  user-role                           | 用户线视图/用户线类视图     | L4034
+  web captcha                         | 用户视图             | L4088
+  web https-authorization mode        | 系统视图             | L4140
+  web idle-timeout                    | 系统视图             | L4192
+  webui log                           | 系统视图             | L4244
+-->
 
 **登录设备 \-- 登录设备命令 \-- activation-key**
 

@@ -1,3 +1,16 @@
+<!-- CMD-INDEX
+  connection-limit apply global       | 系统视图             | L15
+  connection-limit amount             | user-profile视图   | L75
+  connection-limit apply              | 接口视图             | L129
+  connection-limit                    | 系统视图             | L217
+  connection-limit rate               | user-profile视图   | L281
+  display connection-limit            | 任意视图             | L335
+  display connection-limit ipv6-stat-nodes | 任意视图             | L553
+  display connection-limit statistics | 任意视图             | L937
+  display connection-limit stat-nodes |                  | L1089
+  limit                               | IPv4连接数限制策略视图/IPv6连接数限制策略视图 | L1483
+  reset connection-limit statistics   | 用户视图             | L1599
+-->
 
 **连接数限制 \-- 连接数限制配置命令 \-- connection-limit apply global**
 

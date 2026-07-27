@@ -1,3 +1,58 @@
+<!-- CMD-INDEX
+  address-family l2vpn                | BGP视图            | L57
+  auto-discovery                      | VSI视图            | L101
+  backup-peer                         | VSI LDP PW视图/VSI静态PW视图 | L157
+  bandwidth（VSI LDP PW view/VSI static PW view） | VSI LDP PW视图/VSI静态PW视图 | L247
+  bandwidth（VSI view）                 | VSI视图            | L309
+  control-word enable                 | PW模板视图           | L365
+  default-pw-id                       | VSI视图            | L421
+  description                         | VSI视图            | L473
+  display bgp l2vpn auto-discovery    | 任意视图             | L519
+  display bgp l2vpn signaling         | 任意视图             | L847
+  display l2vpn auto-discovery        | 任意视图             | L1213
+  display l2vpn bgp                   | 任意视图             | L1295
+  display l2vpn ldp                   | 任意视图             | L1605
+  display l2vpn forwarding            | 任意视图             | L1915
+  display l2vpn mac-address           | 任意视图             | L2287
+  display l2vpn interface             | 任意视图             | L2377
+  display l2vpn pw                    | 任意视图             | L2465
+  display l2vpn pw-class              | 任意视图             | L2867
+  display l2vpn service-instance      | 任意视图             | L2953
+  display l2vpn vsi                   | 任意视图             | L3119
+  encapsulation                       | 以太网服务实例视图        | L3375
+  l2vpn enable                        | 系统视图             | L3469
+  l2vpn switchover                    | 用户视图             | L3509
+  mac-learning enable                 | VSI视图            | L3553
+  mac-learing rate                    | VSI视图            | L3605
+  mac-table limit                     | VSI视图            | L3659
+  mac-table limit drop-unknown        | VSI视图            | L3713
+  mtu                                 | VSI视图            | L3763
+  peer                                | VSI LDP信令视图/VSI静态配置视图 | L3815
+  peer auto-discovery                 | BGP L2VPN地址族视图   | L3921
+  peer signaling                      | BGP L2VPN地址族视图   | L3991
+  policy vpn-target                   | BGP L2VPN地址族视图   | L4049
+  pw-class (system view)              | 系统视图             | L4095
+  pw-class (VSI auto-discovery view)  | VSI自动发现视图        | L4149
+  pw-type                             | PW模板视图           | L4209
+  pwsignaling                         | VSI视图            | L4263
+  reset l2vpn mac-address             | 用户视图             | L4313
+  reset l2vpn statistics pw           | 用户视图             | L4357
+  restrain                            | VSI视图            | L4401
+  revertive                           | VSI LDP信令视图/VSI静态配置视图 | L4471
+  route-distinguisher                 | VSI自动发现视图        | L4523
+  rr-filter                           | BGP L2VPN地址族视图   | L4585
+  service-instance                    | 二层以太网接口视图/二层聚合接口视图 | L4633
+  shutdown                            | VSI视图            | L4681
+  signaling-protocol                  | VSI自动发现视图        | L4729
+  site                                | VSI自动发现BGP信令视图   | L4787
+  snmp-agent trap enable l2vpn        | 系统视图             | L4851
+  statistics enable                   | VSI LDP PW视图/VSI静态PW视图 | L4903
+  tunnel-policy                       | VSI自动发现视图        | L4959
+  vpls-id                             | VSI自动发现LDP信令视图   | L5017
+  vpn-target                          | VSI自动发现视图        | L5083
+  vsi                                 | 系统视图             | L5147
+  xconnect vsi                        | 接口视图/以太网服务实例视图   | L5203
+-->
 
 **VPLS \-- VPLS配置命令 \-- address-family l2vpn**
 

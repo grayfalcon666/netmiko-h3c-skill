@@ -1,3 +1,8 @@
+<!-- CMD-INDEX
+  debugging system internal fdb       |                  | L7
+  display system internal fdb         | Probe视图          | L77
+  reset system internal fdb           | Probe视图          | L125
+-->
 
 **FDB \-- FDB Probe命令 \-- debugging system internal fdb**
 

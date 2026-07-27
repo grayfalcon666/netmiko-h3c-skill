@@ -1,3 +1,11 @@
+<!-- CMD-INDEX
+  call-forwarding                     | POTS语音实体视图       | L10
+  call-hold-format                    | 语音视图             | L112
+  display voice mwi                   | 任意视图             | L158
+  display voice sip subscribe-state   | 任意视图             | L262
+  mwi                                 | FXS语音用户线视图       | L332
+  mwi-server                          | SIP视图            | L374
+-->
 
 **语音业务 \-- 语音业务配置命令 \-- call-forwarding**
 

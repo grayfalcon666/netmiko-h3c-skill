@@ -1,3 +1,14 @@
+<!-- CMD-INDEX
+  authentication-mode                 | 本地漫游组视图          | L13
+  display wlan mobility               | 任意视图             | L65
+  display wlan mobility roam-track mac-address | 任意视图             | L179
+  display wlan mobility group         | 任意视图             | L243
+  group enable                        | 本地漫游组视图          | L355
+  member                              | 本地漫游组视图          | L417
+  source                              | 本地漫游组视图          | L471
+  tunnel-type                         | 本地漫游组视图          | L531
+  wlan mobility group                 | 系统视图             | L579
+-->
 
 **漫游 \-- 漫游配置命令 \-- authentication-mode**
 

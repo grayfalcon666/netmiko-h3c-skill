@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  debugging acl                       | 用户视图             | L6
+  debugging packet-filter packet      | 用户视图             | L426
+-->
 
 **ACL \-- ACL调试命令 \-- debugging acl**
 

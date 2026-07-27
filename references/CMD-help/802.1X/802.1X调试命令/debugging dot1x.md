@@ -1,3 +1,6 @@
+<!-- CMD-INDEX
+  debugging dot1x                     | 用户视图             | L5
+-->
 
 **802.1X \-- 802.1X调试命令 \-- debugging dot1x**
 

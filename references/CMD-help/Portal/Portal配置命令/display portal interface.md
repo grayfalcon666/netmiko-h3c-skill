@@ -1,3 +1,48 @@
+<!-- CMD-INDEX
+  display portal interface            | 任意视图             | L47
+  display portal packet statistics    | 任意视图             | L447
+  display portal rule                 | 任意视图             | L643
+  display portal server               | 任意视图             | L1297
+  display portal user                 | 任意视图             | L1401
+  display portal web-server           | 任意视图             | L2029
+  display web-redirect rule           | 任意视图             | L2127
+  ip                                  | Portal认证服务器视图    | L2367
+  ipv6                                | Portal认证服务器视图    | L2433
+  port                                | Portal认证服务器视图    | L2499
+  portal { bas-ip \| bas-ipv6 }       | 接口视图             | L2549
+  portal apply web-server             | 接口视图             | L2621
+  portal authorization strict-checking | 接口视图             | L2693
+  portal delete-user                  | 系统视图             | L2757
+  portal domain                       | 接口视图             | L2799
+  portal enable                       | 接口视图             | L2865
+  portal fail-permit server           | 接口视图             | L2943
+  portal free-all except destination  | 接口视图             | L3009
+  portal free-rule                    | 系统视图             | L3083
+  portal free-rule source             | 系统视图             | L3169
+  portal { ipv4-max-user \| ipv6-max-user } | 接口视图             | L3225
+  portal ipv6 free-all except destination | 接口视图             | L3289
+  portal ipv6 layer3 source           | 接口视图             | L3361
+  portal ipv6 user-detect             | 接口视图             | L3431
+  portal layer3 source                | 接口视图             | L3511
+  portal max-user                     | 系统视图             | L3583
+  portal nas-id-profile               | 接口视图             | L3637
+  portal nas-port-id format           | 系统视图             | L3701
+  portal pre-auth domain              | 三层接口视图/三层子接口视图   | L3851
+  portal pre-auth ip-pool             | 接口视图             | L3913
+  portal roaming enable               | 系统视图             | L3987
+  portal server                       | 系统视图             | L4037
+  portal user-detect                  | 接口视图             | L4089
+  portal web-server                   | 系统视图             | L4169
+  reset portal packet statistics      | 用户视图             | L4221
+  server-detect (portal server view)  | Portal认证服务器视图    | L4259
+  server-detect (portal web-server view) | Portal Web服务器视图  | L4317
+  url                                 | Portal Web服务器视图  | L4375
+  url-parameter                       | Portal Web服务器视图  | L4425
+  user-sync                           | Portal认证服务器视图    | L4491
+  vpn-instance                        | Portal Web服务器视图  | L4549
+  web-redirect track                  | 接口视图             | L4595
+  web-redirect url                    | 接口视图             | L4661
+-->
 
 **Portal \-- Portal配置命令 \-- display portal interface**
 

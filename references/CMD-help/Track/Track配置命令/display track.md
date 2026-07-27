@@ -1,3 +1,11 @@
+<!-- CMD-INDEX
+  display track                       | ]                | L10
+  track bfd                           | 系统视图             | L260
+  track cfd                           | 系统视图             | L338
+  track interface                     | 系统视图             | L406
+  track interface protocol            | 系统视图             | L480
+  track nqa                           | 系统视图             | L556
+-->
 
 **Track \-- Track配置命令 \-- display track**
 

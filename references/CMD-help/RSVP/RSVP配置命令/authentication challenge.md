@@ -1,3 +1,37 @@
+<!-- CMD-INDEX
+  authentication challenge            | RSVP视图/RSVP邻居视图  | L36
+  authentication key                  | RSVP视图/RSVP邻居视图  | L116
+  authentication lifetime             | RSVP视图/RSVP邻居视图  | L216
+  authentication window-size          | RSVP视图/RSVP邻居视图  | L306
+  display rsvp                        | 任意视图             | L402
+  display rsvp authentication         | 任意视图             | L676
+  display rsvp lsp                    | 任意视图             | L974
+  display rsvp peer                   | 任意视图             | L1300
+  display rsvp request                | 任意视图             | L1480
+  display rsvp reservation            | 任意视图             | L1688
+  display rsvp sender                 | 任意视图             | L1926
+  display rsvp statistics             | 任意视图             | L2364
+  dscp                                | RSVP视图           | L2594
+  graceful-restart enable             | RSVP视图           | L2644
+  hello interval                      | RSVP视图           | L2692
+  hello lost                          | RSVP视图           | L2746
+  keep-multiplier                     | RSVP视图           | L2802
+  peer                                | RSVP视图           | L2854
+  refresh interval                    | RSVP视图           | L2918
+  reset rsvp authentication           | 用户视图             | L2972
+  reset rsvp statistics               | 用户视图             | L3016
+  rsvp                                | 系统视图             | L3066
+  rsvp authentication challenge       | 接口视图             | L3114
+  rsvp authentication key             | 接口视图             | L3196
+  rsvp authentication lifetime        | 接口视图             | L3298
+  rsvp authentication window-size     | 接口视图             | L3390
+  rsvp bfd enable                     | 接口视图             | L3488
+  rsvp enable                         | 接口视图             | L3542
+  rsvp hello enable                   | 接口视图             | L3608
+  rsvp reduction retransmit increment | 接口视图             | L3668
+  rsvp reduction retransmit interval  | 接口视图             | L3732
+  rsvp reduction srefresh             | 接口视图             | L3796
+-->
 
 **RSVP \-- RSVP配置命令 \-- authentication challenge**
 

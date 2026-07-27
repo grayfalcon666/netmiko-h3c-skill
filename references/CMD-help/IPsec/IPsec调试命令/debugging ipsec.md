@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  debugging ipsec                     | ]                | L6
+  debugging ike                       | 用户视图             | L1252
+-->
 
 **IPsec \-- IPsec调试命令 \-- debugging ipsec**
 

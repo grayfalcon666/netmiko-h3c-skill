@@ -1,3 +1,10 @@
+<!-- CMD-INDEX
+  display system internal kernel memory dump | Probe视图          | L9
+  display system internal kernel memory pool |                  | L57
+  follow                              | Probe视图          | L129
+  memory boundary-check enable        |                  | L189
+  memory boundary-check scan          | Probe视图          | L255
+-->
 
 **诊断 \-- 诊断Probe命令 \-- display system internal kernel memory dump**
 

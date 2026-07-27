@@ -1,3 +1,7 @@
+<!-- CMD-INDEX
+  debugging ipv6 mfib                 | 用户视图             | L6
+  debugging ipv6 mrib                 | 用户视图             | L528
+-->
 
 **IPv6组播路由与转发 \-- IPv6组播路由与转发调试命令 \-- debugging ipv6 mfib**
 

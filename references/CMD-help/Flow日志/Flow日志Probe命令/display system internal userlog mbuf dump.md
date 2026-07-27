@@ -1,3 +1,8 @@
+<!-- CMD-INDEX
+  display system internal userlog mbuf dump | Probe视图          | L7
+  display system internal userlog statistic | Probe视图          | L57
+  display system internal userlog test | Probe视图          | L105
+-->
 
 **Flow日志 \-- Flow日志Probe命令 \-- display system internal userlog mbuf dump**
 

@@ -1,3 +1,112 @@
+<!-- CMD-INDEX
+  address-family ipv4                 | BGP视图/BGP-VPN实例视图 | L111
+  address-family ipv6                 | BGP视图/BGP-VPN实例视图 | L197
+  advertise-rib-active                | BGP视图/BGP IPv4单播地址族视图/BGP-VPN IPv4单播地址族/BGP IPv6单播地址族视图/BGP-VPN IPv6单播地址族 | L283
+  aggregate                           | BGP IPv4单播地址族视图/BGP-VPN IPv4单播地址族视图/BGP IPv6单播地址族视图/BGP IPv4组播地址族视图/BGP IPv6组播地址族视图 | L357
+  balance                             | BGP IPv4单播地址族视图/BGP-VPN IPv4单播地址族视图/BGP IPv6单播地址族视图/BGP-VPN IPv6单播地址族视图/BGP IPv4组播地址族视图/BGP IPv6组播地址族视图 | L571
+  balance as-path-neglect             | BGP IPv4单播地址族视图/BGP-VPN IPv4单播地址族视图/BGP IPv6单播地址族视图/BGP-VPN IPv6单播地址族视图 | L661
+  bestroute as-path-neglect           | BGP IPv4单播地址族视图/BGP-VPN IPv4单播地址族视图/BGP IPv6单播地址族视图/BGP-VPN IPv6单播地址族视图/BGP IPv4组播地址族视图/BGP IPv6组播地址族视图 | L727
+  bestroute compare-med               | BGP IPv4单播地址族视图/BGP-VPN IPv4单播地址族视图/BGP IPv6单播地址族视图/BGP IPv4组播地址族视图/BGP IPv6组播地址族视图 | L779
+  bestroute med-confederation         | BGP IPv4单播地址族视图/BGP-VPN IPv4单播地址族视图/BGP IPv6单播地址族视图/BGP IPv4组播地址族视图/BGP IPv6组播地址族视图 | L847
+  bgp                                 | 系统视图             | L913
+  bgp-policy accounting               | 接口视图             | L961
+  compare-different-as-med            | BGP IPv4单播地址族视图/BGP-VPN IPv4单播地址族视图/BGP IPv6单播地址族视图/BGP IPv4组播地址族视图/BGP IPv6组播地址族视图 | L1047
+  confederation id                    | BGP视图            | L1117
+  confederation nonstandard           | BGP视图            | L1191
+  confederation peer-as               | BGP视图            | L1243
+  dampening                           | BGP IPv4单播地址族视图/BGP-VPN IPv4单播地址族视图/BGP IPv6单播地址族视图/BGP-VPN IPv6单播地址族视图/BGP IPv4组播地址族视图/BGP IPv6组播地址族视图 | L1299
+  default local-preference            | BGP IPv4单播地址族视图/BGP-VPN IPv4单播地址族视图/BGP IPv6单播地址族视图/BGP-VPN IPv6单播地址族视图/BGP IPv4组播地址族视图/BGP IPv6组播地址族视图 | L1395
+  default med                         | BGP IPv4单播地址族视图/BGP-VPN IPv4单播地址族视图/BGP IPv6单播地址族视图/BGP-VPN IPv6单播地址族视图/BGP IPv4组播地址族视图/BGP IPv6组播地址族视图 | L1461
+  default-route imported              | BGP IPv4单播地址族视图/BGP-VPN IPv4单播地址族视图/BGP IPv6单播地址族视图/BGP-VPN IPv6单播地址族视图/BGP IPv4组播地址族视图/BGP IPv6组播地址族视图 | L1537
+  display bgp dampening parameter     | ]                | L1627
+  display bgp group                   | 任意视图             | L1719
+  display bgp network                 | 任意视图             | L2035
+  display bgp non-stop-routing status | 任意视图             | L2159
+  display bgp paths                   | 任意视图             | L2227
+  display bgp peer                    | ]                | L2303
+  display bgp routing-table dampened  | ]                | L3553
+  display bgp routing-table flap-info | 任意视图             | L3713
+  display bgp routing-table ipv4 multicast | 任意视图             | L3909
+  display bgp routing-table ipv4 unicast | 任意视图             | L4375
+  display bgp routing-table ipv6 multicast | 任意视图             | L4897
+  display bgp routing-table ipv6 unicast | 任意视图             | L5501
+  display bgp routing-table ipv6 unicast inlabel | 任意视图             | L6027
+  display bgp routing-table ipv6 unicast outlabel | 任意视图             | L6125
+  display bgp update-group            | ]                | L6215
+  display bgp-policy statistics       | 任意视图             | L6601
+  ebgp-interface-sensitive            | BGP视图            | L6837
+  fast-reroute route-policy           | BGP IPv4单播地址族视图/BGP-VPN IPv4单播地址族视图/BGP IPv6单播地址族视图/BGP-VPN IPv6单播地址族视图 | L6883
+  filter-policy export                | BGP IPv4单播地址族视图/BGP-VPN IPv4单播地址族视图/BGP VPNv4地址族视图/BGP IPv6单播地址族视图/BGP-VPN IPv6单播地址族视图/BGP VPNv6地址族视图/BGP IPv4组播地址族视图/BGP IPv6组播地址族视图 | L6947
+  filter-policy import                | BGP IPv4单播地址族视图/BGP-VPN IPv4单播地址族视图/BGP VPNv4地址族视图/BGP IPv6单播地址族视图/BGP-VPN IPv6单播地址族视图/BGP VPNv6地址族视图/BGP IPv4组播地址族视图/BGP IPv6组播地址族视图 | L7061
+  graceful-restart                    | BGP视图            | L7167
+  graceful-restart timer purge-time   | BGP视图            | L7221
+  graceful-restart timer restart      | BGP视图            | L7287
+  graceful-restart timer wait-for-rib | BGP视图            | L7349
+  group                               | BGP视图/BGP-VPN实例视图 | L7413
+  ignore-first-as                     | BGP视图            | L7531
+  import-route                        | BGP IPv4单播地址族视图/BGP-VPN IPv4单播地址族视图/BGP IPv6单播地址族视图/BGP-VPN IPv6单播地址族视图/BGP IPv4组播地址族视图/BGP IPv6组播地址族视图 | L7569
+  ip vpn-instance (BGP view)          | BGP视图            | L7681
+  log-peer-change                     | BGP视图            | L7745
+  network                             | BGP IPv4单播地址族视图/BGP-VPN IPv4单播地址族视图/BGP IPv6单播地址族视图/BGP-VPN IPv6单播地址族视图/BGP IPv4组播地址族视图/BGP IPv6组播地址族视图 | L7795
+  network short-cut                   | BGP IPv4单播地址族视图/BGP-VPN IPv4单播地址族视图/BGP IPv6单播地址族视图/BGP-VPN IPv6单播地址族视图/BGP IPv4组播地址族视图/BGP IPv6组播地址族视图 | L7899
+  non-stop-routing                    | BGP视图            | L7983
+  peer advertise-community            |                  | L8029
+  peer advertise-ext-community        |                  | L8133
+  peer allow-as-loop                  |                  | L8243
+  peer as-number (for a BGP peer group) | BGP视图/BGP-VPN实例视图 | L8347
+  peer as-number (for a BGP peer)     | BGP视图/BGP-VPN实例视图 | L8413
+  peer as-path-acl                    |                  | L8489
+  peer bfd                            | BGP视图/BGP-VPN实例视图 | L8599
+  peer capability-advertise conventional | BGP视图/BGP-VPN实例视图 | L8701
+  peer capability-advertise route-refresh | BGP视图/BGP-VPN实例视图 | L8781
+  peer capability-advertise suppress-4-byte-as | BGP视图/BGP-VPN实例视图 | L8865
+  peer connect-interface              | BGP视图/BGP-VPN实例视图 | L8939
+  peer default-route-advertise        |                  | L9029
+  peer description                    | BGP视图/BGP-VPN实例视图 | L9131
+  peer ebgp-max-hop                   | BGP视图/BGP-VPN实例视图 | L9193
+  peer enable                         |                  | L9265
+  peer fake-as                        | BGP视图/BGP-VPN实例视图 | L9417
+  peer filter-policy                  |                  | L9489
+  peer group                          | BGP视图/BGP-VPN实例视图 | L9605
+  peer ignore                         | BGP视图/BGP-VPN实例视图 | L9727
+  peer ignore-originatorid            | BGP视图/BGP-VPN实例视图 | L9795
+  peer ipsec-profile                  | BGP视图/BGP-VPN实例视图 | L9867
+  peer keep-all-routes                |                  | L9953
+  peer label-route-capability         | BGP IPv4单播地址族视图/BGP-VPN IPv4单播地址族视图/BGP IPv6单播地址族视图 | L10051
+  peer log-change                     | BGP视图/BGP-VPN实例视图 | L10127
+  peer low-memory-exempt              | BGP视图/BGP-VPN实例视图 | L10203
+  peer next-hop-local                 | network-admin    | L10271
+  peer password                       | BGP视图/BGP-VPN实例视图 | L10355
+  peer preferred-value                |                  | L10449
+  peer prefix-list                    |                  | L10553
+  peer public-as-only                 |                  | L10665
+  peer reflect-client                 |                  | L10767
+  peer route-limit                    |                  | L10885
+  peer route-policy                   |                  | L10983
+  peer route-update-interval          | BGP视图/BGP-VPN实例视图 | L11093
+  peer soo                            |                  | L11161
+  peer source-address                 | BGP视图/BGP-VPN实例视图 | L11257
+  peer substitute-as                  | BGP视图/BGP-VPN实例视图 | L11351
+  peer timer                          | BGP视图/BGP-VPN实例视图 | L11421
+  peer ttl-security                   | BGP视图/BGP-VPN实例视图 | L11525
+  pic                                 | BGP IPv4单播地址族视图/BGP-VPN IPv4单播地址族视图/BGP IPv6单播地址族视图/BGP-VPN IPv6单播地址族视图 | L11607
+  preference                          | BGP IPv4单播地址族视图/BGP-VPN IPv4单播地址族视图/BGP IPv6单播地址族视图/BGP-VPN IPv6单播地址族视图/BGP IPv4组播地址族视图/BGP IPv6组播地址族视图 | L11661
+  primary-path-detect bfd             | BGP视图            | L11751
+  reflect between-clients             | BGP IPv4单播地址族视图/BGP-VPN IPv4单播地址族视图/BGP VPNv4地址族视图/BGP IPv6单播地址族视图/BGP VPNv6地址族视图/BGP L2VPN地址族视图/BGP IPv4组播地址族视图/BGP IPv6组播地址族视图/BGP IPv4 MDT地址族视图 | L11811
+  reflector cluster-id                | BGP IPv4单播地址族视图/BGP-VPN IPv4单播地址族视图/BGP VPNv4地址族视图/BGP IPv6单播地址族视图/BGP VPNv6地址族视图/BGP L2VPN地址族视图/BGP IPv4组播地址族视图/BGP IPv6组播地址族视图/BGP IPv4 MDT地址族视图 | L11915
+  refresh bgp                         | 用户视图             | L12027
+  retain local-label                  | BGP视图            | L12133
+  reset bgp                           | 用户视图             | L12179
+  reset bgp all                       | 用户视图             | L12271
+  reset bgp dampening                 | ]                | L12303
+  reset bgp flap-info                 | ]                | L12379
+  router id                           | 系统视图             | L12477
+  router-id (BGP view)                | BGP视图            | L12541
+  router-id (BGP-VPN view)            | BGP-VPN实例视图      | L12601
+  snmp-agent trap enable bgp          | 系统视图             | L12675
+  summary automatic                   | BGP IPv4单播地址族视图/BGP-VPN IPv4单播地址族视图/BGP IPv4组播地址族视图 | L12717
+  timer                               | BGP视图/BGP-VPN实例视图 | L12783
+-->
 
 **BGP \-- BGP配置命令 \-- address-family ipv4**
 

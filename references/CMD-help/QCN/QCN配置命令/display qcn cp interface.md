@@ -1,3 +1,15 @@
+<!-- CMD-INDEX
+  display qcn cp interface            | 任意视图             | L14
+  display qcn global                  | 任意视图             | L116
+  display qcn interface               | 任意视图             | L230
+  display qcn profile                 | 任意视图             | L320
+  qcn enable                          | 系统视图             | L412
+  qcn port priority                   | 二层以太网接口视图        | L452
+  qcn priority                        | 系统视图             | L532
+  qcn priority profile                | 系统视图             | L602
+  qcn proflie                         | 系统视图             | L652
+  reset qcn cp interface              | 用户视图             | L700
+-->
 
 **QCN \-- QCN配置命令 \-- display qcn cp interface**
 

@@ -1,3 +1,20 @@
+<!-- CMD-INDEX
+  display mac-authentication          | 任意视图             | L19
+  display mac-authentication connection | 任意视图             | L307
+  mac-authentication                  | 系统视图/以太网接口视图     | L655
+  mac-authentication critical vlan    | 以太网接口视图          | L707
+  mac-authentication domain           | 系统视图/以太网接口视图     | L761
+  mac-authentication guest-vlan       | 以太网接口视图          | L823
+  mac-authentication host-mode        | 以太网接口视图          | L877
+  mac-authentication max-user         | 以太网接口视图          | L927
+  mac-authentication re-authenticate server-unreachable keep-online | 以太网接口视图          | L977
+  mac-authentication timer            | 系统视图             | L1019
+  mac-authentication timer auth-delay | 以太网接口视图          | L1077
+  mac-authentication user-name-format | 系统视图             | L1133
+  reset mac-authentication critical-vlan | 用户视图             | L1217
+  reset mac-authentication guest-vlan | 用户视图             | L1255
+  reset mac-authentication statistics | 用户视图             | L1293
+-->
 
 **MAC地址认证 \-- MAC地址认证配置命令 \-- display mac-authentication**
 

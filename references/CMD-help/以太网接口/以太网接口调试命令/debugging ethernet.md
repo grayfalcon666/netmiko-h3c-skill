@@ -1,3 +1,8 @@
+<!-- CMD-INDEX
+  debugging ethernet                  | ]                | L7
+  debugging ifmgr                     | 用户视图             | L215
+  debugging system-event              | 用户视图             | L279
+-->
 
 **以太网接口 \-- 以太网接口调试命令 \-- debugging ethernet**
 
