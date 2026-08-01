@@ -21,6 +21,7 @@
 import json
 import os
 import tempfile
+import time
 import unittest
 
 import connection_pool_server as server
@@ -72,23 +73,104 @@ class TestParseView(unittest.TestCase):
 
 
 class TestHasError(unittest.TestCase):
-    def test_unknown_command(self):
-        self.assertTrue(server.has_error("% Unknown command at '^' position."))
+    def test_unrecognized_command(self):
+        self.assertTrue(server.has_error("% Unrecognized command found at '^' position."))
 
-    def test_error_caret(self):
-        self.assertTrue(server.has_error("  ^\n  % Wrong parameter found"))
+    def test_incomplete_command(self):
+        self.assertTrue(server.has_error("% Incomplete command found at '^' position."))
 
-    def test_incomplete(self):
-        self.assertTrue(server.has_error("Incomplete command found at '^' position."))
+    def test_ambiguous_command(self):
+        self.assertTrue(server.has_error("% Ambiguous command found at '^' position."))
+
+    def test_wrong_parameter(self):
+        self.assertTrue(server.has_error("% Wrong parameter found at '^' position."))
+
+    def test_too_many_parameters(self):
+        self.assertTrue(server.has_error("Too many parameters"))
 
     def test_invalid(self):
         self.assertTrue(server.has_error("Invalid input detected"))
 
-    def test_unrecognized_ignored(self):
-        self.assertFalse(server.has_error("% Unrecognized command found at '^' position."))
+    def test_caret_locator_line(self):
+        self.assertTrue(server.has_error("  ^\n  % Wrong parameter found"))
+
+    def test_unknown_command_not_matched(self):
+        # Cisco 风格措辞不在表内（H3C 用 Unrecognized），按设计不判错
+        self.assertFalse(server.has_error("% Unknown command at '^' position."))
 
     def test_plain_output_ok(self):
         self.assertFalse(server.has_error("<H3C>\nsysname test\n[H3C]"))
+
+    def test_empty_ok(self):
+        self.assertFalse(server.has_error(""))
+
+
+class TestAuth(unittest.TestCase):
+    SECRET = "s3cret-key"
+
+    @staticmethod
+    def _token(exp_delta=300, iat_delta=0, secret=None):
+        claims = {"iss": "netmiko-h3c-client",
+                  "iat": int(time.time()) + iat_delta,
+                  "exp": int(time.time()) + exp_delta}
+        return server.sign_jwt(claims, secret or TestAuth.SECRET)
+
+    def test_no_secret_open_mode(self):
+        old = server.POOL_SECRET
+        server.POOL_SECRET = ""
+        try:
+            self.assertTrue(server.token_valid(""))
+            self.assertTrue(server.token_valid("not-a-jwt"))
+        finally:
+            server.POOL_SECRET = old
+
+    def test_valid_jwt_accepted(self):
+        old = server.POOL_SECRET
+        server.POOL_SECRET = self.SECRET
+        try:
+            self.assertTrue(server.token_valid(self._token()))
+        finally:
+            server.POOL_SECRET = old
+
+    def test_expired_jwt_rejected(self):
+        old = server.POOL_SECRET
+        server.POOL_SECRET = self.SECRET
+        try:
+            self.assertFalse(server.token_valid(self._token(exp_delta=-600)))
+        finally:
+            server.POOL_SECRET = old
+
+    def test_wrong_secret_rejected(self):
+        old = server.POOL_SECRET
+        server.POOL_SECRET = self.SECRET
+        try:
+            self.assertFalse(server.token_valid(self._token(secret="other-secret")))
+        finally:
+            server.POOL_SECRET = old
+
+    def test_tampered_payload_rejected(self):
+        old = server.POOL_SECRET
+        server.POOL_SECRET = self.SECRET
+        try:
+            tok = self._token()
+            seg1, _, sig = tok.split(".")
+            bad_claims = {"iss": "netmiko-h3c-client",
+                          "iat": int(time.time()) - 3600,
+                          "exp": int(time.time()) - 3600}
+            bad_seg2 = server._b64url_encode(json.dumps(bad_claims, separators=(",", ":")).encode("utf-8"))
+            self.assertFalse(server.token_valid(f"{seg1}.{bad_seg2}.{sig}"))
+        finally:
+            server.POOL_SECRET = old
+
+    def test_malformed_rejected(self):
+        old = server.POOL_SECRET
+        server.POOL_SECRET = self.SECRET
+        try:
+            self.assertFalse(server.token_valid("not-a-jwt"))
+            self.assertFalse(server.token_valid("a.b"))
+            self.assertFalse(server.token_valid(""))
+        finally:
+            server.POOL_SECRET = old
 
 
 class TestSanitize(unittest.TestCase):
@@ -109,7 +191,8 @@ class TestExecRequestLimit(unittest.TestCase):
         self.assertEqual(len(req.commands), 5)
 
     def test_six_rejected(self):
-        with self.assertRaises(Exception):
+        # Pydantic v2 的 ValidationError 继承自 ValueError
+        with self.assertRaises(ValueError):
             server.ExecRequest(port=30001, commands=["a"] * 6)
 
 

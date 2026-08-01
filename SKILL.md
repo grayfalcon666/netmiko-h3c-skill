@@ -68,7 +68,7 @@ description: 使用 Netmiko 对新华三（H3C）交换机、路由器等设备�
   - 有认证（通过环境变量）：`python3 <SKILL目录>/scripts/apply_config.py <端口号> "<命令1>" ... --user <用户名> --password-env <环境变量名>`
 - **服务端内置机制**：
   - 所有命令统一使用 `send_command_timing` 执行，不依赖提示符匹配，可兼容任意嵌套深度的子视图（如 `[Client1-segment-routing-ipv6]`）。
-  - 每条命令后服务端自动检测错误关键字（`% Unknown command`、`Incomplete command`、`Error`、`Invalid`、`Wrong parameter` 等），一旦发现立即终止本批并标记 `status: error`。
+  - 每条命令后服务端自动检测错误关键字（`% Unrecognized command`、`% Incomplete command`、`% Ambiguous command`、`Wrong parameter`、`Too many parameters`、`Invalid`、`Error` 等），一旦发现立即终止本批并标记 `status: error`。
   - 单次最多 5 条命令，服务端强制校验，超出直接拒绝。
   - **服务端不会自动回复任何 `[Y/N]` 交互提示**；若设备出现此类提示，必须由你与用户沟通确认（见第 8 条）。
 - **输出格式**：脚本返回 JSON，包含 `status`、`start_view`、`end_view`、`output`、`error`、`failed_index`。

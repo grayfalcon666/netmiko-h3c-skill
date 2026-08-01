@@ -17,21 +17,24 @@ connection_pool_server.py – H3C 设备 Telnet 连接池后端服务
 安全：密码仅存内存，日志只记 端口+操作名+status+耗时，绝不记录命令正文、设备输出或密码。
 """
 
+from __future__ import annotations
+
+import base64
+import binascii
+import hashlib
+import hmac
+import json
+import logging
 import os
 import re
-import sys
-import time
-import json
 import threading
-import logging
-from contextlib import asynccontextmanager
-from typing import List, Optional
+import time
+from contextlib import asynccontextmanager, suppress
 
-from pydantic import BaseModel, Field, field_validator
-from fastapi import FastAPI
 import uvicorn
-import netmiko
+from fastapi import Depends, FastAPI, Header, HTTPException
 from netmiko import ConnectHandler
+from pydantic import BaseModel, Field, field_validator
 
 
 def load_dotenv() -> None:
@@ -127,14 +130,13 @@ def detect_view(conn) -> dict:
     return parse_view(conn.find_prompt())
 
 
-def safe_detect(session) -> Optional[dict]:
+def safe_detect(session) -> dict | None:
     """尽力探测视图；失败（断连/无响应）返回 None。"""
-    try:
-        if session.conn is None:
-            return None
-        return detect_view(session.conn)
-    except Exception:
+    if session.conn is None:
         return None
+    with suppress(Exception):
+        return detect_view(session.conn)
+    return None
 
 
 _PROMPT_RE = re.compile(r'[\[<][^\]>]*[\]>]')
@@ -150,11 +152,10 @@ def probe_alive(session, timeout: float = 3.0) -> bool:
     conn = session.conn
     if conn is None:
         return False
-    try:
+    with suppress(Exception):
         out = conn.send_command_timing("", read_timeout=timeout)
-    except Exception:
-        return False
-    return bool(out) and bool(_PROMPT_RE.search(out))
+        return bool(out) and bool(_PROMPT_RE.search(out))
+    return False
 
 
 # --------------------------------------------------------------------------
@@ -171,7 +172,7 @@ def update_nav_path(nav_path, cmd):
         return out[:-1]
     if low == "system-view":
         return out if out else ["system-view"]
-    if low.startswith("interface ") or low.startswith("vlan "):
+    if low.startswith(("interface ", "vlan ")):
         out.append(cmd)
     return out
 
@@ -219,35 +220,41 @@ def restore_view(conn, nav_path):
             continue
         try:
             out = conn.send_command_timing(cmd, read_timeout=8)
-        except Exception:
+        except Exception:  # noqa: BLE001 — 连接中断/超时即放弃恢复（尽力而为）
             break
         if has_error(out):
             break
-    try:
+    with suppress(Exception):
         return detect_view(conn)
-    except Exception:
-        return None
+    return None
 
 
 # --------------------------------------------------------------------------
 # 命令输出错误检测（从原 apply_config.py 原样迁移）
 # --------------------------------------------------------------------------
+ERROR_PATTERNS = [
+    r"%\s*Unrecognized command",
+    r"%\s*Incomplete command",
+    r"%\s*Ambiguous command",     # 新增
+    r"%\s*Wrong parameter",
+    r"Too many parameters",       # 新增（注意这条前面可能不带 %）
+    r"Invalid",
+    r"Error",
+    r"^\s*\^+\s*$",               # 定位符保留（整行都是 ^）
+]
+
+
 def has_error(output: str) -> bool:
-    """检查命令输出是否包含错误关键字。忽略 % Unrecognized command（由 return 在用户视图引起）。"""
-    cleaned = re.sub(r'^\s*% Unrecognized command.*\n?', '', output or '', flags=re.MULTILINE).strip()
+    """检查命令输出是否包含错误关键字。空输出视为正常。
+
+    注意：% Unrecognized command 同样判为错误（H3C 对未知/错误命令的固定措辞），
+    不再是原先"return 在用户视图触发的可忽略消息"。
+    """
+    cleaned = (output or "").strip()
     if not cleaned:
         return False
-    error_patterns = [
-        r'% Unknown command',
-        r'%\s*\^',                 # 错误定位符
-        r'Incomplete command',
-        r'Invalid',
-        r'Error',
-        r'Too many parameters',
-        r'Wrong parameter',
-    ]
-    for pat in error_patterns:
-        if re.search(pat, cleaned, re.IGNORECASE):
+    for pat in ERROR_PATTERNS:
+        if re.search(pat, cleaned, re.MULTILINE | re.IGNORECASE):
             return True
     return False
 
@@ -255,7 +262,7 @@ def has_error(output: str) -> bool:
 # --------------------------------------------------------------------------
 # 密码脱敏（防御性：即使异常文本含密码也替换掉）
 # --------------------------------------------------------------------------
-def sanitize(text: str, secrets: List[str]) -> str:
+def sanitize(text: str, secrets: list[str]) -> str:
     """把文本中出现过的所有敏感串替换为 ***。"""
     out = text or ""
     for s in secrets:
@@ -270,7 +277,7 @@ def sanitize(text: str, secrets: List[str]) -> str:
 class Session:
     """单个设备（端口）的池化 Telnet 会话。"""
 
-    def __init__(self, port: int, username: str = "", password: Optional[str] = None):
+    def __init__(self, port: int, username: str = "", password: str | None = None):
         self.port = port
         self.username = username
         self.password = password              # 仅内存，绝不落盘/落日志
@@ -279,7 +286,7 @@ class Session:
         self.last_used = time.time()
         self.has_auth = bool(username and password is not None)
         self.device_type = "hp_comware_telnet" if self.has_auth else "generic_telnet"
-        self.nav_path: List[str] = []         # 从用户视图重放到当前视图的导航命令序列（持久化恢复用）
+        self.nav_path: list[str] = []         # 从用户视图重放到当前视图的导航命令序列（持久化恢复用）
 
     @property
     def connected(self) -> bool:
@@ -305,7 +312,7 @@ class ConnectionPool:
             session.nav_path = list(desc.get("nav_path") or [])
         return session
 
-    def get_or_create(self, port: int, username: str = "", password: Optional[str] = None) -> Session:
+    def get_or_create(self, port: int, username: str = "", password: str | None = None) -> Session:
         with self._pool_lock:
             session = self._sessions.get(port)
             if session is None:
@@ -319,10 +326,8 @@ class ConnectionPool:
                 session.conn = None
                 session.password = None
                 if conn:
-                    try:
+                    with suppress(Exception):
                         conn.disconnect()
-                    except Exception:
-                        pass
                 session = self._seed_from_descriptor(Session(port, username, password))
                 self._sessions[port] = session
             return session
@@ -348,10 +353,8 @@ class ConnectionPool:
         if session.conn is not None:
             if probe_alive(session):
                 return
-            try:
+            with suppress(Exception):
                 session.conn.disconnect()
-            except Exception:
-                pass
             session.conn = None
         session.conn = self._create_conn(session)
         # 无认证用 generic_telnet，netmiko 不会自动关分屏，补一次
@@ -372,12 +375,10 @@ class ConnectionPool:
         session.conn = None
         session.password = None
         if conn:
-            try:
+            with suppress(Exception):
                 conn.disconnect()
-            except Exception:
-                pass
 
-    def list_sessions(self, port: Optional[int] = None) -> List[dict]:
+    def list_sessions(self, port: int | None = None) -> list[dict]:
         with self._pool_lock:
             sessions = [self._sessions[port]] if port is not None and port in self._sessions else list(self._sessions.values())
         now = time.time()
@@ -388,7 +389,7 @@ class ConnectionPool:
                 try:
                     alive = probe_alive(s, timeout=3.0)
                     view = safe_detect(s) if alive else None
-                except Exception:
+                except Exception:  # noqa: BLE001 — 防御性兜底（probe_alive/safe_detect 均不抛异常）
                     alive, view = False, None
                 finally:
                     s.lock.release()
@@ -419,12 +420,12 @@ class ConnectionPool:
         with self._pool_lock:
             sessions = list(self._sessions.values())
         for s in sessions:
-            if now - s.last_used > self.idle_timeout:
-                if s.lock.acquire(blocking=False):     # 忙碌中则跳过，避免打断进行中的命令
-                    try:
-                        self.drop_session(s)
-                    finally:
-                        s.lock.release()
+            # 忙碌中则跳过，避免打断进行中的命令（and 短路保证未超时就不加锁）
+            if now - s.last_used > self.idle_timeout and s.lock.acquire(blocking=False):
+                try:
+                    self.drop_session(s)
+                finally:
+                    s.lock.release()
 
     def shutdown_all(self) -> None:
         self._stop_event.set()
@@ -436,10 +437,8 @@ class ConnectionPool:
             s.conn = None
             s.password = None
             if conn:
-                try:
+                with suppress(Exception):
                     conn.disconnect()
-                except Exception:
-                    pass
 
     # ---- 持久化（会话描述符，绝不包含密码）----
     def save_state(self) -> None:
@@ -532,7 +531,7 @@ def _trim_history(path: str) -> None:
         pass
 
 
-def read_history(port: int, limit: Optional[int] = None) -> List[dict]:
+def read_history(port: int, limit: int | None = None) -> list[dict]:
     limit = limit or 100
     try:
         with open(history_path(port), encoding="utf-8") as f:
@@ -580,12 +579,10 @@ def _restore_noauth_in_background() -> None:
         if desc.get("username"):
             continue  # 认证设备懒恢复（等 AI 带凭据调用）
         def _restore(p=port):
-            try:
+            with suppress(Exception):
                 s = pool.get_or_create(p)
                 with s.lock:
                     pool.ensure_connected(s)
-            except Exception:
-                pass
         threading.Thread(target=_restore, daemon=True, name=f"restore-{port}").start()
 
 
@@ -603,24 +600,79 @@ app = FastAPI(title="H3C Netmiko 连接池服务", version="1.0", lifespan=lifes
 
 
 # --------------------------------------------------------------------------
+# 令牌鉴权（可选：设置 NETMIKO_POOL_JWT_SECRET 作为 HS256 签名密钥后，
+# 除 /health 外所有端点要求携带有效 JWT 的 X-Auth-Token）
+# --------------------------------------------------------------------------
+POOL_SECRET = os.environ.get("NETMIKO_POOL_JWT_SECRET", "")
+
+JWT_LEEWAY = 30  # 秒，容忍客户端与服务端时钟偏差
+
+
+def _b64url_encode(data: bytes) -> str:
+    return base64.urlsafe_b64encode(data).rstrip(b"=").decode("ascii")
+
+
+def _b64url_decode(s: str) -> bytes:
+    return base64.urlsafe_b64decode(s + "=" * (-len(s) % 4))
+
+
+def sign_jwt(claims: dict, secret: str) -> str:
+    """签发 HS256 JWT（供客户端/测试使用，服务端只做校验）。"""
+    header = {"alg": "HS256", "typ": "JWT"}
+    seg1 = _b64url_encode(json.dumps(header, separators=(",", ":")).encode("utf-8"))
+    seg2 = _b64url_encode(json.dumps(claims, separators=(",", ":")).encode("utf-8"))
+    sig = hmac.new(secret.encode("utf-8"), f"{seg1}.{seg2}".encode(), hashlib.sha256).digest()
+    return f"{seg1}.{seg2}.{_b64url_encode(sig)}"
+
+
+def token_valid(provided: str) -> bool:
+    """校验 JWT：未配置密钥（开放模式）恒真；否则检查签名 + exp 过期 + iat 防未来。纯函数可单测。"""
+    if not POOL_SECRET:
+        return True
+    parts = provided.split(".")
+    if len(parts) != 3:
+        return False
+    seg1, seg2, sig = parts
+    expected = _b64url_encode(
+        hmac.new(POOL_SECRET.encode("utf-8"), f"{seg1}.{seg2}".encode(), hashlib.sha256).digest())
+    if not hmac.compare_digest(sig, expected):
+        return False
+    try:
+        payload = json.loads(_b64url_decode(seg2).decode("utf-8"))
+    except (binascii.Error, UnicodeDecodeError, json.JSONDecodeError, ValueError):
+        return False
+    now = time.time()
+    exp = payload.get("exp")
+    if not isinstance(exp, (int, float)) or now > exp + JWT_LEEWAY:
+        return False
+    iat = payload.get("iat")
+    return not (iat is not None and now < iat - JWT_LEEWAY)
+
+
+def require_auth(x_auth_token: str = Header(default="", alias="X-Auth-Token")) -> None:
+    if not token_valid(x_auth_token):
+        raise HTTPException(status_code=401, detail="unauthorized")
+
+
+# --------------------------------------------------------------------------
 # 请求模型
 # --------------------------------------------------------------------------
 class ConnectRequest(BaseModel):
     port: int
-    username: Optional[str] = None
-    password: Optional[str] = None
+    username: str | None = None
+    password: str | None = None
 
 
 class ExecRequest(BaseModel):
     port: int
-    commands: List[str] = Field(default_factory=list)
+    commands: list[str] = Field(default_factory=list)
     timeout: int = 5
-    username: Optional[str] = None
-    password: Optional[str] = None
+    username: str | None = None
+    password: str | None = None
 
     @field_validator("commands")
     @classmethod
-    def _limit_commands(cls, v: List[str]) -> List[str]:
+    def _limit_commands(cls, v: list[str]) -> list[str]:
         if len(v) > MAX_COMMANDS:
             raise ValueError(f"单次最多执行 {MAX_COMMANDS} 条命令")
         return v
@@ -628,11 +680,11 @@ class ExecRequest(BaseModel):
 
 class ExploreRequest(BaseModel):
     port: int
-    commands: List[str] = Field(default_factory=list)   # 前置子视图命令
+    commands: list[str] = Field(default_factory=list)   # 前置子视图命令
     base: str                                           # 待探索的不完整命令
     timeout: int = 5
-    username: Optional[str] = None
-    password: Optional[str] = None
+    username: str | None = None
+    password: str | None = None
 
 
 class DisconnectRequest(BaseModel):
@@ -649,20 +701,20 @@ def health() -> dict:
     return {"status": "ok", "sessions": n}
 
 
-@app.get("/status")
-def status(port: Optional[int] = None) -> dict:
+@app.get("/status", dependencies=[Depends(require_auth)])
+def status(port: int | None = None) -> dict:
     return {"status": "success", "sessions": pool.list_sessions(port)}
 
 
-@app.get("/history")
-def history_endpoint(port: Optional[int] = None, limit: Optional[int] = None) -> dict:
+@app.get("/history", dependencies=[Depends(require_auth)])
+def history_endpoint(port: int | None = None, limit: int | None = None) -> dict:
     """返回指定端口的历史消息（命令+输出，最近 limit 条，默认 100）。"""
     if port is None:
         return {"status": "error", "error": "缺少 port 参数", "history": []}
     return {"status": "success", "port": port, "history": read_history(port, limit)}
 
 
-@app.post("/connect")
+@app.post("/connect", dependencies=[Depends(require_auth)])
 def connect(req: ConnectRequest) -> dict:
     t0 = time.time()
     username = req.username or ""
@@ -677,7 +729,7 @@ def connect(req: ConnectRequest) -> dict:
         append_history(session.port, _history_entry(session, "connect", [], [], "success", view, view))
         logger.info("op=connect port=%s status=success dur_ms=%s", req.port, int((time.time() - t0) * 1000))
         return {"status": "success", "port": req.port, "view": view}
-    except Exception as e:
+    except Exception as e:  # noqa: BLE001 — 连接设备异常种类繁多，一律结构化返回
         pool.drop_session(session)
         append_history(session.port, _history_entry(
             session, "connect", [], [], "error", None, None,
@@ -686,7 +738,7 @@ def connect(req: ConnectRequest) -> dict:
         return {"status": "error", "port": req.port, "view": None, "error": sanitize(str(e), secrets)}
 
 
-@app.post("/exec")
+@app.post("/exec", dependencies=[Depends(require_auth)])
 def exec_endpoint(req: ExecRequest) -> dict:
     t0 = time.time()
     username = req.username or ""
@@ -702,7 +754,7 @@ def exec_endpoint(req: ExecRequest) -> dict:
         with session.lock:
             try:
                 pool.ensure_connected(session)
-            except Exception as e:
+            except Exception as e:  # noqa: BLE001 — 连接设备异常统一转结构化错误
                 pool.drop_session(session)
                 error = "连接设备失败: " + sanitize(str(e), secrets)
                 _finish_exec(session, start_view, None, [], status, None, error, req, t0)
@@ -715,7 +767,7 @@ def exec_endpoint(req: ExecRequest) -> dict:
                     continue
                 try:
                     out = session.conn.send_command_timing(cmd, read_timeout=req.timeout)
-                except Exception as e:
+                except Exception as e:  # noqa: BLE001 — 命令执行异常统一转结构化错误
                     end_view = safe_detect(session)
                     failed_index = i
                     if end_view is None:
@@ -736,7 +788,7 @@ def exec_endpoint(req: ExecRequest) -> dict:
             end_view = safe_detect(session)
             session.last_used = time.time()
             status = "success"
-    except Exception as e:
+    except Exception as e:  # noqa: BLE001 — 兜底：任何异常均返回结构化 JSON
         pool.drop_session(session)
         error = "未知错误: " + sanitize(str(e), secrets)
     _finish_exec(session, start_view, end_view, outputs, status, failed_index, error, req, t0)
@@ -764,7 +816,7 @@ def _finish_exec(session, start_view, end_view, outputs, status, failed_index, e
                 session.port, status, int((time.time() - t0) * 1000))
 
 
-@app.post("/disconnect")
+@app.post("/disconnect", dependencies=[Depends(require_auth)])
 def disconnect(req: DisconnectRequest) -> dict:
     with pool._pool_lock:
         session = pool._sessions.pop(req.port, None)
@@ -773,10 +825,8 @@ def disconnect(req: DisconnectRequest) -> dict:
         session.conn = None
         session.password = None
         if conn:
-            try:
+            with suppress(Exception):
                 conn.disconnect()
-            except Exception:
-                pass
     pool.remove_descriptor(req.port)
     append_history(req.port, {
         "ts": time.strftime("%Y-%m-%dT%H:%M:%S"),
@@ -800,7 +850,7 @@ def extract_help_lines(raw_output: str) -> str:
     return "\n".join(lines)
 
 
-def parse_help_output(output: str) -> List[str]:
+def parse_help_output(output: str) -> list[str]:
     ignore_pattern = re.compile(r'^\s*(%|Error|----|<cr>|\^|$)')
     options = []
     for line in output.splitlines():
@@ -850,9 +900,7 @@ def explore_syntax(conn, base_cmd: str):
                     f"{current_prefix} 1 ?", strip_prompt=False, strip_command=False
                 )
                 probe_output = extract_help_lines(probe_raw)
-                if re.search(r'% Unknown command|% Unrecognized command|Error', probe_raw, re.IGNORECASE):
-                    return True, chain, f"'{current_prefix}' 后参数为终点，停止探索。"
-                elif not parse_help_output(probe_output):
+                if re.search(r'% Unknown command|% Unrecognized command|Error', probe_raw, re.IGNORECASE) or not parse_help_output(probe_output):
                     return True, chain, f"'{current_prefix}' 后参数为终点，停止探索。"
                 else:
                     chain.append({"prefix": current_prefix, "options": [opt], "type": "parameter"})
@@ -872,13 +920,13 @@ def _finish_explore(session, req, start_view, end_view, status, chain, info, err
     """explore 批末副作用：对账导航路径、写描述符、记历史、记日志。"""
     pool.sync_session(session, end_view)
     append_history(session.port, _history_entry(
-        session, "explore", list(req.commands) + [req.base], [info] if info else [],
+        session, "explore", [*list(req.commands), req.base], [info] if info else [],
         status, start_view, end_view, None, error))
     logger.info("op=explore port=%s status=%s dur_ms=%s",
                 session.port, status, int((time.time() - t0) * 1000))
 
 
-@app.post("/explore")
+@app.post("/explore", dependencies=[Depends(require_auth)])
 def explore_endpoint(req: ExploreRequest) -> dict:
     t0 = time.time()
     username = req.username or ""
@@ -890,7 +938,7 @@ def explore_endpoint(req: ExploreRequest) -> dict:
         with session.lock:
             try:
                 pool.ensure_connected(session)
-            except Exception as e:
+            except Exception as e:  # noqa: BLE001 — 连接设备异常统一转结构化错误
                 pool.drop_session(session)
                 return {"status": "error", "error": "连接设备失败: " + sanitize(str(e), secrets),
                         "chain": [], "info": "", "start_view": None, "end_view": None}
@@ -913,7 +961,7 @@ def explore_endpoint(req: ExploreRequest) -> dict:
         _finish_explore(session, req, start_view, end_view, status, chain, info, error, t0)
         return {"status": status, "chain": chain, "info": info,
                 "start_view": start_view, "end_view": end_view}
-    except Exception as e:
+    except Exception as e:  # noqa: BLE001 — 兜底：任何异常均返回结构化 JSON
         pool.drop_session(session)
         return {"status": "error", "error": sanitize(str(e), secrets), "chain": [], "info": "",
                 "start_view": start_view, "end_view": None}
@@ -925,6 +973,8 @@ def explore_endpoint(req: ExploreRequest) -> dict:
 def main() -> None:
     host = os.environ.get("NETMIKO_POOL_HOST", "127.0.0.1")
     port = int(os.environ.get("NETMIKO_POOL_PORT", "8765"))
+    if not POOL_SECRET:
+        print("警告: 未设置 NETMIKO_POOL_JWT_SECRET，运行在无鉴权模式（仅本机可访问）。", flush=True)
     print(f"连接池服务启动: http://{host}:{port}  (设备地址 {DEVICE_IP})", flush=True)
     uvicorn.run(app, host=host, port=port, log_level="info")
 

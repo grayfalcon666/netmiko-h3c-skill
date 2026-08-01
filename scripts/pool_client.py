@@ -15,13 +15,19 @@ pool_client.py – 连接池服务 HTTP 客户端（纯 stdlib，无第三方依
   python3 pool_client.py history <端口> [--limit N]
 """
 
+from __future__ import annotations
+
+import argparse
+import base64
+import getpass
+import hashlib
+import hmac
+import json
 import os
 import sys
-import json
-import argparse
-import getpass
-import urllib.request
+import time
 import urllib.error
+import urllib.request
 
 
 def load_dotenv() -> None:
@@ -49,6 +55,26 @@ def load_dotenv() -> None:
 load_dotenv()
 
 POOL_URL = os.environ.get("NETMIKO_POOL_URL", "http://127.0.0.1:8765")
+POOL_SECRET = os.environ.get("NETMIKO_POOL_JWT_SECRET", "")
+
+JWT_TTL = 300  # 秒，令牌有效期（每个请求重新签发，短时效自失效）
+
+
+def _b64url_encode(data: bytes) -> str:
+    return base64.urlsafe_b64encode(data).rstrip(b"=").decode("ascii")
+
+
+def _make_token() -> str:
+    """以 NETMIKO_POOL_JWT_SECRET 为 HS256 密钥签发短时效 JWT；未配置则返回空（开放模式）。"""
+    if not POOL_SECRET:
+        return ""
+    now = int(time.time())
+    header = {"alg": "HS256", "typ": "JWT"}
+    claims = {"iss": "netmiko-h3c-client", "iat": now, "exp": now + JWT_TTL}
+    seg1 = _b64url_encode(json.dumps(header, separators=(",", ":")).encode("utf-8"))
+    seg2 = _b64url_encode(json.dumps(claims, separators=(",", ":")).encode("utf-8"))
+    sig = hmac.new(POOL_SECRET.encode("utf-8"), f"{seg1}.{seg2}".encode(), hashlib.sha256).digest()
+    return f"{seg1}.{seg2}.{_b64url_encode(sig)}"
 
 
 class PoolError(Exception):
@@ -58,14 +84,21 @@ class PoolError(Exception):
 # --------------------------------------------------------------------------
 # 底层请求
 # --------------------------------------------------------------------------
-def _request(method: str, path: str, payload: dict = None, timeout: int = 15) -> dict:
+def _request(method: str, path: str, payload: dict | None = None, timeout: int = 15) -> dict:
     data = json.dumps(payload).encode("utf-8") if payload is not None else None
     req = urllib.request.Request(POOL_URL + path, data=data, method=method)
     if payload is not None:
         req.add_header("Content-Type", "application/json")
+    tok = _make_token()
+    if tok:
+        req.add_header("X-Auth-Token", tok)
     try:
         with urllib.request.urlopen(req, timeout=timeout) as resp:
             return json.loads(resp.read().decode("utf-8"))
+    except urllib.error.HTTPError as e:
+        raise PoolError(
+            f"连接池服务拒绝访问（HTTP {e.code}）。请检查 NETMIKO_POOL_JWT_SECRET 是否与服务端一致。"
+        ) from e
     except urllib.error.URLError as e:
         raise PoolError(
             f"连接池服务未启动或不可达（{POOL_URL}）。请先运行："
@@ -82,7 +115,7 @@ def health() -> dict:
     return _request("GET", "/health")
 
 
-def connect(port: int, username: str = None, password: str = None) -> dict:
+def connect(port: int, username: str | None = None, password: str | None = None) -> dict:
     payload = {"port": port}
     if username is not None:
         payload["username"] = username
@@ -91,8 +124,8 @@ def connect(port: int, username: str = None, password: str = None) -> dict:
     return _request("POST", "/connect", payload)
 
 
-def exec_cmds(port: int, commands: list, username: str = None,
-              password: str = None, timeout: int = 5) -> dict:
+def exec_cmds(port: int, commands: list, username: str | None = None,
+              password: str | None = None, timeout: int = 5) -> dict:
     payload = {"port": port, "commands": list(commands), "timeout": timeout}
     if username is not None:
         payload["username"] = username
@@ -101,8 +134,8 @@ def exec_cmds(port: int, commands: list, username: str = None,
     return _request("POST", "/exec", payload)
 
 
-def explore(port: int, commands: list, base: str, username: str = None,
-            password: str = None, timeout: int = 5) -> dict:
+def explore(port: int, commands: list, base: str, username: str | None = None,
+            password: str | None = None, timeout: int = 5) -> dict:
     payload = {"port": port, "commands": list(commands), "base": base, "timeout": timeout}
     if username is not None:
         payload["username"] = username
@@ -115,12 +148,12 @@ def disconnect(port: int) -> dict:
     return _request("POST", "/disconnect", {"port": port})
 
 
-def status(port: int = None) -> dict:
+def status(port: int | None = None) -> dict:
     path = "/status" if port is None else f"/status?port={port}"
     return _request("GET", path)
 
 
-def history(port: int, limit: int = None) -> dict:
+def history(port: int, limit: int | None = None) -> dict:
     path = f"/history?port={port}"
     if limit is not None:
         path += f"&limit={limit}"

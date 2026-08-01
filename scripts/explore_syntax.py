@@ -14,9 +14,9 @@ H3C 命令语法探索器（连接池客户端版）
   有认证：python3 explore_syntax.py <端口> ... --user <用户名> [--password-env <环境变量名>]
 """
 
-import sys
-import json
 import argparse
+import json
+import sys
 
 import pool_client
 

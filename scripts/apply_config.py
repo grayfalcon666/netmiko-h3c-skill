@@ -15,9 +15,9 @@ apply_config.py – 通过连接池服务对 H3C 设备执行配置命令（最�
            （密码交互输入，或用 --password-env <环境变量名>）
 """
 
-import sys
-import json
 import argparse
+import json
+import sys
 
 import pool_client
 

@@ -71,6 +71,7 @@ It listens on `127.0.0.1:8765` by default. Overridable environment variables —
 - `NETMIKO_POOL_DEVICE_IP`: device address (default `192.168.56.1`)
 - `NETMIKO_POOL_URL`: client-side service URL (default `http://127.0.0.1:8765`)
 - `NETMIKO_POOL_DATA_DIR`: persistence data directory (default `server/data/`)
+- `NETMIKO_POOL_JWT_SECRET`: HS256 signing secret (optional but recommended). Client scripts use it to sign a short-lived JWT (default 5-minute TTL) sent in the `X-Auth-Token` header; every endpoint except `/health` validates it.
 
 Use `scripts/pool_client.py` to check and manage the service:
 
@@ -160,7 +161,7 @@ Output format (JSON). `start_view`/`end_view` describe the device view before/af
 }
 ```
 
-If `status` is `error`, command execution failed (e.g. `% Unknown command`). Stop subsequent operations and verify commands or consult relevant personnel.
+If `status` is `error`, command execution failed (e.g. `% Unrecognized command`). Stop subsequent operations and verify commands or consult relevant personnel.
 
 ### 4. Command Syntax Exploration (optional)
 
@@ -194,6 +195,7 @@ All devices are reachable via unified address `192.168.56.1`. Different port num
 ## Security & High-Risk Operations
 
 - **Password Protection**: Never store plaintext passwords in command lines, scripts or persistent files. Passwords live only in the connection-pool server memory, travel over the loopback interface, and are never written to logs or echoed. Using `--password-env` or interactive prompt is strongly recommended.
+- **Token Authentication**: Set `NETMIKO_POOL_JWT_SECRET` to enable (used as an HS256 signing secret). Client scripts auto-sign a short-lived JWT (default 5-minute TTL) into the `X-Auth-Token` header; the server validates the signature and expiry, returning 401 for invalid/expired tokens. If unset, the server runs in open mode (loopback only, with a startup warning).
 - **Secondary Confirmation for Risky Commands**: Commands including `reboot`, bulk configuration removal via `undo`, `reset`, `erase` and other operations that may cause service interruption or trigger `[Y/N]` interactive prompts **must acquire explicit user authorization before execution**. The server will not automatically answer confirmation prompts. Do not proceed without permission.
 
 ## Script Detailed Description
@@ -221,7 +223,7 @@ All devices are reachable via unified address `192.168.56.1`. Different port num
 - Function: send configuration commands (≤5) to the pool service, returning `start_view`/`end_view`.
 - Features:
   - Uses `send_command_timing` independent of prompt patterns, compatible with arbitrary nested sub-views.
-  - Server automatically detects error keywords in each command output (e.g. `% Unknown command`). Terminate immediately and return `error` once detected.
+  - Server automatically detects error keywords in each command output (e.g. `% Unrecognized command`, `% Incomplete command`, `Wrong parameter`, `Too many parameters`). Terminate immediately and return `error` once detected.
   - Single call supports maximum 5 commands, enforced server-side.
 - Views are not auto-switched: the caller must issue navigation commands explicitly based on `start_view`/`end_view`.
 

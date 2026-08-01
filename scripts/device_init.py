@@ -14,9 +14,9 @@
 注意：会话保持池化，版本查验后不会断开，可继续下发配置。
 """
 
-import sys
-import json
 import argparse
+import json
+import sys
 
 import pool_client
 

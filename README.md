@@ -68,6 +68,7 @@ uv run server/connection_pool_server.py
 - `NETMIKO_POOL_DEVICE_IP`：设备地址，默认 `192.168.56.1`
 - `NETMIKO_POOL_URL`：客户端连接的服务地址（默认 `http://127.0.0.1:8765`）
 - `NETMIKO_POOL_DATA_DIR`：持久化数据目录（默认 `server/data/`）
+- `NETMIKO_POOL_JWT_SECRET`：HS256 签名密钥（可选但推荐）。客户端用它签发短时效 JWT（默认 5 分钟有效）放入 `X-Auth-Token` header，除 `/health` 外所有端点校验之
 
 启动后可用 `scripts/pool_client.py` 检查与管理系统：
 
@@ -144,7 +145,7 @@ python3 scripts/pool_client.py history <端口>  # 读取该端口会话历史�
   "failed_index": null
 }
 ```
-若 `status` 为 `error`，说明命令执行过程中出现错误（如 `% Unknown command`），请停止后续操作，检查命令或联系用户。
+若 `status` 为 `error`，说明命令执行过程中出现错误（如 `% Unrecognized command`），请停止后续操作，检查命令或联系用户。
 
 ### 4. 命令语法探索（可选）
 
@@ -175,6 +176,7 @@ grep -rl "vlan" references/CMD-help/ | grep -i config
 ## 安全与高危操作
 
 - **密码保护**：严禁在命令行、脚本或任何持久化文件中明文写入密码。密码仅保存在连接池服务内存中，经本机回环传输，服务端不落日志、不回显。强烈建议使用 `--password-env` 或脚本交互提示输入。
+- **令牌鉴权**：建议设置 `NETMIKO_POOL_JWT_SECRET`（作为 HS256 签名密钥）。客户端每个请求自动签发短时效 JWT（默认 5 分钟有效）放入 `X-Auth-Token` header；服务端校验签名与有效期，非法/过期返回 401。未设置时运行在无鉴权模式（仅本机可访问，启动会打印警告）。
 - **高危命令二次确认**：对于 `reboot`、`undo` 清空大段配置、`reset`、`erase` 等可能破坏业务或触发 `[Y/N]` 交互的命令，**必须**在执行前获得用户明确的授权。服务端不会替您回答任何确认提示，未经允许请勿继续执行。
 
 ## 会话持久化与历史
@@ -211,7 +213,7 @@ grep -rl "vlan" references/CMD-help/ | grep -i config
 - 功能：向连接池服务下发配置命令（≤5 条），返回 `start_view`/`end_view`。
 - 特点：
   - 使用 `send_command_timing` 不依赖提示符，可适应任意嵌套子视图。
-  - 服务端自动检测每一条命令的输出是否包含错误关键字（如 `% Unknown command`），一旦发现立即终止并返回 `error`。
+  - 服务端自动检测每一条命令的输出是否包含错误关键字（如 `% Unrecognized command`），一旦发现立即终止并返回 `error`。
   - 单次调用支持 ≤5 条命令，服务端强制校验。
 - 视图不自动切换：调用方需依据 `start_view`/`end_view` 显式下发导航命令。
 

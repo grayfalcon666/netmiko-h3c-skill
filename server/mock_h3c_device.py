@@ -22,9 +22,8 @@ Username:/Password:（hp_comware_telnet 流程）。
   python3 server/mock_h3c_device.py --port 2324 --require-auth --hostname SW-1
 """
 
-import re
-import sys
 import argparse
+import re
 import socketserver
 
 # 帮助选项表：命令前缀 -> 下一级选项（<x> 表示参数占位）
@@ -180,7 +179,7 @@ class H3CDeviceHandler(socketserver.StreamRequestHandler):
         elif cmd.startswith("dis "):
             pass                              # 通用 display：模拟空结果
         else:
-            self.send("% Unknown command at '^' position.")
+            self.send("% Unrecognized command found at '^' position.")
         self.send(self._prompt())
 
     def _send_version(self):
