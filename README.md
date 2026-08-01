@@ -162,11 +162,13 @@ python3 scripts/explore_syntax.py <端口号> "前置子视图命令..." "待探
 
 执行任何配置前，先查询命令格式：
 ```bash
-python3 scripts/search_cmd.py "<关键词>"           # 返回 JSON 定位
-python3 scripts/search_cmd.py --full "<关键词>"     # 直接输出命令完整帮助文本
+python3 scripts/search_cmd.py "<关键词>"            # 返回 JSON 定位
+python3 scripts/search_cmd.py --full "<关键词>"      # 直接输出命令完整帮助文本
 python3 scripts/search_cmd.py --exact --full "<关键词>"  # 精确匹配命令名 + 完整帮助文本
+python3 scripts/search_cmd.py --view "IKE profile视图"   # 只看指定视图下的命令
+python3 scripts/search_cmd.py --file "IPsec" "ike"       # 只看指定模块路径下的命令
 ```
-不带 `--full` 返回 JSON 数组（每项含 `command`、`view`、`file`、`line`），据此用 Read 读取对应行获取精确命令格式；带 `--full` 直接从索引行到下一个索引行之间输出完整文档块，无需再读文件。匹配模式互斥、默认子串匹配：`--exact` 命令名完全相等、`--prefix` 以关键词开头、`--suffix` 以关键词结尾、`--word` 关键词作为完整单词出现（不命中 `ipsec` 之类子串）、`--regex` 正则表达式匹配。索引缓存（`references/.cmd_cache.jsonl`）经 git status 增量更新，非 Git 环境回退到文件哈希比对；`.env` 中的 `NETMIKO_CMD_DOC_AUTO_REFRESH`（默认 `true`）控制是否开启动态检查更新。
+不带 `--full` 返回 JSON 数组（每项含 `command`、`view`、`file`、`line`），据此用 Read 读取对应行获取精确命令格式；带 `--full` 直接从索引行到下一个索引行之间输出完整文档块，无需再读文件。匹配模式（`--exact` 命令名完全相等（自动剥离索引里的括号注记与花括号备选，如 `--exact "ipsec policy"` 命中 `ipsec { ipv6-policy \| policy }`）、`--prefix` 以关键词开头、`--suffix` 以关键词结尾、`--word` 关键词作为完整单词出现（不命中 `ipsec` 之类子串）、`--regex` 正则表达式匹配）五者互斥、默认子串匹配；`--view <视图>`/`--file <模块>` 是过滤条件，可与任一匹配模式叠加。多词默认 AND：空格分隔的关键词必须全部出现在「命令名 + 视图名」的拼接字符串中（如 `rule (IPv4 advanced ACL view)` 的搜索文本为 `rule IPv4高级ACL视图`，查 `"rule ipv4"` 可命中）。无匹配时返回 `{"suggestions": [前 3 个相似命令]}` 供提示用户；带 `--full` 时每个建议命令额外带 `syntax` 字段（该命令【命令】段落前 5 行），看一眼即知语法、无需再读文件。索引缓存（`references/.cmd_cache.jsonl`）经 git status 增量更新，非 Git 环境回退到文件哈希比对；`.env` 中的 `NETMIKO_CMD_DOC_AUTO_REFRESH`（默认 `true`）控制是否开启动态检查更新。
 
 **例外**：`references/high-frequency-commands.md` 中列出的命令已确认为通用 H3C 语法，可直接使用，无需查阅文档。
 
@@ -207,7 +209,7 @@ python3 scripts/search_cmd.py --exact --full "<关键词>"  # 精确匹配命令
 ### `scripts/search_cmd.py`
 - 功能：命令文档查询脚本（纯标准库，独立运行，无需连接池服务）。查询 `references/CMD-help` 的命令格式定位（`command`/`view`/`file`/`line`）；`--full` 模式直接从索引行到下一个索引行之间输出完整文档块。
 - 缓存：`references/.cmd_cache.jsonl`，经 git status 增量更新（非 Git 环境回退文件哈希比对）；`.env` 的 `NETMIKO_CMD_DOC_AUTO_REFRESH`（默认 `true`）控制是否开启动态检查更新。
-- 用法：`python3 scripts/search_cmd.py [--full] [--exact|--prefix|--suffix|--word|--regex] "<关键词>"` → `--full` 输出命令完整帮助文本，否则输出 JSON 数组；匹配模式互斥，默认子串匹配，详见上文命令参考文档。
+- 用法：`python3 scripts/search_cmd.py [--full] [--exact|--prefix|--suffix|--word|--regex] [--view <视图>] [--file <模块>] "<关键词>"` → `--full` 输出命令完整帮助文本，否则输出 JSON 数组；匹配模式互斥、默认子串匹配，多词关键词默认 AND，无匹配返回 `{"suggestions": [前 3 个相似命令]}`，详见上文命令参考文档。
 
 ### `scripts/pool_client.py`
 - 功能：连接池服务的纯标准库 HTTP 客户端，封装 `health`/`status`/`disconnect`/`history`/`exec_cmds`/`connect`/`explore`，并提供统一的认证参数解析（`--user`/`--password`/`--password-env`）。

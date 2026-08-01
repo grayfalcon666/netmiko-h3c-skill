@@ -31,19 +31,32 @@ description: 使用 Netmiko 对新华三（H3C）交换机、路由器等设备�
 ### 二、命令格式查询
 
 - **查询命令格式**
-  统一使用 `python3 <SKILL_DIR>/scripts/search_cmd.py [--full] [--exact|--prefix|--suffix|--word|--regex] "<关键词>"`
+  统一使用 `python3 <SKILL_DIR>/scripts/search_cmd.py [--full] [--exact|--prefix|--suffix|--word|--regex] [--view <视图>] [--file <模块>] "<关键词...>"`
   - 不带 `--full`：返回 JSON 数组 `[{command, view, file, line}]`，可据此用 Read 工具查看文档。
   - 带 `--full`：直接输出每个匹配命令的完整帮助文本片段，无需再读取文件。**优先使用 `--full` 一次获取格式，若结果太长再考虑无参数筛选**。
-  - 匹配模式互斥，默认子串匹配，由本 Agent 按需选用：
-    - `--exact` 命令名完全相等（如 `--exact "vlan"` 只命中 `vlan`）
+  - **匹配模式**（`--exact`/`--prefix`/`--suffix`/`--word`/`--regex` 五者互斥，只能选其一；默认子串匹配）：
+    - `--exact` 命令名完全相等（自动剥离索引里的括号注记与花括号备选，如 `--exact "ipsec policy"` 命中 `ipsec { ipv6-policy \| policy }`）
     - `--prefix` 命令名以关键词开头（如 `--prefix "display ip"`）
     - `--suffix` 命令名以关键词结尾（如 `--suffix "brief"`）
     - `--word` 关键词作为完整单词出现（如 `--word "ip"` 命中 `ip address`，不命中 `ipsec`）
     - `--regex` 正则表达式匹配（如 `--regex "^display.*brief$"`）
+  - **过滤条件**（`--view` 与 `--file` 不互斥，可与任一匹配模式叠加）：
+    - `--view <视图>` 只看指定视图下的命令（如 `--view "IKE profile视图"`）
+    - `--file <模块>` 只看指定文件/模块下的命令（如 `--file "IPsec"`）
+  - **多词默认 AND**：空格分隔的关键词必须全部出现在「命令名 + 视图名」的拼接字符串中（如 `rule (IPv4 advanced ACL view)` 的搜索文本为 `rule IPv4高级ACL视图`，查 `"rule ipv4"` 可命中）。
+  - **查询策略优先级**（避免从多模式中瞎选）：
+    0. 命令在 `references/high-frequency-commands.md` 白名单中 → 已确认为通用 H3C 语法，直接使用，无需查询文档
+    1. 已知确切命令名 → `--exact --full`
+    2. 知道模块 + 部分命令名 → `--file <模块> --full "<多词 AND>"`
+    3. 只知道功能关键词 → 多词 AND，不加匹配模式
+    4. 以上都查不到 → 看 `suggestions` 或按通用语法执行
   - **绝对禁止**自行在文件系统中 `grep`、`ls`、遍历目录搜索命令文档。
 
-- **无文档时的处理**  
-  若返回空数组，但确认为 H3C 通用语法，需告知用户“未找到文档，将按通用语法执行”并展示命令，获确认后继续。
+- **无文档时的处理**
+  若无匹配：返回 `{"suggestions": [前3个相似命令]}`；带 `--full` 时每个建议命令额外带 `syntax` 字段
+  - suggestions 非空 → 向用户展示建议命令（如“是否想查 acl 或 rule（IPv4 advanced ACL view）？”），按其意图用建议命令重新查询。
+  - suggestions 为空、且确认为 H3C 通用语法 → 告知用户“未找到文档，将按通用语法执行”并展示命令，获确认后继续。
+  - **`--file <模块>` 过滤为空且返回 `suggested_modules`** → 立即改用建议的模块名重新查询（如 `--file "ike"` 返回 `suggested_modules: ["IPsec"]`，则改 `--file "IPsec"` 重查），不要试错。
 
 - **未知语法探索**  
   当命令后续参数无法确定时，必须使用：  
