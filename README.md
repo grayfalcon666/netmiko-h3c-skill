@@ -27,7 +27,8 @@ netmiko-h3c/
 │   ├── pool_client.py            # 连接池服务 HTTP 客户端（纯标准库）+ 生命周期 CLI
 │   ├── apply_config.py           # 配置下发通用脚本（服务客户端）
 │   ├── device_init.py            # 设备初始化与版本查询脚本（服务客户端）
-│   └── explore_syntax.py         # 命令语法探索脚本（服务客户端）
+│   ├── explore_syntax.py         # 命令语法探索脚本（服务客户端）
+│   └── search_cmd.py             # 命令文档查询脚本（纯标准库，索引缓存增量更新）
 ├── server/
 │   ├── connection_pool_server.py # 连接池后端服务（FastAPI + uvicorn）
 │   ├── test_pool_utils.py        # 纯函数单元测试（无需真实设备）
@@ -159,15 +160,17 @@ python3 scripts/explore_syntax.py <端口号> "前置子视图命令..." "待探
 
 ## 命令参考文档
 
-执行任何配置前，请先查阅 `references/CMD-help` 目录下对应的功能模块。例如需要添加 VLAN：
+执行任何配置前，先查询命令格式：
 ```bash
-grep -rl "vlan" references/CMD-help/ | grep -i config
+python3 scripts/search_cmd.py "<关键词>"           # 返回 JSON 定位
+python3 scripts/search_cmd.py --full "<关键词>"     # 直接输出命令完整帮助文本
+python3 scripts/search_cmd.py --exact --full "<关键词>"  # 精确匹配命令名 + 完整帮助文本
 ```
-然后读取匹配的 `.md` 文件获取精确的命令格式。
+不带 `--full` 返回 JSON 数组（每项含 `command`、`view`、`file`、`line`），据此用 Read 读取对应行获取精确命令格式；带 `--full` 直接从索引行到下一个索引行之间输出完整文档块，无需再读文件。匹配模式互斥、默认子串匹配：`--exact` 命令名完全相等、`--prefix` 以关键词开头、`--suffix` 以关键词结尾、`--word` 关键词作为完整单词出现（不命中 `ipsec` 之类子串）、`--regex` 正则表达式匹配。索引缓存（`references/.cmd_cache.jsonl`）经 git status 增量更新，非 Git 环境回退到文件哈希比对；`.env` 中的 `NETMIKO_CMD_DOC_AUTO_REFRESH`（默认 `true`）控制是否开启动态检查更新。
 
 **例外**：`references/high-frequency-commands.md` 中列出的命令已确认为通用 H3C 语法，可直接使用，无需查阅文档。
 
-若在文档中未找到对应命令，但可确定是 H3C 标准语法，请在执行前明确告知用户“未找到对应文档，将按通用语法执行”并展示具体命令，获得确认后继续。
+若 `search_cmd.py` 返回空数组但可确定是 H3C 标准语法，请在执行前明确告知用户”未找到对应文档，将按通用语法执行”并展示具体命令，获得确认后继续。
 
 ## 连接与端口说明
 
@@ -200,6 +203,11 @@ grep -rl "vlan" references/CMD-help/ | grep -i config
 - 机制：懒建连（连接中断自动重建，存活判定用有界往返探测，能发现设备重启/半开导致的死连接）、每端口一把锁（同端口串行、不同端口并行）、空闲超时自动回收（默认 300s）、优雅关闭。
 - 持久化：会话描述符（端口/用户名/导航路径，**不含密码**）与历史消息落在 `server/data/`（可用 `NETMIKO_POOL_DATA_DIR` 覆盖），重启后自动恢复视图。
 - 启动：`uv run server/connection_pool_server.py`（依赖经 PEP 723 自动安装）。
+
+### `scripts/search_cmd.py`
+- 功能：命令文档查询脚本（纯标准库，独立运行，无需连接池服务）。查询 `references/CMD-help` 的命令格式定位（`command`/`view`/`file`/`line`）；`--full` 模式直接从索引行到下一个索引行之间输出完整文档块。
+- 缓存：`references/.cmd_cache.jsonl`，经 git status 增量更新（非 Git 环境回退文件哈希比对）；`.env` 的 `NETMIKO_CMD_DOC_AUTO_REFRESH`（默认 `true`）控制是否开启动态检查更新。
+- 用法：`python3 scripts/search_cmd.py [--full] [--exact|--prefix|--suffix|--word|--regex] "<关键词>"` → `--full` 输出命令完整帮助文本，否则输出 JSON 数组；匹配模式互斥，默认子串匹配，详见上文命令参考文档。
 
 ### `scripts/pool_client.py`
 - 功能：连接池服务的纯标准库 HTTP 客户端，封装 `health`/`status`/`disconnect`/`history`/`exec_cmds`/`connect`/`explore`，并提供统一的认证参数解析（`--user`/`--password`/`--password-env`）。

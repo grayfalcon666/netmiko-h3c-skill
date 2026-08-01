@@ -30,7 +30,8 @@ netmiko-h3c/
 │   ├── pool_client.py            # Connection-pool HTTP client (pure stdlib) + lifecycle CLI
 │   ├── apply_config.py           # General configuration deployment script (service client)
 │   ├── device_init.py            # Device initialization & version query script (service client)
-│   └── explore_syntax.py         # Command syntax exploration script (service client)
+│   ├── explore_syntax.py         # Command syntax exploration script (service client)
+│   └── search_cmd.py             # Command doc query script (pure stdlib, incremental index cache)
 ├── server/
 │   ├── connection_pool_server.py # Connection-pool backend service (FastAPI + uvicorn)
 │   ├── test_pool_utils.py        # Pure-function unit tests (no device required)
@@ -175,18 +176,19 @@ The `chain` array in the JSON result lists the available options at each level (
 
 ## Command Reference Documents
 
-Check corresponding module files under `references/CMD-help` before deploying any configuration.
-Example for adding VLAN:
+Query the command format before deploying any configuration:
 
-```
-grep -rl "vlan" references/CMD-help/ | grep -i config
+```bash
+python3 scripts/search_cmd.py "<keyword>"                # JSON locator
+python3 scripts/search_cmd.py --full "<keyword>"         # full help text
+python3 scripts/search_cmd.py --exact --full "<keyword>" # exact command-name match + full help text
 ```
 
-Read matched `.md` files to obtain accurate command syntax.
+Without `--full` the script returns a JSON array (each item contains `command`, `view`, `file`, `line`); use the Read tool on the reported line to obtain the exact command format, replacing manual grep/index lookup. With `--full` it prints the complete documentation block from the indexed line up to the next indexed line, so no file read is needed. Matching modes are mutually exclusive and substring by default: `--exact` exact command-name match, `--prefix` starts with the keyword, `--suffix` ends with the keyword, `--word` keyword as a full word (does not hit substrings like `ipsec`), `--regex` regex match. The index cache (`references/.cmd_cache.jsonl`) is refreshed incrementally via git status; in non-Git environments it falls back to file-hash comparison. The `.env` switch `NETMIKO_CMD_DOC_AUTO_REFRESH` (default `true`) controls whether dynamic change detection and cache refresh are enabled.
 
 **Exception**: Commands listed in `references/high-frequency-commands.md` are confirmed standard H3C syntax and can be used directly without document lookup.
 
-If no matching document is found but you confirm the syntax is standard H3C command: clearly inform the user with the message: *"No matching document found, command will be executed following general syntax"*, display exact commands and obtain confirmation before running.
+If `search_cmd.py` returns an empty array but you confirm the syntax is standard H3C command: clearly inform the user with the message: *"No matching document found, command will be executed following general syntax"*, display exact commands and obtain confirmation before running.
 
 ## Connection & Port Explanation
 
@@ -207,6 +209,12 @@ All devices are reachable via unified address `192.168.56.1`. Different port num
 - Mechanism: lazy (re)connect with a bounded round-trip liveness probe that detects dead/half-open connections (device reboot), one lock per port (serialize same-port, parallelize different ports), idle timeout reaping (default 300s), graceful shutdown.
 - Persistence: session descriptors (port/username/nav path, **never passwords**) and history land in `server/data/` (overridable via `NETMIKO_POOL_DATA_DIR`); views are restored automatically after a restart.
 - Run: `uv run server/connection_pool_server.py` (dependencies installed automatically via PEP 723).
+
+### `scripts/search_cmd.py`
+
+- Function: command-document query script (pure stdlib, standalone, no pool service required). Locates the command format in `references/CMD-help` (`command`/`view`/`file`/`line`); `--full` mode prints the complete documentation block from the indexed line up to the next indexed line.
+- Cache: `references/.cmd_cache.jsonl`, refreshed incrementally via git status (falls back to file-hash comparison in non-Git environments); the `.env` switch `NETMIKO_CMD_DOC_AUTO_REFRESH` (default `true`) controls whether dynamic change detection and cache refresh are enabled.
+- Usage: `python3 scripts/search_cmd.py [--full] [--exact|--prefix|--suffix|--word|--regex] "<keyword>"` → with `--full` prints full help text, otherwise a JSON array; matching modes are mutually exclusive and default to substring (see Command Reference above).
 
 ### `scripts/pool_client.py`
 

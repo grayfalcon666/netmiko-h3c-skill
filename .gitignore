@@ -7,3 +7,6 @@ scripts/__pycache__
 
 # 会话/历史持久化数据
 server/data/
+
+# 命令文档索引缓存（search_cmd.py 生成）
+references/.cmd_cache.jsonl
