@@ -1,55 +1,40 @@
 #!/usr/bin/env python3
+# /// script
+# requires-python = ">=3.9"
+# dependencies = []
+# ///
 """
-设备初始化脚本：连接设备、关闭分屏、获取版本信息。
+设备初始化脚本：通过连接池服务连接设备并获取版本信息。
+
 用法：
-  python3 device_init.py <端口号> [用户名] [密码]
-示例：
-  # 无认证
-  python3 device_init.py 30001
-  # 有认证
-  python3 device_init.py 30001 admin MyPassword
+  无认证：python3 device_init.py <端口号>
+  有认证：python3 device_init.py <端口号> --user <用户名>
+           （密码交互输入，或用 --password-env <环境变量名>）
+
+注意：会话保持池化，版本查验后不会断开，可继续下发配置。
 """
+
 import sys
 import json
-from netmiko import ConnectHandler
+import argparse
+
+import pool_client
 
 
-def main():
-    if len(sys.argv) < 2:
-        print(json.dumps({"status": "error", "message": "用法: device_init.py <端口号> [用户名] [密码]"}))
-        sys.exit(1)
+def main() -> None:
+    parser = argparse.ArgumentParser(description="连接设备并获取版本信息")
+    parser.add_argument("port", type=int, help="Telnet 端口号")
+    pool_client.add_auth_args(parser)
+    args = parser.parse_args()
 
-    port = int(sys.argv[1])
-    username = sys.argv[2] if len(sys.argv) >= 3 else None
-    password = sys.argv[3] if len(sys.argv) >= 4 else None
-
-    device = {
-        'host': '192.168.56.1',
-        'port': port,
-        'global_delay_factor': 2,
-        'conn_timeout': 30,
-    }
-
-    if username and password:
-        device['device_type'] = 'hp_comware_telnet'
-        device['username'] = username
-        device['password'] = password
-    else:
-        device['device_type'] = 'generic_telnet'
-
+    username, password = pool_client.resolve_password(args)
     try:
-        conn = ConnectHandler(**device)
-        # 强制回到用户视图，清除残留会话
-        conn.send_command_timing('return', read_timeout=15)
-        conn.send_command('screen-length disable', read_timeout=15)
-        version_output = conn.send_command('dis version', read_timeout=30)
-        # 确保退出前回到用户视图
-        conn.send_command_timing('return', read_timeout=15)
-        print(json.dumps({"status": "success", "output": version_output}))
-    except Exception as e:
-        print(json.dumps({"status": "error", "message": str(e)}))
+        result = pool_client.exec_cmds(args.port, ["dis version"], username=username, password=password)
+    except pool_client.PoolError as e:
+        print(json.dumps({"status": "error", "error": str(e)}))
         sys.exit(1)
+    print(json.dumps(result, indent=2, ensure_ascii=False))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

@@ -9,12 +9,14 @@ This repository is an automation configuration toolkit for H3C switches, routers
 
 ## Features
 
-- **Environment Self-Check**: Automatically verify whether the Netmiko library is installed with clear guidance.
-- **Device Initialization & Version Inspection**: One-click disable pagination, retrieve device version and return structured JSON results.
-- **Secure Configuration Deployment**: All configurations are executed via the unified `apply_config.py` script, built-in view switching, error detection and timeout protection to prevent human misoperation.
-- **Secondary Confirmation for High-Risk Operations**: Manual approval is mandatory before executing destructive commands such as `reboot`, `undo`, `reset`.
+- **Persistent Connection Pool Service**: A FastAPI-based local HTTP backend pools Telnet connections and preserves device view state across calls, avoiding repeated reconnection and authentication overhead.
+- **View State Reporting**: Each command batch returns `start_view`/`end_view`, letting the caller (AI) determine the current view and issue navigation commands.
+- **Device Initialization & Version Inspection**: One-click connect and retrieve device version, returning structured JSON results.
+- **Secure Configuration Deployment**: All configurations are executed via the unified `apply_config.py` script, with built-in error detection, command-count limit and timeout protection.
+- **Secondary Confirmation for High-Risk Operations**: Manual approval is mandatory before executing destructive commands such as `reboot`, `undo`, `reset`. The server never auto-answers `[Y/N]` prompts.
+- **Command Syntax Exploration**: For unknown commands, `explore_syntax.py` performs step-by-step `?` queries to discover the syntax instead of guessing.
 - **Structured Command Reference Library**: `references/CMD-help` organizes configuration, debugging and probe commands by functional modules (VLAN, OSPF, BGP, DHCP, etc.), with a whitelist of frequently used commands to reduce lookup overhead.
-- **Password Protection**: Support interactive input or environment variable for password transmission. Plaintext passwords are forbidden in command lines or files.
+- **Password Protection**: Passwords live only in server memory and travel over the loopback interface. Support interactive input or environment variable for password transmission. Plaintext passwords are forbidden in command lines or files.
 - **Multi-Device Support**: Differentiate devices using distinct Telnet port numbers. The underlying proxy transparently forwards TCP traffic to corresponding Console serial ports.
 
 ## Directory Structure
@@ -25,8 +27,14 @@ netmiko-h3c/
 ├── README.md                     # Chinese documentation
 ├── README_en.md                  # English documentation (this file)
 ├── scripts/
-│   ├── device_init.py            # Device initialization & version query script
-│   └── apply_config.py           # General configuration deployment script
+│   ├── pool_client.py            # Connection-pool HTTP client (pure stdlib) + lifecycle CLI
+│   ├── apply_config.py           # General configuration deployment script (service client)
+│   ├── device_init.py            # Device initialization & version query script (service client)
+│   └── explore_syntax.py         # Command syntax exploration script (service client)
+├── server/
+│   ├── connection_pool_server.py # Connection-pool backend service (FastAPI + uvicorn)
+│   ├── test_pool_utils.py        # Pure-function unit tests (no device required)
+│   └── mock_h3c_device.py        # Fake H3C device Telnet server (local e2e verification)
 └── references/
     ├── CMD-help/                 # H3C command reference documents grouped by modules
     │   ├── VLAN/
@@ -42,23 +50,38 @@ netmiko-h3c/
 
 ## Requirements
 
-- Python 3.6+
-- Netmiko library: `pip install netmiko`
+- Python 3.9+
+- [uv](https://docs.astral.sh/uv/): server dependencies (netmiko/fastapi/uvicorn) are installed automatically by `uv run` via PEP 723 inline metadata; the client scripts are pure Python stdlib and can be run with `python3`.
 - Telnet service enabled on target devices. Accessible via `192.168.56.1` with specific ports (the underlying proxy forwards TCP traffic to real Console ports).
 
 ## Quick Start
 
-### 1. Verify Netmiko Environment
+### 1. Start the Connection Pool Service
+
+All scripts execute commands through the local connection pool service, so **start it first**:
 
 ```
-python3 -c "import netmiko; print(netmiko.__version__)"
+uv run server/connection_pool_server.py
 ```
 
-If the version number is printed, the environment is ready. Otherwise run `pip install netmiko`.
+It listens on `127.0.0.1:8765` by default. Overridable environment variables — these can also be placed in a `.env` file at the repository root (template: `.env.example`), which is auto-loaded by the server and the client scripts at startup (existing environment variables take precedence):
+
+- `NETMIKO_POOL_HOST` / `NETMIKO_POOL_PORT`: server listen address
+- `NETMIKO_POOL_DEVICE_IP`: device address (default `192.168.56.1`)
+- `NETMIKO_POOL_URL`: client-side service URL (default `http://127.0.0.1:8765`)
+
+Use `scripts/pool_client.py` to check and manage the service:
+
+```
+python3 scripts/pool_client.py health             # check if the service is alive
+python3 scripts/pool_client.py status             # list all sessions & current views
+python3 scripts/pool_client.py status <port>      # show a specific session
+python3 scripts/pool_client.py disconnect <port>  # disconnect a session
+```
 
 ### 2. Device Initialization & Version Check
 
-Use `scripts/device_init.py` to connect devices, automatically disable pagination and fetch version information.
+Use `scripts/device_init.py` to connect devices and fetch version information.
 
 - Unauthenticated device:
 
@@ -66,56 +89,85 @@ Use `scripts/device_init.py` to connect devices, automatically disable paginatio
 python3 scripts/device_init.py <port_number>
 ```
 
-- Authenticated device:
-
-```
-python3 scripts/device_init.py <port_number> <username> <password>
-```
-
-> 
-> Note: Password will not be recorded in command history. Interactive input or environment variable passing is recommended.
-
-Sample script output:
-
-```
-{"status": "success", "output": "H3C Comware Software, Version 7.1.064, Release 9660P39 ..."}
-```
-
-If `status` equals `error`, troubleshoot according to the error message inside `output`.
-
-### 3. Deploy Configurations
-
-All configuration tasks (VLAN creation, interface setup, routing protocols, etc.) must be executed through `scripts/apply_config.py`. The script automatically handles view switching, disables pagination and detects command errors.
-
-- Unauthenticated device:
-
-```
-python3 scripts/apply_config.py <port_number> "vlan 100" "name test_vlan"
-```
-
 - Authenticated device (interactive password prompt):
 
 ```
-python3 scripts/apply_config.py <port_number> "vlan 100" --user admin
+python3 scripts/device_init.py <port_number> --user admin
 ```
 
 - Authenticated device (password via environment variable):
 
 ```
 export MY_SECRET='your_password'
-python3 scripts/apply_config.py <port_number> "vlan 100" --user admin --password-env MY_SECRET
+python3 scripts/device_init.py <port_number> --user admin --password-env MY_SECRET
 ```
 
-> 
+Sample script output:
+
+```json
+{
+  "status": "success",
+  "start_view": {"prompt": "<H3C>", "view": "user", "hostname": "H3C", "path": ""},
+  "end_view": {"prompt": "<H3C>", "view": "user", "hostname": "H3C", "path": ""},
+  "output": "H3C Comware Software, Version 7.1.064, Release 9660P39 ...",
+  "error": null,
+  "failed_index": null
+}
+```
+
+If `status` equals `error`, troubleshoot according to the error message inside `output`. The session stays pooled after version check and can be reused for configuration.
+
+> **Compatibility note**: The old positional form `device_init.py <port> <username> <password>` was removed (plaintext passwords violate security rules). Use `--user` + `--password-env` or interactive input instead.
+
+### 3. Deploy Configurations
+
+All configuration tasks (VLAN creation, interface setup, routing protocols, etc.) must be executed through `scripts/apply_config.py`. Sessions and views are kept by the server, and command errors are detected server-side.
+
+- Unauthenticated device:
+
+```
+python3 scripts/apply_config.py <port_number> "system-view" "vlan 100" "name test_vlan"
+```
+
+- Authenticated device (interactive password prompt):
+
+```
+python3 scripts/apply_config.py <port_number> "system-view" "vlan 100" --user admin
+```
+
+- Authenticated device (password via environment variable):
+
+```
+export MY_SECRET='your_password'
+python3 scripts/apply_config.py <port_number> "system-view" "vlan 100" --user admin --password-env MY_SECRET
+```
+
 > **Important Limitation**: A single call accepts up to 5 commands. Split multiple commands into batches, and proceed only after the previous batch succeeds.
 
-Output format (JSON):
+Output format (JSON). `start_view`/`end_view` describe the device view before/after the batch, letting the caller decide whether navigation commands are needed (e.g. `system-view`, `interface X`, `quit`, `return`):
 
-```
-{"status": "success", "output": "..."}
+```json
+{
+  "status": "success",
+  "start_view": {"prompt": "<H3C>", "view": "user", "hostname": "H3C", "path": ""},
+  "end_view": {"prompt": "[H3C-vlan100]", "view": "subview", "hostname": "H3C", "path": "vlan100"},
+  "output": "[H3C]\n[H3C-vlan100]",
+  "error": null,
+  "failed_index": null
+}
 ```
 
 If `status` is `error`, command execution failed (e.g. `% Unknown command`). Stop subsequent operations and verify commands or consult relevant personnel.
+
+### 4. Command Syntax Exploration (optional)
+
+When unsure about the syntax of an incomplete command, use `scripts/explore_syntax.py`. The server performs step-by-step `?` queries within one connection:
+
+```
+python3 scripts/explore_syntax.py <port_number> "prefix subview commands..." "incomplete command"
+```
+
+The `chain` array in the JSON result lists the available options at each level (`type` is `keyword`/`parameter`/`multiple`).
 
 ## Command Reference Documents
 
@@ -134,44 +186,66 @@ If no matching document is found but you confirm the syntax is standard H3C comm
 
 ## Connection & Port Explanation
 
-All devices are reachable via unified address `192.168.56.1`. Different port numbers represent different network devices. A black-box underlying proxy forwards Telnet TCP connections on specified ports to device Console serial ports. Confirm port mapping for each device before usage.
+All devices are reachable via unified address `192.168.56.1`. Different port numbers represent different network devices. The connection pool opens and keeps a TCP Telnet connection on the specified port; a black-box underlying proxy forwards traffic to device Console serial ports. Confirm port mapping for each device before usage.
 
 ## Security & High-Risk Operations
 
-- **Password Protection**: Never store plaintext passwords in command lines, scripts or persistent files. Using `--password-env` or interactive prompt is strongly recommended.
-- **Secondary Confirmation for Risky Commands**: Commands including `reboot`, bulk configuration removal via `undo`, `reset`, `erase` and other operations that may cause service interruption or trigger `[Y/N]` interactive prompts **must acquire explicit user authorization before execution**. The script will not automatically answer confirmation prompts. Do not proceed without permission.
+- **Password Protection**: Never store plaintext passwords in command lines, scripts or persistent files. Passwords live only in the connection-pool server memory, travel over the loopback interface, and are never written to logs or echoed. Using `--password-env` or interactive prompt is strongly recommended.
+- **Secondary Confirmation for Risky Commands**: Commands including `reboot`, bulk configuration removal via `undo`, `reset`, `erase` and other operations that may cause service interruption or trigger `[Y/N]` interactive prompts **must acquire explicit user authorization before execution**. The server will not automatically answer confirmation prompts. Do not proceed without permission.
 
 ## Script Detailed Description
 
-### `device_init.py`
+### `server/connection_pool_server.py`
 
-- Function: Establish connection, execute `screen-length disable`, collect device version with `display version`, then close the session.
-- Scenario: Initial device inspection. The session terminates after each run. Separate connections are required for configuration tasks.
+- Function: FastAPI connection-pool backend that keeps Telnet connections per port and preserves view state across requests.
+- Endpoints: `GET /health`, `GET /status`, `POST /connect`, `POST /exec`, `POST /explore`, `POST /disconnect`.
+- Mechanism: lazy (re)connect, one lock per port (serialize same-port, parallelize different ports), idle timeout reaping (default 300s), graceful shutdown.
+- Run: `uv run server/connection_pool_server.py` (dependencies installed automatically via PEP 723).
 
-### `apply_config.py`
+### `scripts/pool_client.py`
 
-- Function: Establish Telnet session and run fixed workflow: `return` → `screen-length disable` → `system-view` → user-defined commands → `return`.
+- Function: pure-stdlib HTTP client for the pool service, wrapping `health`/`status`/`disconnect`/`exec_cmds`/`connect`/`explore`, plus unified auth-arg parsing (`--user`/`--password`/`--password-env`).
+- Usage: `python3 scripts/pool_client.py health | status [port] | disconnect <port>`.
+
+### `scripts/device_init.py`
+
+- Function: connect and fetch device version (`dis version`).
+- Notice: the session stays pooled after version check and can be reused for configuration. The positional password argument was removed.
+
+### `scripts/apply_config.py`
+
+- Function: send configuration commands (≤5) to the pool service, returning `start_view`/`end_view`.
 - Features:
-  - Use `send_command_timing` independent of prompt patterns, compatible with arbitrary nested sub-views.
-  - Automatically detect error keywords in each command output (e.g. `% Unknown command`, `^ Error`). Terminate immediately and return `error` once detected.
-  - All timeout values ≤10 seconds.
-  - Single call supports maximum 5 commands. Multiple commands requiring continuous execution under the same sub-view should be placed within one call (view state persists during a single invocation).
-- Notice: The Telnet connection closes after each call. A new connection and system-view entry will be created on next invocation. Do NOT rely on persistent view state across separate calls.
+  - Uses `send_command_timing` independent of prompt patterns, compatible with arbitrary nested sub-views.
+  - Server automatically detects error keywords in each command output (e.g. `% Unknown command`). Terminate immediately and return `error` once detected.
+  - Single call supports maximum 5 commands, enforced server-side.
+- Views are not auto-switched: the caller must issue navigation commands explicitly based on `start_view`/`end_view`.
+
+### `server/mock_h3c_device.py` (testing)
+
+- Function: fake H3C device Telnet server that simulates a prompt state machine, for end-to-end verification without a real device.
+- Usage: `python3 server/mock_h3c_device.py --port 2323 [--require-auth]`, paired with `NETMIKO_POOL_DEVICE_IP=127.0.0.1` for the pool server.
+
+### `server/test_pool_utils.py` (testing)
+
+- Function: pure-function unit tests (view parsing, error detection, password sanitization, command-count limit).
+- Usage: `uv run server/test_pool_utils.py`.
 
 ## Typical Workflow
 
-1. Environment check: Confirm Netmiko availability.
+1. Start the pool service: `uv run server/connection_pool_server.py`, then confirm with `python3 scripts/pool_client.py health`.
 2. Collect device port and authentication information.
 3. Run `device_init.py` for each device to retrieve version and identify connectivity/authentication issues early.
 4. Look up proper command syntax in `references/CMD-help` based on requirements.
-5. Invoke `apply_config.py` in batches (≤5 commands per run) and validate return results.
+5. Invoke `apply_config.py` in batches (≤5 commands per run). Decide navigation commands based on `start_view`/`end_view`, and validate return results.
 6. Verify key configurations using inspection commands such as `display current-configuration | include ...`.
 7. For high-risk commands, obtain manual approval before submitting to the script.
+8. After finishing a task, navigate back to user view with `return` or disconnect via `pool_client.py disconnect <port>` to avoid leftover view state.
 
 ## Contribution & Extension
 
 - To add command references for new functional modules: create folders under `references/CMD-help` and write standardized `.md` documents.
-- If script defects are found or new enhancements are needed (new authentication methods, custom error matching logic, etc.), modify Python files inside `scripts/`. Keep consistent JSON output structure and error detection logic.
+- If script defects are found or new enhancements are needed (new authentication methods, custom error matching logic, etc.), modify Python files inside `scripts/` or `server/connection_pool_server.py`. Keep consistent JSON output structure and error detection logic.
 - Issues and Pull Requests are welcome to improve this repository.
 
 ## License
