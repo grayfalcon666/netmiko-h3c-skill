@@ -973,7 +973,9 @@ def explore_endpoint(req: ExploreRequest) -> dict:
 def main() -> None:
     host = os.environ.get("NETMIKO_POOL_HOST", "127.0.0.1")
     port = int(os.environ.get("NETMIKO_POOL_PORT", "8765"))
-    if not POOL_SECRET:
+    if POOL_SECRET:
+        print("JWT 鉴权已启用（NETMIKO_POOL_JWT_SECRET 已配置，除 /health 外所有端点校验令牌）。", flush=True)
+    else:
         print("警告: 未设置 NETMIKO_POOL_JWT_SECRET，运行在无鉴权模式（仅本机可访问）。", flush=True)
     print(f"连接池服务启动: http://{host}:{port}  (设备地址 {DEVICE_IP})", flush=True)
     uvicorn.run(app, host=host, port=port, log_level="info")
