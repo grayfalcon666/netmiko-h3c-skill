@@ -34,7 +34,8 @@ netmiko-h3c/
 ├── server/
 │   ├── connection_pool_server.py # Connection-pool backend service (FastAPI + uvicorn)
 │   ├── test_pool_utils.py        # Pure-function unit tests (no device required)
-│   └── mock_h3c_device.py        # Fake H3C device Telnet server (local e2e verification)
+│   ├── mock_h3c_device.py        # Fake H3C device Telnet server (local e2e verification)
+│   └── data/                     # Runtime-generated: session descriptors & history (not committed)
 └── references/
     ├── CMD-help/                 # H3C command reference documents grouped by modules
     │   ├── VLAN/
@@ -69,6 +70,7 @@ It listens on `127.0.0.1:8765` by default. Overridable environment variables —
 - `NETMIKO_POOL_HOST` / `NETMIKO_POOL_PORT`: server listen address
 - `NETMIKO_POOL_DEVICE_IP`: device address (default `192.168.56.1`)
 - `NETMIKO_POOL_URL`: client-side service URL (default `http://127.0.0.1:8765`)
+- `NETMIKO_POOL_DATA_DIR`: persistence data directory (default `server/data/`)
 
 Use `scripts/pool_client.py` to check and manage the service:
 
@@ -77,6 +79,7 @@ python3 scripts/pool_client.py health             # check if the service is aliv
 python3 scripts/pool_client.py status             # list all sessions & current views
 python3 scripts/pool_client.py status <port>      # show a specific session
 python3 scripts/pool_client.py disconnect <port>  # disconnect a session
+python3 scripts/pool_client.py history <port>     # read session history (default latest 100)
 ```
 
 ### 2. Device Initialization & Version Check
@@ -198,14 +201,15 @@ All devices are reachable via unified address `192.168.56.1`. Different port num
 ### `server/connection_pool_server.py`
 
 - Function: FastAPI connection-pool backend that keeps Telnet connections per port and preserves view state across requests.
-- Endpoints: `GET /health`, `GET /status`, `POST /connect`, `POST /exec`, `POST /explore`, `POST /disconnect`.
-- Mechanism: lazy (re)connect, one lock per port (serialize same-port, parallelize different ports), idle timeout reaping (default 300s), graceful shutdown.
+- Endpoints: `GET /health`, `GET /status`, `POST /connect`, `POST /exec`, `POST /explore`, `POST /disconnect`, `GET /history`.
+- Mechanism: lazy (re)connect with a bounded round-trip liveness probe that detects dead/half-open connections (device reboot), one lock per port (serialize same-port, parallelize different ports), idle timeout reaping (default 300s), graceful shutdown.
+- Persistence: session descriptors (port/username/nav path, **never passwords**) and history land in `server/data/` (overridable via `NETMIKO_POOL_DATA_DIR`); views are restored automatically after a restart.
 - Run: `uv run server/connection_pool_server.py` (dependencies installed automatically via PEP 723).
 
 ### `scripts/pool_client.py`
 
-- Function: pure-stdlib HTTP client for the pool service, wrapping `health`/`status`/`disconnect`/`exec_cmds`/`connect`/`explore`, plus unified auth-arg parsing (`--user`/`--password`/`--password-env`).
-- Usage: `python3 scripts/pool_client.py health | status [port] | disconnect <port>`.
+- Function: pure-stdlib HTTP client for the pool service, wrapping `health`/`status`/`disconnect`/`history`/`exec_cmds`/`connect`/`explore`, plus unified auth-arg parsing (`--user`/`--password`/`--password-env`).
+- Usage: `python3 scripts/pool_client.py health | status [port] | disconnect <port> | history <port> [--limit N]`.
 
 ### `scripts/device_init.py`
 
@@ -228,8 +232,21 @@ All devices are reachable via unified address `192.168.56.1`. Different port num
 
 ### `server/test_pool_utils.py` (testing)
 
-- Function: pure-function unit tests (view parsing, error detection, password sanitization, command-count limit).
+- Function: pure-function unit tests (view parsing, error detection, password sanitization, command-count limit, nav-path tracking/reconciliation, history read/trim, descriptor persistence & corrupt-file tolerance).
 - Usage: `uv run server/test_pool_utils.py`.
+
+## Session Persistence & History
+
+The server persists each session's recovery plan and call history in the data directory (default `server/data/`, overridable via `NETMIKO_POOL_DATA_DIR`):
+
+- `pool_sessions.json`: session descriptors (port, username, **nav path**). The nav path is the command sequence that replays from the user view to the current view (e.g. `system-view → interface GigabitEthernet1/0/1`).
+- `history_<port>.jsonl`: per-port commands and outputs (JSON Lines, keeping the latest 1000 lines).
+
+**Restart recovery**: after restart the server loads the descriptors and reconnects to restore views — unauthenticated devices restore automatically at startup; authenticated devices restore **lazily** (the connection is rebuilt and nav commands replayed the next time the caller supplies credentials). Recovery is best-effort: if device state changed and replay fails, the nav path is reconciled against the actual detected view, so the `start_view` the caller sees is always the true view.
+
+**Reading history**: `GET /history?port=<port>&limit=N`, or on the CLI `python3 scripts/pool_client.py history <port> [--limit N]`.
+
+**Security red line**: descriptors and history **never contain passwords** (passwords live only in server memory). An explicit `/disconnect` removes that port's recovery plan.
 
 ## Typical Workflow
 

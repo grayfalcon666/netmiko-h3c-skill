@@ -12,6 +12,7 @@ pool_client.py – 连接池服务 HTTP 客户端（纯 stdlib，无第三方依
   python3 pool_client.py health
   python3 pool_client.py status [端口]
   python3 pool_client.py disconnect <端口>
+  python3 pool_client.py history <端口> [--limit N]
 """
 
 import os
@@ -119,6 +120,13 @@ def status(port: int = None) -> dict:
     return _request("GET", path)
 
 
+def history(port: int, limit: int = None) -> dict:
+    path = f"/history?port={port}"
+    if limit is not None:
+        path += f"&limit={limit}"
+    return _request("GET", path)
+
+
 # --------------------------------------------------------------------------
 # 认证参数解析（集中安全规则，供三个客户端脚本复用）
 # --------------------------------------------------------------------------
@@ -159,6 +167,9 @@ def main() -> None:
     p_status.add_argument("port", nargs="?", type=int, help="可选：指定端口")
     p_dis = sub.add_parser("disconnect", help="断开指定端口会话")
     p_dis.add_argument("port", type=int)
+    p_hist = sub.add_parser("history", help="读取指定端口会话历史")
+    p_hist.add_argument("port", type=int)
+    p_hist.add_argument("--limit", type=int, default=None, help="返回最近 N 条（默认 100）")
     args = parser.parse_args()
 
     try:
@@ -166,6 +177,8 @@ def main() -> None:
             result = health()
         elif args.cmd == "status":
             result = status(args.port if "port" in args else None)
+        elif args.cmd == "history":
+            result = history(args.port, args.limit)
         else:  # disconnect
             result = disconnect(args.port)
     except PoolError as e:

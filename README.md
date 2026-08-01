@@ -31,7 +31,8 @@ netmiko-h3c/
 ├── server/
 │   ├── connection_pool_server.py # 连接池后端服务（FastAPI + uvicorn）
 │   ├── test_pool_utils.py        # 纯函数单元测试（无需真实设备）
-│   └── mock_h3c_device.py        # 假 H3C 设备 Telnet 服务器（本地端到端验证用）
+│   ├── mock_h3c_device.py        # 假 H3C 设备 Telnet 服务器（本地端到端验证用）
+│   └── data/                     # 运行时生成：会话描述符与历史记录（不入库 git）
 └── references/
     ├── CMD-help/                 # 按模块整理的 H3C 命令参考文档
     │   ├── VLAN/
@@ -66,6 +67,7 @@ uv run server/connection_pool_server.py
 - `NETMIKO_POOL_HOST` / `NETMIKO_POOL_PORT`：服务监听地址
 - `NETMIKO_POOL_DEVICE_IP`：设备地址，默认 `192.168.56.1`
 - `NETMIKO_POOL_URL`：客户端连接的服务地址（默认 `http://127.0.0.1:8765`）
+- `NETMIKO_POOL_DATA_DIR`：持久化数据目录（默认 `server/data/`）
 
 启动后可用 `scripts/pool_client.py` 检查与管理系统：
 
@@ -74,6 +76,7 @@ python3 scripts/pool_client.py health          # 检查服务是否存活
 python3 scripts/pool_client.py status          # 列出所有会话与当前视图
 python3 scripts/pool_client.py status <端口>   # 查看指定端口会话
 python3 scripts/pool_client.py disconnect <端口>  # 断开指定端口会话
+python3 scripts/pool_client.py history <端口>  # 读取该端口会话历史（默认最近 100 条）
 ```
 
 ### 2. 设备初始化与版本查验
@@ -174,17 +177,31 @@ grep -rl "vlan" references/CMD-help/ | grep -i config
 - **密码保护**：严禁在命令行、脚本或任何持久化文件中明文写入密码。密码仅保存在连接池服务内存中，经本机回环传输，服务端不落日志、不回显。强烈建议使用 `--password-env` 或脚本交互提示输入。
 - **高危命令二次确认**：对于 `reboot`、`undo` 清空大段配置、`reset`、`erase` 等可能破坏业务或触发 `[Y/N]` 交互的命令，**必须**在执行前获得用户明确的授权。服务端不会替您回答任何确认提示，未经允许请勿继续执行。
 
+## 会话持久化与历史
+
+服务把每个会话的恢复计划与调用历史落在数据目录（默认 `server/data/`，可用 `NETMIKO_POOL_DATA_DIR` 覆盖）：
+
+- `pool_sessions.json`：会话描述符（端口、用户名、**导航路径**）。导航路径是从用户视图重放到当前视图的命令序列（如 `system-view → interface GigabitEthernet1/0/1`）。
+- `history_<端口>.jsonl`：该端口每次调用的命令与输出（JSON Lines，保留最近 1000 行）。
+
+**重启恢复**：服务重启后自动加载描述符并重连恢复视图——无认证设备在启动时自动恢复；认证设备**懒恢复**（下次调用方携带凭据时重建连接并重放导航）。恢复是尽力而为：若设备状态变化导致重放失败，按实际探测到的视图对账，调用方拿到的 `start_view` 始终是真实视图。
+
+**读取历史**：`GET /history?port=<端口>&limit=N`，或命令行 `python3 scripts/pool_client.py history <端口> [--limit N]`。
+
+**安全红线**：描述符与历史中**绝不包含密码**（密码仅存服务端内存）。显式 `/disconnect` 会移除该端口的恢复计划。
+
 ## 脚本详细说明
 
 ### `server/connection_pool_server.py`
 - 功能：FastAPI 连接池后端服务，池化保持各端口的 Telnet 连接，跨请求保持视图状态。
-- 端点：`GET /health`、`GET /status`、`POST /connect`、`POST /exec`、`POST /explore`、`POST /disconnect`。
-- 机制：懒建连（连接中断自动重建）、每端口一把锁（同端口串行、不同端口并行）、空闲超时自动回收（默认 300s）、优雅关闭。
+- 端点：`GET /health`、`GET /status`、`POST /connect`、`POST /exec`、`POST /explore`、`POST /disconnect`、`GET /history`。
+- 机制：懒建连（连接中断自动重建，存活判定用有界往返探测，能发现设备重启/半开导致的死连接）、每端口一把锁（同端口串行、不同端口并行）、空闲超时自动回收（默认 300s）、优雅关闭。
+- 持久化：会话描述符（端口/用户名/导航路径，**不含密码**）与历史消息落在 `server/data/`（可用 `NETMIKO_POOL_DATA_DIR` 覆盖），重启后自动恢复视图。
 - 启动：`uv run server/connection_pool_server.py`（依赖经 PEP 723 自动安装）。
 
 ### `scripts/pool_client.py`
-- 功能：连接池服务的纯标准库 HTTP 客户端，封装 `health`/`status`/`disconnect`/`exec_cmds`/`connect`/`explore`，并提供统一的认证参数解析（`--user`/`--password`/`--password-env`）。
-- 用法：`python3 scripts/pool_client.py health | status [端口] | disconnect <端口>`。
+- 功能：连接池服务的纯标准库 HTTP 客户端，封装 `health`/`status`/`disconnect`/`history`/`exec_cmds`/`connect`/`explore`，并提供统一的认证参数解析（`--user`/`--password`/`--password-env`）。
+- 用法：`python3 scripts/pool_client.py health | status [端口] | disconnect <端口> | history <端口> [--limit N]`。
 
 ### `scripts/device_init.py`
 - 功能：连接设备并获取版本信息（`dis version`）。
@@ -203,7 +220,7 @@ grep -rl "vlan" references/CMD-help/ | grep -i config
 - 用法：`python3 server/mock_h3c_device.py --port 2323 [--require-auth]`，配合 `NETMIKO_POOL_DEVICE_IP=127.0.0.1` 启动连接池服务。
 
 ### `server/test_pool_utils.py`（测试用）
-- 功能：纯函数单元测试（视图解析、错误检测、密码脱敏、命令数上限）。
+- 功能：纯函数单元测试（视图解析、错误检测、密码脱敏、命令数上限、nav_path 跟踪与对账、历史读写/截断、描述符持久化与损坏容错）。
 - 用法：`uv run server/test_pool_utils.py`。
 
 ## 典型工作流

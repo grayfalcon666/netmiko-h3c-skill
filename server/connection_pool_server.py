@@ -21,6 +21,7 @@ import os
 import re
 import sys
 import time
+import json
 import threading
 import logging
 from contextlib import asynccontextmanager
@@ -66,6 +67,13 @@ logger = logging.getLogger("pool-server")
 # 设备固定 IP（可用环境变量覆盖，便于用 mock 设备做本地端到端验证）
 DEVICE_IP = os.environ.get("NETMIKO_POOL_DEVICE_IP", "192.168.56.1")
 MAX_COMMANDS = 5
+
+# 数据持久化：会话描述符 + 每端口历史记录
+HISTORY_MAX = 1000                                # 每端口历史保留的最大行数，超出截断
+DEFAULT_DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
+DATA_DIR = os.environ.get("NETMIKO_POOL_DATA_DIR", DEFAULT_DATA_DIR)
+SESSION_FILE = os.path.join(DATA_DIR, "pool_sessions.json")
+_io_lock = threading.Lock()                       # 描述符/历史文件写盘互斥
 
 
 # --------------------------------------------------------------------------
@@ -129,6 +137,98 @@ def safe_detect(session) -> Optional[dict]:
         return None
 
 
+_PROMPT_RE = re.compile(r'[\[<][^\]>]*[\]>]')
+
+
+def probe_alive(session, timeout: float = 3.0) -> bool:
+    """有界往返存活探测：发空行，要求超时内设备回显提示符。
+
+    netmiko 的 is_alive() 只发 IAC NOP 再读 1 字节，把"活但静默"和"死但静默"
+    都判为存活，无法发现设备重启/半开连接（尤其中间有透明代理时）。此探测要求
+    真实提示符回显，失败即视为死连接；调用方据此断开并重建。
+    """
+    conn = session.conn
+    if conn is None:
+        return False
+    try:
+        out = conn.send_command_timing("", read_timeout=timeout)
+    except Exception:
+        return False
+    return bool(out) and bool(_PROMPT_RE.search(out))
+
+
+# --------------------------------------------------------------------------
+# 导航路径（nav_path）：从用户视图重放到当前视图的命令序列，用于重启/重连后恢复
+# --------------------------------------------------------------------------
+def update_nav_path(nav_path, cmd):
+    """根据已发送命令更新导航路径。纯函数，返回新列表。"""
+    cmd = (cmd or "").strip()
+    low = cmd.lower()
+    out = list(nav_path or [])
+    if low == "return":
+        return []
+    if low == "quit":
+        return out[:-1]
+    if low == "system-view":
+        return out if out else ["system-view"]
+    if low.startswith("interface ") or low.startswith("vlan "):
+        out.append(cmd)
+    return out
+
+
+_VLAN_RE = re.compile(r"^[Vv]lan(\d+)$")
+_VLAN_IF_RE = re.compile(r"^[Vv]lan-[Ii]nterface(\d+)$")
+_INTERFACE_RE = re.compile(r"[A-Za-z]+[0-9]+(?:/[0-9]+)*")
+
+
+def reconcile_nav_path(nav_path, end_view):
+    """用探测到的 end_view 对账导航路径（end_view 是 ground truth）。纯函数。
+
+    - user 视图 → []；system 视图 → ["system-view"]。
+    - 子视图：trace 尾项与 path 相关则保留 trace；否则按 path 生成最小导航
+      （interface X / vlan N / Vlan-interface N）。嵌套子视图无法从单段 path 重建时
+      靠命令跟踪兜底（保留 trace）。
+    - end_view 为 None 时原样返回。
+    """
+    if not end_view or not end_view.get("view"):
+        return list(nav_path or [])
+    view = end_view["view"]
+    path = (end_view.get("path") or "").strip()
+    if view == "user":
+        return []
+    if view == "system":
+        return ["system-view"]
+    nav = list(nav_path or [])
+    if nav:
+        tail = nav[-1].strip().lower()
+        if path and (path.lower() in tail or tail.endswith(path.lower())):
+            return nav
+    if path:
+        m = _VLAN_RE.match(path)
+        if m:
+            return ["system-view", f"vlan {int(m.group(1))}"]
+        if _VLAN_IF_RE.match(path) or _INTERFACE_RE.search(path):
+            return ["system-view", f"interface {path}"]
+    return nav
+
+
+def restore_view(conn, nav_path):
+    """尽力重放导航命令恢复视图；命令报错或连接异常即停。返回实际视图 dict（探测失败为 None）。"""
+    for cmd in (nav_path or []):
+        if not cmd or not isinstance(cmd, str):
+            continue
+        try:
+            out = conn.send_command_timing(cmd, read_timeout=8)
+        except Exception:
+            break
+        if has_error(out):
+            break
+    try:
+        return detect_view(conn)
+    except Exception:
+        return None
+
+
 # --------------------------------------------------------------------------
 # 命令输出错误检测（从原 apply_config.py 原样迁移）
 # --------------------------------------------------------------------------
@@ -179,6 +279,7 @@ class Session:
         self.last_used = time.time()
         self.has_auth = bool(username and password is not None)
         self.device_type = "hp_comware_telnet" if self.has_auth else "generic_telnet"
+        self.nav_path: List[str] = []         # 从用户视图重放到当前视图的导航命令序列（持久化恢复用）
 
     @property
     def connected(self) -> bool:
@@ -194,13 +295,21 @@ class ConnectionPool:
         self._pool_lock = threading.Lock()
         self._stop_event = threading.Event()
         self._reaper_thread = None
+        self._descriptors: dict = {}          # port -> {username, nav_path}，持久化恢复计划（不含密码）
 
     # ---- 会话获取 ----
+    def _seed_from_descriptor(self, session: Session) -> Session:
+        """新建会话时从持久化描述符播种导航路径（认证设备懒恢复的关键）。"""
+        desc = self._descriptors.get(session.port)
+        if desc:
+            session.nav_path = list(desc.get("nav_path") or [])
+        return session
+
     def get_or_create(self, port: int, username: str = "", password: Optional[str] = None) -> Session:
         with self._pool_lock:
             session = self._sessions.get(port)
             if session is None:
-                session = Session(port, username, password)
+                session = self._seed_from_descriptor(Session(port, username, password))
                 self._sessions[port] = session
                 return session
             # 认证签名变化（有/无认证）时断开旧连接并重建
@@ -214,7 +323,7 @@ class ConnectionPool:
                         conn.disconnect()
                     except Exception:
                         pass
-                session = Session(port, username, password)
+                session = self._seed_from_descriptor(Session(port, username, password))
                 self._sessions[port] = session
             return session
 
@@ -231,22 +340,28 @@ class ConnectionPool:
         return ConnectHandler(**device)
 
     def ensure_connected(self, session: Session) -> None:
-        """懒建连：连接为空或已断时重建。分屏在建连时一次性关闭。"""
+        """懒建连：连接为空或已断时重建。分屏在建连时一次性关闭。
+
+        存活判定用有界往返探测（probe_alive）而非 is_alive()：设备重启后旧连接
+        半开，is_alive 无法发现，这里要求真实提示符回显，失败即断开重建。
+        """
         if session.conn is not None:
-            try:
-                if session.conn.is_alive():
-                    return
-            except Exception:
-                pass
-        if session.conn is not None:
+            if probe_alive(session):
+                return
             try:
                 session.conn.disconnect()
             except Exception:
                 pass
+            session.conn = None
         session.conn = self._create_conn(session)
         # 无认证用 generic_telnet，netmiko 不会自动关分屏，补一次
         if session.device_type == "generic_telnet":
             session.conn.send_command_timing("screen-length disable", read_timeout=10)
+        # 新连接默认回到用户视图：若有保存的导航路径则重放恢复，并据此对账后落盘
+        if session.nav_path:
+            actual = restore_view(session.conn, session.nav_path)
+            session.nav_path = reconcile_nav_path(session.nav_path, actual)
+            self._save_descriptor(session)
 
     # ---- 断连与清理 ----
     def drop_session(self, session: Session) -> None:
@@ -268,10 +383,21 @@ class ConnectionPool:
         now = time.time()
         out = []
         for s in sessions:
-            view = safe_detect(s)
+            # 有界往返探测（非阻塞加锁，避开正在执行的命令）：死连接不挂起、不显示假视图
+            if s.lock.acquire(blocking=False):
+                try:
+                    alive = probe_alive(s, timeout=3.0)
+                    view = safe_detect(s) if alive else None
+                except Exception:
+                    alive, view = False, None
+                finally:
+                    s.lock.release()
+            else:
+                alive = s.connected
+                view = safe_detect(s) if alive else None
             out.append({
                 "port": s.port,
-                "connected": s.connected,
+                "connected": alive,
                 "auth": "user" if s.has_auth else "none",
                 "view": view,
                 "idle_seconds": round(now - s.last_used, 1),
@@ -315,6 +441,132 @@ class ConnectionPool:
                 except Exception:
                     pass
 
+    # ---- 持久化（会话描述符，绝不包含密码）----
+    def save_state(self) -> None:
+        """把会话描述符写入磁盘（原子写：临时文件 + rename）。"""
+        with self._pool_lock:
+            descriptors = [
+                {"port": p, "username": d.get("username", "") or "",
+                 "nav_path": list(d.get("nav_path") or [])}
+                for p, d in self._descriptors.items()
+            ]
+        try:
+            os.makedirs(DATA_DIR, exist_ok=True)
+            tmp = SESSION_FILE + ".tmp"
+            with _io_lock:
+                with open(tmp, "w", encoding="utf-8") as f:
+                    json.dump(descriptors, f, ensure_ascii=False, indent=2)
+                os.replace(tmp, SESSION_FILE)
+        except OSError:
+            logger.warning("写入会话状态失败: %s", SESSION_FILE)
+
+    def load_state(self) -> None:
+        """从磁盘加载会话描述符到 self._descriptors；缺失/损坏则置空重建。"""
+        try:
+            with open(SESSION_FILE, encoding="utf-8") as f:
+                data = json.load(f)
+        except (OSError, ValueError):
+            self._descriptors = {}
+            return
+        out = {}
+        for d in data if isinstance(data, list) else []:
+            try:
+                port = int(d.get("port"))
+                out[port] = {
+                    "username": (d.get("username") or "") or "",
+                    "nav_path": [c for c in (d.get("nav_path") or []) if isinstance(c, str)],
+                }
+            except (TypeError, ValueError):
+                continue
+        self._descriptors = out
+
+    def _save_descriptor(self, session: Session) -> None:
+        """更新单个会话描述符并落盘。"""
+        with self._pool_lock:
+            self._descriptors[session.port] = {
+                "username": session.username or "",
+                "nav_path": list(session.nav_path),
+            }
+        self.save_state()
+
+    def remove_descriptor(self, port: int) -> None:
+        """/disconnect 时移除该端口的恢复计划。"""
+        with self._pool_lock:
+            self._descriptors.pop(port, None)
+        self.save_state()
+
+    def sync_session(self, session: Session, end_view) -> None:
+        """批末副作用：用探测到的 end_view 对账导航路径 + 写描述符。"""
+        session.nav_path = reconcile_nav_path(session.nav_path, end_view)
+        self._save_descriptor(session)
+
+
+# --------------------------------------------------------------------------
+# 历史记录（每端口一个 jsonl，命令与输出，绝不包含密码）
+# --------------------------------------------------------------------------
+def history_path(port: int) -> str:
+    return os.path.join(DATA_DIR, f"history_{port}.jsonl")
+
+
+def append_history(port: int, entry: dict) -> None:
+    try:
+        os.makedirs(DATA_DIR, exist_ok=True)
+        path = history_path(port)
+        with _io_lock:
+            with open(path, "a", encoding="utf-8") as f:
+                f.write(json.dumps(entry, ensure_ascii=False) + "\n")
+            _trim_history(path)
+    except OSError:
+        logger.warning("写入历史失败: %s", history_path(port))
+
+
+def _trim_history(path: str) -> None:
+    """保留最近 HISTORY_MAX 行，防止无限膨胀。"""
+    try:
+        with open(path, encoding="utf-8") as f:
+            lines = f.readlines()
+        if len(lines) > HISTORY_MAX:
+            with open(path, "w", encoding="utf-8") as f:
+                f.writelines(lines[-HISTORY_MAX:])
+    except OSError:
+        pass
+
+
+def read_history(port: int, limit: Optional[int] = None) -> List[dict]:
+    limit = limit or 100
+    try:
+        with open(history_path(port), encoding="utf-8") as f:
+            lines = f.readlines()
+    except OSError:
+        return []
+    out = []
+    for line in lines[-limit:]:
+        line = line.strip()
+        if not line:
+            continue
+        try:
+            out.append(json.loads(line))
+        except ValueError:
+            continue
+    return out
+
+
+def _history_entry(session: Session, op: str, commands, outputs, status,
+                   start_view, end_view, failed_index=None, error=None) -> dict:
+    """构造历史条目。命令/输出原样记录；绝不写入密码（凭据独立传参，命令正文不含）。"""
+    return {
+        "ts": time.strftime("%Y-%m-%dT%H:%M:%S"),
+        "port": session.port,
+        "op": op,
+        "commands": list(commands),
+        "output": "\n".join(outputs) if outputs else "",
+        "status": status,
+        "start_view": start_view,
+        "end_view": end_view,
+        "failed_index": failed_index,
+        "error": error,
+    }
+
 
 pool = ConnectionPool()
 
@@ -322,10 +574,28 @@ pool = ConnectionPool()
 # --------------------------------------------------------------------------
 # FastAPI 应用与生命周期
 # --------------------------------------------------------------------------
+def _restore_noauth_in_background() -> None:
+    """无认证设备启动即自动重连+恢复视图；失败静默保留描述符，下次懒恢复兜底。"""
+    for port, desc in pool._descriptors.items():
+        if desc.get("username"):
+            continue  # 认证设备懒恢复（等 AI 带凭据调用）
+        def _restore(p=port):
+            try:
+                s = pool.get_or_create(p)
+                with s.lock:
+                    pool.ensure_connected(s)
+            except Exception:
+                pass
+        threading.Thread(target=_restore, daemon=True, name=f"restore-{port}").start()
+
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
+    pool.load_state()
     pool.start_reaper()
+    _restore_noauth_in_background()
     yield
+    pool.save_state()
     pool.shutdown_all()
 
 
@@ -384,6 +654,14 @@ def status(port: Optional[int] = None) -> dict:
     return {"status": "success", "sessions": pool.list_sessions(port)}
 
 
+@app.get("/history")
+def history_endpoint(port: Optional[int] = None, limit: Optional[int] = None) -> dict:
+    """返回指定端口的历史消息（命令+输出，最近 limit 条，默认 100）。"""
+    if port is None:
+        return {"status": "error", "error": "缺少 port 参数", "history": []}
+    return {"status": "success", "port": port, "history": read_history(port, limit)}
+
+
 @app.post("/connect")
 def connect(req: ConnectRequest) -> dict:
     t0 = time.time()
@@ -395,10 +673,15 @@ def connect(req: ConnectRequest) -> dict:
             pool.ensure_connected(session)
             view = detect_view(session.conn)
             session.last_used = time.time()
+        pool.sync_session(session, view)
+        append_history(session.port, _history_entry(session, "connect", [], [], "success", view, view))
         logger.info("op=connect port=%s status=success dur_ms=%s", req.port, int((time.time() - t0) * 1000))
         return {"status": "success", "port": req.port, "view": view}
     except Exception as e:
         pool.drop_session(session)
+        append_history(session.port, _history_entry(
+            session, "connect", [], [], "error", None, None,
+            error="连接失败: " + sanitize(str(e), secrets)))
         logger.info("op=connect port=%s status=error dur_ms=%s", req.port, int((time.time() - t0) * 1000))
         return {"status": "error", "port": req.port, "view": None, "error": sanitize(str(e), secrets)}
 
@@ -410,16 +693,22 @@ def exec_endpoint(req: ExecRequest) -> dict:
     secrets = [req.password] if req.password else []
     session = pool.get_or_create(req.port, username, req.password)
     start_view = None
+    end_view = None
+    outputs = []
+    status = "error"
+    failed_index = None
+    error = None
     try:
         with session.lock:
             try:
                 pool.ensure_connected(session)
             except Exception as e:
                 pool.drop_session(session)
-                return _err(req.port, start_view, None, "连接设备失败", sanitize(str(e), secrets), None, t0)
+                error = "连接设备失败: " + sanitize(str(e), secrets)
+                _finish_exec(session, start_view, None, [], status, None, error, req, t0)
+                return _exec_result(req.port, start_view, None, [], status, None, error)
 
             start_view = safe_detect(session)
-            outputs = []
             for i, cmd in enumerate(req.commands):
                 cmd = (cmd or "").strip()
                 if not cmd:
@@ -428,44 +717,51 @@ def exec_endpoint(req: ExecRequest) -> dict:
                     out = session.conn.send_command_timing(cmd, read_timeout=req.timeout)
                 except Exception as e:
                     end_view = safe_detect(session)
+                    failed_index = i
                     if end_view is None:
                         pool.drop_session(session)
-                        return _err(req.port, start_view, None, "连接中断，下个请求将自动重建", sanitize(str(e), secrets), i, t0)
-                    return _err(req.port, start_view, end_view, "命令执行异常", sanitize(str(e), secrets), i, t0)
+                        error = "连接中断，下个请求将自动重建: " + sanitize(str(e), secrets)
+                    else:
+                        error = "命令执行异常: " + sanitize(str(e), secrets)
+                    _finish_exec(session, start_view, end_view, outputs, status, failed_index, error, req, t0)
+                    return _exec_result(req.port, start_view, end_view, outputs, status, failed_index, error)
                 outputs.append(out)
                 if has_error(out):
                     end_view = safe_detect(session)
-                    return _err(req.port, start_view, end_view, f"命令 '{cmd}' 执行失败", None, i, t0, outputs=outputs)
+                    failed_index = i
+                    error = f"命令 '{cmd}' 执行失败"
+                    _finish_exec(session, start_view, end_view, outputs, status, failed_index, error, req, t0)
+                    return _exec_result(req.port, start_view, end_view, outputs, status, failed_index, error)
 
             end_view = safe_detect(session)
             session.last_used = time.time()
-        logger.info("op=exec port=%s status=success dur_ms=%s", req.port, int((time.time() - t0) * 1000))
-        return {
-            "status": "success",
-            "start_view": start_view,
-            "end_view": end_view,
-            "output": "\n".join(outputs),
-            "error": None,
-            "failed_index": None,
-        }
+            status = "success"
     except Exception as e:
         pool.drop_session(session)
-        logger.info("op=exec port=%s status=error dur_ms=%s", req.port, int((time.time() - t0) * 1000))
-        return _err(req.port, start_view, None, "未知错误", sanitize(str(e), secrets), None, t0)
+        error = "未知错误: " + sanitize(str(e), secrets)
+    _finish_exec(session, start_view, end_view, outputs, status, failed_index, error, req, t0)
+    return _exec_result(req.port, start_view, end_view, outputs, status, failed_index, error)
 
 
-def _err(port, start_view, end_view, error, err_detail, failed_index, t0, outputs=None):
-    logger.info("op=exec port=%s status=error dur_ms=%s", port, int((time.time() - t0) * 1000))
-    if err_detail:
-        error = f"{error}: {err_detail}"
+def _exec_result(port, start_view, end_view, outputs, status, failed_index, error):
     return {
-        "status": "error",
+        "status": status,
         "start_view": start_view,
         "end_view": end_view,
         "output": "\n".join(outputs) if outputs else "",
         "error": error,
         "failed_index": failed_index,
     }
+
+
+def _finish_exec(session, start_view, end_view, outputs, status, failed_index, error, req, t0):
+    """exec 批末副作用：对账导航路径、写描述符、记历史、记日志。"""
+    pool.sync_session(session, end_view)
+    append_history(session.port, _history_entry(
+        session, "exec", req.commands, outputs, status,
+        start_view, end_view, failed_index, error))
+    logger.info("op=exec port=%s status=%s dur_ms=%s",
+                session.port, status, int((time.time() - t0) * 1000))
 
 
 @app.post("/disconnect")
@@ -481,6 +777,14 @@ def disconnect(req: DisconnectRequest) -> dict:
                 conn.disconnect()
             except Exception:
                 pass
+    pool.remove_descriptor(req.port)
+    append_history(req.port, {
+        "ts": time.strftime("%Y-%m-%dT%H:%M:%S"),
+        "port": req.port, "op": "disconnect",
+        "commands": [], "output": "", "status": "success",
+        "start_view": None, "end_view": None,
+        "failed_index": None, "error": None,
+    })
     return {"status": "success", "port": req.port}
 
 
@@ -564,6 +868,16 @@ def explore_syntax(conn, base_cmd: str):
     return True, chain, ""
 
 
+def _finish_explore(session, req, start_view, end_view, status, chain, info, error, t0):
+    """explore 批末副作用：对账导航路径、写描述符、记历史、记日志。"""
+    pool.sync_session(session, end_view)
+    append_history(session.port, _history_entry(
+        session, "explore", list(req.commands) + [req.base], [info] if info else [],
+        status, start_view, end_view, None, error))
+    logger.info("op=explore port=%s status=%s dur_ms=%s",
+                session.port, status, int((time.time() - t0) * 1000))
+
+
 @app.post("/explore")
 def explore_endpoint(req: ExploreRequest) -> dict:
     t0 = time.time()
@@ -571,6 +885,7 @@ def explore_endpoint(req: ExploreRequest) -> dict:
     secrets = [req.password] if req.password else []
     session = pool.get_or_create(req.port, username, req.password)
     start_view = None
+    end_view = None
     try:
         with session.lock:
             try:
@@ -583,15 +898,20 @@ def explore_endpoint(req: ExploreRequest) -> dict:
             for cmd in req.commands:
                 out = session.conn.send_command_timing(cmd, strip_prompt=False, strip_command=False)
                 if re.search(r'Error|Unknown command|Unrecognized command', out, re.IGNORECASE):
-                    return {"status": "error", "error": f"前置命令 '{cmd}' 执行失败",
-                            "chain": [], "info": "", "start_view": start_view,
-                            "end_view": safe_detect(session)}
+                    end_view = safe_detect(session)
+                    status = "error"
+                    error = f"前置命令 '{cmd}' 执行失败"
+                    session.last_used = time.time()
+                    _finish_explore(session, req, start_view, end_view, status, [], "", error, t0)
+                    return {"status": status, "error": error,
+                            "chain": [], "info": "", "start_view": start_view, "end_view": end_view}
             success, chain, info = explore_syntax(session.conn, req.base)
             end_view = safe_detect(session)
             session.last_used = time.time()
-        logger.info("op=explore port=%s status=%s dur_ms=%s", req.port,
-                    "success" if success else "error", int((time.time() - t0) * 1000))
-        return {"status": "success" if success else "error", "chain": chain, "info": info,
+            status = "success" if success else "error"
+            error = None if success else "语法探索失败"
+        _finish_explore(session, req, start_view, end_view, status, chain, info, error, t0)
+        return {"status": status, "chain": chain, "info": info,
                 "start_view": start_view, "end_view": end_view}
     except Exception as e:
         pool.drop_session(session)

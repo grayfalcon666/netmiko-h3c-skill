@@ -4,3 +4,6 @@ scripts/__pycache__
 
 # 本机环境配置
 .env
+
+# 会话/历史持久化数据
+server/data/

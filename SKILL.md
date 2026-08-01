@@ -13,7 +13,7 @@ description: 使用 Netmiko 对新华三（H3C）交换机、路由器等设备�
    所有脚本均通过本机 HTTP 连接池服务执行命令。**连接池服务由用户手动启动，agent 不得自行拉起**；调用任何脚本前必须先确认服务已启动：
    - **探测**：`python3 <SKILL目录>/scripts/pool_client.py health`，返回 `{"status":"ok",...}` 即正常。
    - **若服务未启动**：立即告知用户需先手动启动服务（`uv run <SKILL目录>/server/connection_pool_server.py`），等用户确认服务就绪后再继续，严禁代替用户启动。
-   - **会话管理**：`python3 <SKILL目录>/scripts/pool_client.py status [端口]` 查看会话与当前视图；`... disconnect <端口>` 主动断开。
+   - **会话管理**：`python3 <SKILL目录>/scripts/pool_client.py status [端口]` 查看会话与当前视图；`... disconnect <端口>` 主动断开。会话与视图跨服务重启保持，历史消息可用 `... history <端口>` 读取。
 
 3. **建立 Telnet 连接**
    - 询问用户需要连接几台设备，并获取每台设备对应的端口号。
