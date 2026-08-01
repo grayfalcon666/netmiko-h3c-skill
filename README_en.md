@@ -24,6 +24,7 @@ This repository is an automation configuration toolkit for H3C switches, routers
 ```
 netmiko-h3c/
 ├── SKILL.md                      # Skill specification & execution rules (for AI or operators)
+├── CMD_HELP_STANDARD.md          # CMD-help documentation authoring spec (read before contributing)
 ├── README.md                     # Chinese documentation
 ├── README_en.md                  # English documentation (this file)
 ├── scripts/
@@ -176,6 +177,8 @@ The `chain` array in the JSON result lists the available options at each level (
 
 ## Command Reference Documents
 
+The command docs under [`references/CMD-help`](./references/CMD-help/) follow the [CMD_HELP_STANDARD.md](./CMD_HELP_STANDARD.md) authoring spec; read it before adding or modifying any document.
+
 Query the command format before deploying any configuration:
 
 ```bash
@@ -186,7 +189,7 @@ python3 scripts/search_cmd.py --view "IKE profile视图"     # commands under a 
 python3 scripts/search_cmd.py --file "IPsec" "ike"        # commands under a specific module/file only
 ```
 
-Without `--full` the script returns a JSON array (each item contains `command`, `view`, `file`, `line`); use the Read tool on the reported line to obtain the exact command format, replacing manual grep/index lookup. With `--full` it prints the complete documentation block from the indexed line up to the next indexed line, so no file read is needed. The matching modes are mutually exclusive and default to substring: `--exact` exact command-name match (automatically strips parenthetical annotations and brace alternatives from the indexed name, e.g. `--exact "ipsec policy"` hits `ipsec { ipv6-policy \| policy }`), `--prefix` starts with the keyword, `--suffix` ends with the keyword, `--word` keyword as a full word (does not hit substrings like `ipsec`), `--regex` regex match; `--view <view>` / `--file <module>` are filters that can be combined with any matching mode. Multi-word keywords default to AND — space-separated words must all appear in the concatenation of command name plus view name (e.g. the search text for `rule (IPv4 advanced ACL view)` is `rule IPv4高级ACL视图`, so `"rule ipv4"` hits it). When nothing matches, the script returns `{"suggestions": [top 3 similar commands]}` to prompt the user; with `--full`, each suggested command additionally carries a `syntax` field (the first 5 lines of its 【命令】 section), so the syntax is visible at a glance without opening the file. The index cache (`references/.cmd_cache.jsonl`) is refreshed incrementally via git status; in non-Git environments it falls back to file-hash comparison. The `.env` switch `NETMIKO_CMD_DOC_AUTO_REFRESH` (default `true`) controls whether dynamic change detection and cache refresh are enabled.
+Without `--full` the script returns a JSON array (each item contains `command`, `view`, `file`, `line`); use the Read tool on the reported line to obtain the exact command format, replacing manual grep/index lookup. With `--full` it prints the complete documentation block from the indexed line up to the next indexed line, so no file read is needed. The matching modes are mutually exclusive and default to substring: `--exact` exact command-name match (automatically strips parenthetical annotations and brace alternatives from the indexed name, e.g. `--exact "ipsec policy"` hits `ipsec { ipv6-policy \| policy }`), `--prefix` starts with the keyword, `--suffix` ends with the keyword, `--word` keyword as a full word (does not hit substrings like `ipsec`), `--regex` regex match; `--view <view>` / `--file <module>` are filters that can be combined with any matching mode. Multi-word keywords default to AND — space-separated words must all appear in the concatenation of command name plus view name (e.g. the search text for `rule (IPv4 advanced ACL view)` is `rule IPv4高级ACL视图`, so `"rule ipv4"` hits it). When nothing matches, the script returns `{"suggestions": [top 3 similar commands]}` to prompt the user; with `--full`, each suggested command additionally carries a `syntax` field (the first 5 lines of its 【命令】 section), so the syntax is visible at a glance without opening the file. The index cache (`references/.cmd_cache.jsonl`) is refreshed incrementally via git status; in non-Git environments it falls back to file-hash comparison. The `.env` switch `NETMIKO_CMD_DOC_AUTO_REFRESH` (default `true`) controls whether dynamic change detection and cache refresh are enabled. For index entries with an empty `view` column, the view is extracted from the body 【视图】 section (body takes precedence; only when the body has none does it fall back to the nearest preceding non-empty view in the same file). When a `--file <module>` filter returns nothing, the result carries a `suggested_modules` field listing the most similar module names (e.g. `--file "ike"` suggests `["IPsec"]`) so you can retry with the correct module name.
 
 **Exception**: Commands listed in `references/high-frequency-commands.md` are confirmed standard H3C syntax and can be used directly without document lookup.
 
@@ -273,8 +276,12 @@ The server persists each session's recovery plan and call history in the data di
 
 ## Contribution & Extension
 
-- To add command references for new functional modules: create folders under `references/CMD-help` and write standardized `.md` documents.
-- If script defects are found or new enhancements are needed (new authentication methods, custom error matching logic, etc.), modify Python files inside `scripts/` or `server/connection_pool_server.py`. Keep consistent JSON output structure and error detection logic.
+- **Contributing command references (CMD-help)**: before adding or modifying command docs, read the [CMD_HELP_STANDARD.md](./CMD_HELP_STANDARD.md) spec first to match the structure that [`scripts/search_cmd.py`](./scripts/search_cmd.py) depends on:
+  - Name files under [`references/CMD-help/<module>/`](./references/CMD-help/) as `<module>配置命令.md` / `<module>调试命令.md` / `<module>Probe命令.md`;
+  - Add a `<!-- CMD-INDEX ... -->` index block at the top of every file (`command | view | Lline`), where `Lline` must point to the command-block title line in the body;
+  - Organize the body per the spec: block title, full-width separator, and `【命令】`/`【视图】` sections; when the index view column is empty, the body `【视图】` section must be filled accurately;
+  - Verify with `python3 scripts/search_cmd.py --exact "<new command>"` (the cache is rebuilt automatically via git status).
+- If script defects are found or new enhancements are needed (new authentication methods, custom error matching logic, etc.), modify Python files inside [`scripts/`](./scripts/) or [`server/connection_pool_server.py`](./server/connection_pool_server.py). Keep consistent JSON output structure and error detection logic.
 - Issues and Pull Requests are welcome to improve this repository.
 
 ## License

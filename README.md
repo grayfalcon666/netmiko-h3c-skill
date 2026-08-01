@@ -22,6 +22,7 @@
 ```
 netmiko-h3c/
 ├── SKILL.md                      # 技能描述与执行规范（供 AI 或使用者参考）
+├── CMD_HELP_STANDARD.md          # CMD-help 命令文档编写规范（新增/修改文档前必读）
 ├── README.md                     # 本文件
 ├── scripts/
 │   ├── pool_client.py            # 连接池服务 HTTP 客户端（纯标准库）+ 生命周期 CLI
@@ -160,6 +161,8 @@ python3 scripts/explore_syntax.py <端口号> "前置子视图命令..." "待探
 
 ## 命令参考文档
 
+[`references/CMD-help`](./references/CMD-help/) 下的命令文档遵循 [CMD_HELP_STANDARD.md](./CMD_HELP_STANDARD.md) 编写规范，新增或修改文档前请先阅读该规范。
+
 执行任何配置前，先查询命令格式：
 ```bash
 python3 scripts/search_cmd.py "<关键词>"            # 返回 JSON 定位
@@ -168,7 +171,7 @@ python3 scripts/search_cmd.py --exact --full "<关键词>"  # 精确匹配命令
 python3 scripts/search_cmd.py --view "IKE profile视图"   # 只看指定视图下的命令
 python3 scripts/search_cmd.py --file "IPsec" "ike"       # 只看指定模块路径下的命令
 ```
-不带 `--full` 返回 JSON 数组（每项含 `command`、`view`、`file`、`line`），据此用 Read 读取对应行获取精确命令格式；带 `--full` 直接从索引行到下一个索引行之间输出完整文档块，无需再读文件。匹配模式（`--exact` 命令名完全相等（自动剥离索引里的括号注记与花括号备选，如 `--exact "ipsec policy"` 命中 `ipsec { ipv6-policy \| policy }`）、`--prefix` 以关键词开头、`--suffix` 以关键词结尾、`--word` 关键词作为完整单词出现（不命中 `ipsec` 之类子串）、`--regex` 正则表达式匹配）五者互斥、默认子串匹配；`--view <视图>`/`--file <模块>` 是过滤条件，可与任一匹配模式叠加。多词默认 AND：空格分隔的关键词必须全部出现在「命令名 + 视图名」的拼接字符串中（如 `rule (IPv4 advanced ACL view)` 的搜索文本为 `rule IPv4高级ACL视图`，查 `"rule ipv4"` 可命中）。无匹配时返回 `{"suggestions": [前 3 个相似命令]}` 供提示用户；带 `--full` 时每个建议命令额外带 `syntax` 字段（该命令【命令】段落前 5 行），看一眼即知语法、无需再读文件。索引缓存（`references/.cmd_cache.jsonl`）经 git status 增量更新，非 Git 环境回退到文件哈希比对；`.env` 中的 `NETMIKO_CMD_DOC_AUTO_REFRESH`（默认 `true`）控制是否开启动态检查更新。
+不带 `--full` 返回 JSON 数组（每项含 `command`、`view`、`file`、`line`），据此用 Read 读取对应行获取精确命令格式；带 `--full` 直接从索引行到下一个索引行之间输出完整文档块，无需再读文件。匹配模式（`--exact` 命令名完全相等（自动剥离索引里的括号注记与花括号备选，如 `--exact "ipsec policy"` 命中 `ipsec { ipv6-policy \| policy }`）、`--prefix` 以关键词开头、`--suffix` 以关键词结尾、`--word` 关键词作为完整单词出现（不命中 `ipsec` 之类子串）、`--regex` 正则表达式匹配）五者互斥、默认子串匹配；`--view <视图>`/`--file <模块>` 是过滤条件，可与任一匹配模式叠加。多词默认 AND：空格分隔的关键词必须全部出现在「命令名 + 视图名」的拼接字符串中（如 `rule (IPv4 advanced ACL view)` 的搜索文本为 `rule IPv4高级ACL视图`，查 `"rule ipv4"` 可命中）。无匹配时返回 `{"suggestions": [前 3 个相似命令]}` 供提示用户；带 `--full` 时每个建议命令额外带 `syntax` 字段（该命令【命令】段落前 5 行），看一眼即知语法、无需再读文件。索引缓存（`references/.cmd_cache.jsonl`）经 git status 增量更新，非 Git 环境回退到文件哈希比对；`.env` 中的 `NETMIKO_CMD_DOC_AUTO_REFRESH`（默认 `true`）控制是否开启动态检查更新。索引中 `view` 列为空的命令，视图从正文【视图】小节提取（正文优先，正文没有才继承同文件最近一条非空视图）。`--file <模块>` 过滤结果为空时，返回 `suggested_modules` 字段提示最相似的模块名（如 `--file "ike"` 提示 `["IPsec"]`），可据此改用正确模块名重查。
 
 **例外**：`references/high-frequency-commands.md` 中列出的命令已确认为通用 H3C 语法，可直接使用，无需查阅文档。
 
@@ -248,8 +251,12 @@ python3 scripts/search_cmd.py --file "IPsec" "ike"       # 只看指定模块路
 
 ## 贡献与扩展
 
-- 如需增加新功能模块的命令参考，请在 `references/CMD-help` 下创建对应目录，并编写规范的 `.md` 文件。
-- 若发现脚本缺陷或需要增强（如适配其他认证方式、自定义错误模式），可修改 `scripts/` 下的 Python 文件或 `server/connection_pool_server.py`，请保持 JSON 输出结构与检测逻辑一致。
+- **贡献命令参考文档（CMD-help）**：新增或修改命令文档前，请先阅读 [CMD_HELP_STANDARD.md](./CMD_HELP_STANDARD.md) 编写规范，确保符合 [`scripts/search_cmd.py`](./scripts/search_cmd.py) 解析器依赖的结构：
+  - 在 [`references/CMD-help/<模块名>/`](./references/CMD-help/) 下按 `<模块名>配置命令.md`、`<模块名>调试命令.md`、`<模块名>Probe命令.md` 命名文件；
+  - 每个文件头部写 `<!-- CMD-INDEX ... -->` 索引块（`命令名 | 视图 | L行号`），`L行号` 必须指向正文命令块标题所在行；
+  - 正文按规范组织块标题、整行分隔线与【命令】/【视图】等小节；索引视图留空时正文【视图】必须准确填写；
+  - 完成后运行 `python3 scripts/search_cmd.py --exact "新增命令"` 验证可被查询到（缓存经 git status 自动重建）。
+- 若发现脚本缺陷或需要增强（如适配其他认证方式、自定义错误模式），可修改 [`scripts/`](./scripts/) 下的 Python 文件或 [`server/connection_pool_server.py`](./server/connection_pool_server.py)，请保持 JSON 输出结构与检测逻辑一致。
 - 欢迎提交 Issue 或 Pull Request 完善本仓库。
 
 ## 许可
